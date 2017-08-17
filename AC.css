@@ -1,26 +1,63 @@
+:root {
+    background-color: #555555;
+    font-family: 'VT323', monospace;
+}
+
 body {
+}
+
+#wrap {
+    position: fixed;
+    left: 0px;
+    top: 40px;
+    height: 100%;
+    width: 100%;
+}
+
+#non-gallery-container {
+    position: fixed;
+    top: 25px;
+    left: 250px;
+    width: 80%;
+}
+
+#bottom-toolbar {
+    position: fixed;
+}
+
+#vat-buttons {
     background: #555555;
+    font-family: 'VT323',monospace;
+    color: white;
+    height: 30px;
+}
+
+input {
+    background-color: #656565;
+    outline-style: none;
+    border: none;
+    color: #ffc23a;
 }
 
 /*then text*/
 
 .then {
-    font-family: 'VT323', monospace;
     font-size: 18pt;
-    color: black;
+    color: white;
     padding-left: 20px;
     padding-right: 20px;
 }
 
 .if {
-    font-family: 'VT323', monospace;
     font-size: 18pt;
-    color: black;
+    color: white;
     padding-left: 20px;
     padding-right: 20px;
 }
 
 .if-then {
+    color: white;
+    font-family: 'VT323', monospace;
     border: none;
     min-height: 90px;
     padding: 0px 0px 0px 0px;
@@ -34,7 +71,6 @@ body {
 /*methoden-name*/
 
 .trigger-name {
-    width: 100%;
     border: none;
 }
 
@@ -42,7 +78,6 @@ body {
 
 #vat-conditions {
     background: none;
-    margin: 20px;
     width: 180px;
 }
 
@@ -50,7 +85,6 @@ body {
 
 #vat-actions {
     background: none;
-    margin: 20px;
     width: 180px;
 }
 
@@ -63,7 +97,6 @@ body {
 
 .rule .if-then {
     min-height: 55px;
-    padding: 0px 0px 0px 0px;
 }
 
 /*Comment of user*/
@@ -71,10 +104,10 @@ body {
 .comment-textarea {
     background: #555555;
     color: white;
-    font-size: 11pt;
+    font-size: 12pt;
     font-family: 'VT323';
     border: none;
-    padding: 10px;
+    padding: 8px;
     height: 40px;
 }
 
@@ -82,10 +115,6 @@ body {
 
 .instruction {
     border-radius: 10px;
-}
-
-.method {
-    background: none;
 }
 
 ::-webkit-scrollbar {
@@ -108,21 +137,13 @@ body {
     background-color: #656565;
 }
 
-/*rules*/
-
-/*layers*/
-
-/*wüste balken*/
-
 /*Methoden Name: exclude blocks*/
 
 .trigger-name .editable-display {
     font-family: 'VT323', monospace;
-    border-color: #ffc23a;
-    border: 2px;
-    border-style: solid;
-    background: none;
-    color: #ffc23a;
+    border: none;
+    background: #555555;
+    color: white;
     padding: 0px 30px 0px 30px;
     font-size: 25px;
     margin: 10px 0px 0px 10px;
@@ -147,23 +168,38 @@ body {
     background: #ffc23a;
 }
 
-div.direction-picker-display.north {
-    background: white;
-    content: url(https://agentcubesonline.com/AQO/images/tools/tool-fp.png);
+#one-true-value-editor {
+    background: #555555;
+    border-style: solid;
+    border-color: white;
 }
 
 .gallery-thumbnail {
-    border-color: white;
-    border-style: solid;
-    border-width: 2px;
-    background: white;
+    border-color: #ffc23a;
 }
 
 .gallery_agentitem {
-    margin-top: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
+    margin: 5px 0px 0px 5px;
+    padding: 5px 0px 0px 0px;
+    height: 35px;
+}
+
+.gallery_agentitem:hover {
+    background-color: #ffc23a;
+    color: #555555;
+}
+
+.flippy-closed {
+    margin: 0 10px 0 20px;
+}
+
+.flippy-open {
+    margin: 0 10px 0 20px;
+}
+
+div.direction-picker-display.north {
+    background: white;
+    content: url(https://agentcubesonline.com/AQO/images/tools/tool-fp.png);
 }
 
 /*condition block normal*/
@@ -280,6 +316,8 @@ img.shape-editor-display {
     font-size: 20px;
 }
 
+/*agents */
+
 .gallery_name {
     font-family: 'VT323', monospace;
     font-size: 14px;
@@ -287,17 +325,6 @@ img.shape-editor-display {
 
 #gallery-title-span {
     font-family: 'VT323', monospace;
-}
-
-button:hover {
-    background: none;
-    border-color: #ffc23a;
-    color: #ffc23a;
-}
-
-#one-true-value-editor {
-    background: #555555;
-    border-style: solid;
 }
 
 .vat-proxy {
@@ -312,7 +339,7 @@ button:hover {
 }
 
 .icon-tool-with-translated-tooltip {
-    background: #555555;
+    background: none;
 }
 
 .block.rule.instruction-context-menu.vat-selected {
@@ -345,13 +372,6 @@ button:hover {
 textarea.comment-textarea {
     margin: 0px 0px 10px 7px;
     width: 100%;
-}
-
-#vat-buttons {
-    background: #555555;
-    font-family: 'VT323',monospace;
-    color: white;
-    height: 40px;
 }
 
 select.icon-tool-with-translated-tooltip.form-control {
@@ -453,37 +473,41 @@ div.method.block.instruction-context-menu {
     min-width: 700px;
 }
 
-button {
-    font-family: 'VT323',monospace;
-    background: none;
-    border: 2px;
-    color: white;
-    border-style: solid;
-    border-width: 2px;
-    margin-top: 5px;
-    margin-left: 5px;
-}
-
-div.icon-tool-with-translated-tooltip.noUiSlider {
-    background: none;
-}
-
-button.icon-tool-with-translated-tooltip {
-    margin-right: 10px;
-    background: none;
-}
-
 #layer-controls {
     background: none;
     font-family: 'VT323', monospace;
-    font-size: 10px;
+    font-size: 13px;
     height: 10px;
     position: absolute;
-    right: 20px;
-    top: -50px;
+    right: -70px;
+    top: 0px;
 }
 
-div.icon-tool-with-translated-tooltip {
+.icon-tool-with-translated-tooltip.noUiSlider {
+    height: 200px;
+}
+
+/*buttons*/
+
+button {
+    font-family: 'VT323',monospace;
+    border: none;
+    color: white;
+}
+
+button:hover {
+    background: #ffc23a;
+    color: #555555;
+}
+
+/*toolbar on top*/
+
+#toolbar button.icon-tool-with-translated-tooltip {
+    margin-right: 10px;
+}
+
+.config {
     background: none;
+    margin-top: 2px;
 }
 
