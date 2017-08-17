@@ -1,0 +1,489 @@
+body {
+    background: #555555;
+}
+
+/*then text*/
+
+.then {
+    font-family: 'VT323', monospace;
+    font-size: 18pt;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.if {
+    font-family: 'VT323', monospace;
+    font-size: 18pt;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.if-then {
+    border: none;
+    min-height: 90px;
+    padding: 0px 0px 0px 0px;
+    background-color: #66b5b4;
+}
+
+.if-then+.if-then {
+    background-color: #ae87ca;
+}
+
+/*methoden-name*/
+
+.trigger-name {
+    width: 100%;
+    border: none;
+}
+
+/*conditions*/
+
+#vat-conditions {
+    background: none;
+    margin: 20px;
+    width: 180px;
+}
+
+/*actions*/
+
+#vat-actions {
+    background: none;
+    margin: 20px;
+    width: 180px;
+}
+
+/*color table rules*/
+
+.rule {
+    border: none;
+    background: white;
+}
+
+.rule .if-then {
+    min-height: 55px;
+    padding: 0px 0px 0px 0px;
+}
+
+/*Comment of user*/
+
+.comment-textarea {
+    background: #555555;
+    color: white;
+    font-size: 11pt;
+    font-family: 'VT323';
+    border: none;
+    padding: 10px;
+    height: 40px;
+}
+
+/*Block*/
+
+.instruction {
+    border-radius: 10px;
+}
+
+.method {
+    background: none;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    /* for vertical scrollbars */
+    height: 12px;
+    /* for horizontal scrollbars */
+    background: #656565;
+}
+
+::-webkit-scrollbar-track {
+    background: #656565;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #656565;
+}
+
+.rule-box {
+    background-color: #656565;
+}
+
+/*rules*/
+
+/*layers*/
+
+/*wüste balken*/
+
+/*Methoden Name: exclude blocks*/
+
+.trigger-name .editable-display {
+    font-family: 'VT323', monospace;
+    border-color: #ffc23a;
+    border: 2px;
+    border-style: solid;
+    background: none;
+    color: #ffc23a;
+    padding: 0px 30px 0px 30px;
+    font-size: 25px;
+    margin: 10px 0px 0px 10px;
+    text-align: center;
+}
+
+.trigger-name .editable-display:hover {
+    background: #ffc23a;
+    color: #555555;
+}
+
+/*popup menu*/
+
+.popup-list-item {
+    font-family: 'VT323', monospace;
+    font-size: 15px;
+    background: #555555;
+}
+
+.popup-list-item:hover {
+    color: black;
+    background: #ffc23a;
+}
+
+div.direction-picker-display.north {
+    background: white;
+    content: url(https://agentcubesonline.com/AQO/images/tools/tool-fp.png);
+}
+
+.gallery-thumbnail {
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    background: white;
+}
+
+.gallery_agentitem {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+/*condition block normal*/
+
+/*condition block selected*/
+
+/*action block normal*/
+
+.action.instruction.instruction-context-menu {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background: white;
+    color: #ae87ca;
+    border: 2px;
+    border-style: solid;
+}
+
+/*action block selected*/
+
+.action.instruction.instruction-context-menu.vat-selected {
+    background: #ae87ca;
+    color: white;
+}
+
+/*Expand block triangle*/
+
+.action .vat-flippy-closed {
+    color: #ae87ca;
+}
+
+.action .vat-flippy-open {
+    color: #ae87ca;
+}
+
+.condition .vat-flippy-open {
+    color: #66b5b4;
+}
+
+.condition .vat-flippy-closed {
+    color: #66b5b4;
+}
+
+/*fields inside condition blocks*/
+
+.condition .editable-display {
+    text-align: center;
+    border-color: #66b5b4;
+    border-style: solid;
+    border-width: 2px;
+    font-family: 'VT323', monospace;
+    font-size: 11pt;
+    min-width: 23px;
+    min-height: 23px;
+    color: #66b5b4;
+}
+
+/*fields inside condition blocks*/
+
+.action .editable-display {
+    border: 2px;
+    border-color: #ae87ca;
+    border-style: solid;
+    min-height: 23px;
+    min-width: 23px;
+    text-align: center;
+    font-family: 'VT323', monospace;
+    font-size: 11pt;
+    color: #ae87ca;
+}
+
+/*fields inside condition blocks pickers ?*/
+
+img.shape-editor-display {
+    border-width: 2px;
+    border-style: solid;
+    min-height: 23px;
+    min-width: 23px;
+}
+
+.condition .direction-picker-display {
+    border-style: solid;
+    border-color: #66b5b4;
+    border-width: 2px;
+}
+
+.action .direction-picker-display {
+    border-style: solid;
+    border-color: #ae87ca;
+    border-width: 2px;
+}
+
+/*Statusbar ausblenden*/
+
+#status-bar {
+    display: none;
+}
+
+#container {
+    background: none;
+}
+
+/*toolbar top*/
+
+#vat-code-header {
+    display: none;
+}
+
+#vat-code-header-agent-name {
+    display: none;
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+}
+
+.gallery_name {
+    font-family: 'VT323', monospace;
+    font-size: 14px;
+}
+
+#gallery-title-span {
+    font-family: 'VT323', monospace;
+}
+
+button:hover {
+    background: none;
+    border-color: #ffc23a;
+    color: #ffc23a;
+}
+
+#one-true-value-editor {
+    background: #555555;
+    border-style: solid;
+}
+
+.vat-proxy {
+    height: 40px;
+    width: 40px;
+}
+
+.method.block.instruction-context-menu {
+    border: 2px;
+    border-style: solid;
+    border-color: white;
+}
+
+.icon-tool-with-translated-tooltip {
+    background: #555555;
+}
+
+.block.rule.instruction-context-menu.vat-selected {
+    border-style: solid;
+    border-color: #ffc23a;
+    border-width: 2px;
+}
+
+.condition.instruction.instruction-context-menu.vat-selected {
+    background: #66b5b4;
+    color: white;
+}
+
+.comments-box {
+    margin: 5px 5px 5px 5px;
+}
+
+.group-title.translated-gui-element {
+    font-family: 'VT323',monospace;
+    font-size: 20px;
+}
+
+.disclosure-box {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    overflow: true;
+}
+
+textarea.comment-textarea {
+    margin: 0px 0px 10px 7px;
+    width: 100%;
+}
+
+#vat-buttons {
+    background: #555555;
+    font-family: 'VT323',monospace;
+    color: white;
+    height: 40px;
+}
+
+select.icon-tool-with-translated-tooltip.form-control {
+    color: white;
+}
+
+canvas {
+    border-style: solid;
+    border-width: 15px;
+    border-color: #555555;
+}
+
+#toolbar {
+    background: #555555;
+    height: 70px;
+}
+
+#gallery-description {
+    background: #656565;
+    font-size: 40px;
+    text-align: center;
+}
+
+#vat-table {
+    width: 80%;
+}
+
+td.translated-gui-element {
+    font-family: 'VT323', monospace;
+    background: #555555;
+    font-size: 30px;
+    color: white;
+}
+
+#vat-code-header-td {
+    background: #555555;
+    color: #555555;
+}
+
+.condition.instruction.instruction-context-menu {
+    background: white;
+    color: #66b5b4;
+    border-style: solid;
+    border-color: #66b5b4;
+    border-width: 2px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+#vat-conditions-scroll {
+    background: #656565;
+    margin: 0px 20px 0px 20px;
+}
+
+#vat-conditions-td {
+    background: #656565;
+    border-color: #555555;
+    border-style: solid;
+    border-width: 40px;
+}
+
+#vat-actions-scroll {
+    background: #656565;
+    margin: 0px 20px 0px 20px;
+}
+
+#vat-actions-td {
+    background: #656565;
+    border-color: #555555;
+    border-style: solid;
+    border-width: 40px;
+}
+
+.block {
+    margin: 20px 20px 20px 20px;
+    background: #656565;
+}
+
+#vat-code-td {
+    background: #656565;
+    padding: 0px;
+    margin: 0px;
+    border-style: solid;
+    border-color: #555555;
+    border-width: 40px;
+    padding-top: 0px;
+}
+
+.method.block.instruction-context-menu.vat-selected {
+    border: 2px;
+    border-style: solid;
+    border-color: #ffc23a;
+}
+
+div.method.block.instruction-context-menu {
+    min-width: 700px;
+}
+
+button {
+    font-family: 'VT323',monospace;
+    background: none;
+    border: 2px;
+    color: white;
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+div.icon-tool-with-translated-tooltip.noUiSlider {
+    background: none;
+}
+
+button.icon-tool-with-translated-tooltip {
+    margin-right: 10px;
+    background: none;
+}
+
+#layer-controls {
+    background: none;
+    font-family: 'VT323', monospace;
+    font-size: 10px;
+    height: 10px;
+    position: absolute;
+    right: 20px;
+    top: -50px;
+}
+
+div.icon-tool-with-translated-tooltip {
+    background: none;
+}
+
