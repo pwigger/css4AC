@@ -7,18 +7,24 @@ body {
 }
 
 #wrap {
-    position: fixed;
-    left: 0px;
-    top: 40px;
-    height: 100%;
-    width: 100%;
+    height: 100%
+width:100%;
 }
 
 #non-gallery-container {
-    position: fixed;
-    top: 25px;
-    left: 250px;
+    left: 0px;
     width: 80%;
+}
+
+#gallery-container {
+    position: relative;
+    left: 80% ;
+    width: 280px;
+    background: #656565;
+}
+
+div#threed-and-status {
+    width: 100%;
 }
 
 #bottom-toolbar {
@@ -26,10 +32,35 @@ body {
 }
 
 canvas {
-    margin-top: 15px;
-    border-style: solid;
-    border-width: 0px;
-    border-color: #555555;
+    width: 98%;
+    height: 100%;
+    /*prozent für 3d*/
+}
+
+#vat {
+    top: 0px;
+}
+
+table#vat-table {
+    width: 98%;
+}
+
+#gallery-buttons {
+    position: fixed;
+    left: 80%;
+}
+
+#container {
+    background: none;
+}
+
+#layer-controls {
+    position: fixed;
+    left: 20px;
+    top: 0px;
+    background: none;
+    font-family: 'VT323', monospace;
+    font-size: 13px;
 }
 
 input {
@@ -276,10 +307,6 @@ img.shape-editor-display {
     display: none;
 }
 
-#container {
-    background: none;
-}
-
 /*toolbar top*/
 
 #vat-code-header {
@@ -306,12 +333,6 @@ div#gallery-description {
     font-family: 'VT323',monospace;
     font-size: 12pt;
     margin: 0px 0px 0px 10px;
-}
-
-#gallery-container {
-    width: 250px;
-    background: #656565;
-    border-right: 20px solid #555555;
 }
 
 #gallery-title-span {
@@ -386,6 +407,7 @@ span.gallery_name {
 .condition.instruction.instruction-context-menu.vat-selected {
     background: #66b5b4;
     color: white;
+    border-color: white;
 }
 
 .comments-box {
@@ -423,10 +445,6 @@ select.icon-tool-with-translated-tooltip.form-control {
     background: #656565;
     font-size: 40px;
     text-align: center;
-}
-
-#vat-table {
-    width: 80%;
 }
 
 td.translated-gui-element {
@@ -494,17 +512,6 @@ td.translated-gui-element {
 }
 
 div.method.block.instruction-context-menu {
-    min-width: 800px;
-}
-
-#layer-controls {
-    background: none;
-    font-family: 'VT323', monospace;
-    font-size: 13px;
-    height: 10px;
-    position: absolute;
-    right: -70px;
-    top: 0px;
 }
 
 .icon-tool-with-translated-tooltip.noUiSlider {
@@ -932,11 +939,12 @@ button#tool-reset.down {
 }
 
 button#action-button {
-    background: url(http://www.pwigger.ch/AC/icons/menu.png);
+    background: url(http://www.pwigger.ch/AC/icons/active/menu.png);
     background-repeat: no-repeat;
-    background-size: 16px 16px;
+    background-size: 5px 5px;
     background-position: center;
     outline-style: none;
+    background-color: red;
 }
 
 button#action-button:hover {
@@ -1112,5 +1120,59 @@ hr {
 #toolbar {
     background: #555555;
     height: 40px;
+}
+
+#vat-code-header-resize-img {
+    opacity: 0;
+    position: absolute;
+    width: 1000px;
+    height: 40px;
+    left: 0;
+    cursor: ns-resize;
+}
+
+#layer-div {
+    position: absolute;
+    left: 10px;
+    top: 70px;
+}
+
+#layer-minus-button {
+    position: absolute;
+    left: 0px;
+    top: 100px;
+}
+
+#layer-plus-button {
+    position: absolute;
+    left: 30px;
+    top: 100px;
+}
+
+#layer-height {
+}
+
+#layer-height-div {
+    position: absolute;
+    left: 10px;
+    top: 80px;
+}
+
+#layer-height-slider-div {
+    position: absolute;
+    left: 9px;
+    top: 130px;
+}
+
+#layer-grid-checkbox {
+    position: absolute;
+    left: 0px;
+    top: 360px;
+}
+
+#grid {
+    position: absolute;
+    left: 16px;
+    top: 358px;
 }
 
