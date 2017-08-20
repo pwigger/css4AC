@@ -13,10 +13,6 @@
     position: fixed;
 }
 
-#container {
-    background: none;
-}
-
 #error {
     background-color: blue;
     border: solid blue 100px;
@@ -35,12 +31,6 @@
 
 #gallery {
     width: 250px;
-}
-
-#gallery-buttons {
-    left: 89.0%;
-    position: fixed;
-    top: 140px;
 }
 
 #gallery-container {
@@ -136,8 +126,8 @@
 }
 
 #non-gallery-container {
-    left: 20px;
-    width: 79%;
+    left: 60px;
+    width: 77%;
 }
 
 #one-true-value-editor {
@@ -311,13 +301,13 @@
     background: none;
     height: 800px;
     margin: 0px 20px 0px 20px;
-    z-index: 4;
+    z-index: 0;
 }
 
 #vat-conditions-td {
     background: #656565;
     position: relative;
-    z-index: 4;
+    z-index: 0;
 }
 
 #vat-conditions-td:hover {
@@ -327,6 +317,7 @@
     position: relative;
     top: -350px;
     transition-timing-function: ease;
+    z-index: 4;
 }
 
 #world-button {
@@ -402,7 +393,7 @@
     background: #555555;
     border: none;
     color: white;
-    font-family: 'VT323';
+    font-family: 'Open Sans', sans-serif;
     font-size: 13px;
     padding: 8px;
 }
@@ -512,7 +503,7 @@
 }
 
 .gallery_name {
-    font-family: 'VT323',monospace;
+    font-family: 'Open Sans', sans-serif;
     font-size: 13px;
 }
 
@@ -803,7 +794,7 @@ button#tool-arrow {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 16px 16px;
-    left: 40px;
+    left: 25px;
     position: fixed;
     top: 60px;
     z-index: 1;
@@ -833,7 +824,7 @@ button#tool-camera-pan {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 16px 16px;
-    left: 40px;
+    left: 25px;
     position: fixed;
     top: 260px;
     z-index: 1;
@@ -863,7 +854,7 @@ button#tool-camera-rot {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 16px 16px;
-    left: 40px;
+    left: 25px;
     position: fixed;
     top: 230px;
     z-index: 1;
@@ -893,7 +884,7 @@ button#tool-camera-zoom {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 16px 16px;
-    left: 40px;
+    left: 25px;
     position: fixed;
     top: 290px;
     z-index: 1;
@@ -922,7 +913,7 @@ button#tool-eraser {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 16px 16px;
-    left: 40px;
+    left: 25px;
     position: fixed;
     top: 150px;
     z-index: 1;
@@ -952,7 +943,7 @@ button#tool-fp {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 16px 12px;
-    left: 40px;
+    left: 25px;
     outline-style: none;
     position: fixed;
     top: 320px;
@@ -991,7 +982,7 @@ button#tool-hand {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 16px 16px;
-    left: 40px;
+    left: 25px;
     position: fixed;
     top: 180px;
     z-index: 1;
@@ -1021,7 +1012,7 @@ button#tool-multi {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 16px 16px;
-    left: 40px;
+    left: 25px;
     position: fixed;
     top: 120px;
     z-index: 1;
@@ -1051,7 +1042,7 @@ button#tool-pencil {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 16px 16px;
-    left: 40px;
+    left: 25px;
     position: fixed;
     top: 90px;
     z-index: 1;
@@ -1182,12 +1173,6 @@ button#tool-stop:hover {
 button:hover {
     background: #ffc23a;
     color: #555555;
-}
-
-canvas {
-    /*prozent für 3d*/
-    height: 100%;
-    width: 100%;
 }
 
 /*then text*/
@@ -1473,5 +1458,26 @@ span.cancelbutton {
 
 .attribute-window-table {
     width: 190px;
+}
+
+#gallery-buttons {
+    position: fixed;
+    right: 40px;
+    top: 140px;
+}
+
+canvas {
+    height: 100%;
+    width: 100%;
+}
+
+canvas.threed-view {
+    height: inherit;
+    width: inherit;
+}
+
+.AgentView {
+    position: relative;
+    top: 140px;
 }
 
