@@ -1,13 +1,138 @@
-:root {
-    background-color: #555555;
+#action-button img {
+    display: none;
+}
+
+#asi-cube-link img {
+    content: url(http://www.pwigger.ch/AC/icons/logo.png);
+    left: -230px;
+    position: relative;
+    top: 30px;
+}
+
+#bottom-toolbar {
+    position: fixed;
+}
+
+#container {
+    background: none;
+}
+
+#error {
+    background-color: blue;
+    border: solid blue 100px;
+    color: white;
+    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+    opacity: 1;
+    position: relative;
+    top: 100px;
+}
+
+#fast {
+    opacity: 0.4;
+    position: relative;
+    top: -5px;
+}
+
+#gallery {
+    width: 250px;
+}
+
+#gallery-buttons {
+    left: 89.0%;
+    position: fixed;
+    top: 140px;
+}
+
+#gallery-container {
+    background: #656565;
+    left: 82% ;
+    position: relative;
+    top: 70px;
+    width: 280px;
+}
+
+#gallery-description {
+    background: #656565;
+    font-size: 40px;
+    text-align: center;
+}
+
+#gallery-title-span {
     font-family: 'VT323', monospace;
+    font-size: 30px;
+    left: -50px;
+    padding: 0 0 0 0;
+    position: relative;
 }
 
-body {
+#grid {
+    left: 28px;
+    position: absolute;
+    top: 287px;
 }
 
-div#wrap {
-    overflow: visible;
+#language-button img {
+    display: none;
+}
+
+#layer-controls {
+    background: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    left: 75.5%;
+    position: fixed;
+    top: 50px;
+}
+
+#layer-div {
+    left: 15px;
+    position: absolute;
+    top: 80px;
+}
+
+#layer-grid-checkbox {
+    left: 8px;
+    position: absolute;
+    top: 290px;
+}
+
+#layer-height {
+}
+
+#layer-height-div {
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -webkit-transform: rotate(90deg);
+    left: -5px;
+    position: absolute;
+    top: 200px;
+    transform: rotate(270deg);
+}
+
+#layer-height-slider-div {
+    height: 200%;
+    left: 9px;
+    position: absolute;
+    top: 130px;
+}
+
+#layer-minus-button {
+    box-shadow: none;
+    font-size: 9pt;
+    left: 0px;
+    padding-top: 5px;
+    position: absolute;
+    top: 100px;
+}
+
+#layer-plus-button {
+    box-shadow: none;
+    font-size: 9pt;
+    left: 30px;
+    padding-top: 5px;
+    position: absolute;
+    top: 100px;
 }
 
 #non-gallery-container {
@@ -15,221 +140,110 @@ div#wrap {
     width: 79%;
 }
 
-#gallery-container {
+#one-true-value-editor {
+    background: #555555;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10pt;
+}
+
+#slider {
+    color: black;
+}
+
+#slider-group {
     position: relative;
-    left: 82% ;
-    width: 280px;
-    background: #656565;
-    top: 70px;
+    top: -5px;
 }
 
-div#threed-and-status {
-    width: 100%;
+#slow {
+    opacity: 0.4;
+    position: relative;
+    top: -5px;
 }
 
-#bottom-toolbar {
-    position: fixed;
+#status-bar {
+    display: none;
 }
 
-canvas {
-    width: 100%;
-    height: 100%;
-    /*prozent für 3d*/
+#tool-arrow img {
+    display: none;
+}
+
+#tool-camera-pan img {
+    display: none;
+}
+
+#tool-camera-rot img {
+    display: none;
+}
+
+#tool-camera-zoom img {
+    display: none;
+}
+
+#tool-eraser img {
+    display: none;
+}
+
+#tool-fp img {
+    display: none;
+}
+
+#tool-hand img {
+    display: none;
+}
+
+#tool-multi img {
+    display: none;
+}
+
+#tool-pencil img {
+    display: none;
+}
+
+#tool-play img {
+    display: none;
+}
+
+#tool-reset img {
+    display: none;
+}
+
+#tool-step img {
+    display: none;
+}
+
+#tool-stop img {
+    display: none;
+}
+
+#toolbar {
+    background: #555555;
+    height: 40px;
+}
+
+#toolbar button {
+}
+
+#toolbar button.icon-tool-with-translated-tooltip {
+    margin-right: 10px;
 }
 
 #vat {
     top: 0px;
 }
 
-table#vat-table {
-    width: 100%;
-}
-
-#gallery-buttons {
-    position: fixed;
-    left: 89.0%;
-    top: 140px;
-}
-
-#container {
-    background: none;
-}
-
-#layer-controls {
-    position: fixed;
-    left: 75.5%;
-    top: 50px;
-    background: none;
-    font-family: 'VT323', monospace;
-    font-size: 13px;
-}
-
-input {
-    position: absolute;
-    padding-top: 7px;
-    padding-left: 5px;
-    margin: 0px 0px 0px 0px;
-    background-color: #656565;
-    outline-style: none;
-    border: none;
-    color: #ffc23a;
-}
-
-/*then text*/
-
-.then {
-    font-size: 18pt;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.if {
-    font-size: 18pt;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.if-then {
-    color: white;
-    font-family: 'VT323', monospace;
-    border: none;
-    min-height: 90px;
-    padding: 0px 0px 0px 0px;
-    background-color: #66b5b4;
-}
-
-.if-then+.if-then {
-    background-color: #ae87ca;
-}
-
-/*methoden-name*/
-
-.trigger-name {
-    border: none;
-}
-
-/*conditions*/
-
-#vat-conditions {
+#vat-actions {
     background: none;
     width: 180px;
 }
 
-#vat-code-header-td {
-    background: #555555;
-    color: #555555;
-}
-
-#vat-conditions-scroll {
-    background: none;
-    margin: 0px 20px 0px 20px;
-    z-index: 4;
-    height: 800px;
-}
-
-#vat-conditions-td {
-    background: #656565;
-    position: relative;
-    z-index: 4;
-}
-
-@-moz-keyframes fade_in_conditions {
-  0% {
-    
-    top: 0px;
-    
-    background: #656565;
-  }
-  100% {
-    
-    top: -350px;
-    
-    background-color: #66b5b4;
-  }
-}
-
-@-webkit-keyframes fade_in_conditions {
-  0% {
-    
-    top: 0px;
-    
-    background: #656565;
-  }
-  100% {
-    
-    top: -350px;
-    
-    background-color: #66b5b4;
-  }
-}
-
-@-ms-keyframes fade_in_conditions {
-  0% {
-    
-    top: 0px;
-    
-    background: #656565;
-  }
-  100% {
-    
-    top: -350px;
-    
-    background-color: #66b5b4;
-  }
-}
-
-@-o-keyframes fade_in_conditions {
-  0% {
-    
-    top: 0px;
-    
-    background: #656565;
-  }
-  100% {
-    
-    top: -350px;
-    
-    background-color: #66b5b4;
-  }
-}
-
-@keyframes fade_in_conditions {
-  0% {
-    
-    top: 0px;
-    
-    background: #656565;
-  }
-  100% {
-    
-    top: -350px;
-    
-    background-color: #66b5b4;
-  }
-}
-
-
-
-#vat-conditions-td:hover {
-    position: relative;
-    top: -350px;
-    animation-name: fade_in_conditions;
-    animation-duration: 0.5s;
-    transition-timing-function: ease;
-    background-color: #66b5b4;
-}
-
-.group-end {
-    height: 300px;
-}
-
 #vat-actions-scroll {
     background: none;
+    height: 800px;
     margin: 0px 20px 0px 20px;
     z-index: 4;
-    height: 800px;
 }
 
 #vat-actions-td {
@@ -238,335 +252,21 @@ input {
     z-index: 4;
 }
 
-@-moz-keyframes fade_in_actions {
-  0% {
-    
-    top: 0px;
-    
-    background: #ae87ca;
-  }
-  100% {
-    
-    top: -350px;
-    
-    background-color: #ae87ca;
-  }
-}
-
-@-webkit-keyframes fade_in_actions {
-  0% {
-    
-    top: 0px;
-    
-    background: #ae87ca;
-  }
-  100% {
-    
-    top: -350px;
-    
-    background-color: #ae87ca;
-  }
-}
-
-@-ms-keyframes fade_in_actions {
-  0% {
-    
-    top: 0px;
-    
-    background: #ae87ca;
-  }
-  100% {
-    
-    top: -350px;
-    
-    background-color: #ae87ca;
-  }
-}
-
-@-o-keyframes fade_in_actions {
-  0% {
-    
-    top: 0px;
-    
-    background: #ae87ca;
-  }
-  100% {
-    
-    top: -350px;
-    
-    background-color: #ae87ca;
-  }
-}
-
-@keyframes fade_in_actions {
-  0% {
-    
-    top: 0px;
-    
-    background: #ae87ca;
-  }
-  100% {
-    
-    top: -350px;
-    
-    background-color: #ae87ca;
-  }
-}
-
-
-
 #vat-actions-td:hover {
+    animation-duration: 0.5s;
+    animation-name: fade_in_actions;
+    background-color: #66b5b4;
     position: relative;
     top: -350px;
-    animation-name: fade_in_actions;
-    animation-duration: 0.5s;
     transition-timing-function: ease;
-    background-color: #ae87ca;
 }
 
-.block {
-    margin: 20px 20px 20px 20px;
-    background: #656565;
-}
-
-#vat-code-td {
-    background: #656565;
-    padding: 0px;
-    margin: 0px;
-    border-style: solid;
-    border-color: #555555;
-    border-width: 0px;
-    padding-top: 0px;
-}
-
-/*actions*/
-
-#vat-actions {
-    background: none;
-    width: 180px;
-}
-
-/*color table rules*/
-
-.rule {
-    border: none;
-    background: white;
-}
-
-.rule .if-then {
-    min-height: 55px;
-}
-
-/*Comment of user*/
-
-.comment-textarea {
+#vat-buttons {
     background: #555555;
     color: white;
-    font-size: 12pt;
-    font-family: 'VT323';
-    border: none;
-    padding: 8px;
-    height: 40px;
+    font-family: 'VT323',monospace;
+    height: 30px;
 }
-
-/*Block*/
-
-.instruction {
-    border-radius: 10px;
-}
-
-/*Scrollbar*/
-
-::-webkit-scrollbar {
-    background: none;
-}
-
-::-webkit-scrollbar-track-piece {
-    background: none;
-    border-radius: 20px;
-    border: transparent 1px solid;
-    margin: 60px 0px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: none;
-    border-radius: 5px;
-    border: 1px white solid;
-    height: 40px;
-}
-
-.rule-box {
-    background-color: #656565;
-}
-
-/*Methoden Name: exclude blocks*/
-
-.trigger-name .editable-display {
-    font-family: 'VT323', monospace;
-    border: none;
-    background: #555555;
-    color: white;
-    padding: 0px 30px 0px 30px;
-    font-size: 25px;
-    margin: 10px 0px 0px 10px;
-    text-align: center;
-}
-
-.trigger-name .editable-display:hover {
-    background: #ffc23a;
-    color: #555555;
-}
-
-/*popup menu*/
-
-.popup-list-item {
-    font-family: 'VT323', monospace;
-    font-size: 15px;
-    background: #555555;
-}
-
-.popup-list-item:hover {
-    color: black;
-    background: #ffc23a;
-}
-
-#one-true-value-editor {
-    background: #555555;
-    border-style: solid;
-    border-color: white;
-}
-
-/*condition block normal*/
-
-.condition.instruction.instruction-context-menu {
-    font-family: 'VT323', monospace;
-    font-size: 15px;
-    background: white;
-    color: #66b5b4;
-    border-style: solid;
-    border-color: #66b5b4;
-    border-width: 2px;
-    padding-right: 10px;
-    padding-left: 10px;
-    margin-top: 10px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-}
-
-/*condition block selected*/
-
-.condition.instruction.instruction-context-menu.vat-selected {
-    background: #66b5b4;
-    color: white;
-    border-color: white;
-}
-
-/*action block normal*/
-
-.action.instruction.instruction-context-menu {
-    font-family: 'VT323', monospace;
-    font-size: 15px;
-    padding-right: 10px;
-    padding-left: 10px;
-    margin-top: 10px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    background: white;
-    color: #ae87ca;
-    border: 2px;
-    border-style: solid;
-}
-
-/*action block selected*/
-
-.action.instruction.instruction-context-menu.vat-selected {
-    background: #ae87ca;
-    color: white;
-}
-
-/*Expand block triangle*/
-
-.action .vat-flippy-closed {
-    color: #ae87ca;
-}
-
-.action.vat-selected .vat-flippy-closed {
-    color: white;
-}
-
-.action .vat-flippy-open {
-    color: #ae87ca;
-}
-
-.action.vat-selected .vat-flippy-open {
-    color: white;
-}
-
-.condition .vat-flippy-open {
-    color: #66b5b4;
-}
-
-.condition.vat-selected .vat-flippy-open {
-    color: white;
-}
-
-.condition .vat-flippy-closed {
-    color: #66b5b4;
-}
-
-.condition.vat-selected .vat-flippy-closed {
-    color: white;
-}
-
-/*fields inside condition blocks*/
-
-.condition .editable-display {
-    text-align: center;
-    border-color: #66b5b4;
-    border-style: solid;
-    border-width: 2px;
-    font-family: 'VT323', monospace;
-    font-size: 11pt;
-    min-width: 23px;
-    min-height: 23px;
-    color: #66b5b4;
-}
-
-/*fields inside condition blocks*/
-
-.action .editable-display {
-    border: 2px;
-    border-color: #ae87ca;
-    border-style: solid;
-    min-height: 23px;
-    min-width: 23px;
-    text-align: center;
-    font-family: 'VT323', monospace;
-    font-size: 11pt;
-    color: #ae87ca;
-}
-
-/*fields inside condition blocks pickers ?*/
-
-.condition .direction-picker-display {
-    border-style: solid;
-    border-color: #66b5b4;
-    border-width: 2px;
-}
-
-.action .direction-picker-display {
-    border-style: solid;
-    border-color: #ae87ca;
-    border-width: 2px;
-}
-
-/*Statusbar ausblenden*/
-
-#status-bar {
-    display: none;
-}
-
-/*toolbar top*/
 
 #vat-code-header {
     display: none;
@@ -574,101 +274,215 @@ input {
 
 #vat-code-header-agent-name {
     display: none;
-    font-family: 'VT323', monospace;
+    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
 }
 
-/*agents */
-
-div#gallery-description {
-    width: 250px;
-    background-color: #656565;
-    position: fixed;
-    z-index: 20;
+#vat-code-header-resize-img {
+    cursor: ns-resize;
+    height: 40px;
+    left: 33%;
+    opacity: 0;
+    position: absolute;
+    width: 400px;
 }
 
-#gallery {
-    width: 250px;
+#vat-code-header-td {
+    background: #555555;
+    color: #555555;
 }
 
-.gallery_name {
-    font-family: 'VT323',monospace;
-    font-size: 12pt;
-    margin: 0px 0px 0px 20px;
-}
-
-#gallery-title-span {
-    font-family: 'VT323', monospace;
-    font-size: 30px;
-    position: relative;
-    left: -50px;
-    padding: 0 0 0 0;
-}
-
-div.gallery_shapeitem {
-    padding-left: 40px;
-    padding-bottom: 2px;
+#vat-code-td {
+    background: #656565;
+    border-color: #555555;
+    border-style: solid;
+    border-width: 0px;
+    margin: 0px;
+    padding: 0px;
     padding-top: 0px;
-    height: 35px;
 }
 
-li.gallery-shapelabel {
-    display: none;
+#vat-conditions {
+    background: none;
+    width: 180px;
 }
 
-span.gallery_name {
+#vat-conditions-scroll {
+    background: none;
+    height: 800px;
+    margin: 0px 20px 0px 20px;
+    z-index: 4;
+}
+
+#vat-conditions-td {
+    background: #656565;
+    position: relative;
+    z-index: 4;
+}
+
+#vat-conditions-td:hover {
+    animation-duration: 0.5s;
+    animation-name: fade_in_conditions;
+    background-color: #ae87ca;
+    position: relative;
+    top: -350px;
+    transition-timing-function: ease;
+}
+
+#world-button {
+    position: relative;
+    top: -5px;
+}
+
+#world-drop-down {
+    background-color: #555555;
+    border: solid white 1px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    margin-right: 5px;
+    position: relative;
+    top: -5px;
+}
+
+#world-save-button {
+    position: relative;
+    top: -5px;
+}
+
+.action .direction-picker-display {
+    border-color: #66b5b4;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.action .editable-display {
+    border: 2px;
+    border-color: #66b5b4;
+    border-style: solid;
+    color: #66b5b4;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    min-width: 23px;
     text-align: center;
-    vertical-align: middle;
+}
+
+.action .vat-flippy-closed {
+    color: #66b5b4;
+}
+
+.action .vat-flippy-open {
+    color: #66b5b4;
+}
+
+.action.instruction.instruction-context-menu.vat-selected {
+    background: #66b5b4;
+    color: white;
+}
+
+.action.vat-selected .vat-flippy-closed {
+    color: white;
+}
+
+.action.vat-selected .vat-flippy-open {
+    color: white;
+}
+
+.block {
+    background: #656565;
+    margin: 20px 20px 20px 20px;
+}
+
+.block.rule.instruction-context-menu.vat-selected {
+    border-color: #ffc23a;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.comment-textarea {
+    background: #555555;
+    border: none;
+    color: white;
+    font-family: 'VT323';
+    font-size: 13px;
+    padding: 8px;
+}
+
+.comments-box {
+    margin: 12px;
+    overflow: hidden;
+}
+
+.condition .direction-picker-display {
+    border-color: #ae87ca;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.condition .editable-display {
+    border-color: #ae87ca;
+    border-style: solid;
+    border-width: 2px;
+    color: #ae87ca;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    min-width: 23px;
+    text-align: center;
+}
+
+.condition .vat-flippy-closed {
+    color: #ae87ca;
+}
+
+.condition .vat-flippy-open {
+    color: #ae87ca;
+}
+
+.condition.instruction.instruction-context-menu {
+    background: white;
+    border-color: #ae87ca;
+    border-style: solid;
+    border-width: 2px;
+    color: #ae87ca;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    margin-top: 10px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+}
+
+.condition.instruction.instruction-context-menu.vat-selected {
+    background: #ae87ca;
+    border-color: white;
+    color: white;
+}
+
+.condition.vat-selected .vat-flippy-closed {
+    color: white;
+}
+
+.condition.vat-selected .vat-flippy-open {
+    color: white;
 }
 
 .config {
     background: none;
-    margin-top: 5px;
     margin-right: 5px;
+    margin-top: 5px;
 }
 
-.gallery-thumbnail {
-    border-color: #ffc23a;
+.disclosure-box {
+    font-family: 'VT323',monospace;
+    overflow: true;
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    width: 110px;
 }
 
-ul#gallery_agentlist {
-    margin: 10px;
-    width: 260px;
-}
-
-li ul.gallery_agentsublist li:last-child div.gallery_shapeitem {
-    margin-bottom: 60px;
-}
-
-ul#gallery_agentlist>li:last-child {
-    margin-bottom: 100px;
-}
-
-ul#gallery_agentlist>li:first-child {
-    margin-top: 100px;
-}
-
-li:last-child li:last-child div.gallery_shapeitem:last-child {
-    margin-bottom: 100px;
-}
-
-.gallery_agentitem {
-    height: 35px;
-    border-top: solid #555555 1px;
-    padding-top: 4px;
-}
-
-.gallery_agentitem:hover {
-    background-color: #ffc23a;
-    color: white;
-    background: rgba(255, 255, 255, 0.25);
-    border-top: #555555;
-}
-
-.gallery_shapeitem:hover {
-    background-color: #ffc23a;
-    color: white;
-    background: rgba(255, 255, 255, 0.25);
+.dropdown-menu {
+    background-color: #656565;
 }
 
 .flippy-closed {
@@ -680,692 +494,120 @@ li:last-child li:last-child div.gallery_shapeitem:last-child {
     margin: 5px 10px 0 20px;
 }
 
-.vat-proxy {
-    height: 40px;
-    width: 40px;
-}
-
-.method.block.instruction-context-menu {
-    border: 2px;
-    border-style: solid;
-    border-color: white;
-}
-
-.icon-tool-with-translated-tooltip {
-}
-
-.block.rule.instruction-context-menu.vat-selected {
-    border-style: solid;
+.gallery-thumbnail {
     border-color: #ffc23a;
-    border-width: 2px;
 }
 
-.comments-box {
-    margin: 5px 5px 5px 5px;
+.gallery_agentitem {
+    border-top: solid #555555 1px;
+    height: 35px;
+    padding-top: 4px;
+}
+
+.gallery_agentitem:hover {
+    background: rgba(255, 255, 255, 0.25);
+    background-color: #ffc23a;
+    border-top: #555555;
+    color: white;
+}
+
+.gallery_name {
+    font-family: 'VT323',monospace;
+    font-size: 13px;
+}
+
+.gallery_shapeitem:hover {
+    background: rgba(255, 255, 255, 0.25);
+    background-color: #ffc23a;
+    color: white;
+}
+
+.group {
+    height: 30px;
+    padding-top: 4px;
+}
+
+.group-end {
+    height: 300px;
 }
 
 .group-title.translated-gui-element {
+    color: white;
     font-family: 'VT323',monospace;
     font-size: 20px;
-    color: white;
 }
 
-.disclosure-box {
-    font-family: 'VT323',monospace;
-    position: absolute;
-    right: 0px;
-    top: 5px;
-    width: 110px;
-    overflow: true;
-}
-
-.method-disclosure-span {
-    font-size: 12pt;
-}
-
-textarea.comment-textarea {
-    margin: 0px 0px 10px 7px;
-    width: 100%;
-}
-
-select.icon-tool-with-translated-tooltip.form-control {
-    color: white;
-}
-
-#gallery-description {
-    background: #656565;
-    font-size: 40px;
-    text-align: center;
-}
-
-td.translated-gui-element {
-    font-family: 'VT323', monospace;
-    background: #555555;
-    font-size: 30px;
-    color: white;
-}
-
-.method.block.instruction-context-menu.vat-selected {
-    border: 2px;
-    border-style: solid;
-    border-color: #ffc23a;
-}
-
-div.method.block.instruction-context-menu {
+.icon-tool-with-translated-tooltip {
 }
 
 .icon-tool-with-translated-tooltip.noUiSlider {
     height: 200px;
 }
 
-/*toolbar on top*/
-
-#toolbar button.icon-tool-with-translated-tooltip {
-    margin-right: 10px;
+.if {
+    color: white;
+    font-size: 18pt;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-div.dropdown #action-button {
-    background: url(http://www.pwigger.ch/AC/icons/menu.png);
-    repeat: none;
-}
-
-div.direction-picker-display.north {
-}
-
-/*Replace button-images*/
-
-#tool-play img {
-    display: none;
-}
-
-button#tool-play {
-    background: url(http://www.pwigger.ch/AC/icons/play.png);
-    background-repeat: no-repeat;
-    background-size: 10px 10px;
-    background-position: center;
-    background-color: #656565;
-}
-
-button#tool-play:hover {
-    background: url(http://www.pwigger.ch/AC/icons/active/play.png);
-    background-repeat: no-repeat;
-    background-size: 10px 10px;
-    background-position: center;
-    outline-style: none;
-    background-color: #ffc23a;
-}
-
-button#tool-play.down {
-    background: url(http://www.pwigger.ch/AC/icons/active/play.png);
-    background-repeat: no-repeat;
-    background-size: 10px 10px;
-    background-position: center;
-    outline-style: none;
-    background-color: #ffc23a;
-}
-
-#tool-stop img {
-    display: none;
-}
-
-button#tool-stop {
-    background: url(http://www.pwigger.ch/AC/icons/stop.png);
-    background-repeat: no-repeat;
-    background-size: 10px 10px;
-    background-position: center;
-    background-color: #656565;
-}
-
-button#tool-stop:hover {
-    background: url(http://www.pwigger.ch/AC/icons/active/stop.png);
-    background-repeat: no-repeat;
-    background-size: 10px 10px;
-    background-position: center;
-    outline-style: none;
-    background-color: #ffc23a;
-}
-
-button#tool-stop.down {
-    background: url(http://www.pwigger.ch/AC/icons/active/stop.png);
-    background-color: #ffc23a;
-    background-repeat: no-repeat;
-    background-size: 10px 10px;
-    background-position: center;
-    outline-style: none;
-}
-
-#tool-step img {
-    display: none;
-}
-
-button#tool-step {
-    background: url(http://www.pwigger.ch/AC/icons/step.png);
-    background-repeat: no-repeat;
-    background-size: 10px 10px;
-    background-position: center;
-    background-color: #656565;
-}
-
-button#tool-step:hover {
-    background: url(http://www.pwigger.ch/AC/icons/active/step.png);
-    outline-style: none;
-    background-repeat: no-repeat;
-    background-size: 10px 10px;
-    background-position: center;
-    background-color: #ffc23a;
-}
-
-button#tool-step.down {
-    background: url(http://www.pwigger.ch/AC/icons/active/step.png);
-    outline-style: none;
-    background-repeat: no-repeat;
-    background-size: 10px 10px;
-    background-position: center;
-    background-color: #ffc23a;
-}
-
-#tool-arrow img {
-    display: none;
-}
-
-button#tool-arrow {
-    position: fixed;
-    top: 180px;
-    left: 40px;
-    z-index: 1;
-    background: url(http://www.pwigger.ch/AC/icons/cursor.png);
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    background-position: center;
-    background-color: #52a3d0;
-}
-
-button#tool-arrow:hover {
-    background: url(http://www.pwigger.ch/AC/icons/active/cursor.png);
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    background-position: center;
-    outline-style: none;
-    background-color: #ffc23a;
-}
-
-button#tool-arrow.down {
-    background: url(http://www.pwigger.ch/AC/icons/active/cursor.png);
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    background-position: center;
-    outline-style: none;
-    background-color: #ffc23a;
-}
-
-#tool-pencil img {
-    display: none;
-}
-
-button#tool-pencil {
-    position: fixed;
-    top: 150px;
-    left: 40px;
-    z-index: 1;
-    background: url(http://www.pwigger.ch/AC/icons/edit.png);
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    background-position: center;
-    background-color: #52a3d0;
-}
-
-button#tool-pencil:hover {
-    background: url(http://www.pwigger.ch/AC/icons/active/edit.png);
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    background-position: center;
-    outline-style: none;
-    background-color: #ffc23a;
-}
-
-button#tool-pencil.down {
-    background: url(http://www.pwigger.ch/AC/icons/active/edit.png);
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    background-position: center;
-    outline-style: none;
-    background-color: #ffc23a;
-}
-
-#tool-multi img {
-    display: none;
-}
-
-button#tool-multi {
-    background: url(http://www.pwigger.ch/AC/icons/paint.png);
-    position: fixed;
-    top: 120px;
-    left: 40px;
-    z-index: 1;
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    background-position: center;
-    background-color: #52a3d0;
-}
-
-button#tool-multi:hover {
-    background: url(http://www.pwigger.ch/AC/icons/active/paint.png);
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    background-position: center;
-    outline-style: none;
-    background-color: #ffc23a;
-}
-
-button#tool-multi.down {
-    background: url(http://www.pwigger.ch/AC/icons/active/paint.png);
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    background-position: center;
-    outline-style: none;
-    background-color: #ffc23a;
-}
-
-#tool-eraser img {
-    display: none;
-}
-
-button#tool-eraser {
-    position: fixed;
-    top: 90px;
-    left: 40px;
-    z-index: 1;
-    background: url(http://www.pwigger.ch/AC/icons/erase.png);
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    background-position: center;
-    background-color: #52a3d0;
-}
-
-button#tool-eraser:hover {
-    background: url(http://www.pwigger.ch/AC/icons/active/erase.png);
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    background-position: center;
-    outline-style: none;
-    background-color: #ffc23a;
-}
-
-button#tool-eraser.down {
-    background: url(http://www.pwigger.ch/AC/icons/active/erase.png);
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    background-position: center;
-    outline-style: none;
-    background-color: #ffc23a;
-}
-
-#tool-hand img {
-    display: none;
-}
-
-button#tool-hand {
-    position: fixed;
-    top: 60px;
-    left: 40px;
-    z-index: 1;
-    background: url(http://www.pwigger.ch/AC/icons/pointer.png);
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    background-position: center;
-    background-color: #52a3d0;
-}
-
-button#tool-hand:hover {
-    background: url(http://www.pwigger.ch/AC/icons/active/pointer.png);
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    background-position: center;
-    outline-style: none;
-    background-color: #ffc23a;
-}
-
-button#tool-hand.down {
-    background: url(http://www.pwigger.ch/AC/icons/active/pointer.png);
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    background-position: center;
-    outline-style: none;
-    background-color: #ffc23a;
-}
-
-#tool-camera-rot img {
-    display: none;
-}
-
-button#tool-camera-rot {
-    position: fixed;
-    top: 230px;
-    left: 40px;
-    z-index: 1;
-    background: url(http://www.pwigger.ch/AC/icons/3drotation.png);
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    background-position: center;
-    background-color: #52a3d0;
-}
-
-button#tool-camera-rot:hover {
-    background: url(http://www.pwigger.ch/AC/icons/active/3drotation.png);
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    background-position: center;
-    outline-style: none;
-    background-color: #ffc23a;
-}
-
-button#tool-camera-rot.down {
-    background: url(http://www.pwigger.ch/AC/icons/active/3drotation.png);
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    background-position: center;
-    outline-style: none;
-    background-color: #ffc23a;
-}
-
-#tool-camera-pan img {
-    display: none;
-}
-
-button#tool-camera-pan {
-    position: fixed;
-    top: 260px;
-    left: 40px;
-    z-index: 1;
-    background: url(http://www.pwigger.ch/AC/icons/aspect-chose.png);
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    background-position: center;
-    background-color: #52a3d0;
-}
-
-button#tool-camera-pan:hover {
-    background: url(http://www.pwigger.ch/AC/icons/active/aspect-chose.png);
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    background-position: center;
-    outline-style: none;
-    background-color: #ffc23a;
-}
-
-button#tool-camera-pan.down {
-    background: url(http://www.pwigger.ch/AC/icons/active/aspect-chose.png);
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    background-position: center;
-    outline-style: none;
-    background-color: #ffc23a;
-}
-
-#tool-camera-zoom img {
-    display: none;
-}
-
-button#tool-camera-zoom {
-    position: fixed;
-    top: 290px;
-    left: 40px;
-    z-index: 1;
-    background: url(http://www.pwigger.ch/AC/icons/zoom.png);
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    background-position: center;
-    background-color: #52a3d0;
-}
-
-button#tool-camera-zoom:hover {
-    background: url(http://www.pwigger.ch/AC/icons/active/zoom.png);
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    background-position: center;
-    outline-style: none;
-    background-color: #ffc23a;
-}
-
-button#tool-camera-zoom.down {
-    background: url(http://www.pwigger.ch/AC/icons/active/zoom.png);
-    background-size: 16px 16px;
-    background-position: center;
-    outline-style: none;
-    background-repeat: no-repeat;
-}
-
-#tool-fp img {
-    display: none;
-}
-
-button#tool-fp {
-    position: fixed;
-    top: 320px;
-    left: 40px;
-    z-index: 1;
-    background: url(http://www.pwigger.ch/AC/icons/birdview.png);
-    background-repeat: no-repeat;
-    background-size: 16px 12px;
-    background-position: center;
-    outline-style: none;
-    background-color: #52a3d0;
-}
-
-button#tool-fp:hover {
-    background: url(http://www.pwigger.ch/AC/icons/active/first-person-view.png);
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    background-position: center;
-    outline-style: none;
-    background-color: #ffc23a;
-}
-
-button#tool-fp.down {
-    background: url(http://www.pwigger.ch/AC/icons/first-person-view.png);
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    background-position: center;
-    outline-style: none;
-}
-
-button#tool-fp.down:hover {
-    background: url(http://www.pwigger.ch/AC/icons/active/birdview.png);
-    background-repeat: no-repeat;
-    background-size: 16px 12px;
-    background-position: center;
-    outline-style: none;
-    background-color: #ffc23a;
-}
-
-#tool-reset img {
-    display: none;
-}
-
-button#tool-reset {
-    background: url(http://www.pwigger.ch/AC/icons/restart.png);
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    background-position: center;
-    background-color: #656565;
-}
-
-button#tool-reset:hover {
-    background: url(http://www.pwigger.ch/AC/icons/active/restart.png);
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    background-position: center;
-    outline-style: none;
-    background-color: #ffc23a;
-}
-
-button#tool-reset.down {
-    background: url(http://www.pwigger.ch/AC/icons/active/restart.png);
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    background-position: center;
-    outline-style: none;
-    background-color: #ffc23a;
-}
-
-#action-button img {
-    display: none;
-}
-
-/*does not work! TODO*/
-
-button#action-button {
-    background-repeat: no-repeat;
-    background-size: 5px 5px;
-    background-position: center;
-    outline-style: none;
-    background-color: red;
-}
-
-button#action-button:hover {
-    background: url(http://www.pwigger.ch/AC/icons/active/menu.png);
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    background-position: center;
-    outline-style: none;
-    background-color: #ffc23a;
-}
-
-#language-button img {
-    display: none;
-}
-
-button#language-button {
-    background: url(http://www.pwigger.ch/AC/icons/world.png);
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    background-position: center;
-}
-
-button#language-button:hover {
-    background: url(http://www.pwigger.ch/AC/icons/active/world.png);
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    background-position: center;
-    outline-style: none;
-    background-color: #ffc23a;
-}
-
-/*buttons*/
-
-button {
-    font-family: 'VT323',monospace;
+.if-then {
+    background-color: #ae87ca;
     border: none;
     color: white;
-    background: #656565;
-}
-
-button:hover {
-    background: #ffc23a;
-    color: #555555;
-}
-
-div.group {
-    margin: 0 20px 0 20px;
-}
-
-.group {
-    padding-top: 4px;
-    height: 30px;
-}
-
-#toolbar button {
-}
-
-#world-drop-down {
-    position: relative;
-    top: -5px;
-    margin-right: 5px;
-    color: white;
     font-family: 'VT323', monospace;
-    background-color: #555555;
-    border: solid white 1px;
+    min-height: 90px;
+    padding: 0px 0px 0px 0px;
 }
 
-#world-save-button {
-    position: relative;
-    top: -5px;
+.if-then+.if-then {
+    background-color: #66b5b4;
 }
 
-#world-button {
-    position: relative;
-    top: -5px;
-}
-
-#slow {
-    position: relative;
-    top: -5px;
-    opacity: 0.4;
-}
-
-#fast {
-    position: relative;
-    top: -5px;
-    opacity: 0.4;
-}
-
-#slider-group {
-    position: relative;
-    top: -5px;
-}
-
-.world-button-menu-item {
-    font-family: 'VT323', monospace;
-    font-size: 15px;
-    background: #555555;
-    color: white;
-}
-
-.world-button-menu-item:hover {
-    font-family: 'VT323', monospace;
-    font-size: 15px;
-    background: #ffc23a;
-    color: #555555;
-}
-
-.setting-button-menu-item {
-    font-family: 'VT323', monospace;
-    font-size: 15px;
-    background: #555555;
-    color: white;
-}
-
-.setting-button-menu-item:hover {
-    font-family: 'VT323', monospace;
-    font-size: 15px;
-    background: #ffc23a;
-    color: #555555;
-}
-
-.dropdown-menu {
-    background-color: #656565;
-}
-
-hr {
-    border-top: 0px solid white;
+.instruction {
+    border-radius: 10px;
 }
 
 .language-button-menu-item {
-    font-family: 'VT323', monospace;
-    font-size: 15px;
     background: #555555;
     color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
 }
 
 .language-button-menu-item:hover {
-    font-family: 'VT323', monospace;
-    font-size: 15px;
     background: #ffc23a;
     color: #555555;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
 }
 
-#slider {
-    color: black;
+.method-disclosure-span {
+    font-size: 13px;
+}
+
+.method.block.instruction-context-menu {
+    border: 2px;
+    border-color: white;
+    border-style: solid;
+}
+
+.method.block.instruction-context-menu.vat-selected {
+    border: 2px;
+    border-color: #ffc23a;
+    border-style: solid;
+}
+
+.noUi-handle {
+    background-color: white;
+    border: solid 1px white;
+    box-shadow: none;
+}
+
+.noUi-handle:hover {
+    background-color: none;
+    border: solid 1px #555555;
+    box-shadow: none;
 }
 
 .noUi-target {
@@ -1375,110 +617,861 @@ hr {
     margin: 0px 15px;
 }
 
-.noUi-handle {
-    background-color: white;
-    box-shadow: none;
-    border: solid 1px white;
-}
-
-.noUi-handle:hover {
-    background-color: none;
-    box-shadow: none;
-    border: solid 1px #555555;
-}
-
-#vat-buttons {
+.popup-list-item {
     background: #555555;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+
+.popup-list-item:hover {
+    background: #ffc23a;
+    color: black;
+}
+
+.rule {
+    border: none;
+}
+
+.rule .if-then {
+    min-height: 55px;
+}
+
+.rule-box {
+    background-color: #656565;
+}
+
+.setting-button-menu-item {
+    background: #555555;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+
+.setting-button-menu-item:hover {
+    background: #ffc23a;
+    color: #555555;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+
+.then {
+    color: white;
+    font-size: 18pt;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.trigger-name .editable-display {
+    background: #555555;
+    border: none;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    margin: 10px 0px 0px 10px;
+    padding: 0px 30px 0px 30px;
+    text-align: center;
+}
+
+.trigger-name .editable-display:hover {
+    background: #ffc23a;
+    color: #555555;
+}
+
+.vat-proxy {
+    height: 40px;
+    width: 40px;
+}
+
+.world-button-menu-item {
+    background: #555555;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+
+.world-button-menu-item:hover {
+    background: #ffc23a;
+    color: #555555;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+
+::-webkit-scrollbar {
+    background: none;
+    height: 0px;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: none;
+    border: 1px white solid;
+    border-radius: 5px;
+    height: 40px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background: none;
+    border: transparent 1px solid;
+    border-radius: 20px;
+    margin: 60px 0px;
+}
+
+:root {
+    background-color: #555555;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*stylebot cant handle this
+@keyframes fade_in_conditions {
+  0% {
+    
+    top: 0px;
+    
+    background: #656565;
+  }
+  100% {
+    
+    top: -350px;
+    
+    background-color: #ae87ca;
+  }
+}
+
+
+
+@keyframes fade_in_actions {
+  0% {
+    
+    top: 0px;
+    
+    background: #66b5b4;
+  }
+  100% {
+    
+    top: -350px;
+    
+    background-color: #66b5b4;
+  }
+}
+
+*/
+
+button {
+    background: #656565;
+    border: none;
+    color: white;
     font-family: 'VT323',monospace;
-    color: white;
-    height: 30px;
 }
 
-#toolbar {
-    background: #555555;
-    height: 40px;
+button#action-button {
+    background: url(http://www.pwigger.ch/AC/icons/menu.png);
+    background-color: red;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 5px 5px;
+    outline-style: none;
 }
 
-#vat-code-header-resize-img {
-    opacity: 0;
-    position: absolute;
-    width: 400px;
-    height: 40px;
-    left: 33%;
-    cursor: ns-resize;
+button#action-button:hover {
+    background: url(http://www.pwigger.ch/AC/icons/active/menu.png);
+    background-color: #ffc23a;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    outline-style: none;
 }
 
-#layer-div {
-    position: absolute;
-    left: 15px;
-    top: 80px;
+button#language-button {
+    background: url(http://www.pwigger.ch/AC/icons/world.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
 }
 
-#layer-minus-button {
-    padding-top: 5px;
-    font-size: 9pt;
-    position: absolute;
-    left: 0px;
-    top: 100px;
-    box-shadow: none;
+button#language-button:hover {
+    background: url(http://www.pwigger.ch/AC/icons/active/world.png);
+    background-color: #ffc23a;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    outline-style: none;
 }
 
-#layer-plus-button {
-    padding-top: 5px;
-    font-size: 9pt;
-    position: absolute;
-    left: 30px;
-    top: 100px;
-    box-shadow: none;
+button#tool-arrow {
+    background: url(http://www.pwigger.ch/AC/icons/cursor.png);
+    background-color: #52a3d0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    left: 40px;
+    position: fixed;
+    top: 60px;
+    z-index: 1;
 }
 
-#layer-height {
+button#tool-arrow.down {
+    background: url(http://www.pwigger.ch/AC/icons/active/cursor.png);
+    background-color: #ffc23a;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    outline-style: none;
 }
 
-#layer-height-div {
-    position: absolute;
-    left: -5px;
-    top: 200px;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(270deg);
-    -o-transform: rotate(270deg);
-    -ms-transform: rotate(270deg);
-    transform: rotate(270deg);
+button#tool-arrow:hover {
+    background: url(http://www.pwigger.ch/AC/icons/active/cursor.png);
+    background-color: #ffc23a;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    outline-style: none;
 }
 
-#layer-height-slider-div {
-    position: absolute;
-    left: 9px;
-    top: 130px;
-    height: 200%;
+button#tool-camera-pan {
+    background: url(http://www.pwigger.ch/AC/icons/aspect-chose.png);
+    background-color: #52a3d0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    left: 40px;
+    position: fixed;
+    top: 260px;
+    z-index: 1;
 }
 
-#layer-grid-checkbox {
-    position: absolute;
-    left: 8px;
+button#tool-camera-pan.down {
+    background: url(http://www.pwigger.ch/AC/icons/active/aspect-chose.png);
+    background-color: #ffc23a;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    outline-style: none;
+}
+
+button#tool-camera-pan:hover {
+    background: url(http://www.pwigger.ch/AC/icons/active/aspect-chose.png);
+    background-color: #ffc23a;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    outline-style: none;
+}
+
+button#tool-camera-rot {
+    background: url(http://www.pwigger.ch/AC/icons/3drotation.png);
+    background-color: #52a3d0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    left: 40px;
+    position: fixed;
+    top: 230px;
+    z-index: 1;
+}
+
+button#tool-camera-rot.down {
+    background: url(http://www.pwigger.ch/AC/icons/active/3drotation.png);
+    background-color: #ffc23a;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    outline-style: none;
+}
+
+button#tool-camera-rot:hover {
+    background: url(http://www.pwigger.ch/AC/icons/active/3drotation.png);
+    background-color: #ffc23a;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    outline-style: none;
+}
+
+button#tool-camera-zoom {
+    background: url(http://www.pwigger.ch/AC/icons/zoom.png);
+    background-color: #52a3d0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    left: 40px;
+    position: fixed;
     top: 290px;
+    z-index: 1;
 }
 
-#grid {
-    position: absolute;
-    left: 28px;
-    top: 287px;
+button#tool-camera-zoom.down {
+    background: url(http://www.pwigger.ch/AC/icons/active/zoom.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    outline-style: none;
 }
 
-#error {
-    background-color: blue;
-    opacity: 1;
+button#tool-camera-zoom:hover {
+    background: url(http://www.pwigger.ch/AC/icons/active/zoom.png);
+    background-color: #ffc23a;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    outline-style: none;
+}
+
+button#tool-eraser {
+    background: url(http://www.pwigger.ch/AC/icons/erase.png);
+    background-color: #52a3d0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    left: 40px;
+    position: fixed;
+    top: 150px;
+    z-index: 1;
+}
+
+button#tool-eraser.down {
+    background: url(http://www.pwigger.ch/AC/icons/active/erase.png);
+    background-color: #ffc23a;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    outline-style: none;
+}
+
+button#tool-eraser:hover {
+    background: url(http://www.pwigger.ch/AC/icons/active/erase.png);
+    background-color: #ffc23a;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    outline-style: none;
+}
+
+button#tool-fp {
+    background: url(http://www.pwigger.ch/AC/icons/birdview.png);
+    background-color: #52a3d0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px 12px;
+    left: 40px;
+    outline-style: none;
+    position: fixed;
+    top: 320px;
+    z-index: 1;
+}
+
+button#tool-fp.down {
+    background: url(http://www.pwigger.ch/AC/icons/first-person-view.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    outline-style: none;
+}
+
+button#tool-fp.down:hover {
+    background: url(http://www.pwigger.ch/AC/icons/active/birdview.png);
+    background-color: #ffc23a;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px 12px;
+    outline-style: none;
+}
+
+button#tool-fp:hover {
+    background: url(http://www.pwigger.ch/AC/icons/active/first-person-view.png);
+    background-color: #ffc23a;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    outline-style: none;
+}
+
+button#tool-hand {
+    background: url(http://www.pwigger.ch/AC/icons/pointer.png);
+    background-color: #52a3d0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    left: 40px;
+    position: fixed;
+    top: 180px;
+    z-index: 1;
+}
+
+button#tool-hand.down {
+    background: url(http://www.pwigger.ch/AC/icons/active/pointer.png);
+    background-color: #ffc23a;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    outline-style: none;
+}
+
+button#tool-hand:hover {
+    background: url(http://www.pwigger.ch/AC/icons/active/pointer.png);
+    background-color: #ffc23a;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    outline-style: none;
+}
+
+button#tool-multi {
+    background: url(http://www.pwigger.ch/AC/icons/paint.png);
+    background-color: #52a3d0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    left: 40px;
+    position: fixed;
+    top: 120px;
+    z-index: 1;
+}
+
+button#tool-multi.down {
+    background: url(http://www.pwigger.ch/AC/icons/active/paint.png);
+    background-color: #ffc23a;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    outline-style: none;
+}
+
+button#tool-multi:hover {
+    background: url(http://www.pwigger.ch/AC/icons/active/paint.png);
+    background-color: #ffc23a;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    outline-style: none;
+}
+
+button#tool-pencil {
+    background: url(http://www.pwigger.ch/AC/icons/edit.png);
+    background-color: #52a3d0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    left: 40px;
+    position: fixed;
+    top: 90px;
+    z-index: 1;
+}
+
+button#tool-pencil.down {
+    background: url(http://www.pwigger.ch/AC/icons/active/edit.png);
+    background-color: #ffc23a;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    outline-style: none;
+}
+
+button#tool-pencil:hover {
+    background: url(http://www.pwigger.ch/AC/icons/active/edit.png);
+    background-color: #ffc23a;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    outline-style: none;
+}
+
+button#tool-play {
+    background: url(http://www.pwigger.ch/AC/icons/play.png);
+    background-color: #656565;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+}
+
+button#tool-play.down {
+    background: url(http://www.pwigger.ch/AC/icons/active/play.png);
+    background-color: #ffc23a;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    outline-style: none;
+}
+
+button#tool-play:hover {
+    background: url(http://www.pwigger.ch/AC/icons/active/play.png);
+    background-color: #ffc23a;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    outline-style: none;
+}
+
+button#tool-reset {
+    background: url(http://www.pwigger.ch/AC/icons/restart.png);
+    background-color: #656565;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+}
+
+button#tool-reset.down {
+    background: url(http://www.pwigger.ch/AC/icons/active/restart.png);
+    background-color: #ffc23a;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    outline-style: none;
+}
+
+button#tool-reset:hover {
+    background: url(http://www.pwigger.ch/AC/icons/active/restart.png);
+    background-color: #ffc23a;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    outline-style: none;
+}
+
+button#tool-step {
+    background: url(http://www.pwigger.ch/AC/icons/step.png);
+    background-color: #656565;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+}
+
+button#tool-step.down {
+    background: url(http://www.pwigger.ch/AC/icons/active/step.png);
+    background-color: #ffc23a;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    outline-style: none;
+}
+
+button#tool-step:hover {
+    background: url(http://www.pwigger.ch/AC/icons/active/step.png);
+    background-color: #ffc23a;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    outline-style: none;
+}
+
+button#tool-stop {
+    background: url(http://www.pwigger.ch/AC/icons/stop.png);
+    background-color: #656565;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+}
+
+button#tool-stop.down {
+    background: url(http://www.pwigger.ch/AC/icons/active/stop.png);
+    background-color: #ffc23a;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    outline-style: none;
+}
+
+button#tool-stop:hover {
+    background: url(http://www.pwigger.ch/AC/icons/active/stop.png);
+    background-color: #ffc23a;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    outline-style: none;
+}
+
+button:hover {
+    background: #ffc23a;
+    color: #555555;
+}
+
+canvas {
+    /*prozent für 3d*/
+    height: 100%;
+    width: 100%;
+}
+
+/*then text*/
+
+/*popup menu*/
+
+/*condition block normal*/
+
+/*condition block selected*/
+
+/*action block normal*/
+
+/*action block selected*/
+
+/*Expand block triangle*/
+
+/*fields inside condition blocks*/
+
+/*fields inside condition blocks*/
+
+/*fields inside condition blocks pickers ?*/
+
+/*Statusbar ausblenden*/
+
+/*methoden-name*/
+
+/*toolbar top*/
+
+/*agents */
+
+/*toolbar on top*/
+
+/*Replace button-images*/
+
+/*does not work! TODO*/
+
+/*buttons*/
+
+/*conditions*/
+
+/*actions*/
+
+/*color table rules*/
+
+/*Comment of user*/
+
+/*Block*/
+
+/*Scrollbar*/
+
+/*Methoden Name: exclude blocks*/
+
+div#gallery-description {
+    background-color: #656565;
+    position: fixed;
+    width: 250px;
+    z-index: 20;
+}
+
+div#threed-and-status {
+    width: 100%;
+}
+
+div#wrap {
+    overflow: visible;
+}
+
+div.direction-picker-display.north {
+}
+
+div.dropdown #action-button {
+    background: url(http://www.pwigger.ch/AC/icons/menu.png);
+    repeat: none;
+}
+
+div.gallery_shapeitem {
+    height: 35px;
+    padding-bottom: 2px;
+    padding-left: 40px;
+    padding-top: 0px;
+}
+
+div.group {
+    margin: 0 20px 0 20px;
+}
+
+div.method.block.instruction-context-menu {
+}
+
+hr {
+    border-top: 0px solid white;
+}
+
+input {
+    background-color: white;
+    color: black;
+    margin: 0px 0px 0px 0px;
+    outline-style: none;
+}
+
+li ul.gallery_agentsublist li:last-child div.gallery_shapeitem {
+    margin-bottom: 60px;
+}
+
+li.gallery-shapelabel {
+    display: none;
+}
+
+li:last-child li:last-child div.gallery_shapeitem:last-child {
+    margin-bottom: 100px;
+}
+
+select.icon-tool-with-translated-tooltip.form-control {
     color: white;
-    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
-    border: solid blue 100px;
-    top: 100px;
-    position: relative;
 }
 
-#asi-cube-link img {
-    content: url(http://www.pwigger.ch/AC/icons/logo.png);
+span.gallery_name {
+    text-align: center;
+    vertical-align: middle;
+}
+
+table#vat-table {
+    width: 100%;
+}
+
+textarea.comment-textarea {
+    margin: 0px 0px 10px 7px;
+    width: 100%;
+}
+
+ul#gallery_agentlist {
+    margin: 10px;
+    width: 260px;
+}
+
+ul#gallery_agentlist>li:first-child {
+    margin-top: 100px;
+}
+
+ul#gallery_agentlist>li:last-child {
+    margin-bottom: 100px;
+}
+
+/*conversational programming*/
+
+#vat .condition.true span.instruction-name {
+    color: lightgreen;
+}
+
+#vat .condition.true {
+    border: white solid 2px;
+}
+
+#vat .condition.false span.instruction-name {
+    color: lightcoral;
+}
+
+#vat .condition.false {
+    border: white solid 2px;
+}
+
+.block.false {
+    opacity: 0.3;
+}
+
+.block.true {
+    background: #FFF;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.true~.block {
+    opacity: 0.3;
+}
+
+.action.instruction.instruction-context-menu {
+    background: white;
+    border: 2px;
+    border-style: solid;
+    color: #66b5b4;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    margin-top: 10px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+}
+
+td.translated-gui-element {
+    background: #555555;
+    color: white;
+    font-family: 'VT323', monospace;
+    font-size: 30px;
+}
+
+.trigger-name {
+    border: none;
+}
+
+.trigger.name .editable-display {
+    font-family: 'VT323', monospace;
+}
+
+.attribute-row {
+    font-size: 18px;
+}
+
+.attribute-row td {
+    padding: 0 10px;
+}
+
+.highlightedRow {
+    background: #51a3d0;
+    width: 300px;
+}
+
+.draggable-title-bar {
+    background: none;
+}
+
+.draggable-window {
+    background: none;
+    color: white;
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+    border: solid white 1px;
+    padding: 10px;
+    z-index: 0;
+}
+
+.draggable-window#attr-window {
+    position: fixed;
+    top: 60px;
+}
+
+.draggable-window#prop-window {
+    position: fixed;
+    top: 60px;
+}
+
+input.attributeRowNumber {
+    margin-left: 20px;
+    width: 40px;
+    background: none;
+    color: white;
+    border: none;
+}
+
+span.cancelbutton {
+    background: url(http://www.pwigger.ch/AC/icons/close.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    outline-style: none;
     position: relative;
-    left: -230px;
-    top: 30px;
+    left: 10px;
+    top: -12px;
+}
+
+.draggable-flippy {
+    display: none;
+}
+
+.attributeRowNumber {
+    font-size: 18px;
+    margin: 0;
+}
+
+.draggable-window-content-div {
+    padding: 0px 0px 0px 10px  ;
+}
+
+.draggable-window-content-div>button {
+    font-size: 13pt;
+    background: none;
+    border: solid white 1px;
+}
+
+.draggable-window-content-div>button:hover {
+    color: black;
+}
+
+.attribute-window-table {
+    width: 190px;
 }
 
