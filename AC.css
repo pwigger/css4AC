@@ -39,6 +39,7 @@
     top: 120px;
     width: 280px;
     right: 40px;
+    z-index: 5;
 }
 
 #gallery-description {
@@ -223,14 +224,20 @@
 
 #vat-actions {
     background: none;
-    width: 180px;
+    width: 260px;
 }
 
 #vat-actions-scroll {
-    background: none;
     height: 100%;
-    margin: 0px 20px 0px 20px;
+    margin: 0px 0px 0px 0px;
     z-index: 4;
+}
+
+/*needs to be adjusted: media queries?*/
+
+#vat-actions-scroll:hover {
+    position: fixed;
+    padding-top: 30%;
 }
 
 #vat-actions-td {
@@ -245,12 +252,12 @@
 #vat-actions-td:hover {
     animation-duration: 0.5s;
     animation-name: fade_in_actions;
-    background-color: #66b5b4;
     position: fixed;
     top: 50px;
     height: 100%;
     border: none;
     transition-timing-function: ease;
+    background: #AAA;
 }
 
 #vat-buttons {
@@ -268,22 +275,24 @@
 
 #vat-code-header-resize-img {
     cursor: ns-resize;
-    height: 40px;
-    left: 33%;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    right: 340px;
+    z-index: 4;
     opacity: 0;
-    position: absolute;
-    width: 400px;
 }
 
 #vat-code-header-td {
-    background: #555555;
-    color: #555555;
     height: 50px;
+    background: none;
+    color: transparent;
 }
 
 #vat-code-td {
-    top: 0px;
+    top: 20px;
     padding-right: 620px;
+    z-index: -30;
 }
 
 #vat {
@@ -291,11 +300,15 @@
     left: 290px;
 }
 
+div.method:last-child {
+    margin-bottom: 100px;
+}
+
 tbody {
 }
 
-table#vat-table {
-    
+#vat-table {
+    z-index: -30;
 }
 
 #vat-code-header {
@@ -304,34 +317,42 @@ table#vat-table {
 
 #vat-conditions {
     background: none;
-    width: 180px;
+    width: 260px; 
+
+    
 }
 
 #vat-conditions-scroll {
-    background: none;
+    background: rgba(0 0 0 0);
     height: 100%;
-    margin: 0px 20px 0px 20px;
-    z-index: 0;
+
+}
+
+#vat-conditions-scroll:hover {
+    position: fixed;
+    padding-top: 30%;
+    width: 300px;
 }
 
 #vat-conditions-td {
-    background: #656565;
+    background: rgba(85, 85, 85, 1);
     z-index: 4;
     position: fixed;
     left: 60px;
     width: 300px;
     height: 100%;
+    border:white solid 2px; 
 }
 
 #vat-conditions-td:hover {
     animation-duration: 0.5s;
     animation-name: fade_in_actions;
-    background-color: #ac83c2;
     position: fixed;
     top: 50px;
     height: 100%;
-    border: none;
     transition-timing-function: ease;
+
+
 }
 
 #world-button {
@@ -443,11 +464,11 @@ table#vat-table {
 }
 
 .condition.instruction.instruction-context-menu {
-    background: white;
-    border-color: #ae87ca;
+    background: #ae87ca;
+    border-color: white;
     border-style: solid;
     border-width: 2px;
-    color: #ae87ca;
+    color: white;
     font-family: 'Open Sans', sans-serif;
     font-size: 13px;
     margin-top: 10px;
@@ -470,10 +491,8 @@ table#vat-table {
 }
 
 .action.instruction.instruction-context-menu {
-    background: white;
-    border: 2px;
-    border-style: solid;
-    color: #66b5b4;
+    background: #66b5b4;
+    color: white;
     font-family: 'Open Sans', sans-serif;
     font-size: 13px;
     margin-top: 10px;
@@ -481,6 +500,9 @@ table#vat-table {
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 3px;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
 }
 
 .config {
@@ -495,7 +517,7 @@ table#vat-table {
     position: absolute;
     right: 0px;
     top: 5px;
-    width: 110px;
+    width: 130px;
 }
 
 .dropdown-menu {
@@ -552,6 +574,8 @@ table#vat-table {
     color: white;
     font-family: 'VT323',monospace;
     font-size: 20px;
+    padding-top: 60px;
+    width: 200px;
 }
 
 .icon-tool-with-translated-tooltip {
@@ -563,7 +587,7 @@ table#vat-table {
 
 .if {
     color: white;
-    font-size: 18pt;
+    font-size: 14pt;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -586,7 +610,6 @@ table#vat-table {
 }
 
 .language-button-menu-item {
-    background: #555555;
     color: white;
     font-family: 'Open Sans', sans-serif;
     font-size: 13px;
@@ -673,7 +696,7 @@ table#vat-table {
 
 .then {
     color: white;
-    font-size: 18pt;
+    font-size: 14pt;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -733,7 +756,7 @@ table#vat-table {
     background: none;
     border: transparent 1px solid;
     border-radius: 20px;
-    margin: 60px 0px;
+    margin: 200px;
 }
 
 :root {
@@ -1353,6 +1376,7 @@ textarea.comment-textarea {
 ul#gallery_agentlist {
     margin: 10px;
     width: 260px;
+    z-index: 5;
 }
 
 ul#gallery_agentlist>li:first-child {
@@ -1503,8 +1527,8 @@ span.cancelbutton {
 
 #gallery-buttons {
     position: fixed;
-    right: 40px;
-    top: 140px;
+    right: 70px;
+    top: 180px;
 }
 
 canvas {
