@@ -35,10 +35,10 @@
 
 #gallery-container {
     background: #656565;
-    left: 82% ;
-    position: relative;
-    top: 70px;
+    position: fixed;
+    top: 120px;
     width: 280px;
+    right: 40px;
 }
 
 #gallery-description {
@@ -58,7 +58,7 @@
 #grid {
     left: 28px;
     position: absolute;
-    top: 287px;
+    top: 137px;
 }
 
 #language-button img {
@@ -66,12 +66,11 @@
 }
 
 #layer-controls {
-    background: none;
+    position: fixed;
     font-family: 'Open Sans', sans-serif;
     font-size: 13px;
-    left: 75.5%;
-    position: fixed;
-    top: 50px;
+    right: 350px;
+    top: -30px;
 }
 
 #layer-div {
@@ -83,7 +82,7 @@
 #layer-grid-checkbox {
     left: 8px;
     position: absolute;
-    top: 290px;
+    top: 140px;
 }
 
 #layer-height {
@@ -94,17 +93,16 @@
     -ms-transform: rotate(270deg);
     -o-transform: rotate(270deg);
     -webkit-transform: rotate(90deg);
-    left: -5px;
+    left: -14px;
     position: absolute;
-    top: 200px;
+    top: 260px;
     transform: rotate(270deg);
 }
 
 #layer-height-slider-div {
-    height: 200%;
     left: 9px;
     position: absolute;
-    top: 130px;
+    top: 170px;
 }
 
 #layer-minus-button {
@@ -126,8 +124,10 @@
 }
 
 #non-gallery-container {
-    left: 60px;
-    width: 77%;
+    position: static;
+    margin-left: 60px;
+    padding-right: 340px;
+    right: 500px;
 }
 
 #one-true-value-editor {
@@ -135,6 +135,7 @@
     border: none;
     font-family: 'Open Sans', sans-serif;
     font-size: 10pt;
+    z-index: 4;
 }
 
 #slider {
@@ -220,10 +221,6 @@
     margin-right: 10px;
 }
 
-#vat {
-    top: 0px;
-}
-
 #vat-actions {
     background: none;
     width: 180px;
@@ -231,23 +228,28 @@
 
 #vat-actions-scroll {
     background: none;
-    height: 800px;
+    height: 100%;
     margin: 0px 20px 0px 20px;
     z-index: 4;
 }
 
 #vat-actions-td {
     background: #656565;
-    position: relative;
     z-index: 4;
+    position: fixed;
+    right: 330px;
+    width: 300px;
+    height: 100%;
 }
 
 #vat-actions-td:hover {
     animation-duration: 0.5s;
     animation-name: fade_in_actions;
     background-color: #66b5b4;
-    position: relative;
-    top: -350px;
+    position: fixed;
+    top: 50px;
+    height: 100%;
+    border: none;
     transition-timing-function: ease;
 }
 
@@ -256,10 +258,6 @@
     color: white;
     font-family: 'VT323',monospace;
     height: 30px;
-}
-
-#vat-code-header {
-    display: none;
 }
 
 #vat-code-header-agent-name {
@@ -280,16 +278,28 @@
 #vat-code-header-td {
     background: #555555;
     color: #555555;
+    height: 50px;
 }
 
 #vat-code-td {
-    background: #656565;
-    border-color: #555555;
-    border-style: solid;
-    border-width: 0px;
-    margin: 0px;
-    padding: 0px;
-    padding-top: 0px;
+    top: 0px;
+    padding-right: 620px;
+}
+
+#vat {
+    top: 0px;
+    left: 290px;
+}
+
+tbody {
+}
+
+table#vat-table {
+    
+}
+
+#vat-code-header {
+    display: none;
 }
 
 #vat-conditions {
@@ -299,25 +309,29 @@
 
 #vat-conditions-scroll {
     background: none;
-    height: 800px;
+    height: 100%;
     margin: 0px 20px 0px 20px;
     z-index: 0;
 }
 
 #vat-conditions-td {
     background: #656565;
-    position: relative;
-    z-index: 0;
+    z-index: 4;
+    position: fixed;
+    left: 60px;
+    width: 300px;
+    height: 100%;
 }
 
 #vat-conditions-td:hover {
     animation-duration: 0.5s;
-    animation-name: fade_in_conditions;
-    background-color: #ae87ca;
-    position: relative;
-    top: -350px;
+    animation-name: fade_in_actions;
+    background-color: #ac83c2;
+    position: fixed;
+    top: 50px;
+    height: 100%;
+    border: none;
     transition-timing-function: ease;
-    z-index: 4;
 }
 
 #world-button {
@@ -444,17 +458,29 @@
 }
 
 .condition.instruction.instruction-context-menu.vat-selected {
-    background: #ae87ca;
-    border-color: white;
-    color: white;
+    border-color: #ffc23a;
 }
 
 .condition.vat-selected .vat-flippy-closed {
-    color: white;
+    color: #ae87ca;
 }
 
 .condition.vat-selected .vat-flippy-open {
-    color: white;
+    color: #ae87ca;
+}
+
+.action.instruction.instruction-context-menu {
+    background: white;
+    border: 2px;
+    border-style: solid;
+    color: #66b5b4;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    margin-top: 10px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
 }
 
 .config {
@@ -671,6 +697,9 @@
 .vat-proxy {
     height: 40px;
     width: 40px;
+    position: fixed;
+    left: 40%;
+    z-index: 20;
 }
 
 .world-button-menu-item {
@@ -759,7 +788,7 @@ button#action-button {
     background-color: red;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 5px 5px;
+    background-size: 16px 16px;
     outline-style: none;
 }
 
@@ -794,10 +823,12 @@ button#tool-arrow {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 16px 16px;
-    left: 25px;
+    left: 20px;
     position: fixed;
     top: 60px;
     z-index: 1;
+    width: 30px;
+    height: 30px;
 }
 
 button#tool-arrow.down {
@@ -824,10 +855,12 @@ button#tool-camera-pan {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 16px 16px;
-    left: 25px;
+    left: 20px;
     position: fixed;
-    top: 260px;
+    top: 360px;
     z-index: 1;
+    width: 30px;
+    height: 30px;
 }
 
 button#tool-camera-pan.down {
@@ -854,10 +887,12 @@ button#tool-camera-rot {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 16px 16px;
-    left: 25px;
+    left: 20px;
     position: fixed;
-    top: 230px;
+    top: 280px;
     z-index: 1;
+    width: 30px;
+    height: 30px;
 }
 
 button#tool-camera-rot.down {
@@ -884,10 +919,12 @@ button#tool-camera-zoom {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 16px 16px;
-    left: 25px;
+    left: 20px;
     position: fixed;
-    top: 290px;
+    top: 320px;
     z-index: 1;
+    width: 30px;
+    height: 30px;
 }
 
 button#tool-camera-zoom.down {
@@ -913,10 +950,12 @@ button#tool-eraser {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 16px 16px;
-    left: 25px;
+    left: 20px;
     position: fixed;
-    top: 150px;
+    top: 180px;
     z-index: 1;
+    width: 30px;
+    height: 30px;
 }
 
 button#tool-eraser.down {
@@ -943,11 +982,13 @@ button#tool-fp {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 16px 12px;
-    left: 25px;
+    left: 20px;
     outline-style: none;
     position: fixed;
-    top: 320px;
+    top: 400px;
     z-index: 1;
+    width: 30px;
+    height: 30px;
 }
 
 button#tool-fp.down {
@@ -967,6 +1008,10 @@ button#tool-fp.down:hover {
     outline-style: none;
 }
 
+#container {
+    background: none;
+}
+
 button#tool-fp:hover {
     background: url(http://www.pwigger.ch/AC/icons/active/first-person-view.png);
     background-color: #ffc23a;
@@ -982,10 +1027,12 @@ button#tool-hand {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 16px 16px;
-    left: 25px;
+    left: 20px;
     position: fixed;
-    top: 180px;
+    top: 220px;
     z-index: 1;
+    width: 30px;
+    height: 30px;
 }
 
 button#tool-hand.down {
@@ -1012,9 +1059,11 @@ button#tool-multi {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 16px 16px;
-    left: 25px;
+    left: 20px;
     position: fixed;
-    top: 120px;
+    top: 140px;
+    width: 30px;
+    height: 30px;
     z-index: 1;
 }
 
@@ -1042,10 +1091,12 @@ button#tool-pencil {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 16px 16px;
-    left: 25px;
+    left: 20px;
     position: fixed;
-    top: 90px;
+    top: 100px;
     z-index: 1;
+    width: 30px;
+    height: 30px;
 }
 
 button#tool-pencil.down {
@@ -1221,7 +1272,7 @@ button:hover {
 
 /*Block*/
 
-/*Scrollbar*/
+/*scrollbar*/
 
 /*Methoden Name: exclude blocks*/
 
@@ -1294,10 +1345,6 @@ span.gallery_name {
     vertical-align: middle;
 }
 
-table#vat-table {
-    width: 100%;
-}
-
 textarea.comment-textarea {
     margin: 0px 0px 10px 7px;
     width: 100%;
@@ -1314,6 +1361,14 @@ ul#gallery_agentlist>li:first-child {
 
 ul#gallery_agentlist>li:last-child {
     margin-bottom: 100px;
+}
+
+#vat-conditions-header {
+    display: none;
+}
+
+#vat-actions-header {
+    display: none;
 }
 
 /*conversational programming*/
@@ -1346,20 +1401,6 @@ ul#gallery_agentlist>li:last-child {
 
 .true~.block {
     opacity: 0.3;
-}
-
-.action.instruction.instruction-context-menu {
-    background: white;
-    border: 2px;
-    border-style: solid;
-    color: #66b5b4;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
-    margin-top: 10px;
-    padding-bottom: 3px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 3px;
 }
 
 td.translated-gui-element {
