@@ -48,7 +48,6 @@
     top: 0px;
     height: 100%;
     background: #ae87ca;
-    border-radius: 10px;
     z-index: 6;
 }
 
@@ -71,7 +70,6 @@
     top: 0px;
     height: 100%;
     background: #66b5b4;
-    border-radius: 10px;
     z-index: 100;
 }
 
@@ -1457,23 +1455,159 @@ img.shape-editor-display {
 }
 
 .icon-view-tools li[title="3D-Print"] img {
-    content: url(http://www.pwigger.ch/AC/icons/download.png);
+    background-color: #656565;
+    content: url(http://www.pwigger.ch/AC/icons/download_white.png);
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    border: #656565 solid 6px;
+    position: relative;
+    top: -30px;
+}
+
+.icon-view-tools li[title="3D-Print"] img:hover {
+    background-color: #ffc23a;
+    content: url(http://www.pwigger.ch/AC/icons/download_white.png);
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    border: #ffc23a solid 6px;
+}
+
+.icon-view-tools li img[src*="pan-down"] {
+    background-color: #ffc23a;
+    content: url(http://www.pwigger.ch/AC/icons/drag.png);
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    border: #ffc23a solid 6px;
+    position: relative;
+    top: -15px;
 }
 
 .icon-view-tools li img[src*="pan-up"] {
-    content: url(http://www.pwigger.ch/AC/icons/download.png);
+    background-color: #656565;
+    content: url(http://www.pwigger.ch/AC/icons/drag.png);
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    border: #656565 solid 6px;
+    position: relative;
+    top: -15px;
+}
+
+.icon-view-tools li img[src*="pan-down"]:hover {
+    background-color: #ffc23a;
+    content: url(http://www.pwigger.ch/AC/icons/drag.png);
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    border: #ffc23a solid 6px;
+    position: relative;
+    top: -15px;
 }
 
 .icon-view-tools li img[src*="zoom-up"] {
-    content: url(http://www.pwigger.ch/AC/icons/download.png);
+    background-color: #656565;
+    content: url(http://www.pwigger.ch/AC/icons/zoom.png);
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    border: #656565 solid 6px;
+    position: relative;
+    top: 0px;
+}
+
+.icon-view-tools li img[src*="zoom-down"] {
+    background-color: #ffc23a;
+    content: url(http://www.pwigger.ch/AC/icons/zoom.png);
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    border: #ffc23a solid 6px;
+    position: relative;
+    top: 0px;
+}
+
+.icon-view-tools li img[src*="zoom-up"]:hover {
+    background-color: #ffc23a;
+    content: url(http://www.pwigger.ch/AC/icons/zoom.png);
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    border: #ffc23a solid 6px;
+    position: relative;
+    top: 0px;
 }
 
 .icon-view-tools li img[src*="orbit-down"] {
-    content: url(http://www.pwigger.ch/AC/icons/download.png);
+    background-color: #ffc23a;
+    content: url(http://www.pwigger.ch/AC/icons/3drotation.png);
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    border: #ffc23a solid 6px;
+    position: relative;
+    top: 15px;
+}
+
+.icon-view-tools li img[src*="orbit-up"] {
+    background-color: #656565;
+    content: url(http://www.pwigger.ch/AC/icons/3drotation.png);
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    border: #656565 solid 6px;
+    position: relative;
+    top: 15px;
 }
 
 .icon-view-tools li img[src*="reset"] {
     content: url(http://www.pwigger.ch/AC/icons/download.png);
+}
+
+button#clear-button {
+    position: relative;
+    border-radius: 0px;
+    top: 187px;
+    right: 190px;
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    background: #656565;
+}
+
+button#clear-button:hover {
+    background: #ffc23a;
+}
+
+button#flatten-button {
+    position: relative;
+    border-radius: 0px;
+    top: 187px;
+    right: 260px;
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    background: #656565;
+}
+
+button#flatten-button:hover {
+    background: #ffc23a;
+}
+
+#flatten-button-text {
+    display: none;
+}
+
+#clear-button-text {
+    display: none;
+}
+
+#surfaces-dropdown {
+    color: white;
+    background-color: #555555;
+    outline-style: none;
 }
 
 #icon-cancel-button {
@@ -1482,6 +1616,62 @@ img.shape-editor-display {
 
 #clear-button {
     margin-right: 5px;
+}
+
+#pressure-td {
+    background: url(http://www.pwigger.ch/AC/icons/inflate.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    font-size: 0;
+}
+
+#ceiling-td {
+    background: url(http://www.pwigger.ch/AC/icons/roof.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    font-size: 0;
+}
+
+#noise-td {
+    background: url(http://www.pwigger.ch/AC/icons/noise.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    font-size: 0;
+}
+
+#smooth-label {
+    background: white;
+}
+
+#z-offset-td {
+    background: url(http://www.pwigger.ch/AC/icons/vert-dist.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    height: 30px;
+    font-size: 0;
+}
+
+#upright-td {
+    background: url(http://www.pwigger.ch/AC/icons/stand-up.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    font-size: 0;
+}
+
+#surfaces-td {
+}
+
+#distance-td {
+    background: url(http://www.pwigger.ch/AC/icons/hor-dist.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    font-size: 0;
 }
 
 /*Slider Speed*/
