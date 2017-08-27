@@ -49,6 +49,7 @@
     height: 100%;
     background: #ae87ca;
     z-index: 6;
+    padding-top: 320px;
 }
 
 #vat-conditions-header {
@@ -71,6 +72,7 @@
     height: 100%;
     background: #66b5b4;
     z-index: 100;
+    padding-top: 320px;
 }
 
 #vat-code-td {
@@ -223,6 +225,90 @@ ul#gallery_agentlist>li:last-child {
 span.gallery_name {
     text-align: center;
     vertical-align: middle;
+}
+
+#plus-agent-button {
+    background: #555555;
+}
+
+#plus-agent-button:hover {
+    background: #ffc23a;
+}
+
+#gallery-minus-button {
+    background: #555555;
+}
+
+#gallery-minus-button:hover {
+    background: #ffc23a;
+}
+
+#plus-shape-button {
+    background: #555555;
+}
+
+#plus-shape-button:hover {
+    background: #ffc23a;
+}
+
+/*Add Agent window*/
+
+#new-agent-div {
+    background-color: #555555;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.popped-over-content {
+    background: #555555;
+    color: white;
+    box-shadow: none;
+    border: solid #555555 20px;
+    border-radius: 20px;
+}
+
+select.texture-select {
+    background: #555555;
+    border: solid transparent 1px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px;
+    height: 340px;
+    width: 165px;
+    outline: none;
+}
+
+.shape-button {
+    background-color: #555555;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: none;
+}
+
+.icon-view-tools {
+    position: relative;
+    left: 20px;
+    top: -40px;
+}
+
+.shape-button.down {
+    border: solid #ffc23a;
+    width: 65px;
+}
+
+.shape-button-label {
+    display: none;
+}
+
+input#enter-agent-name {
+    background: none;
+    color: white;
+    height: 50px;
+    padding-left: 20px;
+    width: 690px;
+    margin-bottom: 30px;
+}
+
+button#cancel-button {
+    margin-right: 10px;
 }
 
 /*replace logo*/
@@ -1451,9 +1537,6 @@ img.shape-editor-display {
     background-color: #555555;
 }
 
-.icon-view-tools {
-}
-
 .icon-view-tools li[title="3D-Print"] img {
     background-color: #656565;
     content: url(http://www.pwigger.ch/AC/icons/download_white.png);
@@ -2035,6 +2118,7 @@ img[src*="missing"] {
     font-family: 'VT323',monospace;
     font-size: 20px;
     width: 190px;
+    padding-top: 60px;
 }
 
 .highlightedRow {
@@ -2113,8 +2197,12 @@ canvas {
 }
 
 canvas.threed-view {
-    height: inherit;
-    width: inherit;
+    height: 340px;
+    width: 340px;
+    position: relative;
+    top: -2px;
+    left: 20px
+;
 }
 
 /*stylebot cant handle this
