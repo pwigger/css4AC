@@ -5,11 +5,6 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-#bottom-toolbar {
-    position: fixed;
-    bottom: 0px;
-}
-
 #vat-buttons {
     background: #555555;
     color: white;
@@ -30,7 +25,16 @@
 
 #vat-conditions-td {
     width: 300px;
-    padding-right: 40px;
+}
+
+#vat-conditions {
+    text-align: right;
+    direction: ltr;
+}
+
+#vat-conditions .condition {
+    float: right;
+    text-align: left;
 }
 
 #vat-actions-td {
@@ -40,7 +44,9 @@
 #vat-conditions-scroll {
     position: fixed;
     top: inherit;
-    padding-left: 40px;
+    padding-left: 0px;
+    margin-left: 80px;
+    direction: rtl;
 }
 
 #vat-conditions-scroll:hover {
@@ -236,11 +242,25 @@ span.gallery_name {
 }
 
 #gallery-minus-button {
-    background: #555555;
+    background: url(http://www.pwigger.ch/AC/icons/delete_white.png);
+    background-color: #555555;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 11px;
+    font-size: 0;
+    position: relative;
+    top: -5px;
+    width: 24px;
+    height: 24px;
 }
 
 #gallery-minus-button:hover {
-    background: #ffc23a;
+    background: url(http://www.pwigger.ch/AC/icons/delete.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #ffc23a;
+    background-size: 11px;
+    font-size: 0;
 }
 
 #plus-shape-button {
@@ -338,6 +358,18 @@ button#cancel-button {
     top: 100px;
 }
 
+.humane-error {
+    background-color: blue;
+    color: white;
+    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+    opacity: 1;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+    width: 100%;
+}
+
 /*Bar Top*/
 
 #world-button-menu {
@@ -362,6 +394,88 @@ button#cancel-button {
 
 #world-button-text+img {
     display: none;
+}
+
+/*bar bottom*/
+
+#bottom-toolbar {
+    position: fixed;
+    bottom: 0px;
+}
+
+#vat-delete-button {
+    background: url(http://www.pwigger.ch/AC/icons/delete_white.png);
+    background-color: #656565;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 11px;
+    font-size: 0;
+    position: relative;
+    top: -5px;
+    right: 200px;
+    width: 24px;
+    height: 24px;
+}
+
+#vat-delete-button:hover {
+    background: url(http://www.pwigger.ch/AC/icons/delete.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #ffc23a;
+    background-size: 11px;
+    font-size: 0;
+}
+
+#vat-add-rule-button {
+    position: relative;
+    right: 200px;
+}
+
+#vat-add-method-button {
+    position: relative;
+    right: 200px;
+}
+
+
+#vat-duplicate-button {
+    background: url(http://www.pwigger.ch/AC/icons/duplicate_white.png);
+    background-color: #656565;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 11px;
+    font-size: 0;
+    position: relative;
+    right: 150px;
+    top: -5px;
+    width: 24px;
+    height: 24px;
+}
+
+#vat-duplicate-button:hover {
+    background: url(http://www.pwigger.ch/AC/icons/duplicate.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #ffc23a;
+    background-size: 11px;
+    font-size: 0;
+}
+
+
+
+
+#vat-test-button {
+    position: relative;
+    right: 100px;
+}
+
+#vat-not-button {
+    position: relative;
+    right: 700px;
+}
+
+#vat-help-button {
+    position: fixed;
+    right: 605px;
 }
 
 /*Rules*/
@@ -475,10 +589,7 @@ button#cancel-button {
 /*Elements*/
 
 input {
-    background-color: white;
-    color: black;
-    margin: 0px 0px 0px 0px;
-    outline-style: none;
+    font-family: monospace;
 }
 
 input.attributeRowNumber {
@@ -594,7 +705,15 @@ hr {
 }
 
 #status-bar {
-    display: none;
+    position: fixed;
+    top: 50px;
+    left: 40%;
+    color: white;
+    font-size: 40px;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 5:
+    
+;
 }
 
 #tool-arrow img {
@@ -1050,7 +1169,7 @@ button#tool-play {
     */
     top: 7px;
     left: 372px;
-    z-index: 20;
+    z-index: 5;
 }
 
 button#tool-play:hover {
@@ -1089,7 +1208,7 @@ button#tool-step {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
-    z-index: 20;
+    z-index: 5;
     outline-style: none;
 }
 
@@ -1126,7 +1245,7 @@ button#tool-stop {
     */
     top: 7px;
     left: 400px;
-    z-index: 20;
+    z-index: 5;
 }
 
 button#tool-stop.down {
@@ -2310,4 +2429,31 @@ li.annotation-item-header-item {
     padding-top: 60px;
     width: 190px;
 }*/
+
+/*name new shape window */
+
+.new-shape-dialog {
+    border-radius: 0px;
+    position: relative;
+    top: 200px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 20px;
+}
+
+.new-shape-dialog button {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.new-shape-dialog input {
+    background: none;
+    color: white;
+    border: white solid:1px;
+    width: 250px;
+    position: relative;
+    left: -10px;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+}
 

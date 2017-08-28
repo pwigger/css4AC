@@ -239,12 +239,27 @@ span.gallery_name {
     background: #ffc23a;
 }
 
+
 #gallery-minus-button {
-    background: #555555;
+    background: url(http://www.pwigger.ch/AC/icons/delete_white.png);
+    background-color: #555555;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 11px;
+    font-size: 0;
+    position: relative;
+    top: -5px;
+    width: 24px;
+    height: 24px;
 }
 
 #gallery-minus-button:hover {
-    background: #ffc23a;
+    background: url(http://www.pwigger.ch/AC/icons/delete.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #ffc23a;
+    background-size: 11px;
+    font-size: 0;
 }
 
 
@@ -361,6 +376,90 @@ button#cancel-button {
 #world-button-text+img {
     display: none;
 }
+
+
+/*bar bottom*/
+
+#bottom-toolbar {
+    position: fixed;
+    bottom: 0px;
+}
+
+#vat-delete-button {
+    background: url(http://www.pwigger.ch/AC/icons/delete_white.png);
+    background-color: #656565;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 11px;
+    font-size: 0;
+    position: relative;
+    top: -5px;
+    right: 200px;
+    width: 24px;
+    height: 24px;
+}
+
+#vat-delete-button:hover {
+    background: url(http://www.pwigger.ch/AC/icons/delete.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #ffc23a;
+    background-size: 11px;
+    font-size: 0;
+}
+
+#vat-add-rule-button {
+    position: relative;
+    right: 200px;
+}
+
+#vat-add-method-button {
+    position: relative;
+    right: 200px;
+}
+
+
+#vat-duplicate-button {
+    background: url(http://www.pwigger.ch/AC/icons/duplicate_white.png);
+    background-color: #656565;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 11px;
+    font-size: 0;
+    position: relative;
+    right: 150px;
+    top: -5px;
+    width: 24px;
+    height: 24px;
+}
+
+#vat-duplicate-button:hover {
+    background: url(http://www.pwigger.ch/AC/icons/duplicate.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #ffc23a;
+    background-size: 11px;
+    font-size: 0;
+}
+
+
+
+
+#vat-test-button {
+    position: relative;
+    right: 100px;
+}
+
+#vat-not-button {
+    position: relative;
+    right: 700px;
+}
+
+#vat-help-button {
+    position: fixed;
+    right: 605px;
+}
+
 
 /*Rules*/
 
