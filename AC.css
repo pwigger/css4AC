@@ -242,7 +242,7 @@ span.gallery_name {
 }
 
 #gallery-minus-button {
-    background: url(http://www.pwigger.ch/AC/icons/delete_white.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/white/delete.png);
     background-color: #555555;
     background-position: center;
     background-repeat: no-repeat;
@@ -255,7 +255,7 @@ span.gallery_name {
 }
 
 #gallery-minus-button:hover {
-    background: url(http://www.pwigger.ch/AC/icons/delete.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/delete.png);
     background-position: center;
     background-repeat: no-repeat;
     background-color: #ffc23a;
@@ -334,7 +334,7 @@ button#cancel-button {
 /*replace logo*/
 
 #asi-cube-link img {
-    content: url(http://www.pwigger.ch/AC/icons/logo_full.png);
+    content: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/logo_full.png);
     left: -230px;
     position: relative;
     top: 30px;
@@ -404,7 +404,7 @@ button#cancel-button {
 }
 
 #vat-delete-button {
-    background: url(http://www.pwigger.ch/AC/icons/delete_white.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/white/delete_white.png);
     background-color: #656565;
     background-position: center;
     background-repeat: no-repeat;
@@ -418,7 +418,7 @@ button#cancel-button {
 }
 
 #vat-delete-button:hover {
-    background: url(http://www.pwigger.ch/AC/icons/delete.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/delete.png);
     background-position: center;
     background-repeat: no-repeat;
     background-color: #ffc23a;
@@ -438,7 +438,7 @@ button#cancel-button {
 
 
 #vat-duplicate-button {
-    background: url(http://www.pwigger.ch/AC/icons/duplicate_white.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/white/duplicate_white.png);
     background-color: #656565;
     background-position: center;
     background-repeat: no-repeat;
@@ -452,7 +452,7 @@ button#cancel-button {
 }
 
 #vat-duplicate-button:hover {
-    background: url(http://www.pwigger.ch/AC/icons/duplicate.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/duplicate.png);
     background-position: center;
     background-repeat: no-repeat;
     background-color: #ffc23a;
@@ -641,7 +641,7 @@ button:hover {
 }
 
 button#world-save-button {
-    background: url(http://www.pwigger.ch/AC/icons/save.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/save.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 14px;
@@ -655,7 +655,7 @@ button#world-save-button {
 }
 
 button#world-save-button:hover {
-    background: url(http://www.pwigger.ch/AC/icons/active/save.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/save.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 14px;
@@ -721,7 +721,7 @@ hr {
 }
 
 button#tool-arrow {
-    background: url(http://www.pwigger.ch/AC/icons/cursor.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/cursor.png);
     background-color: #52a3d0;
     background-position: center;
     background-repeat: no-repeat;
@@ -735,7 +735,7 @@ button#tool-arrow {
 }
 
 button#tool-arrow.down {
-    background: url(http://www.pwigger.ch/AC/icons/active/cursor.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/cursor.png);
     background-color: #ffc23a;
     background-position: center;
     background-repeat: no-repeat;
@@ -744,7 +744,7 @@ button#tool-arrow.down {
 }
 
 button#tool-arrow:hover {
-    background: url(http://www.pwigger.ch/AC/icons/active/cursor.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/cursor.png);
     background-color: #ffc23a;
     background-position: center;
     background-repeat: no-repeat;
@@ -757,7 +757,7 @@ button#tool-arrow:hover {
 }
 
 button#tool-camera-pan {
-    background: url(http://www.pwigger.ch/AC/icons/drag.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/drag.png);
     background-color: #52a3d0;
     background-position: center;
     background-repeat: no-repeat;
@@ -771,7 +771,7 @@ button#tool-camera-pan {
 }
 
 button#tool-camera-pan.down {
-    background: url(http://www.pwigger.ch/AC/icons/drag_black.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/drag_black.png);
     background-color: #ffc23a;
     background-position: center;
     background-repeat: no-repeat;
@@ -780,7 +780,7 @@ button#tool-camera-pan.down {
 }
 
 button#tool-camera-pan:hover {
-    background: url(http://www.pwigger.ch/AC/icons/drag_black.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/drag_black.png);
     background-color: #ffc23a;
     background-position: center;
     background-repeat: no-repeat;
@@ -793,7 +793,7 @@ button#tool-camera-pan:hover {
 }
 
 button#tool-camera-rot {
-    background: url(http://www.pwigger.ch/AC/icons/3drotation.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/3drotation.png);
     background-color: #52a3d0;
     background-position: center;
     background-repeat: no-repeat;
@@ -807,7 +807,7 @@ button#tool-camera-rot {
 }
 
 button#tool-camera-rot.down {
-    background: url(http://www.pwigger.ch/AC/icons/active/3drotation.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/3drotation.png);
     background-color: #ffc23a;
     background-position: center;
     background-repeat: no-repeat;
@@ -816,7 +816,7 @@ button#tool-camera-rot.down {
 }
 
 button#tool-camera-rot:hover {
-    background: url(http://www.pwigger.ch/AC/icons/active/3drotation.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/3drotation.png);
     background-color: #ffc23a;
     background-position: center;
     background-repeat: no-repeat;
@@ -829,7 +829,7 @@ button#tool-camera-rot:hover {
 }
 
 button#tool-pencil {
-    background: url(http://www.pwigger.ch/AC/icons/edit.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/edit.png);
     background-color: #52a3d0;
     background-position: center;
     background-repeat: no-repeat;
@@ -843,7 +843,7 @@ button#tool-pencil {
 }
 
 button#tool-pencil.down {
-    background: url(http://www.pwigger.ch/AC/icons/active/edit.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/edit.png);
     background-color: #ffc23a;
     background-position: center;
     background-repeat: no-repeat;
@@ -852,7 +852,7 @@ button#tool-pencil.down {
 }
 
 button#tool-pencil:hover {
-    background: url(http://www.pwigger.ch/AC/icons/active/edit.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/edit.png);
     background-color: #ffc23a;
     background-position: center;
     background-repeat: no-repeat;
@@ -868,7 +868,7 @@ button#tool-reset {
     position: fixed;
     left: 460px;
     top: 7px;
-    background: url(http://www.pwigger.ch/AC/icons/restart.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/restart.png);
     background-color: none;
     background-position: center;
     background-repeat: no-repeat;
@@ -878,7 +878,7 @@ button#tool-reset {
 
 /*
 button#tool-reset.down {
-    background: url(http://www.pwigger.ch/AC/icons/active/restart.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/restart.png);
     background-color: #ffc23a;
     background-position: center;
     background-repeat: no-repeat;
@@ -887,7 +887,7 @@ button#tool-reset.down {
 }
 
 button#tool-reset:hover {
-    background: url(http://www.pwigger.ch/AC/icons/active/restart.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/restart.png);
     background-color: #ffc23a;
     background-position: center;
     background-repeat: no-repeat;
@@ -901,7 +901,7 @@ button#tool-reset:hover {
 }
 
 button#tool-camera-zoom {
-    background: url(http://www.pwigger.ch/AC/icons/zoom.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/zoom.png);
     background-color: #52a3d0;
     background-position: center;
     background-repeat: no-repeat;
@@ -915,7 +915,7 @@ button#tool-camera-zoom {
 }
 
 button#tool-camera-zoom:hover {
-    background: url(http://www.pwigger.ch/AC/icons/active/zoom.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/zoom.png);
     background-color: #ffc23a;
     background-position: center;
     background-repeat: no-repeat;
@@ -924,7 +924,7 @@ button#tool-camera-zoom:hover {
 }
 
 button#tool-camera-zoom.down {
-    background: url(http://www.pwigger.ch/AC/icons/active/zoom.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/zoom.png);
     outline-style: none;
     background-color: #ffc23a;
     background-position: center;
@@ -933,7 +933,7 @@ button#tool-camera-zoom.down {
 }
 
 #action-button img {
-    content: url(http://www.pwigger.ch/AC/icons/logo.png);
+    content: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/logo.png);
     height: 25px;
     width: 25px;
     background: none;
@@ -1005,7 +1005,7 @@ button#language-button:hover {
 }
 
 button#tool-eraser {
-    background: url(http://www.pwigger.ch/AC/icons/erase.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/erase.png);
     background-color: #52a3d0;
     background-position: center;
     background-repeat: no-repeat;
@@ -1019,7 +1019,7 @@ button#tool-eraser {
 }
 
 button#tool-eraser.down {
-    background: url(http://www.pwigger.ch/AC/icons/active/erase.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/erase.png);
     background-color: #ffc23a;
     background-position: center;
     background-repeat: no-repeat;
@@ -1028,7 +1028,7 @@ button#tool-eraser.down {
 }
 
 button#tool-eraser:hover {
-    background: url(http://www.pwigger.ch/AC/icons/active/erase.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/erase.png);
     background-color: #ffc23a;
     background-position: center;
     background-repeat: no-repeat;
@@ -1041,7 +1041,7 @@ button#tool-eraser:hover {
 }
 
 button#tool-fp {
-    background: url(http://www.pwigger.ch/AC/icons/birdview.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/birdview.png);
     background-color: #52a3d0;
     background-position: center;
     background-repeat: no-repeat;
@@ -1056,7 +1056,7 @@ button#tool-fp {
 }
 
 button#tool-fp.down {
-    background: url(http://www.pwigger.ch/AC/icons/first-person-view.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/first-person-view.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 16px 16px;
@@ -1064,7 +1064,7 @@ button#tool-fp.down {
 }
 
 button#tool-fp.down:hover {
-    background: url(http://www.pwigger.ch/AC/icons/active/birdview.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/birdview.png);
     background-color: #ffc23a;
     background-position: center;
     background-repeat: no-repeat;
@@ -1073,7 +1073,7 @@ button#tool-fp.down:hover {
 }
 
 button#tool-fp:hover {
-    background: url(http://www.pwigger.ch/AC/icons/active/first-person-view.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/first-person-view.png);
     background-color: #ffc23a;
     background-position: center;
     background-repeat: no-repeat;
@@ -1086,7 +1086,7 @@ button#tool-fp:hover {
 }
 
 button#tool-hand {
-    background: url(http://www.pwigger.ch/AC/icons/pointer.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/pointer.png);
     background-color: #52a3d0;
     background-position: center;
     background-repeat: no-repeat;
@@ -1100,7 +1100,7 @@ button#tool-hand {
 }
 
 button#tool-hand.down {
-    background: url(http://www.pwigger.ch/AC/icons/active/pointer.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/pointer.png);
     background-color: #ffc23a;
     background-position: center;
     background-repeat: no-repeat;
@@ -1109,7 +1109,7 @@ button#tool-hand.down {
 }
 
 button#tool-hand:hover {
-    background: url(http://www.pwigger.ch/AC/icons/active/pointer.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/pointer.png);
     background-color: #ffc23a;
     background-position: center;
     background-repeat: no-repeat;
@@ -1122,7 +1122,7 @@ button#tool-hand:hover {
 }
 
 button#tool-multi {
-    background: url(http://www.pwigger.ch/AC/icons/paint.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/paint.png);
     background-color: #52a3d0;
     background-position: center;
     background-repeat: no-repeat;
@@ -1136,7 +1136,7 @@ button#tool-multi {
 }
 
 button#tool-multi.down {
-    background: url(http://www.pwigger.ch/AC/icons/active/paint.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/paint.png);
     background-color: #ffc23a;
     background-position: center;
     background-repeat: no-repeat;
@@ -1145,7 +1145,7 @@ button#tool-multi.down {
 }
 
 button#tool-multi:hover {
-    background: url(http://www.pwigger.ch/AC/icons/active/paint.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/paint.png);
     background-color: #ffc23a;
     background-position: center;
     background-repeat: no-repeat;
@@ -1158,7 +1158,7 @@ button#tool-multi:hover {
 }
 
 button#tool-play {
-    background: url(http://www.pwigger.ch/AC/icons/play_white.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/white/play_white.png);
     background-position: center;
     background-repeat: no-repeat;
     outline-style: none;
@@ -1173,7 +1173,7 @@ button#tool-play {
 }
 
 button#tool-play:hover {
-    background: url(http://www.pwigger.ch/AC/icons/play.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/play.png);
     background-position: 50%;
     background-repeat: no-repeat;
     outline-style: none;
@@ -1181,7 +1181,7 @@ button#tool-play:hover {
 }
 
 button#tool-play.down {
-    background: url(http://www.pwigger.ch/AC/icons/play.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/play.png);
     background-position: 50%;
     background-repeat: no-repeat;
     outline-style: none;
@@ -1189,7 +1189,7 @@ button#tool-play.down {
 }
 
 button#tool-play.down:hover {
-    background: url(http://www.pwigger.ch/AC/icons/play.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/play.png);
     background-position: 50%;
     background-repeat: no-repeat;
     outline-style: none;
@@ -1201,7 +1201,7 @@ button#tool-play.down:hover {
 }
 
 button#tool-step {
-    background: url(http://www.pwigger.ch/AC/icons/step.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/step.png);
     position: fixed;
     left: 430px;
     top: 7px;
@@ -1213,7 +1213,7 @@ button#tool-step {
 }
 
 button#tool-step.down {
-    background: url(http://www.pwigger.ch/AC/icons/active/step.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/step.png);
     background-color: #ffc23a;
     background-position: center;
     background-repeat: no-repeat;
@@ -1222,7 +1222,7 @@ button#tool-step.down {
 }
 
 button#tool-step:hover {
-    background: url(http://www.pwigger.ch/AC/icons/step.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/step.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1234,7 +1234,7 @@ button#tool-step:hover {
 }
 
 button#tool-stop {
-    background: url(http://www.pwigger.ch/AC/icons/stop.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/stop.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1249,7 +1249,7 @@ button#tool-stop {
 }
 
 button#tool-stop.down {
-    background: url(http://www.pwigger.ch/AC/icons/stop.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/stop.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1257,7 +1257,7 @@ button#tool-stop.down {
 }
 
 button#tool-stop:hover {
-    background: url(http://www.pwigger.ch/AC/icons/stop.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/stop.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1265,7 +1265,7 @@ button#tool-stop:hover {
 }
 
 button#tool-stop.down:hover {
-    background: url(http://www.pwigger.ch/AC/icons/stop.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/stop.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1317,7 +1317,7 @@ img.shape-editor-display {
 /*buttons*/
 
 .icon-tool-with-translated-tooltip#pencil {
-    background: url(http://www.pwigger.ch/AC/icons/edit.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/edit.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1334,7 +1334,7 @@ img.shape-editor-display {
 }
 
 .icon-tool-with-translated-tooltip#pencil:hover {
-    background: url(http://www.pwigger.ch/AC/icons/edit.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/edit.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1344,7 +1344,7 @@ img.shape-editor-display {
 }
 
 .icon-tool-with-translated-tooltip#eraser {
-    background: url(http://www.pwigger.ch/AC/icons/erase.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/erase.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1357,7 +1357,7 @@ img.shape-editor-display {
 }
 
 .icon-tool-with-translated-tooltip#eraser:hover {
-    background: url(http://www.pwigger.ch/AC/icons/erase.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/erase.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1371,7 +1371,7 @@ img.shape-editor-display {
 }
 
 .icon-tool-with-translated-tooltip#eye {
-    background: url(http://www.pwigger.ch/AC/icons/eye.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/eye.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1384,7 +1384,7 @@ img.shape-editor-display {
 }
 
 .icon-tool-with-translated-tooltip#eye:hover {
-    background: url(http://www.pwigger.ch/AC/icons/eye.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/eye.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1398,7 +1398,7 @@ img.shape-editor-display {
 }
 
 .icon-tool-with-translated-tooltip#bucket {
-    background: url(http://www.pwigger.ch/AC/icons/bucket.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/bucket.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1411,7 +1411,7 @@ img.shape-editor-display {
 }
 
 .icon-tool-with-translated-tooltip#bucket:hover {
-    background: url(http://www.pwigger.ch/AC/icons/bucket.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/bucket.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1425,7 +1425,7 @@ img.shape-editor-display {
 }
 
 .icon-tool-with-translated-tooltip#wand {
-    background: url(http://www.pwigger.ch/AC/icons/wand.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/wand.png);
     background-color: #656565;
     background-position: center;
     background-repeat: no-repeat;
@@ -1438,7 +1438,7 @@ img.shape-editor-display {
 }
 
 .icon-tool-with-translated-tooltip#wand:hover {
-    background: url(http://www.pwigger.ch/AC/icons/wand.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/wand.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1452,7 +1452,7 @@ img.shape-editor-display {
 }
 
 .icon-tool-with-translated-tooltip#rect {
-    background: url(http://www.pwigger.ch/AC/icons/rect.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/rect.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1465,7 +1465,7 @@ img.shape-editor-display {
 }
 
 .icon-tool-with-translated-tooltip#rect:hover {
-    background: url(http://www.pwigger.ch/AC/icons/rect.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/rect.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1479,7 +1479,7 @@ img.shape-editor-display {
 }
 
 .icon-tool-with-translated-tooltip#circ {
-    background: url(http://www.pwigger.ch/AC/icons/circ.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/circ.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1492,7 +1492,7 @@ img.shape-editor-display {
 }
 
 .icon-tool-with-translated-tooltip#circ:hover {
-    background: url(http://www.pwigger.ch/AC/icons/circ.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/circ.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1506,7 +1506,7 @@ img.shape-editor-display {
 }
 
 .icon-tool-with-translated-tooltip#poly {
-    background: url(http://www.pwigger.ch/AC/icons/poly.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/poly.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1519,7 +1519,7 @@ img.shape-editor-display {
 }
 
 .icon-tool-with-translated-tooltip#poly:hover {
-    background: url(http://www.pwigger.ch/AC/icons/poly.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/poly.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1545,7 +1545,7 @@ img.shape-editor-display {
 }
 
 #none {
-    background: url(http://www.pwigger.ch/AC/icons/none.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/none.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1559,7 +1559,7 @@ img.shape-editor-display {
 }
 
 #none:hover {
-    background: url(http://www.pwigger.ch/AC/icons/none.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/none.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1573,7 +1573,7 @@ img.shape-editor-display {
 }
 
 #horz {
-    background: url(http://www.pwigger.ch/AC/icons/2ways_vertical.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/2ways_vertical.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1587,7 +1587,7 @@ img.shape-editor-display {
 }
 
 #horz:hover {
-    background: url(http://www.pwigger.ch/AC/icons/2ways_vertical.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/2ways_vertical.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1601,7 +1601,7 @@ img.shape-editor-display {
 }
 
 #vert {
-    background: url(http://www.pwigger.ch/AC/icons/2ways_horizontal.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/2ways_horizontal.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1615,7 +1615,7 @@ img.shape-editor-display {
 }
 
 #vert:hover {
-    background: url(http://www.pwigger.ch/AC/icons/2ways_horizontal.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/2ways_horizontal.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1629,7 +1629,7 @@ img.shape-editor-display {
 }
 
 #both {
-    background: url(http://www.pwigger.ch/AC/icons/4ways.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/4ways.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1643,7 +1643,7 @@ img.shape-editor-display {
 }
 
 #both:hover {
-    background: url(http://www.pwigger.ch/AC/icons/4ways.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/4ways.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1658,7 +1658,7 @@ img.shape-editor-display {
 
 .icon-view-tools li[title="3D-Print"] img {
     background-color: #656565;
-    content: url(http://www.pwigger.ch/AC/icons/download_white.png);
+    content: url(http://www.pwigger.ch/agentcubes/icons/white/download_white.png);
     height: 30px;
     width: 30px;
     cursor: pointer;
@@ -1669,7 +1669,7 @@ img.shape-editor-display {
 
 .icon-view-tools li[title="3D-Print"] img:hover {
     background-color: #ffc23a;
-    content: url(http://www.pwigger.ch/AC/icons/download_white.png);
+    content: url(http://www.pwigger.ch/agentcubes/icons/white/download_white.png);
     height: 30px;
     width: 30px;
     cursor: pointer;
@@ -1678,7 +1678,7 @@ img.shape-editor-display {
 
 .icon-view-tools li img[src*="pan-down"] {
     background-color: #ffc23a;
-    content: url(http://www.pwigger.ch/AC/icons/drag.png);
+    content: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/drag.png);
     height: 30px;
     width: 30px;
     cursor: pointer;
@@ -1689,7 +1689,7 @@ img.shape-editor-display {
 
 .icon-view-tools li img[src*="pan-up"] {
     background-color: #656565;
-    content: url(http://www.pwigger.ch/AC/icons/drag.png);
+    content: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/drag.png);
     height: 30px;
     width: 30px;
     cursor: pointer;
@@ -1700,7 +1700,7 @@ img.shape-editor-display {
 
 .icon-view-tools li img[src*="pan-down"]:hover {
     background-color: #ffc23a;
-    content: url(http://www.pwigger.ch/AC/icons/drag.png);
+    content: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/drag.png);
     height: 30px;
     width: 30px;
     cursor: pointer;
@@ -1711,7 +1711,7 @@ img.shape-editor-display {
 
 .icon-view-tools li img[src*="zoom-up"] {
     background-color: #656565;
-    content: url(http://www.pwigger.ch/AC/icons/zoom.png);
+    content: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/zoom.png);
     height: 30px;
     width: 30px;
     cursor: pointer;
@@ -1722,7 +1722,7 @@ img.shape-editor-display {
 
 .icon-view-tools li img[src*="zoom-down"] {
     background-color: #ffc23a;
-    content: url(http://www.pwigger.ch/AC/icons/zoom.png);
+    content: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/zoom.png);
     height: 30px;
     width: 30px;
     cursor: pointer;
@@ -1733,7 +1733,7 @@ img.shape-editor-display {
 
 .icon-view-tools li img[src*="zoom-up"]:hover {
     background-color: #ffc23a;
-    content: url(http://www.pwigger.ch/AC/icons/zoom.png);
+    content: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/zoom.png);
     height: 30px;
     width: 30px;
     cursor: pointer;
@@ -1744,7 +1744,7 @@ img.shape-editor-display {
 
 .icon-view-tools li img[src*="orbit-down"] {
     background-color: #ffc23a;
-    content: url(http://www.pwigger.ch/AC/icons/3drotation.png);
+    content: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/3drotation.png);
     height: 30px;
     width: 30px;
     cursor: pointer;
@@ -1755,7 +1755,7 @@ img.shape-editor-display {
 
 .icon-view-tools li img[src*="orbit-up"] {
     background-color: #656565;
-    content: url(http://www.pwigger.ch/AC/icons/3drotation.png);
+    content: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/3drotation.png);
     height: 30px;
     width: 30px;
     cursor: pointer;
@@ -1765,7 +1765,7 @@ img.shape-editor-display {
 }
 
 .icon-view-tools li img[src*="reset"] {
-    content: url(http://www.pwigger.ch/AC/icons/download.png);
+    content: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/download.png);
 }
 
 button#clear-button {
@@ -1821,7 +1821,7 @@ button#flatten-button:hover {
 }
 
 #pressure-td {
-    background: url(http://www.pwigger.ch/AC/icons/inflate.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/inflate.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1829,7 +1829,7 @@ button#flatten-button:hover {
 }
 
 #ceiling-td {
-    background: url(http://www.pwigger.ch/AC/icons/roof.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/roof.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 20px;
@@ -1837,7 +1837,7 @@ button#flatten-button:hover {
 }
 
 #noise-td {
-    background: url(http://www.pwigger.ch/AC/icons/noise.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/noise.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1849,7 +1849,7 @@ button#flatten-button:hover {
 }
 
 #z-offset-td {
-    background: url(http://www.pwigger.ch/AC/icons/vert-dist.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/vert-dist.png);
     background-position: top;
     background-repeat: no-repeat;
     background-size: 30px;
@@ -1858,7 +1858,7 @@ button#flatten-button:hover {
 }
 
 #upright-td {
-    background: url(http://www.pwigger.ch/AC/icons/stand-up.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/stand-up.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 30px;
@@ -1869,7 +1869,7 @@ button#flatten-button:hover {
 }
 
 #distance-td {
-    background: url(http://www.pwigger.ch/AC/icons/hor-dist.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/hor-dist.png);
     background-position: top;
     background-repeat: no-repeat;
     background-size: 20px;
@@ -2201,7 +2201,7 @@ img[src*="missing"] {
 }
 
 #vat-code-header-resize-img:hover {
-    content: url(http://www.pwigger.ch/AC/icons/menu.png);
+    content: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/menu.png);
     cursor: ns-resize;
     position: fixed;
     width: 100%;
@@ -2380,7 +2380,7 @@ select.icon-tool-with-translated-tooltip.form-control {
 }
 
 span.cancelbutton {
-    background: url(http://www.pwigger.ch/AC/icons/close.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/close.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 10px 10px;
