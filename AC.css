@@ -289,7 +289,7 @@ span.gallery_name {
     color: white;
     box-shadow: none;
     border: solid #555555 20px;
-    border-radius: 20px;
+    border-radius: 0px;
 }
 
 select.texture-select {
@@ -591,7 +591,10 @@ button#cancel-button {
 /*Elements*/
 
 input {
-    font-family: monospace;
+    background-color: white;
+    color: black;
+    margin: 0px 0px 0px 0px;
+    outline-style: none;
 }
 
 input.attributeRowNumber {
@@ -712,7 +715,7 @@ hr {
     color: white;
     font-size: 40px;
     background-color: rgba(0,0,0,0.0);
-    z-index: 5:
+    z-index: 5;
     width: 75%;
     left: 50%;
     margin-left: -37.5%;
@@ -939,7 +942,7 @@ button#tool-camera-zoom.down {
     height: 25px;
     width: 25px;
     background: none;
-    background-position: center
+    background-position: center;
     background-repeat: no-repeat;
     background-size: 16px 16px;
     margin-top: 5px;
@@ -1346,7 +1349,7 @@ img.shape-editor-display {
 }
 
 .icon-tool-with-translated-tooltip#eraser {
-    background: url(http://www.pwigger.ch/agentcubes/icons//white/erase.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/white/erase.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1373,7 +1376,7 @@ img.shape-editor-display {
 }
 
 .icon-tool-with-translated-tooltip#eye {
-    background: url(http://www.pwigger.ch/agentcubes/icons//white/eye.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/white/eye.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1400,7 +1403,7 @@ img.shape-editor-display {
 }
 
 .icon-tool-with-translated-tooltip#bucket {
-    background: url(http://www.pwigger.ch/agentcubes/icons//white/bucket.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/white/bucket.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1427,7 +1430,7 @@ img.shape-editor-display {
 }
 
 .icon-tool-with-translated-tooltip#wand {
-    background: url(http://www.pwigger.ch/agentcubes/icons//white/wand.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/white/wand.png);
     background-color: #656565;
     background-position: center;
     background-repeat: no-repeat;
@@ -1454,7 +1457,7 @@ img.shape-editor-display {
 }
 
 .icon-tool-with-translated-tooltip#rect {
-    background: url(http://www.pwigger.ch/agentcubes/icons//white/rect.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/white/rect.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1481,7 +1484,7 @@ img.shape-editor-display {
 }
 
 .icon-tool-with-translated-tooltip#circ {
-    background: url(http://www.pwigger.ch/agentcubes/icons//white/circ.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/white/circ.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1508,7 +1511,7 @@ img.shape-editor-display {
 }
 
 .icon-tool-with-translated-tooltip#poly {
-    background: url(http://www.pwigger.ch/agentcubes/icons//white/poly.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/white/poly.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1547,7 +1550,7 @@ img.shape-editor-display {
 }
 
 #none {
-    background: url(http://www.pwigger.ch/agentcubes/icons//white/none.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/white/none.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1575,7 +1578,7 @@ img.shape-editor-display {
 }
 
 #horz {
-    background: url(http://www.pwigger.ch/agentcubes/icons//white/2ways_vertical.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/white/2ways_vertical.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1603,7 +1606,7 @@ img.shape-editor-display {
 }
 
 #vert {
-    background: url(http://www.pwigger.ch/agentcubes/icons//white/2ways_horizontal.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/white/2ways_horizontal.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1661,8 +1664,8 @@ img.shape-editor-display {
 .icon-view-tools li[title="3D-Print"] img {
     background-color: #656565;
     content: url(http://www.pwigger.ch/agentcubes/icons/white/download.png);
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     cursor: pointer;
     border: #656565 solid 6px;
     position: relative;
@@ -1672,8 +1675,8 @@ img.shape-editor-display {
 .icon-view-tools li[title="3D-Print"] img:hover {
     background-color: #ffc23a;
     content: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/download.png);
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     cursor: pointer;
     border: #ffc23a solid 6px;
 }
@@ -1681,8 +1684,8 @@ img.shape-editor-display {
 .icon-view-tools li img[src*="pan-down"] {
     background-color: #ffc23a;
     content: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/drag.png);
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     cursor: pointer;
     border: #ffc23a solid 6px;
     position: relative;
@@ -1691,9 +1694,9 @@ img.shape-editor-display {
 
 .icon-view-tools li img[src*="pan-up"] {
     background-color: #656565;
-    content: url(http://www.pwigger.ch/agentcubes/icons//white/drag.png);
-    height: 30px;
-    width: 30px;
+    content: url(http://www.pwigger.ch/agentcubes/icons/white/drag.png);
+    height: 25px;
+    width: 25px;
     cursor: pointer;
     border: #656565 solid 6px;
     position: relative;
@@ -1703,8 +1706,8 @@ img.shape-editor-display {
 .icon-view-tools li img[src*="pan-up"]:hover {
     background-color: #ffc23a;
     content: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/drag.png);
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     cursor: pointer;
     border: #ffc23a solid 6px;
     position: relative;
@@ -1713,9 +1716,9 @@ img.shape-editor-display {
 
 .icon-view-tools li img[src*="zoom-up"] {
     background-color: #656565;
-    content: url(http://www.pwigger.ch/agentcubes/icons//white/zoom.png);
-    height: 30px;
-    width: 30px;
+    content: url(http://www.pwigger.ch/agentcubes/icons/white/zoom.png);
+    height: 25px;
+    width: 25px;
     cursor: pointer;
     border: #656565 solid 6px;
     position: relative;
@@ -1725,8 +1728,8 @@ img.shape-editor-display {
 .icon-view-tools li img[src*="zoom-down"] {
     background-color: #ffc23a;
     content: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/zoom.png);
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     cursor: pointer;
     border: #ffc23a solid 6px;
     position: relative;
@@ -1736,8 +1739,8 @@ img.shape-editor-display {
 .icon-view-tools li img[src*="zoom-up"]:hover {
     background-color: #ffc23a;
     content: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/zoom.png);
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     cursor: pointer;
     border: #ffc23a solid 6px;
     position: relative;
@@ -1746,9 +1749,9 @@ img.shape-editor-display {
 
 .icon-view-tools li img[src*="orbit-down"] {
     background-color: #ffc23a;
-    content: url(http://www.pwigger.ch/agentcubes/icons//white/3drotation.png);
-    height: 30px;
-    width: 30px;
+    content: url(http://www.pwigger.ch/agentcubes/icons/white/3drotation.png);
+    height: 25px;
+    width: 25px;
     cursor: pointer;
     border: #ffc23a solid 6px;
     position: relative;
@@ -1758,8 +1761,8 @@ img.shape-editor-display {
 .icon-view-tools li img[src*="orbit-up"] {
     background-color: #656565;
     content: url(http://www.pwigger.ch/agentcubes/icons/white/3drotation.png);
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     cursor: pointer;
     border: #656565 solid 6px;
     position: relative;
@@ -1768,9 +1771,9 @@ img.shape-editor-display {
 
 .icon-view-tools li img[src*="orbit-up"]:hover {
     background-color: #ffc23a;
-    content: url(http://www.pwigger.ch/agentcubes/icons/white/3drotation.png);
-    height: 30px;
-    width: 30px;
+    content: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/3drotation.png);
+    height: 25px;
+    width: 25px;
     cursor: pointer;
     border: #ffc23a solid 6px;
     position: relative;
@@ -1780,8 +1783,8 @@ img.shape-editor-display {
 .icon-view-tools li img[src*="reset"] {
     background-color: #656565;
     content: url(http://www.pwigger.ch/agentcubes/icons//white/restart.png);
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     cursor: pointer;
     border: #656565 solid 6px;
     position: relative;
@@ -1791,11 +1794,10 @@ img.shape-editor-display {
 .icon-view-tools li img[src*="reset"]:hover {
     background-color: #ffc23a;
     content: url(http://www.pwigger.ch/agentcubes/icons//darkgrey/restart.png);
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     cursor: pointer;
     border: #ffc23a solid 6px;
-
 }
 
 button#clear-button {
@@ -1803,8 +1805,8 @@ button#clear-button {
     border-radius: 0px;
     top: 187px;
     right: 190px;
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     padding: 0px;
     background: #656565;
 }
@@ -2463,7 +2465,6 @@ li.annotation-item-header-item {
 /*name new shape window */
 
 .new-shape-dialog {
-    border-radius: 0px;
     position: relative;
     top: 200px;
     font-family: 'Open Sans', sans-serif;
@@ -2478,7 +2479,7 @@ li.annotation-item-header-item {
 .new-shape-dialog input {
     background: none;
     color: white;
-    border: white solid:1px;
+    border: white solid 1px;
     width: 250px;
     position: relative;
     left: -10px;
