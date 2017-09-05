@@ -1,0 +1,2024 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 /*moving boxes around*/\
+\
+:root \{\
+    background-color: #555555;\
+    font-family: 'Open Sans', sans-serif;\
+\}\
+\
+#bottom-toolbar \{\
+    position: fixed;\
+    bottom: 0px;\
+\}\
+\
+#vat-buttons \{\
+    background: #555555;\
+    color: white;\
+    font-family: 'VT323',monospace;\
+    height: 30px;\
+\}\
+\
+#non-gallery-container \{\
+    position: fixed;\
+    left: 0px;\
+    top: 40px;\
+    padding-left: 0px;\
+\}\
+\
+#threed-and-status \{\
+    padding-right: 350px;\
+\}\
+\
+#vat-conditions-td \{\
+    width: 300px;\
+    padding-right: 40px;\
+\}\
+\
+#vat-actions-td \{\
+    width: 600px;\
+    \
+    \
+\}\
+#vat-actions\{width:220px;\}\
+\
+#vat-actions-scroll\{\
+display:block; width:280px;\}\
+\
+#vat-code-td \{\
+    position: static;\
+    padding-left: 40px;\
+\}\
+\
+#vat-code \{\
+    background: none;;\
+\}\
+\
+#vat-conditions-scroll \{\
+    position: fixed;\
+    top: inherit;\
+    padding-left: 40px;\
+\}\
+\
+#vat-conditions-header \{\
+    background: none;\
+    font-size: 0;\
+\}\
+\
+#vat-code-header-td \{\
+    background: none;\
+    font-size: 0;\
+    height: 50px;\
+\}\
+\
+#vat-actions-header \{\
+    background: none;\
+    font-size: 0;\
+\}\
+\
+tbody \{\
+\}\
+\
+.method \{\
+    background: none;\
+\}\
+\
+/*Selecte Agent image*/\
+\
+#vat-code-header-img \{\
+    z-index: 3;\
+    position: relative;\
+    left: inherit;\
+    top: -2px;\
+\}\
+\
+/*Gallery*/\
+\
+#gallery-buttons \{\
+    position: fixed;\
+    right: 70px;\
+    top: 180px;\
+\}\
+\
+#gallery-container \{\
+    position: fixed;\
+    z-index: 4;\
+    right: 0px;\
+    width: 300px;\
+    top: 120px;\
+    background-color: #656565;\
+\}\
+\
+#gallery \{\
+\}\
+\
+#gallery-description \{\
+    font-size: 30px;\
+    padding: 30px;\
+    font-family: 'VT323',monospace;\
+\}\
+\
+#gallery-title-span \{\
+    position: fixed;\
+    top: 140px;\
+\}\
+\
+.gallery-thumbnail \{\
+    border-color: #ffc23a;\
+\}\
+\
+.gallery_agentitem \{\
+    border-top: solid #555555 1px;\
+    height: 35px;\
+    padding-top: 4px;\
+\}\
+\
+.gallery_agentitem:hover \{\
+    background: rgba(255, 255, 255, 0.25);\
+    background-color: #ffc23a;\
+    border-top: #555555;\
+    color: white;\
+\}\
+\
+.gallery_name \{\
+    font-family: 'Open Sans', sans-serif;\
+    font-size: 13px;\
+\}\
+\
+.gallery_shapeitem:hover \{\
+    background: rgba(255, 255, 255, 0.25);\
+    background-color: #ffc23a;\
+    color: white;\
+\}\
+\
+.AgentView \{\
+    position: relative;\
+    top: 140px;\
+\}\
+\
+.gallery_shapeitem \{\
+    height: 35px;\
+    padding-bottom: 2px;\
+    padding-left: 20px;\
+    padding-top: 0px;\
+\}\
+\
+div#gallery-description \{\
+    background-color: #656565;\
+    position: fixed;\
+    width: 250px;\
+    z-index: 20;\
+\}\
+\
+div.gallery_shapeitem \{\
+    height: 35px;\
+    padding-bottom: 2px;\
+    padding-left: 40px;\
+    padding-top: 0px;\
+\}\
+\
+li ul.gallery_agentsublist li:last-child div.gallery_shapeitem \{\
+    margin-bottom: 60px;\
+\}\
+\
+li.gallery-shapelabel \{\
+    display: none;\
+\}\
+\
+li:last-child li:last-child div.gallery_shapeitem:last-child \{\
+    margin-bottom: 100px;\
+\}\
+\
+ul#gallery_agentlist \{\
+    margin: 10px;\
+    width: 260px;\
+    z-index: 5;\
+\}\
+\
+ul#gallery_agentlist>li:first-child \{\
+    margin-top: 100px;\
+\}\
+\
+ul#gallery_agentlist>li:last-child \{\
+    margin-bottom: 100px;\
+\}\
+\
+span.gallery_name \{\
+    text-align: center;\
+    vertical-align: middle;\
+\}\
+\
+/*replace logo*/\
+\
+#asi-cube-link img \{\
+    content: url(http://www.pwigger.ch/AC/icons/logo_full.png);\
+    left: -230px;\
+    position: relative;\
+    top: 30px;\
+\}\
+\
+/*3dView*/\
+\
+#container \{\
+    background: none;\
+\}\
+\
+/*Windows*/\
+\
+#error \{\
+    background-color: blue;\
+    border: solid blue 100px;\
+    color: white;\
+    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;\
+    opacity: 1;\
+    position: relative;\
+    top: 100px;\
+\}\
+\
+/*Bar Top*/\
+\
+#world-button-menu \{\
+    position: fixed;\
+    left: 180px;\
+    top: 35px;\
+\}\
+\
+.world-button-menu-item \{\
+    background: #555555;\
+    color: white;\
+    font-family: 'Open Sans', sans-serif;\
+    font-size: 13px;\
+\}\
+\
+.world-button-menu-item:hover \{\
+    background: #ffc23a;\
+    color: #555555;\
+    font-family: 'Open Sans', sans-serif;\
+    font-size: 13px;\
+\}\
+\
+#world-button-text+img \{\
+    display: none;\
+\}\
+\
+/*Rules*/\
+\
+.block \{\
+    margin: 20px;\
+    background: none;\
+    border: none;\
+    position: relative;\
+\}\
+\
+.trigger-name \{\
+    border: none;\
+\}\
+\
+.rule-box \{\
+    background: none;\
+\}\
+\
+.trigger-name .editable-display \{\
+    background: #555555;\
+    border: none;\
+    color: white;\
+    font-family: 'Open Sans', sans-serif;\
+    font-size: 25px;\
+    margin: 10px 0px 0px 10px;\
+    padding: 0px 30px 0px 30px;\
+    text-align: center;\
+\}\
+\
+.trigger-name .editable-display:hover \{\
+    background: #ffc23a;\
+    color: #555555;\
+\}\
+\
+.trigger.name .editable-display \{\
+    font-family: 'VT323', monospace;\
+\}\
+\
+.rule .if-then \{\
+    min-height: 50px;\
+    background-color: #ae87ca;\
+    border: none;\
+    white-space: pre-wrap;\
+\}\
+\
+.then \{\
+    color: white;\
+    font-size: 14pt;\
+    padding-left: 20px;\
+    padding-right: 20px;\
+\}\
+\
+.if \{\
+    color: white;\
+    font-size: 14pt;\
+    padding-left: 20px;\
+    padding-right: 20px;\
+\}\
+\
+.if-then+.if-then \{\
+    background-color: #66b5b4;\
+\}\
+\
+.instruction \{\
+    border-radius: 10px;\
+\}\
+\
+.instruction-area \{\
+    min-width: 20px;\
+    width: 80%;\
+\}\
+\
+.block.rule.instruction-context-menu.vat-selected \{\
+    border-color: #ffc23a;\
+    border-style: solid;\
+    border-width: 2px;\
+\}\
+#vat .method.vat-selected\{\
+   border-color: #ffc23a;\
+    border-style: solid;\
+    border-width: 2px;\}\
+    \
+  #vat  .method\{\
+        \
+         border-color: white;\
+    border-style: solid;\
+    border-width: 2px;margin-bottom:50px;\
+    background:#656565;\}\
+\
+\
+\
+/*rule hide*/\
+\
+.method-disclosure-span \{\
+    font-size: 13px;\
+\}\
+\
+.disclosure-box \{\
+    font-family: 'VT323',monospace;\
+    overflow: true;\
+    position: absolute;\
+    right: 0px;\
+    top: 5px;\
+    width: 130px;\
+\}\
+\
+/*Elements*/\
+\
+input \{\
+    background-color: white;\
+    color: black;\
+    margin: 0px 0px 0px 0px;\
+    outline-style: none;\
+\}\
+\
+input.attributeRowNumber \{\
+    background: none;\
+    border: none;\
+    color: white;\
+    margin-left: 20px;\
+    width: 40px;\
+\}\
+\
+/*Scrollbar*/\
+\
+::-webkit-scrollbar-track \{\
+    background: none;\
+\}\
+\
+::-webkit-scrollbar \{\
+    background: none;\
+    height: 0px;\
+    width: 10px;\
+\}\
+\
+::-webkit-scrollbar-thumb \{\
+    background: none;\
+    border: 1px white solid;\
+    border-radius: 5px;\
+    height: 40px;\
+\}\
+\
+::-webkit-scrollbar-track-piece \{\
+    background: none;\
+    border: transparent 1px solid;\
+    border-radius: 20px;\
+    margin-top: 70%;\
+    margin-bottom: 20px;\
+\}\
+\
+/*Buttons*/\
+\
+button \{\
+    background: #656565;\
+    border: none;\
+    color: white;\
+    font-family: 'VT323',monospace;\
+\}\
+\
+button:hover \{\
+    background: #ffc23a;\
+    color: #555555;\
+\}\
+\
+button#world-save-button \{\
+    background: url(http://www.pwigger.ch/AC/icons/save.png);\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 14px;\
+    background-color: #656565;\
+    font-size: 0;\
+    position: fixed;\
+    top: 8px;\
+    right: 620px;\
+    width: 24px;\
+    height: 24px;\
+\}\
+\
+button#world-save-button:hover \{\
+    background: url(http://www.pwigger.ch/AC/icons/active/save.png);\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 14px;\
+    background-color: #ffc23a;\
+    font-size: 0;\
+\}\
+\
+#world-button \{\
+    background: none;\
+    background-color: #555555;\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 16px 16px;\
+    position: fixed;\
+    top: 0px;\
+    left: 180px;\
+    height: 40px;\
+    width: 90px;\
+\}\
+\
+#world-button:hover \{\
+    background: #ffc23a;\
+\}\
+\
+#world-drop-down \{\
+    background-color: #555555;\
+    border: solid white 1px;\
+    color: white;\
+    font-family: 'Open Sans', sans-serif;\
+    margin-right: 5px;\
+    position: fixed;\
+    top: 8px;\
+    right: 650px;\
+\}\
+\
+.dropdown \{\
+    background: #555555;\
+    width: 50px;\
+\}\
+\
+.dropdown-menu \{\
+    background-color: #555555;\
+\}\
+\
+hr \{\
+    border: black;\
+\}\
+\
+#status-bar \{\
+    display: none;\
+\}\
+\
+#tool-arrow img \{\
+    display: none;\
+\}\
+\
+button#tool-arrow \{\
+    background: url(http://www.pwigger.ch/AC/icons/cursor.png);\
+    background-color: #52a3d0;\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 16px 16px;\
+    height: 30px;\
+    left: 20px;\
+    position: fixed;\
+    top: 60px;\
+    width: 30px;\
+    z-index: 5;\
+\}\
+\
+button#tool-arrow.down \{\
+    background: url(http://www.pwigger.ch/AC/icons/active/cursor.png);\
+    background-color: #ffc23a;\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 16px 16px;\
+    outline-style: none;\
+\}\
+\
+button#tool-arrow:hover \{\
+    background: url(http://www.pwigger.ch/AC/icons/active/cursor.png);\
+    background-color: #ffc23a;\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 16px 16px;\
+    outline-style: none;\
+\}\
+\
+#tool-camera-pan img \{\
+    display: none;\
+\}\
+\
+button#tool-camera-pan \{\
+    background: url(http://www.pwigger.ch/AC/icons/drag.png);\
+    background-color: #52a3d0;\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 16px 16px;\
+    height: 30px;\
+    left: 20px;\
+    position: fixed;\
+    top: 360px;\
+    width: 30px;\
+    z-index: 5;\
+\}\
+\
+button#tool-camera-pan.down \{\
+    background: url(http://www.pwigger.ch/AC/icons/drag_black.png);\
+    background-color: #ffc23a;\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 16px 16px;\
+    outline-style: none;\
+\}\
+\
+button#tool-camera-pan:hover \{\
+    background: url(http://www.pwigger.ch/AC/icons/drag_black.png);\
+    background-color: #ffc23a;\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 16px 16px;\
+    outline-style: none;\
+\}\
+\
+#tool-camera-rot img \{\
+    display: none;\
+\}\
+\
+button#tool-camera-rot \{\
+    background: url(http://www.pwigger.ch/AC/icons/3drotation.png);\
+    background-color: #52a3d0;\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 16px 16px;\
+    height: 30px;\
+    left: 20px;\
+    position: fixed;\
+    top: 280px;\
+    width: 30px;\
+    z-index: 5;\
+\}\
+\
+button#tool-camera-rot.down \{\
+    background: url(http://www.pwigger.ch/AC/icons/active/3drotation.png);\
+    background-color: #ffc23a;\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 16px 16px;\
+    outline-style: none;\
+\}\
+\
+button#tool-camera-rot:hover \{\
+    background: url(http://www.pwigger.ch/AC/icons/active/3drotation.png);\
+    background-color: #ffc23a;\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 16px 16px;\
+    outline-style: none;\
+\}\
+\
+#tool-pencil img \{\
+    display: none;\
+\}\
+\
+button#tool-pencil \{\
+    background: url(http://www.pwigger.ch/AC/icons/edit.png);\
+    background-color: #52a3d0;\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 16px 16px;\
+    height: 30px;\
+    left: 20px;\
+    position: fixed;\
+    top: 100px;\
+    width: 30px;\
+    z-index: 5;\
+\}\
+\
+button#tool-pencil.down \{\
+    background: url(http://www.pwigger.ch/AC/icons/active/edit.png);\
+    background-color: #ffc23a;\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 16px 16px;\
+    outline-style: none;\
+\}\
+\
+button#tool-pencil:hover \{\
+    background: url(http://www.pwigger.ch/AC/icons/active/edit.png);\
+    background-color: #ffc23a;\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 16px 16px;\
+    outline-style: none;\
+\}\
+\
+#tool-reset img \{\
+    display: none;\
+\}\
+\
+button#tool-reset \{\
+    position: fixed;\
+    left: 460px;\
+    top: 7px;\
+    background: url(http://www.pwigger.ch/AC/icons/restart.png);\
+    background-color: none;\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 16px 16px;\
+    outline-style: none;\
+\}\
+\
+/*\
+button#tool-reset.down \{\
+    background: url(http://www.pwigger.ch/AC/icons/active/restart.png);\
+    background-color: #ffc23a;\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 16px 16px;\
+    outline-style: none;\
+\}\
+\
+button#tool-reset:hover \{\
+    background: url(http://www.pwigger.ch/AC/icons/active/restart.png);\
+    background-color: #ffc23a;\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 16px 16px;\
+    outline-style: none;\
+\}\
+*/\
+\
+#tool-camera-zoom img \{\
+    display: none;\
+\}\
+\
+button#tool-camera-zoom \{\
+    background: url(http://www.pwigger.ch/AC/icons/zoom.png);\
+    background-color: #52a3d0;\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 16px 16px;\
+    height: 30px;\
+    left: 20px;\
+    position: fixed;\
+    top: 320px;\
+    width: 30px;\
+    z-index: 5;\
+\}\
+\
+button#tool-camera-zoom:hover \{\
+    background: url(http://www.pwigger.ch/AC/icons/active/zoom.png);\
+    background-color: #ffc23a;\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 16px 16px;\
+    outline-style: none;\
+\}\
+\
+button#tool-camera-zoom.down \{\
+    background: url(http://www.pwigger.ch/AC/icons/active/zoom.png);\
+    outline-style: none;\
+    background-color: #ffc23a;\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 16px 16px;\
+\}\
+\
+#action-button img \{\
+    content: url(http://www.pwigger.ch/AC/icons/logo.png);\
+    height: 25px;\
+    width: 25px;\
+    background: none;\
+    background-position: center\
+    background-repeat: no-repeat;\
+    background-size: 16px 16px;\
+    margin-top: 5px;\
+\}\
+\
+button#action-button \{\
+    background: none;\
+    position: fixed;\
+    top: 0px;\
+    left: 0px;\
+    width: 60px;\
+    height: 40px;\
+\}\
+\
+#action-button:hover \{\
+    background: #ffc23a;\
+\}\
+\
+#action-button-menu \{\
+    position: fixed;\
+    left: 0px;\
+    top: 35px;\
+\}\
+\
+#language-button img \{\
+    display: none;\
+\}\
+\
+button#language-button \{\
+    background: #555555;\
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text x="20%" y="60%" font-size="14"     font-family="monospace" fill="white">Language</text></svg>');\
+    width: 120px;\
+    height: 40px;\
+    position: fixed;\
+    top: 0px;\
+    left: 60px;\
+\}\
+\
+button#language-button:hover \{\
+    background: #ffc23a;\
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text x="20%" y="60%" font-size="14"     font-family="monospace" fill="#555555">Language</text></svg>');\
+\}\
+\
+#language-drop-down \{\
+    position: fixed;\
+    left: 60px;\
+    top: 35px;\
+\}\
+\
+.language-button-menu-item \{\
+    color: white;\
+    font-family: 'Open Sans', sans-serif;\
+    font-size: 13px;\
+\}\
+\
+.language-button-menu-item:hover \{\
+    background: #ffc23a;\
+    color: #555555;\
+    font-family: 'Open Sans', sans-serif;\
+    font-size: 13px;\
+\}\
+\
+#tool-eraser img \{\
+    display: none;\
+\}\
+\
+button#tool-eraser \{\
+    background: url(http://www.pwigger.ch/AC/icons/erase.png);\
+    background-color: #52a3d0;\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 16px 16px;\
+    height: 30px;\
+    left: 20px;\
+    position: fixed;\
+    top: 180px;\
+    width: 30px;\
+    z-index: 5;\
+\}\
+\
+button#tool-eraser.down \{\
+    background: url(http://www.pwigger.ch/AC/icons/active/erase.png);\
+    background-color: #ffc23a;\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 16px 16px;\
+    outline-style: none;\
+\}\
+\
+button#tool-eraser:hover \{\
+    background: url(http://www.pwigger.ch/AC/icons/active/erase.png);\
+    background-color: #ffc23a;\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 16px 16px;\
+    outline-style: none;\
+\}\
+\
+#tool-fp img \{\
+    display: none;\
+\}\
+\
+button#tool-fp \{\
+    background: url(http://www.pwigger.ch/AC/icons/birdview.png);\
+    background-color: #52a3d0;\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 16px 12px;\
+    height: 30px;\
+    left: 20px;\
+    outline-style: none;\
+    position: fixed;\
+    top: 400px;\
+    width: 30px;\
+    z-index: 5;\
+\}\
+\
+button#tool-fp.down \{\
+    background: url(http://www.pwigger.ch/AC/icons/first-person-view.png);\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 16px 16px;\
+    outline-style: none;\
+\}\
+\
+button#tool-fp.down:hover \{\
+    background: url(http://www.pwigger.ch/AC/icons/active/birdview.png);\
+    background-color: #ffc23a;\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 16px 12px;\
+    outline-style: none;\
+\}\
+\
+button#tool-fp:hover \{\
+    background: url(http://www.pwigger.ch/AC/icons/active/first-person-view.png);\
+    background-color: #ffc23a;\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 16px 16px;\
+    outline-style: none;\
+\}\
+\
+#tool-hand img \{\
+    display: none;\
+\}\
+\
+button#tool-hand \{\
+    background: url(http://www.pwigger.ch/AC/icons/pointer.png);\
+    background-color: #52a3d0;\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 16px 16px;\
+    height: 30px;\
+    left: 20px;\
+    position: fixed;\
+    top: 220px;\
+    width: 30px;\
+    z-index: 5;\
+\}\
+\
+button#tool-hand.down \{\
+    background: url(http://www.pwigger.ch/AC/icons/active/pointer.png);\
+    background-color: #ffc23a;\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 16px 16px;\
+    outline-style: none;\
+\}\
+\
+button#tool-hand:hover \{\
+    background: url(http://www.pwigger.ch/AC/icons/active/pointer.png);\
+    background-color: #ffc23a;\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 16px 16px;\
+    outline-style: none;\
+\}\
+\
+#tool-multi img \{\
+    display: none;\
+\}\
+\
+button#tool-multi \{\
+    background: url(http://www.pwigger.ch/AC/icons/paint.png);\
+    background-color: #52a3d0;\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 16px 16px;\
+    height: 30px;\
+    left: 20px;\
+    position: fixed;\
+    top: 140px;\
+    width: 30px;\
+    z-index: 5;\
+\}\
+\
+button#tool-multi.down \{\
+    background: url(http://www.pwigger.ch/AC/icons/active/paint.png);\
+    background-color: #ffc23a;\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 16px 16px;\
+    outline-style: none;\
+\}\
+\
+button#tool-multi:hover \{\
+    background: url(http://www.pwigger.ch/AC/icons/active/paint.png);\
+    background-color: #ffc23a;\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 16px 16px;\
+    outline-style: none;\
+\}\
+\
+#tool-play img \{\
+    display: none;\
+\}\
+\
+button#tool-play \{\
+    background: url(http://www.pwigger.ch/AC/icons/play_white.png);\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    outline-style: none;\
+    background-size: 15px;\
+    position: fixed;\
+    /*top: 50px;\
+    left: calc(100%-355px);\
+    */\
+    top: 7px;\
+    left: 372px;\
+    z-index: 20;\
+\}\
+\
+button#tool-play:hover \{\
+    background: url(http://www.pwigger.ch/AC/icons/play.png);\
+    background-position: 50%;\
+    background-repeat: no-repeat;\
+    outline-style: none;\
+    background-size: 15px;\
+\}\
+\
+button#tool-play.down \{\
+    background: url(http://www.pwigger.ch/AC/icons/play.png);\
+    background-position: 50%;\
+    background-repeat: no-repeat;\
+    outline-style: none;\
+    background-size: 15px;\
+\}\
+\
+button#tool-play.down:hover \{\
+    background: url(http://www.pwigger.ch/AC/icons/play.png);\
+    background-position: 50%;\
+    background-repeat: no-repeat;\
+    outline-style: none;\
+    background-size: 15px;\
+\}\
+\
+#tool-step img \{\
+    display: none;\
+\}\
+\
+button#tool-step \{\
+    background: url(http://www.pwigger.ch/AC/icons/step.png);\
+    position: fixed;\
+    left: 430px;\
+    top: 7px;\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 15px;\
+    z-index: 20;\
+    outline-style: none;\
+\}\
+\
+button#tool-step.down \{\
+    background: url(http://www.pwigger.ch/AC/icons/active/step.png);\
+    background-color: #ffc23a;\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 15px;\
+    outline-style: none;\
+\}\
+\
+button#tool-step:hover \{\
+    background: url(http://www.pwigger.ch/AC/icons/step.png);\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 15px;\
+    outline-style: none;\
+\}\
+\
+#tool-stop img \{\
+    display: none;\
+\}\
+\
+button#tool-stop \{\
+    background: url(http://www.pwigger.ch/AC/icons/stop.png);\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 15px;\
+    outline-style: none;\
+    position: fixed;\
+    /*top: 60px;\
+        left: 315px;\
+    */\
+    top: 7px;\
+    left: 400px;\
+    z-index: 20;\
+\}\
+\
+button#tool-stop.down \{\
+    background: url(http://www.pwigger.ch/AC/icons/stop.png);\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 15px;\
+    outline-style: none;\
+\}\
+\
+button#tool-stop:hover \{\
+    background: url(http://www.pwigger.ch/AC/icons/stop.png);\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 15px;\
+    outline-style: none;\
+\}\
+\
+button#tool-stop.down:hover \{\
+    background: url(http://www.pwigger.ch/AC/icons/stop.png);\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 15px;\
+    outline-style: none;\
+\}\
+\
+/*Draggable window: Variables*/\
+\
+.draggable-window#attr-window \{\
+    position: fixed;\
+    top: 60px;\
+\}\
+\
+.draggable-window#prop-window \{\
+    position: fixed;\
+    top: 60px;\
+\}\
+\
+.draggable-window-content-div \{\
+    padding: 0px 0px 0px 10px  ;\
+\}\
+\
+.draggable-window-content-div>button \{\
+    background: none;\
+    border: solid white 1px;\
+    font-size: 13pt;\
+\}\
+\
+.draggable-window-content-div>button:hover \{\
+    color: black;\
+\}\
+\
+/*Editor 1 (3d inflate) dialogfield*/\
+\
+#icon-editor-table \{\
+    font-family: 'Open Sans', sans-serif;\
+    background-color: #555555;\
+    position: relative;\
+    top: 40px;\
+\}\
+\
+img.shape-editor-display \{\
+    border-style: solid;\
+    border-width: 2px;\
+    min-height: 23px;\
+    min-width: 23px;\
+\}\
+\
+/*buttons*/\
+\
+.icon-tool-with-translated-tooltip#pencil \{\
+    background: url(http://www.pwigger.ch/AC/icons/edit.png);\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 15px;\
+    height: 30px;\
+    width: 30px;\
+    background-color: #656565;\
+    position: fixed;\
+    top: 65px;\
+    border: #656565 solid 1px;\
+\}\
+\
+.icon-tool-with-translated-tooltip#pencil.down \{\
+    background-color: #555555;\
+\}\
+\
+.icon-tool-with-translated-tooltip#pencil:hover \{\
+    background: url(http://www.pwigger.ch/AC/icons/edit.png);\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 15px;\
+    height: 30px;\
+    width: 30px;\
+    background-color: #ffc23a;\
+\}\
+\
+.icon-tool-with-translated-tooltip#eraser \{\
+    background: url(http://www.pwigger.ch/AC/icons/erase.png);\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 15px;\
+    height: 30px;\
+    width: 30px;\
+    background-color: #656565;\
+    position: fixed;\
+    top: 100px;\
+    border: #656565 solid 1px;\
+\}\
+\
+.icon-tool-with-translated-tooltip#eraser:hover \{\
+    background: url(http://www.pwigger.ch/AC/icons/erase.png);\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 15px;\
+    height: 30px;\
+    width: 30px;\
+    background-color: #ffc23a;\
+\}\
+\
+.icon-tool-with-translated-tooltip#eraser.down \{\
+    background-color: #555555;\
+\}\
+\
+.icon-tool-with-translated-tooltip#eye \{\
+    background: url(http://www.pwigger.ch/AC/icons/eye.png);\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 15px;\
+    height: 30px;\
+    width: 30px;\
+    background-color: #656565;\
+    position: fixed;\
+    top: 135px;\
+    border: #656565 solid 1px;\
+\}\
+\
+.icon-tool-with-translated-tooltip#eye:hover \{\
+    background: url(http://www.pwigger.ch/AC/icons/eye.png);\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 15px;\
+    height: 30px;\
+    width: 30px;\
+    background-color: #ffc23a;\
+\}\
+\
+.icon-tool-with-translated-tooltip#eye.down \{\
+    background-color: #555555;\
+\}\
+\
+.icon-tool-with-translated-tooltip#bucket \{\
+    background: url(http://www.pwigger.ch/AC/icons/bucket.png);\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 15px;\
+    height: 30px;\
+    width: 30px;\
+    background-color: #656565;\
+    position: fixed;\
+    top: 170px;\
+    border: #656565 solid 1px;\
+\}\
+\
+.icon-tool-with-translated-tooltip#bucket:hover \{\
+    background: url(http://www.pwigger.ch/AC/icons/bucket.png);\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 15px;\
+    height: 30px;\
+    width: 30px;\
+    background-color: #ffc23a;\
+\}\
+\
+.icon-tool-with-translated-tooltip#bucket.down \{\
+    background-color: #555555;\
+\}\
+\
+.icon-tool-with-translated-tooltip#wand \{\
+    background: url(http://www.pwigger.ch/AC/icons/wand.png);\
+    background-color: #656565;\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 15px;\
+    height: 30px;\
+    width: 30px;\
+    position: fixed;\
+    top: 205px;\
+    border: #656565 solid 1px;\
+\}\
+\
+.icon-tool-with-translated-tooltip#wand:hover \{\
+    background: url(http://www.pwigger.ch/AC/icons/wand.png);\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 15px;\
+    height: 30px;\
+    width: 30px;\
+    background-color: #ffc23a;\
+\}\
+\
+.icon-tool-with-translated-tooltip#wand.down \{\
+    background-color: #555555;\
+\}\
+\
+.icon-tool-with-translated-tooltip#rect \{\
+    background: url(http://www.pwigger.ch/AC/icons/rect.png);\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 15px;\
+    height: 30px;\
+    width: 30px;\
+    background-color: #656565;\
+    position: fixed;\
+    top: 240px;\
+    border: #656565 solid 1px;\
+\}\
+\
+.icon-tool-with-translated-tooltip#rect:hover \{\
+    background: url(http://www.pwigger.ch/AC/icons/rect.png);\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 15px;\
+    height: 30px;\
+    width: 30px;\
+    background-color: #ffc23a;\
+\}\
+\
+.icon-tool-with-translated-tooltip#rect.down \{\
+    background-color: #555555;\
+\}\
+\
+.icon-tool-with-translated-tooltip#circ \{\
+    background: url(http://www.pwigger.ch/AC/icons/circ.png);\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 15px;\
+    height: 30px;\
+    width: 30px;\
+    background-color: #656565;\
+    position: fixed;\
+    top: 275px;\
+    border: #656565 solid 1px;\
+\}\
+\
+.icon-tool-with-translated-tooltip#circ:hover \{\
+    background: url(http://www.pwigger.ch/AC/icons/circ.png);\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 15px;\
+    height: 30px;\
+    width: 30px;\
+    background-color: #ffc23a;\
+\}\
+\
+.icon-tool-with-translated-tooltip#circ.down \{\
+    background-color: #555555;\
+\}\
+\
+.icon-tool-with-translated-tooltip#poly \{\
+    background: url(http://www.pwigger.ch/AC/icons/poly.png);\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 15px;\
+    height: 30px;\
+    width: 30px;\
+    background-color: #656565;\
+    position: fixed;\
+    top: 310px;\
+    border: #656565 solid 1px;\
+\}\
+\
+.icon-tool-with-translated-tooltip#poly:hover \{\
+    background: url(http://www.pwigger.ch/AC/icons/poly.png);\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 15px;\
+    height: 30px;\
+    width: 30px;\
+    background-color: #ffc23a;\
+\}\
+\
+.icon-tool-with-translated-tooltip#poly.down \{\
+    background-color: #555555;\
+\}\
+\
+#color-picker \{\
+    height: 35px;\
+    width: 35px;\
+    position: relative;\
+    top: 125px;\
+    left: -5px;\
+\}\
+\
+#color-picker-bg \{\
+    background: #555555;\
+\}\
+\
+#none \{\
+    background: url(http://www.pwigger.ch/AC/icons/none.png);\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 15px;\
+    height: 30px;\
+    width: 30px;\
+    background-color: #656565;\
+    position: relative;\
+    top: 135px;\
+    left: 45px;\
+    border: #656565 solid 1px;\
+\}\
+\
+#none:hover \{\
+    background: url(http://www.pwigger.ch/AC/icons/none.png);\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 15px;\
+    height: 30px;\
+    width: 30px;\
+    background-color: #ffc23a;\
+\}\
+\
+#none.down \{\
+    background-color: #555555;\
+\}\
+\
+#horz \{\
+    background: url(http://www.pwigger.ch/AC/icons/2ways_vertical.png);\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 15px;\
+    height: 30px;\
+    width: 30px;\
+    background-color: #656565;\
+    position: relative;\
+    top: 105px;\
+    left: 80px;\
+    border: #656565 solid 1px;\
+\}\
+\
+#horz:hover \{\
+    background: url(http://www.pwigger.ch/AC/icons/2ways_vertical.png);\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 15px;\
+    height: 30px;\
+    width: 30px;\
+    background-color: #ffc23a;\
+\}\
+\
+#horz.down \{\
+    background-color: #555555;\
+\}\
+\
+#vert \{\
+    background: url(http://www.pwigger.ch/AC/icons/2ways_horizontal.png);\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 15px;\
+    height: 30px;\
+    width: 30px;\
+    background-color: #656565;\
+    position: relative;\
+    top: 75px;\
+    left: 115px;\
+    border: #656565 solid 1px;\
+\}\
+\
+#vert:hover \{\
+    background: url(http://www.pwigger.ch/AC/icons/2ways_horizontal.png);\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 15px;\
+    height: 30px;\
+    width: 30px;\
+    background-color: #ffc23a;\
+\}\
+\
+#vert.down \{\
+    background-color: #555555;\
+\}\
+\
+#both \{\
+    background: url(http://www.pwigger.ch/AC/icons/4ways.png);\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 15px;\
+    height: 30px;\
+    width: 30px;\
+    background-color: #656565;\
+    position: relative;\
+    top: 45px;\
+    left: 150px;\
+    border: #656565 solid 1px;\
+\}\
+\
+#both:hover \{\
+    background: url(http://www.pwigger.ch/AC/icons/4ways.png);\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 15px;\
+    height: 30px;\
+    width: 30px;\
+    background-color: #ffc23a;\
+\}\
+\
+#both.down \{\
+    background-color: #555555;\
+\}\
+\
+.icon-view-tools \{\
+\}\
+\
+.icon-view-tools li[title="3D-Print"] img \{\
+    content: url(http://www.pwigger.ch/AC/icons/download.png);\
+\}\
+\
+.icon-view-tools li img[src*="pan-up"] \{\
+    content: url(http://www.pwigger.ch/AC/icons/download.png);\
+\}\
+\
+.icon-view-tools li img[src*="zoom-up"] \{\
+    content: url(http://www.pwigger.ch/AC/icons/download.png);\
+\}\
+\
+.icon-view-tools li img[src*="orbit-down"] \{\
+    content: url(http://www.pwigger.ch/AC/icons/download.png);\
+\}\
+\
+.icon-view-tools li img[src*="reset"] \{\
+    content: url(http://www.pwigger.ch/AC/icons/download.png);\
+\}\
+\
+#icon-cancel-button \{\
+    margin-right: 10px;\
+\}\
+\
+#clear-button \{\
+    margin-right: 5px;\
+\}\
+\
+/*Slider Speed*/\
+\
+#fast \{\
+    opacity: 0.4;\
+    position: fixed;\
+    top: 10px;\
+    right: 355px;\
+\}\
+\
+#slow \{\
+    opacity: 0.4;\
+    position: fixed;\
+    top: 10px;\
+    right: 550px;\
+\}\
+\
+/*Layers*/\
+\
+#grid \{\
+    left: 22px;\
+    position: absolute;\
+    top: 290px;\
+\}\
+\
+#layer-controls \{\
+    font-family: 'Open Sans', sans-serif;\
+    font-size: 13px;\
+    position: fixed;\
+    right: 370px;\
+    top: 60px;\
+    height: 350px;\
+\}\
+\
+#layer-div \{\
+    left: 10px;\
+    position: absolute;\
+    top: 10px;\
+\}\
+\
+#layer-grid-checkbox \{\
+    left: 4px;\
+    position: absolute;\
+    top: 293px;\
+\}\
+\
+#layer-height \{\
+\}\
+\
+#layer-height-div \{\
+    -moz-transform: rotate(270deg);\
+    -ms-transform: rotate(270deg);\
+    -o-transform: rotate(270deg);\
+    -webkit-transform: rotate(90deg);\
+    left: -14px;\
+    position: absolute;\
+    top: 170px;\
+    transform: rotate(270deg);\
+\}\
+\
+#layer-height-slider-div \{\
+    left: 8px;\
+    position: absolute;\
+    top: 70px;\
+\}\
+\
+#layer-minus-button \{\
+    box-shadow: none;\
+    font-size: 9pt;\
+    left: 0px;\
+    padding-top: 5px;\
+    position: absolute;\
+    top: 40px;\
+\}\
+\
+#layer-plus-button \{\
+    box-shadow: none;\
+    font-size: 9pt;\
+    left: 30px;\
+    padding-top: 5px;\
+    position: absolute;\
+    top: 40px;\
+\}\
+\
+#slider \{\
+    color: black;\
+\}\
+\
+#slider-group \{\
+    position: fixed;\
+    top: 15px;\
+    right: 370px;\
+\}\
+\
+#toolbar \{\
+    background: #555555;\
+    height: 40px;\
+\}\
+\
+#toolbar button \{\
+\}\
+\
+/*conversational programming*/\
+\
+#vat .condition.false \{\
+    border: white solid 2px;\
+\}\
+\
+#vat .condition.false span.instruction-name \{\
+    color: crimson;\
+\}\
+\
+#vat .condition.true \{\
+    border: white solid 2px;\
+\}\
+\
+#vat .condition.true span.instruction-name \{\
+    color: lightgreen;\
+\}\
+\
+.true~.block \{\
+    opacity: 0.3;\
+\}\
+\
+.block.false \{\
+    opacity: 0.3;\
+    background: red;\
+\}\
+\
+.block.false:hover \{\
+    opacity: 0.8;\
+\}\
+\
+.block.true \{\
+    background: rgba(144,238,144,0.7);\
+    margin-bottom: 30px;\
+    margin-top: 30px;\
+\}\
+\
+/*Actions - block*/\
+\
+.action .direction-picker-display \{\
+    border-color: #66b5b4;\
+    border-style: solid;\
+    border-width: 2px;\
+\}\
+\
+.action .editable-display \{\
+    border: 2px;\
+    border-color: #66b5b4;\
+    border-style: solid;\
+    color: #66b5b4;\
+    font-family: 'Open Sans', sans-serif;\
+    font-size: 13px;\
+    min-width: 23px;\
+    text-align: center;\
+\}\
+\
+.action .vat-flippy-closed \{\
+    color: white;\
+\}\
+\
+.action .vat-flippy-open \{\
+    color: white;\
+\}\
+\
+.action.instruction.instruction-context-menu \{\
+    background: #66b5b4;\
+    border-color: white;\
+    border-style: solid;\
+    border-width: 2px;\
+    color: white;\
+    font-family: 'Open Sans', sans-serif;\
+    font-size: 13px;\
+    margin-top: 10px;\
+    padding-bottom: 3px;\
+    padding-left: 10px;\
+    padding-right: 10px;\
+    padding-top: 3px;\
+    margin-right: 15px;\
+\}\
+\
+.action.instruction.instruction-context-menu.vat-selected \{\
+    background: #66b5b4;\
+    border: solid #ffc23a 2px;\
+    color: white;\
+\}\
+\
+.action.vat-selected .vat-flippy-closed \{\
+    color: #ffc23a;\
+\}\
+\
+.action.vat-selected .vat-flippy-open \{\
+    color: #ffc23a;\
+\}\
+\
+.attribute-row \{\
+    font-size: 18px;\
+\}\
+\
+.attribute-row td \{\
+    padding: 0 10px;\
+\}\
+\
+.attribute-window-table \{\
+    width: 190px;\
+\}\
+\
+.attributeRowNumber \{\
+    font-size: 18px;\
+    margin: 0;\
+\}\
+\
+.comment-textarea \{\
+    background: #555555;\
+    border: none;\
+    color: white;\
+    font-family: 'Open Sans', sans-serif;\
+    font-size: 13px;\
+    padding: 8px;\
+    \
+\}\
+\
+\
+.comments-box \{\
+    margin: 12px;\
+    overflow: hidden;\
+\}\
+\
+\
+textarea.comment-textarea \{\
+    margin: 0px 0px 10px 7px;\
+    width: 100%;\
+    outline-style: none;\
+\}\
+\
+textarea:focus\{background:#ffc23a;color:black;\}\
+/*\
+img[src*="missing"] \{\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    outline-style: none;\
+    border: solid white 2px;\
+\}*/\
+\
+\
+\
+/*Conditions block*/\
+\
+.condition .direction-picker-display \{\
+    border-color: #ae87ca;\
+    border-style: solid;\
+    border-width: 2px;\
+\}\
+\
+.condition .editable-display \{\
+    border-color: #ae87ca;\
+    border-style: solid;\
+    border-width: 2px;\
+    color: #ae87ca;\
+    font-family: 'Open Sans', sans-serif;\
+    font-size: 13px;\
+    min-width: 23px;\
+    text-align: center;\
+\}\
+\
+.condition .vat-flippy-closed \{\
+    color: white;\
+\}\
+\
+.condition .vat-flippy-open \{\
+    color: white;\
+\}\
+\
+.condition.instruction.instruction-context-menu \{\
+    background: #ae87ca;\
+    border-color: white;\
+    border-style: solid;\
+    border-width: 2px;\
+    color: white;\
+    font-family: 'Open Sans', sans-serif;\
+    font-size: 13px;\
+    margin-top: 10px;\
+    padding-bottom: 3px;\
+    padding-left: 10px;\
+    padding-right: 10px;\
+    margin-right: 15px;\
+    padding-top: 3px;\
+\}\
+\
+.condition.instruction.instruction-context-menu.vat-selected \{\
+    border-color: #ffc23a;\
+\}\
+\
+.condition.vat-selected .vat-flippy-closed \{\
+    color: #ffc23a;\
+\}\
+\
+.condition.vat-selected .vat-flippy-open \{\
+    color: #ffc23a;\
+\}\
+\
+.config \{\
+    background: none;\
+    margin-right: 5px;\
+    margin-top: 5px;\
+\}\
+\
+.draggable-flippy \{\
+    display: none;\
+\}\
+\
+.draggable-title-bar \{\
+    background: none;\
+\}\
+\
+#vat-code-header-resize-img \{\
+    cursor: ns-resize;\
+    position: fixed;\
+    width: 100%;\
+    right: 340px;\
+    z-index: 4;\
+    opacity: 0;\
+    height: 50px;\
+\}\
+\
+#vat-code-header-resize-img:hover \{\
+    content: url(http://www.pwigger.ch/AC/icons/menu.png);\
+    cursor: ns-resize;\
+    position: fixed;\
+    width: 100%;\
+    right: 340px;\
+    z-index: 4;\
+\}\
+\
+.draggable-window \{\
+    background: none;\
+    border: solid white 1px;\
+    color: white;\
+    font-family: 'VT323', monospace;\
+    font-size: 20px;\
+    padding: 10px;\
+    z-index: 0;\
+\}\
+\
+.flippy-closed \{\
+    margin: 5px 10px 0 20px;\
+    z-index: 50;\
+\}\
+\
+.flippy-open \{\
+    margin: 5px 10px 0 20px;\
+\}\
+\
+.group-end \{\
+    height: 20px;\
+\}\
+\
+.group-title \{\
+    color: white;\
+    font-family: 'VT323',monospace;\
+    font-size: 20px;\
+    padding-top: 60px;\
+    width: 190px;\
+\}\
+\
+.highlightedRow \{\
+    background: #51a3d0;\
+    width: 300px;\
+\}\
+\
+.icon-tool-with-translated-tooltip \{\
+\}\
+\
+.icon-tool-with-translated-tooltip.noUiSlider \{\
+    height: 200px;\
+\}\
+\
+.context-menu \{\
+    max-width: 250px;\
+\}\
+\
+.noUi-handle \{\
+    background-color: white;\
+    border: solid 1px white;\
+    box-shadow: none;\
+\}\
+\
+.noUi-handle:hover \{\
+    background-color: none;\
+    border: solid 1px #555555;\
+    box-shadow: none;\
+\}\
+\
+.noUi-target \{\
+    background-color: transparent;\
+    border: solid 1px white;\
+    box-shadow: none;\
+    margin: 0px 15px;\
+\}\
+\
+/*unclear*/\
+\
+.popup-list-item \{\
+    background: #555555;\
+    font-family: 'Open Sans', sans-serif;\
+    font-size: 13px;\
+\}\
+\
+.popup-list-item:hover \{\
+    background: #ffc23a;\
+    color: black;\
+\}\
+\
+.setting-button-menu-item \{\
+    background: #555555;\
+    color: white;\
+    font-family: 'Open Sans', sans-serif;\
+    font-size: 13px;\
+\}\
+\
+.setting-button-menu-item:hover \{\
+    background: #ffc23a;\
+    color: #555555;\
+    font-family: 'Open Sans', sans-serif;\
+    font-size: 13px;\
+\}\
+\
+.vat-proxy \{\
+    height: 40px;\
+    left: 40%;\
+    position: fixed;\
+    width: 40px;\
+    z-index: 20;\
+\}\
+\
+canvas \{\
+    height: 100%;\
+    width: 100%;\
+\}\
+\
+canvas.threed-view \{\
+    height: inherit;\
+    width: inherit;\
+\}\
+\
+/*stylebot cant handle this\
+@keyframes fade_in_conditions \{\
+  0% \{\
+    \
+    top: 0px;\
+    \
+    background: #656565;\
+  \}\
+  100% \{\
+    \
+    top: -350px;\
+    \
+    background-color: #ae87ca;\
+  \}\
+\}\
+\
+\
+\
+@keyframes fade_in_actions \{\
+  0% \{\
+    \
+    top: 0px;\
+    \
+    background: #66b5b4;\
+  \}\
+  100% \{\
+    \
+    top: -350px;\
+    \
+    background-color: #66b5b4;\
+  \}\
+\}\
+\
+*/\
+\
+div#threed-and-status \{\
+    width: 100%;\
+\}\
+\
+div#wrap \{\
+    overflow: visible;\
+\}\
+\
+div.group \{\
+    margin: 0 0px 0 0px;\
+\}\
+\
+div.method:last-child \{\
+    margin-bottom: 100px;\
+\}\
+\
+select.icon-tool-with-translated-tooltip.form-control \{\
+    color: white;\
+\}\
+\
+span.cancelbutton \{\
+    background: url(http://www.pwigger.ch/AC/icons/close.png);\
+    background-position: center;\
+    background-repeat: no-repeat;\
+    background-size: 10px 10px;\
+    left: 10px;\
+    outline-style: none;\
+    position: relative;\
+    top: -12px;\
+\}\
+\
+\
+\
+.instruction-context-menu \{\
+\}\
+\
+#one-true-value-editor \{\
+    position: absolute;\
+    z-index: 20000000;\
+    background: #555555;\
+    border: solid #555555 10px;\
+\}\
+\
+#twod-view \{\
+    height: 315px;\
+    width: 315px;\
+\}\
+\
+#QuickstartWindow \{\
+    background-color: #555555;\
+    z-index: 1000000;\
+\}\
+\
+li.annotation-item-header-item \{\
+    font-size: 15px;\
+\}\
+\
+.setting-button-menu-separator \{\
+    background-color: black;\
+    background: #555555;\
+    height: 10px;\
+    margin: 0px;\
+\}\
+\
+/*\
+.group-title.translated-gui-element \{\
+    color: white;\
+    font-family: 'VT323',monospace;\
+    font-size: 20px;\
+    padding-top: 60px;\
+    width: 190px;\
+\}*/\
+\
+}
