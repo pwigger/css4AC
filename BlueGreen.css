@@ -1,0 +1,562 @@
+:root {
+    background-color: #555555;
+}
+
+body {
+    background-color: white;
+    font-family: Century Gothic, Avenir, Arial;
+}
+
+#toolbar {
+    background: #EEEEEE;
+}
+
+#toolbar button {
+    border: 1px solid gray;
+    margin-right: 2px;
+}
+
+#toolbar button.down {
+    background: #AAAAAA;
+}
+
+#toolbar button:hover {
+    background: #ffc23a;
+}
+
+/*Gallery*/
+
+li:last-child li:last-child div.gallery_shapeitem:last-child {
+    margin-bottom: 100px;
+}
+
+.gallery_shapeitem {
+    margin-left: 20px;align-content
+}
+
+#vat-buttons {
+    background: #EEEEEE;
+    border-top: solid white 0px;
+    color: white;
+    height: 35px;
+}
+
+
+
+#vat-buttons button {
+    position: relative;
+    top: 5px;
+}
+
+#gallery-buttons button {
+    position: relative;
+    top: 5px;
+}
+
+#vat-table {
+    background: #888888;
+    padding-right: 20px;
+    border-right: 60px solid #555555;
+}
+
+#vat-conditions .condition {
+    float: right;
+    text-align: left;
+}
+
+#vat-table tr {
+    border-right: solid white 20px;
+}
+
+#vat-conditions-header {
+    background: none;
+    font-size: 0;
+}
+
+#vat-code-header-td {
+    background: none;
+    color: white;
+    font-size: 0;
+}
+
+#vat-code-header-agent-name {
+    position: relative;
+    left: 15px;
+    top: -5px;
+    font-size: 20px;
+}
+
+#vat-code-header-img {
+    height: 30px;
+    width: 30px;
+    top: 3px;
+    position: relative;
+}
+
+#vat-code-header-resize-img {
+    position: relative;
+    top: -5px;
+}
+
+#vat-actions-header {
+    background: none;
+    font-size: 0;
+}
+
+#vat-actions-scroll {
+    margin-right: 11px;
+}
+
+#vat-actions {
+    padding-right: 2px;
+}
+
+/*Rules*/
+
+.block {
+    margin: 0px 10px 0px 10px;
+    background: transparent;
+    border: none;
+    position: relative;
+}
+
+.trigger-name {
+    border: none;
+}
+
+.rule-box {
+    background: none;
+}
+
+.trigger-name .editable-display {
+    background: #666666;
+    border: none;
+    color: white;
+    font-size: 25px;
+    margin: 10px 0px 0px 10px;
+    padding: 0px 30px 0px 30px;
+    text-align: center;
+}
+
+.trigger-name .editable-display:hover {
+    background: #ffc23a;
+    color: #555555;
+}
+
+.trigger.name .editable-display {
+}
+
+.rule .if-then {
+    min-height: 60px;
+    background-color: #ae87ca;
+    border: none;
+    white-space: normal
+;
+}
+
+.then {
+    color: white;
+    font-size: 14pt;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    top: 20px;
+}
+
+.if {
+    color: white;
+    font-size: 14pt;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    top: 20px;
+}
+
+.if-then+.if-then {
+    background-color: #66b5b4;
+}
+
+.instruction {
+    border-radius: 10px;
+}
+
+.instruction-area {
+    padding: 1px 5px;
+    margin: 3px -20px;
+    min-width: 20px;
+    width: 80%;
+}
+
+.block.rule.instruction-context-menu.vat-selected {
+    border-color: #ffc23a;
+    border-style: solid;
+    border-width: 2px;
+}
+
+#vat .method.vat-selected {
+    border-color: #ffc23a;
+    border-style: solid;
+    border-width: 2px;
+}
+
+#vat .method {
+    border-color: #DDDDDD;
+    border-style: solid;
+    border-width: 2px;
+    margin-bottom: 50px;
+    background: #888888;
+}
+
+/*Scrollbar*/
+
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+::-webkit-scrollbar {
+    background: none;
+    height: 0px;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: none;
+    border: 1px white solid;
+    border-radius: 5px;
+    height: 40px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background: none;
+    border: transparent 1px solid;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+/*Actions - block*/
+
+.action .direction-picker-display {
+    border-color: #66b5b4;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.action .editable-display {
+    border: 2px;
+    border-color: #66b5b4;
+    border-style: solid;
+    color: #66b5b4;
+    font-size: 13px;
+    min-width: 23px;
+    text-align: center;
+}
+
+.action .vat-flippy-closed {
+    color: white;
+}
+
+.action .vat-flippy-open {
+    color: white;
+}
+
+.action.instruction.instruction-context-menu {
+    background: #66b5b4;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    color: white;
+    font-size: 13px;
+    margin-top: 10px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    margin-right: 15px;
+}
+
+.action.instruction.instruction-context-menu.vat-selected {
+    background: #66b5b4;
+    border: solid #ffc23a 2px;
+    color: white;
+}
+
+.action.vat-selected .vat-flippy-closed {
+    color: #ffc23a;
+}
+
+.action.vat-selected .vat-flippy-open {
+    color: #ffc23a;
+}
+
+.attribute-row {
+    font-size: 13px;
+}
+
+.comment-textarea {
+    background: #666666;
+    border: none;
+    color: white;
+    font-size: 13px;
+    padding-left: 8px;
+}
+
+.comments-box {
+    margin: 12px;
+}
+
+textarea.comment-textarea {
+    margin: 0px 0px 10px 7px;
+    width: 100%;
+    outline-style: none;
+}
+
+textarea:focus {
+    background: #ffc23a;
+    color: black;
+}
+
+/*Conditions block*/
+
+.condition .direction-picker-display {
+    border-color: #ae87ca;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.condition .editable-display {
+    border-color: #ae87ca;
+    border-style: solid;
+    border-width: 2px;
+    color: #ae87ca;
+    font-size: 13px;
+    min-width: 23px;
+    text-align: center;
+}
+
+.condition .vat-flippy-closed {
+    color: white;
+}
+
+.condition .vat-flippy-open {
+    color: white;
+}
+
+.condition.instruction.instruction-context-menu {
+    background: #ae87ca;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    color: white;
+    font-size: 13px;
+    margin-top: 10px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 15px;
+    padding-top: 3px;
+}
+
+.condition.instruction.instruction-context-menu.vat-selected {
+    border-color: #ffc23a;
+}
+
+.condition.vat-selected .vat-flippy-closed {
+    color: #ffc23a;
+}
+
+.condition.vat-selected .vat-flippy-open {
+    color: #ffc23a;
+}
+
+
+
+.draggable-flippy {
+    display: none;
+}
+
+.draggable-title-bar {
+    background: none;
+    font-size: 15px;
+}
+
+.draggable-window {
+    background: none;
+    border: solid white 1px;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    z-index: 0;
+}
+
+.flippy-closed {
+    margin: 0px 0px 0px 10px;
+    z-index: 50;
+}
+
+.flippy-open {
+    margin: 0px 0px 0px 10px;
+}
+
+.group-end {
+    padding-bottom: 90px;
+}
+
+.group-title {
+    color: white;
+    font-size: 20px;
+    width: 190px;
+}
+
+.highlightedRow {
+    background: #51a3d0;
+    width: 300px;
+}
+
+/*conversational programming*/
+
+#vat .condition.false {
+    border: white solid 2px;
+}
+
+#vat .condition.false span.instruction-name {
+    color: crimson;
+}
+
+#vat .condition.true {
+    border: white solid 2px;
+}
+
+#vat .condition.true span.instruction-name {
+    color: lightgreen;
+}
+
+.true~.block {
+    opacity: 0.3;
+}
+
+.block.false {
+    opacity: 0.35;
+    background: red;
+}
+
+#status-bar {
+    background: none;
+}
+
+.block.true {
+    background: rgba(144,238,144,0.7);
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+#container {
+    background: none;
+}
+
+#gallery-description {
+    background: none;
+    font-size: 20px;
+    padding: 20px 0px 10px 20px;
+    z-index: 4;
+}
+
+.gallery_agentitem {
+    margin: 10px 10px 10px 25px;
+}
+
+.gallery-shapelabel {
+    display: none;
+}
+
+button {
+    background: #EDEDED;
+    color: #656565;
+    outline: none;
+}
+
+button:hover {
+    background: #ffc23a;
+    color: #555555;
+}
+
+.noUi-handle {
+    background-color: #555555;
+    border: solid 1px white;
+    box-shadow: none;
+}
+
+.group .noUi-handle {
+    background-color: #EEEEEE;
+    border: solid 1px #555555;
+}
+
+.noUi-handle:hover {
+    background-color: #ffc23a;
+    box-shadow: none;
+}
+
+.noUi-target {
+    background-color: transparent;
+    border: solid 1px white;
+    box-shadow: none;
+}
+
+.group .noUi-target {
+    background-color: #EEEEEE;
+    border: solid 1px #555555;
+}
+
+.group {
+    margin-right: 12px;
+}
+
+#world-drop-down {
+    margin: 0px 6px;
+}
+
+#layer-height-slider-div .noUi-handle:hover {
+    background-color: #ffc23a;
+    border: solid 1px white;
+    box-shadow: none;
+}
+
+#layer-controls {
+    background: none;
+}
+
+#threed-and-status {
+    background: none;
+}
+
+input {
+    background: none;
+}
+
+ul:last-child .gallery_agentsublist {
+    margin-bottom: 20px;
+}
+
+li:last-child .gallery_agentitem {
+    margin-bottom: 40px;
+}
+
+li:last-child .gallery_agentsublist {
+    position: relative;
+    top: -40px;
+}
+
+#vat input{color:white;}
+
+.config {
+    position: absolute;
+    top: 3px;
+    left: -30px;
+    background: none;
+    border: none;
+    color: white;
+}
+
+.config:hover {
+    background: none;
+    color: #ffc23a;
+}
