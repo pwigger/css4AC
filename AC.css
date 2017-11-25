@@ -1,5 +1,15 @@
 /*moving boxes around*/
 
+/*
+#vat-conditions-scroll:hover {
+    position: fixed;
+    top: 0px;
+    height: 100%;
+    background: #ae87ca;
+    z-index: 6;
+    padding-top: 320px;
+}*/
+
 :root {
     background-color: #555555;
     font-family: 'Open Sans', sans-serif;
@@ -12,10 +22,18 @@
     height: 30px;
 }
 
+/*
 #non-gallery-container {
     position: fixed;
     left: 0px;
     top: 40px;
+    padding-left: 0px;
+}*/
+
+#non-gallery-container {
+    position: absolute;
+    left: 0px;
+    top: 0px;
     padding-left: 0px;
 }
 
@@ -49,15 +67,6 @@
     direction: rtl;
 }
 
-#vat-conditions-scroll:hover {
-    position: fixed;
-    top: 0px;
-    height: 100%;
-    background: #ae87ca;
-    z-index: 6;
-    padding-top: 320px;
-}
-
 #vat-conditions-header {
     background: none;
     font-size: 0;
@@ -74,6 +83,7 @@
     z-index: 6;
 }
 
+/*
 #vat-actions-scroll:hover {
     position: fixed;
     top: 0px;
@@ -81,7 +91,7 @@
     background: #66b5b4;
     z-index: 6;
     padding-top: 320px;
-}
+}*/
 
 #vat-code-td {
     position: static;
@@ -94,8 +104,21 @@
 
 #vat-code-header-td {
     background: none;
+    font-family: monospace;
+    color: white;
     font-size: 0;
     height: 50px;
+}
+
+#vat-code-header-agent-name {
+    position: relative;
+    top: -10px;
+    left: 15px;
+    font-size: 20px;
+}
+
+#vat-code-header-agent-name::after {
+    content: "-Regeln" ;
 }
 
 #vat-actions-header {
@@ -1281,12 +1304,10 @@ button#tool-stop.down:hover {
 
 .draggable-window#attr-window {
     position: fixed;
-    top: 60px;
 }
 
 .draggable-window#prop-window {
     position: fixed;
-    top: 60px;
 }
 
 .draggable-window-content-div {
@@ -1296,11 +1317,28 @@ button#tool-stop.down:hover {
 .draggable-window-content-div>button {
     background: none;
     border: solid white 1px;
-    font-size: 13pt;
+    font-size: 13px;
 }
 
 .draggable-window-content-div>button:hover {
     color: black;
+}
+
+#plot-window-table {
+    margin: 10px;
+    font-family: 'VT323',monospace;
+}
+
+#plot-window-close {
+    font-size: 0px;
+    background: url(http://www.pwigger.ch/agentcubes/icons/white/close.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    left: 0px;
+    outline-style: none;
+    position: relative;
+    top: px;
 }
 
 /*Editor 1 (3d inflate) dialogfield*/
@@ -1749,7 +1787,7 @@ img.shape-editor-display {
 
 .icon-view-tools li img[src*="orbit-down"] {
     background-color: #ffc23a;
-    content: url(http://www.pwigger.ch/agentcubes/icons/white/3drotation.png);
+    content: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/3drotation.png);
     height: 25px;
     width: 25px;
     cursor: pointer;
@@ -1839,9 +1877,10 @@ button#flatten-button:hover {
 }
 
 #surfaces-dropdown {
-    color: white;
-    background-color: #555555;
-    outline-style: none;
+    position: relative;
+    top: -15px;
+    left: 40px;
+    background: none;
 }
 
 #icon-cancel-button {
@@ -1853,7 +1892,7 @@ button#flatten-button:hover {
 }
 
 #pressure-td {
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/inflate.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/white/inflate.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1861,7 +1900,7 @@ button#flatten-button:hover {
 }
 
 #ceiling-td {
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/roof.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/white/roof.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 20px;
@@ -1869,19 +1908,28 @@ button#flatten-button:hover {
 }
 
 #noise-td {
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/noise.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/white/noise.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
     font-size: 0;
 }
 
-#smooth-label {
-    background: white;
+#smooth-label #translated-gui-element {
+    display: none;
+}
+
+.icon-editor-table-element :nth-child(3) .left {
+    background: url(http://www.pwigger.ch/agentcubes/icons/white/blur.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    height: 30px;
+    color: #555555;
 }
 
 #z-offset-td {
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/vert-dist.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/white/vert-dist.png);
     background-position: top;
     background-repeat: no-repeat;
     background-size: 30px;
@@ -1890,18 +1938,26 @@ button#flatten-button:hover {
 }
 
 #upright-td {
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/stand-up.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/white/stand-up.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 30px;
     font-size: 0;
+    position: relative;
+    top: 20px;
+}
+
+#upright-checkbox {
+    position: relative;
+    top: 20px;
 }
 
 #surfaces-td {
+    font-size: 0;
 }
 
 #distance-td {
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/hor-dist.png);
+    background: url(http://www.pwigger.ch/agentcubes/icons/white/hor-dist.png);
     background-position: top;
     background-repeat: no-repeat;
     background-size: 20px;
@@ -2104,7 +2160,7 @@ button#flatten-button:hover {
 }
 
 .attribute-row {
-    font-size: 18px;
+    font-size: 13px;
 }
 
 .attribute-row td {
@@ -2116,7 +2172,7 @@ button#flatten-button:hover {
 }
 
 .attributeRowNumber {
-    font-size: 18px;
+    font-size: 13px;
     margin: 0;
 }
 
@@ -2126,12 +2182,11 @@ button#flatten-button:hover {
     color: white;
     font-family: 'Open Sans', sans-serif;
     font-size: 13px;
-    padding: 8px;
+    padding-left: 8px;
 }
 
 .comments-box {
     margin: 12px;
-    overflow: hidden;
 }
 
 textarea.comment-textarea {
@@ -2220,6 +2275,7 @@ img[src*="missing"] {
 
 .draggable-title-bar {
     background: none;
+    font-size: 15px;
 }
 
 #vat-code-header-resize-img {
@@ -2422,14 +2478,30 @@ div.draggable-title-bar span.cancelbutton {
     top: -12px;
 }
 
-.instruction-context-menu {
-}
-
 #one-true-value-editor {
-    position: absolute;
     z-index: 20000000;
     background: #555555;
     border: solid #555555 10px;
+}
+
+#one-true-value-editor .cancelbutton {
+    background: url(http://www.pwigger.ch/agentcubes/icons/white/close.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    left: 5px;
+    outline-style: none;
+    position: relative;
+}
+
+#one-true-value-editor .acceptbutton {
+    background: url(http://www.pwigger.ch/agentcubes/icons/white/checkbox.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    left: 5px;
+    outline-style: none;
+    position: relative: ;
 }
 
 #twod-view {

@@ -54,7 +54,6 @@
     direction: rtl;
 }
 
-/*
 #vat-conditions-scroll:hover {
     position: fixed;
     top: 0px;
@@ -62,7 +61,7 @@
     background: #ae87ca;
     z-index: 4;
     padding-top: 320px;
-}*/
+}
 
 #vat-conditions-header {
     background: none;
@@ -78,7 +77,6 @@
     width: 280px;
 }
 
-/*
 #vat-actions-scroll:hover {
     position: fixed;
     top: 0px;
@@ -86,7 +84,7 @@
     background: #66b5b4;
     z-index: 4;
     padding-top: 320px;
-}*/
+}
 
 #vat-code-td {
     position: static;
@@ -760,7 +758,7 @@ button#tool-arrow:hover {
 }
 
 button#tool-camera-pan {
-    display: none;
+    display:none;
     background: url(http://www.pwigger.ch/agentcubes/icons/white/drag.png);
     background-color: #52a3d0;
     background-position: center;
@@ -1047,7 +1045,7 @@ button#tool-eraser:hover {
 }
 
 button#tool-fp {
-    display: none;
+    display:none;
     background: url(http://www.pwigger.ch/agentcubes/icons/white/birdview.png);
     background-color: #52a3d0;
     background-position: center;
