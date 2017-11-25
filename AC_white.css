@@ -1,0 +1,189 @@
+/*CSS Skin: Print (only black and white)*/
+
+/* body */
+
+body {
+    background-color: white;
+    font-family: Century Gothic, Avenir, Arial;
+}
+
+body p {
+    color: black;
+}
+
+/* Toolbars */
+
+#toolbar {
+    background: none;
+    border-bottom: 1px solid black;
+}
+
+#bottom-toolbar {
+    background: none;
+    background-color: white;
+    border-top: 1px solid black;
+}
+
+/* Gallery */
+
+#gallery-container {
+    color: black;
+    background: white;
+    border-right: 1px solid black;
+}
+
+#gallery-description {
+    background-color: white;
+    border-bottom: 1px solid black;
+}
+
+#gallery-title-span {
+    color: black;
+}
+
+/* Layer Menu */
+
+#layer-controls {
+    background-color: white;
+    color: black;
+}
+
+/* Conditions, Behaivors, Actions */
+
+#vat {
+    color: black;
+}
+
+#vat-conditions-header, #vat-actions-header {
+    background: none;
+    background-color: white;
+    border-top: 1px solid black;
+}
+
+#vat-code-header-td {
+    background: none;
+    background-color: white;
+    border-top: 1px solid black;
+}
+
+#vat-conditions, #vat-actions, #vat-code {
+    border-top: 1px solid black;
+}
+
+#vat-conditions, #vat-actions {
+    background: white;
+}
+
+#vat-conditions .group-title {
+    font-weight: bold;
+    color: black;
+}
+
+#vat-actions .group-title {
+    font-weight: bold;
+    color: black;
+}
+
+#vat-code, .method, .rule, .if-then {
+    background: white ;
+}
+
+#vat-code {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.vat-selected {
+    /*border: 1px solid black;*/
+}
+
+/* Code pane */
+
+.instruction-context-menu {
+    background: white;
+    border-top: 1px solid black;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.trigger-name {
+    font-weight: bold;
+    font-size: 1.5em;
+    border: 0px;
+    margin-left: 0px;
+}
+
+.method {
+    border-top: 1px solid black;
+    border-radius: 0px;
+    margin-bottom: 2em;
+}
+
+.if-then {
+    border: 0px solid black ;
+}
+
+.anc.if {
+    color: black;
+    font-weight: bold;
+}
+
+.anc.then {
+    color: black;
+    font-weight: bold;
+}
+
+/* Command box */
+
+.action {
+    background: white;
+}
+
+.condition {
+    background: white;
+}
+
+.instruction {
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.comment-textarea {
+    background-color: white;
+    border: 0px;
+    margin-left: 2px;
+}
+
+.direction-picker-display {
+    border: 0px solid black;
+}
+
+/* Backgrounds of popups */
+
+#one-true-value-editor {
+    background-color: white;
+}
+
+.method .trigger-name {
+    border: solid 1px white;
+}
+
+#vat .condition:hover:not(.disabled), #vat .condition.vat-selected:not(.disabled), #vat .condition:hover:not(.disabled), #vat .action:hover:not(.disabled), #vat .action.vat-selected:not(.disabled), #vat .action:hover:not(.disabled) {
+    background: #ddd;
+}
+
+#vat .condition.vat-selected:not(.disabled), #vat .condition:hover:not(.disabled) {
+    background: #ddd;
+}
+
+/* Conversational Programming */
+
+#vat .rule.false div.if-then {
+    background: #ffdddd ;
+}
+
+#vat .rule.true div.if-then {
+    background: #ddffdd ;
+}
+
