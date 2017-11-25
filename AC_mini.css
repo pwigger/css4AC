@@ -17,10 +17,12 @@
     height: 30px;
 }
 
+
+
 #non-gallery-container {
-    position: fixed;
+    position: absolute;
     left: 0px;
-    top: 40px;
+    top: 0px;
     padding-left: 0px;
 }
 
@@ -52,15 +54,6 @@
     padding-left: 0px;
     margin-left: 80px;
     direction: rtl;
-}
-
-#vat-conditions-scroll:hover {
-    position: fixed;
-    top: 0px;
-    height: 100%;
-    background: #ae87ca;
-    z-index: 4;
-    padding-top: 320px;
 }
 
 #vat-conditions-header {
@@ -97,8 +90,21 @@
 
 #vat-code-header-td {
     background: none;
+    font-family: monospace;
+    color: white;
     font-size: 0;
     height: 50px;
+}
+
+#vat-code-header-agent-name {
+    position: relative;
+    top: -10px;
+    left: 15px;
+    font-size: 20px;
+}
+
+#vat-code-header-agent-name::after {
+    content: "-Regeln" ;
 }
 
 #vat-actions-header {
@@ -148,11 +154,13 @@ tbody {
     font-size: 30px;
     padding: 30px;
     font-family: 'VT323',monospace;
+    z-index: 4;
 }
 
 #gallery-title-span {
     position: fixed;
     top: 140px;
+    z-index: 4;
 }
 
 .gallery-thumbnail {
@@ -249,7 +257,7 @@ span.gallery_name {
 }
 
 #gallery-minus-button {
-    background: url(http://www.pwigger.ch/agentcubes/icons/white/delete.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/delete.png);
     background-color: #555555;
     background-position: center;
     background-repeat: no-repeat;
@@ -262,7 +270,7 @@ span.gallery_name {
 }
 
 #gallery-minus-button:hover {
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/delete.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/delete.png);
     background-position: center;
     background-repeat: no-repeat;
     background-color: #ffc23a;
@@ -271,7 +279,7 @@ span.gallery_name {
 }
 
 #plus-shape-button {
-    display: none;
+    background: #555555;
 }
 
 #plus-shape-button:hover {
@@ -290,7 +298,7 @@ span.gallery_name {
     color: white;
     box-shadow: none;
     border: solid #555555 20px;
-    border-radius: 20px;
+    border-radius: 0px;
 }
 
 select.texture-select {
@@ -341,7 +349,7 @@ button#cancel-button {
 /*replace logo*/
 
 #asi-cube-link img {
-    content: url(http://www.pwigger.ch/agentcubes/icons/other/logo_full.png);
+    content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/other/logo_full.png);
     left: -230px;
     position: relative;
     top: 30px;
@@ -405,8 +413,13 @@ button#cancel-button {
 
 /*bar bottom*/
 
+#bottom-toolbar {
+    position: fixed;
+    bottom: 0px;
+}
+
 #vat-delete-button {
-    background: url(http://www.pwigger.ch/agentcubes/icons/white/delete.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/delete.png);
     background-color: #656565;
     background-position: center;
     background-repeat: no-repeat;
@@ -420,7 +433,7 @@ button#cancel-button {
 }
 
 #vat-delete-button:hover {
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/delete.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/delete.png);
     background-position: center;
     background-repeat: no-repeat;
     background-color: #ffc23a;
@@ -439,7 +452,7 @@ button#cancel-button {
 }
 
 #vat-duplicate-button {
-    background: url(http://www.pwigger.ch/agentcubes/icons/white/duplicate.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/duplicate.png);
     background-color: #656565;
     background-position: center;
     background-repeat: no-repeat;
@@ -453,7 +466,7 @@ button#cancel-button {
 }
 
 #vat-duplicate-button:hover {
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/duplicate.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/duplicate.png);
     background-position: center;
     background-repeat: no-repeat;
     background-color: #ffc23a;
@@ -517,7 +530,6 @@ button#cancel-button {
     min-height: 50px;
     background-color: #ae87ca;
     border: none;
-    white-space: pre-wrap;
 }
 
 .then {
@@ -642,7 +654,7 @@ button:hover {
 }
 
 button#world-save-button {
-    background: url(http://www.pwigger.ch/agentcubes/icons/white/save.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/save.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 14px;
@@ -656,7 +668,7 @@ button#world-save-button {
 }
 
 button#world-save-button:hover {
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/save.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/save.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 14px;
@@ -722,21 +734,21 @@ hr {
 }
 
 button#tool-arrow {
-    background: url(http://www.pwigger.ch/agentcubes/icons/white/cursor.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/cursor.png);
     background-color: #52a3d0;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 20px;
+    background-size: 20px 20px;
     height: 40px;
     left: 20px;
     position: fixed;
     top: 60px;
-    width: 40px;
+    width: 30px;
     z-index: 5;
 }
 
 button#tool-arrow.down {
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/cursor.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/cursor.png);
     background-color: #ffc23a;
     background-position: center;
     background-repeat: no-repeat;
@@ -745,7 +757,7 @@ button#tool-arrow.down {
 }
 
 button#tool-arrow:hover {
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/cursor.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/cursor.png);
     background-color: #ffc23a;
     background-position: center;
     background-repeat: no-repeat;
@@ -758,8 +770,7 @@ button#tool-arrow:hover {
 }
 
 button#tool-camera-pan {
-    display:none;
-    background: url(http://www.pwigger.ch/agentcubes/icons/white/drag.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/drag.png);
     background-color: #52a3d0;
     background-position: center;
     background-repeat: no-repeat;
@@ -773,7 +784,7 @@ button#tool-camera-pan {
 }
 
 button#tool-camera-pan.down {
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/drag_black.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/drag.png);
     background-color: #ffc23a;
     background-position: center;
     background-repeat: no-repeat;
@@ -782,7 +793,7 @@ button#tool-camera-pan.down {
 }
 
 button#tool-camera-pan:hover {
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/drag_black.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/drag.png);
     background-color: #ffc23a;
     background-position: center;
     background-repeat: no-repeat;
@@ -795,8 +806,7 @@ button#tool-camera-pan:hover {
 }
 
 button#tool-camera-rot {
-    display: none;
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/3drotation.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/3drotation.png);
     background-color: #52a3d0;
     background-position: center;
     background-repeat: no-repeat;
@@ -810,7 +820,7 @@ button#tool-camera-rot {
 }
 
 button#tool-camera-rot.down {
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/3drotation.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/3drotation.png);
     background-color: #ffc23a;
     background-position: center;
     background-repeat: no-repeat;
@@ -819,7 +829,7 @@ button#tool-camera-rot.down {
 }
 
 button#tool-camera-rot:hover {
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/3drotation.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/3drotation.png);
     background-color: #ffc23a;
     background-position: center;
     background-repeat: no-repeat;
@@ -832,7 +842,7 @@ button#tool-camera-rot:hover {
 }
 
 button#tool-pencil {
-    background: url(http://www.pwigger.ch/agentcubes/icons/white/edit.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/edit.png);
     background-color: #52a3d0;
     background-position: center;
     background-repeat: no-repeat;
@@ -846,7 +856,7 @@ button#tool-pencil {
 }
 
 button#tool-pencil.down {
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/edit.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/edit.png);
     background-color: #ffc23a;
     background-position: center;
     background-repeat: no-repeat;
@@ -855,7 +865,7 @@ button#tool-pencil.down {
 }
 
 button#tool-pencil:hover {
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/edit.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/edit.png);
     background-color: #ffc23a;
     background-position: center;
     background-repeat: no-repeat;
@@ -871,7 +881,7 @@ button#tool-reset {
     position: fixed;
     left: 460px;
     top: 7px;
-    background: url(http://www.pwigger.ch/agentcubes/icons/white/restart.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/restart.png);
     background-color: none;
     background-position: center;
     background-repeat: no-repeat;
@@ -881,7 +891,7 @@ button#tool-reset {
 
 /*
 button#tool-reset.down {
-background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/restart.png);
+background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/restart.png);
 background-color: #ffc23a;
 background-position: center;
 background-repeat: no-repeat;
@@ -890,7 +900,7 @@ outline-style: none;
 }
 
 button#tool-reset:hover {
-background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/restart.png);
+background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/restart.png);
 background-color: #ffc23a;
 background-position: center;
 background-repeat: no-repeat;
@@ -904,8 +914,7 @@ outline-style: none;
 }
 
 button#tool-camera-zoom {
-    display: none;
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/zoom.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/zoom.png);
     background-color: #52a3d0;
     background-position: center;
     background-repeat: no-repeat;
@@ -919,7 +928,7 @@ button#tool-camera-zoom {
 }
 
 button#tool-camera-zoom:hover {
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/zoom.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/zoom.png);
     background-color: #ffc23a;
     background-position: center;
     background-repeat: no-repeat;
@@ -928,7 +937,7 @@ button#tool-camera-zoom:hover {
 }
 
 button#tool-camera-zoom.down {
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/zoom.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/zoom.png);
     outline-style: none;
     background-color: #ffc23a;
     background-position: center;
@@ -937,7 +946,7 @@ button#tool-camera-zoom.down {
 }
 
 #action-button img {
-    content: url(http://www.pwigger.ch/agentcubes/icons/other/logo.png);
+    content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/other/logo.png);
     height: 25px;
     width: 25px;
     background: none;
@@ -1009,7 +1018,7 @@ button#language-button:hover {
 }
 
 button#tool-eraser {
-    background: url(http://www.pwigger.ch/agentcubes/icons/white/erase.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/erase.png);
     background-color: #52a3d0;
     background-position: center;
     background-repeat: no-repeat;
@@ -1023,7 +1032,7 @@ button#tool-eraser {
 }
 
 button#tool-eraser.down {
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/erase.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/erase.png);
     background-color: #ffc23a;
     background-position: center;
     background-repeat: no-repeat;
@@ -1032,7 +1041,7 @@ button#tool-eraser.down {
 }
 
 button#tool-eraser:hover {
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/erase.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/erase.png);
     background-color: #ffc23a;
     background-position: center;
     background-repeat: no-repeat;
@@ -1045,8 +1054,7 @@ button#tool-eraser:hover {
 }
 
 button#tool-fp {
-    display:none;
-    background: url(http://www.pwigger.ch/agentcubes/icons/white/birdview.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/birdview.png);
     background-color: #52a3d0;
     background-position: center;
     background-repeat: no-repeat;
@@ -1061,7 +1069,8 @@ button#tool-fp {
 }
 
 button#tool-fp.down {
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/first-person-view.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/first-person-view.png);
+    background-color: #52a3d0;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 16px 16px;
@@ -1069,7 +1078,7 @@ button#tool-fp.down {
 }
 
 button#tool-fp.down:hover {
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/birdview.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/birdview.png);
     background-color: #ffc23a;
     background-position: center;
     background-repeat: no-repeat;
@@ -1078,7 +1087,7 @@ button#tool-fp.down:hover {
 }
 
 button#tool-fp:hover {
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/first-person-view.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/first-person-view.png);
     background-color: #ffc23a;
     background-position: center;
     background-repeat: no-repeat;
@@ -1086,12 +1095,32 @@ button#tool-fp:hover {
     outline-style: none;
 }
 
+
+button#tool-shadows {
+    
+    background: none;
+    background-color: #52a3d0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    height: 30px;
+    left: 20px;
+    outline-style: none;
+    position: fixed;
+    top: 440px;
+    width: 30px;
+    z-index: 5;
+}
+button#tool-shadows:hover{    background-color: #ffc23a;}
+
+
+
 #tool-hand img {
     display: none;
 }
 
 button#tool-hand {
-    background: url(http://www.pwigger.ch/agentcubes/icons/white/pointer.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/pointer.png);
     background-color: #52a3d0;
     background-position: center;
     background-repeat: no-repeat;
@@ -1105,7 +1134,7 @@ button#tool-hand {
 }
 
 button#tool-hand.down {
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/pointer.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/pointer.png);
     background-color: #ffc23a;
     background-position: center;
     background-repeat: no-repeat;
@@ -1114,7 +1143,7 @@ button#tool-hand.down {
 }
 
 button#tool-hand:hover {
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/pointer.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/pointer.png);
     background-color: #ffc23a;
     background-position: center;
     background-repeat: no-repeat;
@@ -1127,7 +1156,7 @@ button#tool-hand:hover {
 }
 
 button#tool-multi {
-    background: url(http://www.pwigger.ch/agentcubes/icons/white/paint.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/paint.png);
     background-color: #52a3d0;
     background-position: center;
     background-repeat: no-repeat;
@@ -1141,7 +1170,7 @@ button#tool-multi {
 }
 
 button#tool-multi.down {
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/paint.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/paint.png);
     background-color: #ffc23a;
     background-position: center;
     background-repeat: no-repeat;
@@ -1150,7 +1179,7 @@ button#tool-multi.down {
 }
 
 button#tool-multi:hover {
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/paint.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/paint.png);
     background-color: #ffc23a;
     background-position: center;
     background-repeat: no-repeat;
@@ -1163,7 +1192,7 @@ button#tool-multi:hover {
 }
 
 button#tool-play {
-    background: url(http://www.pwigger.ch/agentcubes/icons/white/play.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/play.png);
     background-position: center;
     background-repeat: no-repeat;
     outline-style: none;
@@ -1178,7 +1207,7 @@ left: calc(100%-355px);
 }
 
 button#tool-play:hover {
-    background: url(http://www.pwigger.ch/agentcubes/icons/white/play.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/color/play.png);
     background-position: 50%;
     background-repeat: no-repeat;
     outline-style: none;
@@ -1186,15 +1215,7 @@ button#tool-play:hover {
 }
 
 button#tool-play.down {
-    background: url(http://www.pwigger.ch/agentcubes/icons/white/play.png);
-    background-position: 50%;
-    background-repeat: no-repeat;
-    outline-style: none;
-    background-size: 15px;
-}
-
-button#tool-play.down:hover {
-    background: url(http://www.pwigger.ch/agentcubes/icons/white/play.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/color/play.png);
     background-position: 50%;
     background-repeat: no-repeat;
     outline-style: none;
@@ -1206,19 +1227,19 @@ button#tool-play.down:hover {
 }
 
 button#tool-step {
-    background: url(http://www.pwigger.ch/agentcubes/icons/white/step.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/step.png);
     position: fixed;
     left: 430px;
     top: 7px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
-    z-index: 20;
+    z-index: 5;
     outline-style: none;
 }
 
 button#tool-step.down {
-    background: url(http://www.pwigger.ch/agentcubes/icons/white/step.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/color/step.png);
     background-color: #ffc23a;
     background-position: center;
     background-repeat: no-repeat;
@@ -1227,7 +1248,7 @@ button#tool-step.down {
 }
 
 button#tool-step:hover {
-    background: url(http://www.pwigger.ch/agentcubes/icons/white/step.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/color/step.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1239,7 +1260,7 @@ button#tool-step:hover {
 }
 
 button#tool-stop {
-    background: url(http://www.pwigger.ch/agentcubes/icons/white/stop.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/stop.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1254,7 +1275,7 @@ left: 315px;
 }
 
 button#tool-stop.down {
-    background: url(http://www.pwigger.ch/agentcubes/icons/white/stop.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/color/stop.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1262,15 +1283,7 @@ button#tool-stop.down {
 }
 
 button#tool-stop:hover {
-    background: url(http://www.pwigger.ch/agentcubes/icons/white/stop.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 15px;
-    outline-style: none;
-}
-
-button#tool-stop.down:hover {
-    background: url(http://www.pwigger.ch/agentcubes/icons/white/stop.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/color/stop.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1296,11 +1309,28 @@ button#tool-stop.down:hover {
 .draggable-window-content-div>button {
     background: none;
     border: solid white 1px;
-    font-size: 13pt;
+    font-size: 13px;
 }
 
 .draggable-window-content-div>button:hover {
     color: black;
+}
+
+#plot-window-table {
+    margin: 10px;
+    font-family: 'VT323',monospace;
+}
+
+#plot-window-close {
+    font-size: 0px;
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/close.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    left: 0px;
+    outline-style: none;
+    position: relative;
+    top: px;
 }
 
 /*Editor 1 (3d inflate) dialogfield*/
@@ -1322,7 +1352,7 @@ img.shape-editor-display {
 /*buttons*/
 
 .icon-tool-with-translated-tooltip#pencil {
-    background: url(http://www.pwigger.ch/agentcubes/icons/white/edit.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/edit.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1339,7 +1369,7 @@ img.shape-editor-display {
 }
 
 .icon-tool-with-translated-tooltip#pencil:hover {
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/edit.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/edit.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1349,7 +1379,7 @@ img.shape-editor-display {
 }
 
 .icon-tool-with-translated-tooltip#eraser {
-    background: url(http://www.pwigger.ch/agentcubes/icons/white/erase.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/erase.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1362,7 +1392,7 @@ img.shape-editor-display {
 }
 
 .icon-tool-with-translated-tooltip#eraser:hover {
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/erase.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/erase.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1376,7 +1406,7 @@ img.shape-editor-display {
 }
 
 .icon-tool-with-translated-tooltip#eye {
-    background: url(http://www.pwigger.ch/agentcubes/icons/white/eye.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/eye.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1389,7 +1419,7 @@ img.shape-editor-display {
 }
 
 .icon-tool-with-translated-tooltip#eye:hover {
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/eye.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/eye.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1403,7 +1433,7 @@ img.shape-editor-display {
 }
 
 .icon-tool-with-translated-tooltip#bucket {
-    background: url(http://www.pwigger.ch/agentcubes/icons/white/bucket.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/bucket.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1416,7 +1446,7 @@ img.shape-editor-display {
 }
 
 .icon-tool-with-translated-tooltip#bucket:hover {
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/bucket.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/bucket.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1430,7 +1460,7 @@ img.shape-editor-display {
 }
 
 .icon-tool-with-translated-tooltip#wand {
-    background: url(http://www.pwigger.ch/agentcubes/icons/white/wand.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/wand.png);
     background-color: #656565;
     background-position: center;
     background-repeat: no-repeat;
@@ -1443,7 +1473,7 @@ img.shape-editor-display {
 }
 
 .icon-tool-with-translated-tooltip#wand:hover {
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/wand.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/wand.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1457,7 +1487,7 @@ img.shape-editor-display {
 }
 
 .icon-tool-with-translated-tooltip#rect {
-    background: url(http://www.pwigger.ch/agentcubes/icons/white/rect.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/rect.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1470,7 +1500,7 @@ img.shape-editor-display {
 }
 
 .icon-tool-with-translated-tooltip#rect:hover {
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/rect.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/rect.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1484,7 +1514,7 @@ img.shape-editor-display {
 }
 
 .icon-tool-with-translated-tooltip#circ {
-    background: url(http://www.pwigger.ch/agentcubes/icons/white/circ.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/circ.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1497,7 +1527,7 @@ img.shape-editor-display {
 }
 
 .icon-tool-with-translated-tooltip#circ:hover {
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/circ.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/circ.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1511,7 +1541,7 @@ img.shape-editor-display {
 }
 
 .icon-tool-with-translated-tooltip#poly {
-    background: url(http://www.pwigger.ch/agentcubes/icons/white/poly.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/poly.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1524,7 +1554,7 @@ img.shape-editor-display {
 }
 
 .icon-tool-with-translated-tooltip#poly:hover {
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/poly.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/poly.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1550,7 +1580,7 @@ img.shape-editor-display {
 }
 
 #none {
-    background: url(http://www.pwigger.ch/agentcubes/icons/white/none.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/none.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1564,7 +1594,7 @@ img.shape-editor-display {
 }
 
 #none:hover {
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/none.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/none.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1578,7 +1608,7 @@ img.shape-editor-display {
 }
 
 #horz {
-    background: url(http://www.pwigger.ch/agentcubes/icons/white/2ways_vertical.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/2ways_vertical.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1592,7 +1622,7 @@ img.shape-editor-display {
 }
 
 #horz:hover {
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/2ways_vertical.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/2ways_vertical.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1606,7 +1636,7 @@ img.shape-editor-display {
 }
 
 #vert {
-    background: url(http://www.pwigger.ch/agentcubes/icons/white/2ways_horizontal.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/2ways_horizontal.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1620,7 +1650,7 @@ img.shape-editor-display {
 }
 
 #vert:hover {
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/2ways_horizontal.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/2ways_horizontal.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1634,7 +1664,7 @@ img.shape-editor-display {
 }
 
 #both {
-    background: url(http://www.pwigger.ch/agentcubes/icons/white/4ways.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/4ways.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1648,7 +1678,7 @@ img.shape-editor-display {
 }
 
 #both:hover {
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/4ways.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/4ways.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1663,7 +1693,7 @@ img.shape-editor-display {
 
 .icon-view-tools li[title="3D-Print"] img {
     background-color: #656565;
-    content: url(http://www.pwigger.ch/agentcubes/icons/white/download.png);
+    content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/download.png);
     height: 25px;
     width: 25px;
     cursor: pointer;
@@ -1674,7 +1704,7 @@ img.shape-editor-display {
 
 .icon-view-tools li[title="3D-Print"] img:hover {
     background-color: #ffc23a;
-    content: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/download.png);
+    content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/download.png);
     height: 25px;
     width: 25px;
     cursor: pointer;
@@ -1683,7 +1713,7 @@ img.shape-editor-display {
 
 .icon-view-tools li img[src*="pan-down"] {
     background-color: #ffc23a;
-    content: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/drag.png);
+    content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/drag.png);
     height: 25px;
     width: 25px;
     cursor: pointer;
@@ -1694,7 +1724,7 @@ img.shape-editor-display {
 
 .icon-view-tools li img[src*="pan-up"] {
     background-color: #656565;
-    content: url(http://www.pwigger.ch/agentcubes/icons/white/drag.png);
+    content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/drag.png);
     height: 25px;
     width: 25px;
     cursor: pointer;
@@ -1705,7 +1735,7 @@ img.shape-editor-display {
 
 .icon-view-tools li img[src*="pan-up"]:hover {
     background-color: #ffc23a;
-    content: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/drag.png);
+    content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/drag.png);
     height: 25px;
     width: 25px;
     cursor: pointer;
@@ -1716,7 +1746,7 @@ img.shape-editor-display {
 
 .icon-view-tools li img[src*="zoom-up"] {
     background-color: #656565;
-    content: url(http://www.pwigger.ch/agentcubes/icons/white/zoom.png);
+    content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/zoom.png);
     height: 25px;
     width: 25px;
     cursor: pointer;
@@ -1727,7 +1757,7 @@ img.shape-editor-display {
 
 .icon-view-tools li img[src*="zoom-down"] {
     background-color: #ffc23a;
-    content: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/zoom.png);
+    content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/zoom.png);
     height: 25px;
     width: 25px;
     cursor: pointer;
@@ -1738,7 +1768,7 @@ img.shape-editor-display {
 
 .icon-view-tools li img[src*="zoom-up"]:hover {
     background-color: #ffc23a;
-    content: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/zoom.png);
+    content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/zoom.png);
     height: 25px;
     width: 25px;
     cursor: pointer;
@@ -1749,7 +1779,7 @@ img.shape-editor-display {
 
 .icon-view-tools li img[src*="orbit-down"] {
     background-color: #ffc23a;
-    content: url(http://www.pwigger.ch/agentcubes/icons/white/3drotation.png);
+    content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/3drotation.png);
     height: 25px;
     width: 25px;
     cursor: pointer;
@@ -1760,7 +1790,7 @@ img.shape-editor-display {
 
 .icon-view-tools li img[src*="orbit-up"] {
     background-color: #656565;
-    content: url(http://www.pwigger.ch/agentcubes/icons/white/3drotation.png);
+    content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/3drotation.png);
     height: 25px;
     width: 25px;
     cursor: pointer;
@@ -1771,7 +1801,7 @@ img.shape-editor-display {
 
 .icon-view-tools li img[src*="orbit-up"]:hover {
     background-color: #ffc23a;
-    content: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/3drotation.png);
+    content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/3drotation.png);
     height: 25px;
     width: 25px;
     cursor: pointer;
@@ -1782,7 +1812,7 @@ img.shape-editor-display {
 
 .icon-view-tools li img[src*="reset"] {
     background-color: #656565;
-    content: url(http://www.pwigger.ch/agentcubes/icons//white/restart.png);
+    content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons//white/restart.png);
     height: 25px;
     width: 25px;
     cursor: pointer;
@@ -1793,7 +1823,7 @@ img.shape-editor-display {
 
 .icon-view-tools li img[src*="reset"]:hover {
     background-color: #ffc23a;
-    content: url(http://www.pwigger.ch/agentcubes/icons//darkgrey/restart.png);
+    content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons//darkgrey/restart.png);
     height: 25px;
     width: 25px;
     cursor: pointer;
@@ -1839,9 +1869,10 @@ button#flatten-button:hover {
 }
 
 #surfaces-dropdown {
-    color: white;
-    background-color: #555555;
-    outline-style: none;
+    position: relative;
+    top: -15px;
+    left: 40px;
+    background: none;
 }
 
 #icon-cancel-button {
@@ -1853,7 +1884,7 @@ button#flatten-button:hover {
 }
 
 #pressure-td {
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/inflate.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/inflate.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -1861,7 +1892,7 @@ button#flatten-button:hover {
 }
 
 #ceiling-td {
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/roof.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/roof.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 20px;
@@ -1869,19 +1900,28 @@ button#flatten-button:hover {
 }
 
 #noise-td {
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/noise.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/noise.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
     font-size: 0;
 }
 
-#smooth-label {
-    background: white;
+#smooth-label #translated-gui-element {
+    display: none;
+}
+
+.icon-editor-table-element :nth-child(3) .left {
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/blur.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    height: 30px;
+    color: #555555;
 }
 
 #z-offset-td {
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/vert-dist.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/vert-dist.png);
     background-position: top;
     background-repeat: no-repeat;
     background-size: 30px;
@@ -1890,7 +1930,7 @@ button#flatten-button:hover {
 }
 
 #upright-td {
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/stand-up.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/stand-up.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 30px;
@@ -1901,7 +1941,7 @@ button#flatten-button:hover {
 }
 
 #distance-td {
-    background: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/hor-dist.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/hor-dist.png);
     background-position: top;
     background-repeat: no-repeat;
     background-size: 20px;
@@ -2038,7 +2078,7 @@ button#flatten-button:hover {
 }
 
 .block.false:hover {
-    opacity: 0.8;
+    opacity: 0.4;
 }
 
 .block.true {
@@ -2088,6 +2128,7 @@ button#flatten-button:hover {
     padding-right: 10px;
     padding-top: 3px;
     margin-right: 15px;
+    min-height: 40px;
 }
 
 .action.instruction.instruction-context-menu.vat-selected {
@@ -2234,7 +2275,7 @@ img[src*="missing"] {
 }
 
 #vat-code-header-resize-img:hover {
-    content: url(http://www.pwigger.ch/agentcubes/icons/darkgrey/menu.png);
+    content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/menu.png);
     cursor: ns-resize;
     position: fixed;
     width: 100%;
@@ -2412,7 +2453,7 @@ select.icon-tool-with-translated-tooltip.form-control {
 }
 
 div.draggable-title-bar span.cancelbutton {
-    background: url(http://www.pwigger.ch/agentcubes/icons/white/close.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/close.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 10px 10px;
@@ -2430,6 +2471,26 @@ div.draggable-title-bar span.cancelbutton {
     z-index: 20000000;
     background: #555555;
     border: solid #555555 10px;
+}
+
+#one-true-value-editor .cancelbutton {
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/close.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    left: 5px;
+    outline-style: none;
+    position: relative;
+}
+
+#one-true-value-editor .acceptbutton {
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/checkbox.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    left: 5px;
+    outline-style: none;
+    position: relative;
 }
 
 #twod-view {

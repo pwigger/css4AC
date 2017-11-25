@@ -1,18 +1,13 @@
 /*moving boxes around*/
 
-/*
-#vat-conditions-scroll:hover {
-    position: fixed;
-    top: 0px;
-    height: 100%;
-    background: #ae87ca;
-    z-index: 6;
-    padding-top: 320px;
-}*/
-
 :root {
     background-color: #555555;
     font-family: 'Open Sans', sans-serif;
+}
+
+#bottom-toolbar {
+    position: fixed;
+    bottom: 0px;
 }
 
 #vat-buttons {
@@ -2506,7 +2501,7 @@ div.draggable-title-bar span.cancelbutton {
     background-size: 10px 10px;
     left: 5px;
     outline-style: none;
-    position: relative: ;
+    position: relative;
 }
 
 #twod-view {
