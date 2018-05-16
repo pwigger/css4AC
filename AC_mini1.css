@@ -2923,3 +2923,153 @@ li.annotation-item-header-item {
     font-size: 20px;
 }
 
+/*hide advanced blocks and camera movement for AC kids*/
+
+#attributes-and-properties-action-group {
+    display: none;
+}
+
+#attributes-and-properties-action-group+div {
+    display: none;
+}
+
+#attributes-and-properties-action-group+div+div {
+    display: none;
+}
+
+#attributes-and-properties-action-group+div+div+div {
+    display: none;
+}
+
+#visualization-action-group {
+    display: none;
+}
+
+#visualization-action-group+div {
+    display: none;
+}
+
+#visualization-action-group+div+div {
+    display: none;
+}
+
+#visualization-action-group+div+div+div {
+    display: none;
+}
+
+#visualization-action-group+div+div+div+div {
+    display: none;
+}
+
+#visualization-action-group+div+div+div+div+div {
+    display: none;
+}
+
+#camera-control-action-group {
+    display: none;
+}
+
+#camera-control-action-group+div {
+    display: none;
+}
+
+#camera-control-action-group+div+div {
+    display: none;
+}
+
+#attributes-condition-group {
+    display: none;
+}
+
+#attributes-condition-group+div {
+    display: none;
+}
+
+#attributes-condition-group+div+div {
+    display: none;
+}
+
+#camera-control-condition-group {
+    display: none;
+}
+
+#camera-control-condition-group+div {
+    display: none;
+}
+
+#basic-conditions-condition-group+div+div+div+div {
+    display: none;
+}
+
+#basic-conditions-condition-group+div+div {
+    display: none;
+}
+
+#basic-conditions-condition-group+div+div+div+div+div+div+div+div {
+    display: none;
+}
+
+#basic-conditions-condition-group+div+div+div+div+div+div+div+div+div+div {
+    display: none;
+}
+
+#basic-actions-action-group+div+div+div+div+div {
+    display: none;
+}
+
+#basic-actions-action-group+div+div+div+div+div+div {
+    display: none;
+}
+
+#basic-actions-action-group+div+div+div+div+div+div+div+div+div+div+div {
+    display: none;
+}
+
+#messages-action-group+div+div {
+    display: none;
+}
+
+#sound-and-speech-action-group+div+div {
+    display: none;
+}
+
+#sound-and-speech-action-group+div+div+div {
+    display: none;
+}
+
+#sound-and-speech-action-group+div+div+div+div {
+    display: none;
+}
+
+#simulation-control-action-group+div {
+    display: none;
+}
+
+#simulation-control-action-group+div+div {
+    display: none;
+}
+
+#simulation-control-action-group+div+div+div {
+    display: none;
+}
+
+#simulation-control-action-group {
+    display: none;
+}
+
+#simulation-control-action-group+div+div+div+div {
+    display: none;
+}
+
+.vat-flippy-closed {
+    display: none;
+}
+#tool-camera-rot{display:none;}
+#tool-camera-pan{display:none;}
+#tool-camera-zoom{display:none;}
+#tool-fp{display:none;}
+#tool-shadows{display:none;}
+
+
+
+
