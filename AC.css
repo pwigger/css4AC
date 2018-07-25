@@ -1,136 +1,103 @@
-#one-true-value-editor>div>span:first-child{position:absolute; top:-8px; left:0px; font-size:11px; color:#ffc23a; }
+
+#color-picker-bg #color-picker{position:fixed ;top:360px;width:30px;height:30px;
+}
+
+#icon-editor-table button{
+  color:white;
+  background-color:#555;
+  border:solid white 1px;
+}
+#icon-editor-table button:hover{
+  color:white;
+  background-color:#ffc23a;
+  border:solid #ffc23a 1px;
+}
+#icon-editor-table button:hover{
+  color:black;
+}
+
+#one-true-value-editor > div > span:first-child {
+    position: absolute;
+    top: -8px;
+    left: 0px;
+    font-size: 11px;
+    color: #ffc23a
+}
 
 /*#one-true-value-editor:before{position:fixed!important;left:0px; top:0px !important; background:white;content:"Helo";z-index:-1000000;width:100%; height:100%;}
 */
-#one-true-value-editor{z-index:1000000!important; background:#4d4d4d!important;border:#4d4d4d solid 10px!important;box-shadow:none;    font-family: 'Open Sans', sans-serif!important;
-
-  
-}
-#one-true-value-editor td{padding-left:10px;}
-
-
-/*Elements*/
-
-input {
-    background-color: white;
-    color: black;
-    margin: 0px 0px 0px 0px;
-    outline-style: none;
+#one-true-value-editor {
+    z-index: 1000000 !important;
+    background: #4d4d4d !important;
+    border: #4d4d4d solid 10px !important;
+    box-shadow: none;
+    font-family: 'Open Sans', sans-serif !important
 }
 
-input.attributeRowNumber {
-    background: none;
-    border: none;
-    color: white;
-    margin-left: 20px;
-    width: 40px;
-}
-input{background-color:#4D4d4d!important;
-  color:white!important;
-  font-size:20px;
-  padding-left:10px;
-  font-family:monospace;
-  border:none; 
-  border-bottom:solid #ffc23a 1px;
-  width:180px;
-  position:relative;
-  left:-0px;
-  top:5px;
-}
+    #one-true-value-editor td {
+        padding-left: 10px
+    }
 
 
-.direction-picker-display{background-image:url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/other/direction_all.png); border:solid white 3px!important; 
-}
 
-.direction-picker-display:hover{border:solid #ffc23a 3px!important; 
-}
-
-.direction-popup-editor.direction-picker-display{}
-
-
-.condition img.shape-editor-display[src*="missing"]{content: url( https://raw.githubusercontent.com/pwigger/css4AC/master/icons/color/pick_purple.png);
-    background:white;
-    background-size: 8px 8px;
-  min-height:23px;
-  min-width:23px;
-  position:relative;
- 
-  }
-.editor .editable-display:hover{border:solid #ffc23a 3px!important;}
-
-.editor .editable-display{border:solid white 3px!important;}
-
-.action img.shape-editor-display[src*="missing"]{content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/color/pick_turquise.png);
-  background:white;
-    background-size: 8px 8px;
-  width:10px;
-  height:10px;
-  min-height:18px;
-  min-width:18px;
-border:solid white 3px!important;}
-
-
-.shape-editor-display{top:-2px!important; border:solid white 3px !important;}
-
-.instruction .shape-editor-display:hover{border:solid #ffc23a 3px!important; }
-
-.shape-popup-editor td img{border:solid #5c5c5c 1px;}
-.shape-popup-editor td img:hover{border:solid #ffc23a 1px;}
 
 
 /*moving boxes around*/
 
 :root {
     background-color: #555555;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif
 }
-#container{background:#555!important;}
-#container canvas{padding-right:150px;}
+
+#container {
+    background: #555 !important
+}
+
+    #container canvas {
+        padding-right: 150px
+    }
+
 #vat-buttons {
     background: #555555;
     color: white;
     font-family: 'Open Sans', sans-serif;
-    height: 30px;
+    height: 30px
 }
 
 #non-gallery-container {
     position: absolute;
     left: 60px;
-    top: 0px;
+    top: 0px
 }
-.action .editable-display{position:relative; top:0px;}
 
-#vat .action.vat-selected:not(.disabled), #vat .action:hover:not(.disabled){background:#5BACAB;}
-#vat .condition.vat-selected:not(.disabled), #vat .condition:hover:not(.disabled){background:#A47CC3;}
-.condition .instruction-name{position:relative; top:-2px;}
-.action {margin-top:20px;}
 
- 
 
- 
-  
+
+
+
+
 
 
 #vat-conditions-td {
-    width: 155px;
+    width: 155px
 }
 
 #vat-conditions {
     text-align: right;
     direction: ltr;
-    background:none;
+    background: none
 }
 
-#vat-conditions .condition {
-    float: right;
-    text-align: left;
-}
+    #vat-conditions .condition {
+        float: right;
+        text-align: left
+    }
 
 #vat-actions-td {
     width: 500px;
-    position:relative;
-    right:100px;
-  }
+    position: relative;
+    right: 100px
+}
 
 
 #vat-conditions-scroll {
@@ -138,34 +105,41 @@ border:solid white 3px!important;}
     top: inherit;
     padding-left: 25px;
     margin-left: -10px;
-    direction: ltr;
- 
+    direction: ltr
 }
-#vat textarea{color:white;}
-#vat textarea:focus{color:#656565;}
-.vat-selected .comment-textarea{color:black;}
+
+#vat textarea {
+    color: white
+}
+
+    #vat textarea:focus {
+        color: #656565
+    }
+
+.vat-selected .comment-textarea {
+    color: black
+}
 
 #vat-conditions-header {
     background: none;
     font-size: 10;
-  font-family: monospace;
-  color:white;
-  font-size:20px;
-  position:relative;
-  left:80px;
+    font-family: monospace;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    left: 80px
 }
 
 #vat-actions {
     width: 220px;
     z-index: 6;
-  background:none;
-  
+    background: none
 }
 
 #vat-actions-scroll {
     display: block;
     width: 280px;
-    z-index: 6;
+    z-index: 6
 }
 
 
@@ -173,99 +147,183 @@ border:solid white 3px!important;}
 #vat-code-td {
     position: static;
     padding-left: 100px;
-  padding-right: 100px;
+    padding-right: 100px
 }
 
- @media (max-width: 1600px){
-#non-gallery-container #threed-and-status {    padding-right: 150px;
+@media (max-width: 1600px) {
+    #non-gallery-container #threed-and-status {
+        padding-right: 150px
     }
-    #gallery-container{   height:300px!important;
-}
-   #vat-actions-td {
-    position:fixed!important;
-     width:inherit;
-     right:-20px;
-     max-height:20px;
-  }
-   #vat-code-header-resize-img{right:0px!important;}
-   #vat-actions-header{left:-50px!important;}
-   .method{}
 
-  #vat-code-td {
-    position: static;
-    padding-left: 100px;
-  padding-right: 180px!important;
-}
-   #plus-agent-button{position:fixed!important;right:130px!important;top:80px!important;background:#656565!important;}
-      #plus-shape-button{position:fixed!important;right:60px!important;top:80px!important;background:#656565!important;}
-   #gallery-minus-button{position:fixed!important;right:30px!important;top:80px!important;background-color:#656565!important;}
-   
-   #plus-agent-button:hover{background:#ffc23a!important}
-   #plus-shape-button:hover{background:#ffc23a!important}
-   #gallery-minus-button:hover{background-color:#ffc23a!important}
-}
-
-
- @media (max-width: 1025px){
-   
- 
-#non-gallery-container #threed-and-status {   
-  padding-right: 150px;
+    #gallery-container {
+        height: 300px !important
     }
-   #plus-agent-button{position:fixed!important;right:130px!important;top:20px!important;background:#656565!important;}
-      #plus-shape-button{position:fixed!important;right:60px!important;top:20px!important;background:#656565!important;}
-   #gallery-minus-button{position:fixed!important;right:30px!important;top:20px!important;background-color:#656565!important;}
-   
-   #plus-agent-button:hover{background:#ffc23a!important}
-   #plus-shape-button:hover{background:#ffc23a!important}
-   #gallery-minus-button:hover{background-color:#ffc23a!important}
 
+    #vat-actions-td {
+        position: fixed !important;
+        width: inherit;
+        right: -20px;
+        max-height: 20px
+    }
 
-  
-   #gallery-description{background:none!important;z-index:-200!important;}
-   #gallery-title-span{top:20px!important;}
-    #gallery_agentlist{top:20px!important;}
-   ul#gallery_agentlist>li:first-child{margin-top:15px!important;}
-    #gallery-container{   height:226px!important;
-      top:40px!important;    
+    #vat-code-header-resize-img {
+        right: 0px !important
+    }
+
+    #vat-actions-header {
+        left: -50px !important
+    }
+
+    .method {
+    }
+
+    #vat-code-td {
+        position: static;
+        padding-left: 100px;
+        padding-right: 180px !important
+    }
+
+    #plus-agent-button {
+        position: fixed !important;
+        right: 130px !important;
+        top: 80px !important;
+        background: #656565 !important
+    }
+
+    #plus-shape-button {
+        position: fixed !important;
+        right: 60px !important;
+        top: 80px !important;
+        background: #656565 !important
+    }
+
+    #gallery-minus-button {
+        position: fixed !important;
+        right: 30px !important;
+        top: 80px !important;
+        background-color: #656565 !important
+    }
+
+    #plus-agent-button:hover {
+        background: #ffc23a !important
+    }
+
+    #plus-shape-button:hover {
+        background: #ffc23a !important
+    }
+
+    #gallery-minus-button:hover {
+        background-color: #ffc23a !important
+    }
 }
-   #asi-cube-link img{display:none}
-   #vat-actions-td {
-    position:fixed!important;
-     width:inherit;
-     right:-0px;
-     max-height:20px;
-  }
-   #vat-conditions-td {
-    width: 140px!important;
-}
-   #vat-code-header-resize-img{right:0px!important;}
-   #vat-actions-header{left:-150px!important;}
-   .method{padding-right:0px;
-   padding-left:0px;}
-   
-   #vat-code-td {
-    position: static;
-    padding-left: 100px;
-  padding-right: 170px!important;
-}
+
+
+@media (max-width: 1025px) {
+
+
+    #non-gallery-container #threed-and-status {
+        padding-right: 150px
+    }
+
+    #plus-agent-button {
+        position: fixed !important;
+        right: 130px !important;
+        top: 20px !important;
+        background: #656565 !important
+    }
+
+    #plus-shape-button {
+        position: fixed !important;
+        right: 60px !important;
+        top: 20px !important;
+        background: #656565 !important
+    }
+
+    #gallery-minus-button {
+        position: fixed !important;
+        right: 30px !important;
+        top: 20px !important;
+        background-color: #656565 !important
+    }
+
+    #plus-agent-button:hover {
+        background: #ffc23a !important
+    }
+
+    #plus-shape-button:hover {
+        background: #ffc23a !important
+    }
+
+    #gallery-minus-button:hover {
+        background-color: #ffc23a !important
+    }
+
+
+
+    #gallery-description {
+        background: none !important;
+        z-index: -200 !important
+    }
+
+    #gallery-title-span {
+        top: 20px !important
+    }
+
+    #gallery_agentlist {
+        top: 20px !important
+    }
+
+    ul#gallery_agentlist > li:first-child {
+        margin-top: 15px !important
+    }
+
+    #gallery-container {
+        height: 226px !important;
+        top: 40px !important
+    }
+
+    #asi-cube-link img {
+        display: none
+    }
+
+    #vat-actions-td {
+        position: fixed !important;
+        width: inherit;
+        right: -0px;
+        max-height: 20px
+    }
+
+    #vat-conditions-td {
+        width: 140px !important
+    }
+
+    #vat-code-header-resize-img {
+        right: 0px !important
+    }
+
+    #vat-actions-header {
+        left: -150px !important
+    }
+
+    .method {
+        padding-right: 0px;
+        padding-left: 0px
+    }
+
+    #vat-code-td {
+        position: static;
+        padding-left: 100px;
+        padding-right: 170px    !important
+    }
 }
 
 
 
- .rule .anc{position:inherit;}
-   .if-then .then {top:0px!important;}
-   .instruction-area .condition{left:10px!important;top:0px;}
- 
-   .rule .instruction-area {     
-     display: block!important; 
 
-}
-.rule{white-space:normal;}
 
 
 #vat-code {
-    background: none;
+    background: none
 }
 
 #vat-code-header-td {
@@ -273,51 +331,184 @@ border:solid white 3px!important;}
     font-family: monospace;
     color: white;
     font-size: 0;
-    height: 50px;
+    height: 50px
 }
 
 #vat-code-header-agent-name {
     position: relative;
     left: 15px;
-    font-size: 20px;
+    font-size: 20px
 }
 
-#vat-code-header-agent-name::after {
-    content: "-Regeln" ;
-}
+    #vat-code-header-agent-name::after {
+        /*Rules= Regeln*/
+        content: "-Rules";
+    }
 
 #vat-actions-header {
     background: none;
     font-size: 20px;
-    font-family:monospace;
-    position:relative;
-    left:-300px;
-    color:white;
+    font-family: monospace;
+    position: relative;
+    left: -300px;
+    color: white
 }
 
 
 
 .method {
-    background: none;
+    background: none
 }
 
 
-/*Conditions block*/
 
+/*All Blocks*/
+.instruction.instruction-context-menu {
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    margin-top: 4px;
+    padding-bottom: 5px;
+    padding-left: 6px;
+    padding-right: 10px;
+    padding-top: 2px;
+}
+
+/*Elements*/
+
+
+
+
+input {
+    background-color: #4D4d4d; 
+    color: black;
+    margin: 0px 0px 0px 0px;
+    outline-style: none;
+    color: white;
+    font-size: 20px;
+    padding-left: 10px;
+    font-family: monospace;
+    border: none;
+    border-bottom: solid #ffc23a 1px;
+    width: 180px;
+    position: relative;
+    left: -0px;
+    top: 5px
+}
+#vat input{
+     color: white;
+}
+
+    input.attributeRowNumber {
+        background: none;
+        border: none;
+        color: white;
+        margin-left: 20px;
+        width: 40px
+    }
+
+
+
+.direction-picker-display {
+    background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/other/direction_all.png);
+  
+}
+
+
+img.shape-editor-display {
+   border:solid white 3px;
+    min-height: 23px;
+    min-width: 23px
+}
+
+
+.condition img.shape-editor-display[src*="missing"] {
+    content: url( https://raw.githubusercontent.com/pwigger/css4AC/master/icons/color/pick_purple.png);
+    background: white;
+    background-size: 8px 8px;
+    min-height: 23px;
+    min-width: 23px;
+}
+
+.instruction .shape-editor-display{
+  top:0px;
+}
+
+
+
+.action img.shape-editor-display[src*="missing"] {
+    content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/color/pick_turquise.png);
+    background: white;
+    background-size: 8px 8px;
+    width: 10px;
+    height: 10px;
+    min-height: 23px;
+    min-width: 23px;
+    position:relative;
+  top:-3px;
+    border: solid white 3px;
+}
+
+img.shape-editor-display[src*="missing"]:hover{
+  border: solid #ffc23a 3px;
+}
+
+
+.shape-editor-display {
+    top: -2px;
+    border: solid white 3px;
+ 
+}
+
+
+.shape-popup-editor td img {
+    border: solid #5c5c5c 1px
+}
+
+    .shape-popup-editor td img:hover {
+        border: solid #ffc23a 1px
+    }
+
+.direction-picker-display{border:solid white 3px;}
+
+.direction-picker-display:hover{border: solid #ffc23a 3px!important;}
+
+.editable-display {
+    border-color: #ae87ca;
+    border: solid white 3px;
+    color: #ae87ca;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    min-width: 23px;
+    text-align: center;
+  margin:0px;
+    margin-top:4px;
+}
+
+
+.editor .editable-display:hover {
+    border: solid #ffc23a 3px;
+}
+
+/*Conditions block*/
+.instruction.condition.instruction-context-menu{
+  background-color:#A47CC3;
+}
+
+#vat .condition.vat-selected:not(.disabled), #vat .condition:hover:not(.disabled) {
+    background: #A47CC3
+}
 .config {
     background: none;
     margin-right: 5px;
-    margin-top: 5px;
+    margin-top: 5px
 }
 
-.draggable-flippy {
-    display: none;
-}
 
-.draggable-title-bar {
-    background: none;
-    font-size: 15px;
-}
+
 
 #vat-code-header-resize-img {
     cursor: ns-resize;
@@ -326,213 +517,148 @@ border:solid white 3px!important;}
     right: 340px;
     z-index: 4;
     opacity: 0;
-    height: 50px;
+    height: 50px
 }
 
-#vat-code-header-resize-img:hover {
-    content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/menu.png);
-    cursor: ns-resize;
-    position: fixed;
-    width: 100%;
-    right: 340px;
-    z-index: 4;
-}
+    #vat-code-header-resize-img:hover {
+        content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/menu.png);
+        cursor: ns-resize;
+        position: fixed;
+        width: 100%;
+        right: 340px;
+        z-index: 4
+    }
 
-.draggable-window {
-    background: none;
-    border: solid white 1px;
-    color: white;
-    font-family: monospace;
-    font-size: 20px;
-    padding: 10px;
-    z-index: 0;
-}
 
 .flippy-closed {
     margin: 5px 10px 0 20px;
-    z-index: 50;
+    z-index: 50
 }
 
 .flippy-open {
-    margin: 5px 10px 0 20px;
+    margin: 5px 10px 0 20px
 }
 
 .group-end {
-    padding-bottom: 90px;
+    padding-bottom: 90px
 }
 
 .group-title {
     color: #999;
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px5
-    width: 190px;
-    padding-top: 60px;
+    font-size: 14px5 width: 190px;
+    padding-top: 60px
 }
 
-.highlightedRow {
-    background: #51a3d0;
-    width: 300px;
-}
+
 
 .icon-tool-with-translated-tooltip {
 }
 
-.icon-tool-with-translated-tooltip.noUiSlider {
-    height: 200px;
-}
+    .icon-tool-with-translated-tooltip.noUiSlider {
+        height: 200px
+    }
 
 .context-menu {
-    max-width: 250px;
+    max-width: 250px
 }
 
 .noUi-handle {
     background-color: white;
     border: solid 1px white;
-    box-shadow: none;
+    box-shadow: none
+   
 }
 
-.noUi-handle:hover {
-    background-color: none;
-    border: solid 1px #555555;
-    box-shadow: none;
-}
+    .noUi-handle:hover {
+        background-color: none;
+        border: solid 1px #555555;
+        box-shadow: none
+    }
 
 .noUi-target {
     background-color: transparent;
     border: solid 1px white;
     box-shadow: none;
-    margin: 0px 15px;
+    margin: 0px 15px
+    
 }
 
-.condition .direction-picker-display {
-    border-color: #ae87ca;
-    border-style: solid;
-    border-width: 2px;
-}
+ 
 
- .condition .editable-display {
-    border-color: #ae87ca;
-    border-style: solid;
-    border-width: 2px;
-    color: #ae87ca;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
-    min-width: 23px;
-    text-align: center;
-}
+
+
+
 
 .condition .vat-flippy-closed {
-    color: white;
+    color: white
 }
 
 .condition .vat-flippy-open {
-    color: white;
+    color: white
 }
 
-.condition.instruction.instruction-context-menu {
-    background: #ae87ca;
-    border-color: white;
-    border-style: solid;
-    border-width: 2px;
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
-    margin-top: 5px;
-    padding-bottom: 3px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-right: 15px;
-    padding-top: 3px;
-  min-height:30px;
-}
 
-.condition.instruction.instruction-context-menu.vat-selected {
-    border-color: #ffc23a;
-}
+
+    .condition.instruction.instruction-context-menu.vat-selected {
+        border-color: #ffc23a
+    }
 
 .condition.vat-selected .vat-flippy-closed {
-    color: #ffc23a;
+    color: #ffc23a
 }
 
 .condition.vat-selected .vat-flippy-open {
-    color: #ffc23a;
+    color: #ffc23a
 }
 
 /*Actions - block*/
-
-.action .direction-picker-display {
-    border-color: #66b5b4;
-    border-style: solid;
-    border-width: 2px;
+.instruction.action.instruction-context-menu{
+  background-color:#5BACAB;
+}
+#vat .action.vat-selected:not(.disabled), #vat .action:hover:not(.disabled) {
+    background: #5BACAB
 }
 
+
+
+
 .action .editable-display {
-    border: 2px;
-    border-color: #66b5b4;
+    border: 3px;
+    border-color: white;
     border-style: solid;
     color: #66b5b4;
     font-family: 'Open Sans', sans-serif;
     font-size: 13px;
     min-width: 23px;
-    text-align: center;
+    text-align: center
 }
 
 .action .vat-flippy-closed {
-    color: white;
+    color: white
 }
 
 .action .vat-flippy-open {
-    color: white;
+    color: white
 }
 
-.action.instruction.instruction-context-menu {
-    background: #66b5b4;
-    border-color: white;
-    border-style: solid;
-    border-width: 2px;
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
-    margin-top: 5px;
-    margin-left:20px;
-    padding-bottom: 3px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 3px;
-    margin-right: 15px;
-    min-height: 30px;
-}
 
-.action.instruction.instruction-context-menu.vat-selected {
-    background: #66b5b4;
-    border: solid #ffc23a 2px;
-    color: white;
-}
+
+    .action.instruction.instruction-context-menu.vat-selected {
+        background: #66b5b4;
+        border: solid #ffc23a 2px;
+        color: white
+    }
 
 .action.vat-selected .vat-flippy-closed {
-    color: #ffc23a;
+    color: #ffc23a
 }
 
 .action.vat-selected .vat-flippy-open {
-    color: #ffc23a;
+    color: #ffc23a
 }
 
-.attribute-row {
-    font-size: 13px;
-}
 
-.attribute-row td {
-    padding: 0 10px;
-}
-
-.attribute-window-table {
-    width: 190px;
-}
-
-.attributeRowNumber {
-    font-size: 13px;
-    margin: 0;
-}
 
 .comment-textarea {
     background: #555555;
@@ -540,22 +666,22 @@ border:solid white 3px!important;}
     color: white;
     font-family: 'Open Sans', sans-serif;
     font-size: 13px;
-    padding-left: 8px;
+    padding-left: 8px
 }
 
 .comments-box {
-    margin: 12px;
+    margin: 12px
 }
 
 textarea.comment-textarea {
     margin: 0px 0px 10px 7px;
     width: 100%;
-    outline-style: none;
+    outline-style: none
 }
 
 textarea:focus {
     background: #ffc23a;
-    color: black;
+    color: black
 }
 
 /*
@@ -575,7 +701,7 @@ img[src*="missing"] {
     z-index: 3;
     position: relative;
     left: inherit;
-    top: -2px;
+    top: -2px
 }
 
 /*Gallery*/
@@ -585,7 +711,7 @@ img[src*="missing"] {
 #gallery-buttons {
     position: fixed;
     right: 70px;
-    bottom: 5px;
+    bottom: 5px
 }
 
 #gallery-container {
@@ -594,122 +720,124 @@ img[src*="missing"] {
     right: 30px;
     width: 270px;
     top: 105px;
-    background-color: #656565;
-
+    background-color: #656565
 }
 
 #gallery {
     width: 100%;
-    z-index: 4;
+    z-index: 4
 }
 
 #gallery-description {
     font-size: 20px;
     padding: 30px;
     font-family: 'Open Sans', sans-serif;
-    z-index: 4;
+    z-index: 4
 }
 
 #gallery-title-span {
     position: fixed;
-    top:150px;
-    right:200px;
-    z-index: 4;
+    top: 150px;
+    right: 200px;
+    z-index: 4
 }
 
 .gallery-thumbnail {
     border-color: #ffc23a;
-  top:3px
+    top: 3px
 }
 
 .gallery_agentitem {
     border-top: solid #555555 1px;
     height: 45px;
-    padding-top: 4px;
-
+    padding-top: 4px
 }
-.gallery_agentitem:hover{cursor:pointer;}
 
-.gallery_shapeitem:hover{cursor:pointer;}
+    .gallery_agentitem:hover {
+        cursor: pointer
+    }
+
+.gallery_shapeitem:hover {
+    cursor: pointer
+}
 
 
 .gallery_name {
     font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
+    font-size: 13px
 }
 
 
 .AgentView {
     position: relative;
     top: 100px;
-    width:860px!important;
+    width: 860px !important
 }
 
 .gallery_shapeitem {
     height: 35px;
     padding-bottom: 2px;
     padding-left: 20px;
-    padding-top: 0px;
+    padding-top: 0px
 }
 
 div#gallery-description {
     background-color: #656565;
     position: fixed;
     width: 250px;
-    z-index: 20;
+    z-index: 20
 }
 
 div.gallery_shapeitem {
     height: 35px;
     padding-bottom: 2px;
     padding-left: 40px;
-    padding-top: 0px;
+    padding-top: 0px
 }
 
 li ul.gallery_agentsublist li:last-child div.gallery_shapeitem {
-    margin-bottom: 60px;
+    margin-bottom: 60px
 }
 
 li.gallery-shapelabel {
-    display: none;
+    display: none
 }
 
 li:last-child li:last-child div.gallery_shapeitem:last-child {
-    margin-bottom: 100px;
+    margin-bottom: 100px
 }
 
 ul#gallery_agentlist {
     margin: 5px;
     width: 250px;
-    z-index: 4;
-    
+    z-index: 4
 }
 
-ul#gallery_agentlist>li:first-child {
-    margin-top: 90px;
-}
+    ul#gallery_agentlist > li:first-child {
+        margin-top: 90px
+    }
 
-ul#gallery_agentlist>li:last-child {
-    margin-bottom: 100px;
-}
+    ul#gallery_agentlist > li:last-child {
+        margin-bottom: 100px
+    }
 
 span.gallery_name {
     text-align: center;
     vertical-align: middle;
-    position:relative;
-    top:2px;
-  left:10px;
+    position: relative;
+    top: 2px;
+    left: 10px
 }
 
 #plus-agent-button {
     background: #656565;
-  position: relative;
-    top: 3px;
+    position: relative;
+    top: 3px
 }
 
-#plus-agent-button:hover {
-    background: #ffc23a;
-}
+    #plus-agent-button:hover {
+        background: #ffc23a
+    }
 
 #gallery-minus-button {
     background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/delete.png);
@@ -721,33 +849,33 @@ span.gallery_name {
     position: relative;
     top: -1px;
     width: 24px;
-    height: 24px;
+    height: 24px
 }
 
-#gallery-minus-button:hover {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/delete.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #ffc23a;
-    background-size: 11px;
-    font-size: 0;
-}
+    #gallery-minus-button:hover {
+        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/delete.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #ffc23a;
+        background-size: 11px;
+        font-size: 0
+    }
 
 #plus-shape-button {
     background: #656565;
-  position: relative;
-    top: 3px;
+    position: relative;
+    top: 3px
 }
 
-#plus-shape-button:hover {
-    background: #ffc23a;
-}
+    #plus-shape-button:hover {
+        background: #ffc23a
+    }
 
 /*Add Agent window*/
 
 #new-agent-div {
     background-color: #555555;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif
 }
 
 .popped-over-content {
@@ -755,7 +883,7 @@ span.gallery_name {
     color: white;
     box-shadow: none;
     border: solid #555555 20px;
-    border-radius: 0px;
+    border-radius: 0px
 }
 
 select.texture-select {
@@ -765,30 +893,30 @@ select.texture-select {
     padding: 10px;
     height: 340px;
     width: 165px;
-    outline: none;
+    outline: none
 }
 
 .shape-button {
-    background-color: #555555!important;
+    background-color: #555555 !important;
     color: white !important;
-    font-family: 'Open Sans', sans-serif!important;
-    box-shadow: none!important;
+    font-family: 'Open Sans', sans-serif !important;
+    box-shadow: none !important
 }
 
 .icon-view-tools {
     position: relative;
     left: 20px;
-    top: -40px;
+    top: -40px
 }
 
 .shape-button.down {
     border: solid #ffc23a;
-  background:none!important;
-  width:65px;
+    background: none !important;
+    width: 65px
 }
 
 .shape-button-label {
-    display: none!important;
+    display: none !important
 }
 
 input#enter-agent-name {
@@ -797,27 +925,27 @@ input#enter-agent-name {
     height: 50px;
     padding-left: 20px;
     width: 690px;
-    margin-bottom: 30px;
+    margin-bottom: 30px
 }
 
 button#cancel-button {
-    margin-right: 10px;
+    margin-right: 10px
 }
 
 /*replace logo*/
 
 #asi-cube-link img {
-    content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/other/logo_full.png);
-    left: -210px;
+    //content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/other/logo_full.png);
+    left: -30px;
     position: relative;
-    top: 40px;
-  width:220px;
+    top: 10px;
+    width: 60px
 }
 
 /*3dView*/
 
 #container {
-    background: none;
+    background: none
 }
 
 /*Windows*/
@@ -829,7 +957,7 @@ button#cancel-button {
     font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
     opacity: 1;
     position: relative;
-    top: 100px;
+    top: 100px
 }
 
 .humane-error {
@@ -841,15 +969,18 @@ button#cancel-button {
     top: 0px;
     left: 0px;
     z-index: 5;
-    width: 100%;
+    width: 100%
 }
+
+
+
 
 /*Bar Top*/
 
 
 button:hover {
     background: #ffc23a;
-    color: #555555;
+    color: #555555
 }
 
 #action-button img {
@@ -860,7 +991,7 @@ button:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 16px 16px;
-    margin-top: 5px;
+    margin-top: 5px
 }
 
 button#action-button {
@@ -869,69 +1000,69 @@ button#action-button {
     top: 0px;
     left: 0px;
     width: 60px;
-    height: 40px;
+    height: 40px
 }
 
 #action-button:hover {
-    background: #ffc23a;
+    background: #ffc23a
 }
 
 #action-button-menu {
     position: fixed;
     left: 0px;
-    top: 35px;
+    top: 35px
 }
 
 #language-button img {
-    display: none;
+    display: none
 }
 
 button#language-button {
     background: #555555;
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text x="20%" y="60%" font-size="14"     font-family="monospace" fill="white">Sprache</text></svg>')!important;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text x="20%" y="60%" font-size="14"     font-family="monospace" fill="white">Sprache</text></svg>') !important;
     width: 120px;
     height: 40px;
     position: fixed;
     top: 1px;
-    left: 60px;
+    left: 60px
 }
 
-button#language-button:hover {
-    background: #ffc23a;
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text x="20%" y="60%" font-size="14" font-family="monospace" fill="#555555">Sprache</text></svg>')!important;
-}
+    button#language-button:hover {
+        background: #ffc23a;
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text x="20%" y="60%" font-size="14" font-family="monospace" fill="#555555">Sprache</text></svg>') !important
+    }
 
 #language-drop-down {
     position: fixed;
     left: 60px;
-    top: 35px;
+    top: 35px
 }
 
 .language-button-menu-item {
-    color: white!important;
+    color: white !important;
     font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
+    font-size: 13px
 }
 
-.language-button-menu-item:hover {
-    background: #ffc23a;
-    color: #555555!important;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
-}
+    .language-button-menu-item:hover {
+        background: #ffc23a;
+        color: #555555 !important;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 13px
+    }
 
 .setting-button-menu-item {
-    color: white!important;
+    color: white !important;
     font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
+    font-size: 13px
 }
 
-.setting-button-menu-item:hover {
-    background: #ffc23a;
-    color: #555555!important;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
-}
+    .setting-button-menu-item:hover {
+        background: #ffc23a;
+        color: #555555 !important;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 13px
+    }
 
 
 button#world-save-button {
@@ -945,17 +1076,17 @@ button#world-save-button {
     top: 8px;
     right: 620px;
     width: 24px;
-    height: 24px;
+    height: 24px
 }
 
-button#world-save-button:hover {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/save.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 14px;
-    background-color: #ffc23a;
-    font-size: 0;
-}
+    button#world-save-button:hover {
+        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/save.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 14px;
+        background-color: #ffc23a;
+        font-size: 0
+    }
 
 #world-button {
     background: none;
@@ -966,15 +1097,15 @@ button#world-save-button:hover {
     position: fixed;
     top: 0px;
     left: 180px;
-    height: 40px!important;
+    height: 40px !important;
     width: 90px;
-    font-size:14px;
-  font-family:monospace;
+    font-size: 14px;
+    font-family: monospace
 }
 
-#world-button:hover {
-    background: #ffc23a;
-}
+    #world-button:hover {
+        background: #ffc23a
+    }
 
 #world-drop-down {
     background-color: #555555;
@@ -983,22 +1114,20 @@ button#world-save-button:hover {
     margin-right: 5px;
     position: fixed;
     top: 8px;
-    right: 650px;
-
- 
+    right: 650px
 }
 
 .dropdown {
     background: #555555;
-    width: 50px;
+    width: 50px
 }
 
 .dropdown-menu {
-    background-color: #555555;
-
+    background-color: #555555
 }
+
 hr {
-    border: black;
+    border: black
 }
 
 #status-bar {
@@ -1011,43 +1140,39 @@ hr {
     width: 75%;
     left: 50%;
     margin-left: -37.5%;
-    font-family:'Open Sans', sans-serif;
-    text-shadow: 2px 2px 4px rgba(20,20,20,0.5);
-
-
-
-
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 2px 2px 4px rgba(20,20,20,0.5)
 }
 
 #world-button-menu {
     position: fixed;
     left: 180px;
-    top: 35px;
+    top: 35px
 }
 
 .world-button-menu-item {
     background: #555555;
-    color: white!important;
+    color: white !important;
     font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
+    font-size: 13px
 }
 
-.world-button-menu-item:hover {
-    background: #ffc23a;
-    color: #555555!important;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
-}
+    .world-button-menu-item:hover {
+        background: #ffc23a;
+        color: #555555 !important;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 13px
+    }
 
-#world-button-text+img {
-    display: none;
+#world-button-text + img {
+    display: none
 }
 
 /*bar bottom*/
 
 #bottom-toolbar {
     position: fixed;
-    bottom: 0px;
+    bottom: 0px
 }
 
 #vat-delete-button {
@@ -1061,26 +1186,26 @@ hr {
     top: -5px;
     right: 200px;
     width: 24px;
-    height: 24px;
+    height: 24px
 }
 
-#vat-delete-button:hover {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/delete.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #ffc23a;
-    background-size: 11px;
-    font-size: 0;
-}
+    #vat-delete-button:hover {
+        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/delete.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #ffc23a;
+        background-size: 11px;
+        font-size: 0
+    }
 
 #vat-add-rule-button {
     position: relative;
-    right: 200px;
+    right: 200px
 }
 
 #vat-add-method-button {
     position: relative;
-    right: 200px;
+    right: 200px
 }
 
 #vat-duplicate-button {
@@ -1094,138 +1219,132 @@ hr {
     right: 150px;
     top: -5px;
     width: 24px;
-    height: 24px;
+    height: 24px
 }
 
-#vat-duplicate-button:hover {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/duplicate.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #ffc23a;
-    background-size: 11px;
-    font-size: 0;
-}
+    #vat-duplicate-button:hover {
+        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/duplicate.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #ffc23a;
+        background-size: 11px;
+        font-size: 0
+    }
 
 #vat-test-button {
     position: relative;
-    right: 100px;
+    right: 100px
 }
 
 #vat-not-button {
     position: relative;
-    right: 520px;
+    right: 520px
 }
 
 #vat-help-button {
     position: fixed;
-    right: 305px;
+    right: 305px
 }
 
 /*Rules*/
 
 .block {
-    margin: 20px;
+    margin: 10px;
     background: none;
     border: none;
-    position: relative;
 }
 
 
 .rule-box {
-    background: none;
+    background: none
 }
 
 
 
 .trigger-name .editable-display {
-
     background: #555555;
     color: white;
-  border:none;
+    border: none;
     font-family: 'Open Sans', sans-serif;
     font-size: 25px;
     padding: 0px 30px 0px 30px;
-    margin: 10px 0px 0px 10px;
-  
+    margin: 10px 0px 0px 10px
 }
 
-.method .trigger-name {border:none;}
-
-.trigger-name .editable-display:hover {
-    background: #ffc23a;
-    color: #555555;
+.method .trigger-name {
+    border: none
 }
+
 
 .trigger.name .editable-display {
     font-family: 'Open Sans', sans-serif;
+  
 }
+
+.trigger-name .editable-display:hover {
+    background: #ffc23a;
+    color: #555555
+}
+
+/*method-if then*/
+
+.if-then .if {
+  color:#333;
+  
+  font-size:0px;}
+ span.if::before { position:absolute;font-size:12px;content: " elseif ";}
+.block.rule:first-child .anc.if::before{content:"if";}
+
+.if-then .then {
+  color:#333;
+  font-size:0px;}
+ span.then:before { position:absolute;font-size:12px;content: "then";}
+
+.rule .instruction-area {
+    display: block !important
+}
+
+.rule {
+    white-space: normal
+}
+.anc{padding-left:20px;
+}
+
 
 .rule .if-then {
     min-height: 50px;
     background-color: #ae87ca;
-    border: none;
-   
+    border: none
 }
-.rule .if-then{height:100%!important!;}
-
-.if-then .if {
-  color:white;
-  font-size:0px;}
- span.if::before { position:absolute;font-size:15px;content: " sonst wenn ";}
-.block.rule:first-child .anc.if::before{content:"wenn";}
-
-.if-then .then {
-  color:white;
-  font-size:0px;}
- span.then:before { position:absolute;font-size:15px;content: "dann";}
-
-
-
-.if-then .then {color:white;
-  position:relative;
-top:10px;}
-
-.then {
-    font-size: 14pt;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.if {
-    font-size: 14pt;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.if-then+.if-then {
-    background-color: #66b5b4;
-  
+.if-then + .if-then {
+    background-color: #66b5b4
 }
 
 .instruction {
-    border-radius: 10px;
+    border-radius: 10px
 }
-.instruction-area .condition{position:relative;
-left:60px;}
 
 .instruction-area {
     padding: 1px 5px;
     margin: 5px 0px;
     min-width: 20px;
-    width: 80%;
+    width: 80%
 }
+
+
+
 
 .block.rule.instruction-context-menu.vat-selected {
     border-color: #ffc23a;
     border-style: solid;
-    border-width: 2px;
+    border-width: 2px
 }
 
 #vat .method.vat-selected {
     border-color: #ffc23a;
     border-style: solid;
     border-width: 2px;
-    background:#656565;
+    background: #656565
 }
 
 #vat .method {
@@ -1233,13 +1352,13 @@ left:60px;}
     border-style: solid;
     border-width: 2px;
     margin-bottom: 50px;
-    background: #656565;
+    background: #656565
 }
 
 /*rule hide*/
 
 .method-disclosure-span {
-    font-size: 13px;
+    font-size: 13px
 }
 
 .disclosure-box {
@@ -1248,7 +1367,7 @@ left:60px;}
     position: absolute;
     right: 0px;
     top: 5px;
-    width: 130px;
+    width: 130px
 }
 
 
@@ -1256,27 +1375,27 @@ left:60px;}
 /*Scrollbar*/
 
 ::-webkit-scrollbar-track {
-    background: none;
+    background: none
 }
 
 ::-webkit-scrollbar {
     background: none;
     height: 0px;
-    width: 10px;
+    width: 10px
 }
 
 ::-webkit-scrollbar-thumb {
     background: none;
     border: 1px white solid;
     border-radius: 5px;
-    height: 40px;
+    height: 40px
 }
 
 ::-webkit-scrollbar-track-piece {
     background: none;
     border: transparent 1px solid;
     border-radius: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 40px
 }
 
 /*Buttons*/
@@ -1285,12 +1404,12 @@ button {
     background: #656565;
     border: none;
     color: white;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif
 }
- 
+
 
 #tool-arrow img {
-    display: none;
+    display: none
 }
 
 button#tool-arrow {
@@ -1304,29 +1423,29 @@ button#tool-arrow {
     position: fixed;
     top: 60px;
     width: 30px;
-    z-index: 5;
+    z-index: 5
 }
 
-button#tool-arrow.down {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/cursor.png);
-    background-color: #ffc23a;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    outline-style: none;
-}
+    button#tool-arrow.down {
+        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/cursor.png);
+        background-color: #ffc23a;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+        outline-style: none
+    }
 
-button#tool-arrow:hover {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/cursor.png);
-    background-color: #ffc23a;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    outline-style: none;
-}
+    button#tool-arrow:hover {
+        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/cursor.png);
+        background-color: #ffc23a;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+        outline-style: none
+    }
 
 #tool-camera-pan img {
-    display: none;
+    display: none
 }
 
 button#tool-camera-pan {
@@ -1340,29 +1459,29 @@ button#tool-camera-pan {
     position: fixed;
     top: 360px;
     width: 30px;
-    z-index: 5;
+    z-index: 5
 }
 
-button#tool-camera-pan.down {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/drag.png);
-    background-color: #ffc23a;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    outline-style: none;
-}
+    button#tool-camera-pan.down {
+        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/drag.png);
+        background-color: #ffc23a;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+        outline-style: none
+    }
 
-button#tool-camera-pan:hover {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/drag.png);
-    background-color: #ffc23a;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    outline-style: none;
-}
+    button#tool-camera-pan:hover {
+        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/drag.png);
+        background-color: #ffc23a;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+        outline-style: none
+    }
 
 #tool-camera-rot img {
-    display: none;
+    display: none
 }
 
 button#tool-camera-rot {
@@ -1376,29 +1495,29 @@ button#tool-camera-rot {
     position: fixed;
     top: 280px;
     width: 30px;
-    z-index: 5;
+    z-index: 5
 }
 
-button#tool-camera-rot.down {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/3drotation.png);
-    background-color: #ffc23a;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    outline-style: none;
-}
+    button#tool-camera-rot.down {
+        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/3drotation.png);
+        background-color: #ffc23a;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+        outline-style: none
+    }
 
-button#tool-camera-rot:hover {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/3drotation.png);
-    background-color: #ffc23a;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    outline-style: none;
-}
+    button#tool-camera-rot:hover {
+        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/3drotation.png);
+        background-color: #ffc23a;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+        outline-style: none
+    }
 
 #tool-pencil img {
-    display: none;
+    display: none
 }
 
 button#tool-pencil {
@@ -1412,30 +1531,29 @@ button#tool-pencil {
     position: fixed;
     top: 100px;
     width: 30px;
-    z-index: 5;
- 
+    z-index: 5
 }
 
-button#tool-pencil.down {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/edit.png);
-    background-color: #ffc23a;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    outline-style: none;
-}
+    button#tool-pencil.down {
+        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/edit.png);
+        background-color: #ffc23a;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+        outline-style: none
+    }
 
-button#tool-pencil:hover {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/edit.png);
-    background-color: #ffc23a;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    outline-style: none;
-}
+    button#tool-pencil:hover {
+        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/edit.png);
+        background-color: #ffc23a;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+        outline-style: none
+    }
 
 #tool-reset img {
-    display: none;
+    display: none
 }
 
 button#tool-reset {
@@ -1447,30 +1565,30 @@ button#tool-reset {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 16px 16px;
-    outline-style: none;
+    outline-style: none
 }
 
-button#tool-reset.down {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/restart.png);
-    background-color: #ffc23a;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    outline-style: none;
-}
+    button#tool-reset.down {
+        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/restart.png);
+        background-color: #ffc23a;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+        outline-style: none
+    }
 
-button#tool-reset:hover {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/restart.png);
-    background-color: #ffc23a;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    outline-style: none;
-}
+    button#tool-reset:hover {
+        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/restart.png);
+        background-color: #ffc23a;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+        outline-style: none
+    }
 
 
 #tool-camera-zoom img {
-    display: none;
+    display: none
 }
 
 button#tool-camera-zoom {
@@ -1484,30 +1602,30 @@ button#tool-camera-zoom {
     position: fixed;
     top: 320px;
     width: 30px;
-    z-index: 5;
+    z-index: 5
 }
 
-button#tool-camera-zoom:hover {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/zoom.png);
-    background-color: #ffc23a;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    outline-style: none;
-}
+    button#tool-camera-zoom:hover {
+        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/zoom.png);
+        background-color: #ffc23a;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+        outline-style: none
+    }
 
-button#tool-camera-zoom.down {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/zoom.png);
-    outline-style: none;
-    background-color: #ffc23a;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-}
+    button#tool-camera-zoom.down {
+        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/zoom.png);
+        outline-style: none;
+        background-color: #ffc23a;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 16px 16px
+    }
 
 
 #tool-eraser img {
-    display: none;
+    display: none
 }
 
 button#tool-eraser {
@@ -1521,29 +1639,29 @@ button#tool-eraser {
     position: fixed;
     top: 180px;
     width: 30px;
-    z-index: 5;
+    z-index: 5
 }
 
-button#tool-eraser.down {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/erase.png);
-    background-color: #ffc23a;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    outline-style: none;
-}
+    button#tool-eraser.down {
+        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/erase.png);
+        background-color: #ffc23a;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+        outline-style: none
+    }
 
-button#tool-eraser:hover {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/erase.png);
-    background-color: #ffc23a;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    outline-style: none;
-}
+    button#tool-eraser:hover {
+        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/erase.png);
+        background-color: #ffc23a;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+        outline-style: none
+    }
 
 #tool-fp img {
-    display: none;
+    display: none
 }
 
 button#tool-fp {
@@ -1558,40 +1676,66 @@ button#tool-fp {
     position: fixed;
     top: 400px;
     width: 30px;
-    z-index: 5;
+    z-index: 5
 }
 
-button#tool-fp.down {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/first-person-view.png);
+    button#tool-fp.down {
+        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/first-person-view.png);
+        background-color: #52a3d0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+        outline-style: none
+    }
+
+        button#tool-fp.down:hover {
+            background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/first-person-view.png);
+            background-color: #ffc23a;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 16px 16px;
+            outline-style: none
+        }
+
+    button#tool-fp:hover {
+        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/birdview.png);
+        background-color: #ffc23a;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 16px 12px;
+        outline-style: none
+    }
+
+button#tool-shadows img{display:none;}
+
+button#tool-shadows {
+ 
+  background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/sun.png);
     background-color: #52a3d0;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 16px 16px;
+    height: 30px;
+    left: 20px;
     outline-style: none;
+    position: fixed;
+    top: 440px;
+    width: 30px;
+    z-index: 5
 }
 
-button#tool-fp.down:hover {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/birdview.png);
-    background-color: #ffc23a;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 16px 12px;
-    outline-style: none;
-}
+    button#tool-shadows:hover {
+       background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/sun.png);
+        background-color: #ffc23a;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+        outline-style: none
+    }
 
-button#tool-fp:hover {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/first-person-view.png);
-    background-color: #ffc23a;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    outline-style: none;
-}
-
-
-button#tool-shadows {
-    
-    background: none;
+button#tool-shadows.down {
+ 
+  background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/cloud.png);
     background-color: #52a3d0;
     background-position: center;
     background-repeat: no-repeat;
@@ -1602,14 +1746,28 @@ button#tool-shadows {
     position: fixed;
     top: 440px;
     width: 30px;
-    z-index: 5;
+    z-index: 5
 }
-button#tool-shadows:hover{    background-color: #ffc23a;}
+button#tool-shadows.down:hover {
+ 
+  background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/cloud.png);
+    background-color: #ffc23a;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px 12px;
+    height: 30px;
+    left: 20px;
+    outline-style: none;
+    position: fixed;
+    top: 440px;
+    width: 30px;
+    z-index: 5
+}
 
 
 
 #tool-hand img {
-    display: none;
+    display: none
 }
 
 button#tool-hand {
@@ -1623,29 +1781,29 @@ button#tool-hand {
     position: fixed;
     top: 220px;
     width: 30px;
-    z-index: 5;
+    z-index: 5
 }
 
-button#tool-hand.down {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/pointer.png);
-    background-color: #ffc23a;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    outline-style: none;
-}
+    button#tool-hand.down {
+        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/pointer.png);
+        background-color: #ffc23a;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+        outline-style: none
+    }
 
-button#tool-hand:hover {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/pointer.png);
-    background-color: #ffc23a;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    outline-style: none;
-}
+    button#tool-hand:hover {
+        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/pointer.png);
+        background-color: #ffc23a;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+        outline-style: none
+    }
 
 #tool-multi img {
-    display: none;
+    display: none
 }
 
 button#tool-multi {
@@ -1659,29 +1817,29 @@ button#tool-multi {
     position: fixed;
     top: 140px;
     width: 30px;
-    z-index: 5;
+    z-index: 5
 }
 
-button#tool-multi.down {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/paint.png);
-    background-color: #ffc23a;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    outline-style: none;
-}
+    button#tool-multi.down {
+        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/paint.png);
+        background-color: #ffc23a;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+        outline-style: none
+    }
 
-button#tool-multi:hover {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/paint.png);
-    background-color: #ffc23a;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
-    outline-style: none;
-}
+    button#tool-multi:hover {
+        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/paint.png);
+        background-color: #ffc23a;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+        outline-style: none
+    }
 
 #tool-play img {
-    display: none;
+    display: none
 }
 
 button#tool-play {
@@ -1691,31 +1849,31 @@ button#tool-play {
     outline-style: none;
     background-size: 22px;
     position: fixed;
-  height:50px;
-  width:50px;
+    height: 50px;
+    width: 50px;
     top: 60px;
     right: 520px;
-    z-index: 5;
+    z-index: 5
 }
 
-button#tool-play:hover {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/color/play.png);
-    background-position: 50%;
-    background-repeat: no-repeat;
-    outline-style: none;
-    background-size: 22px;
-}
+    button#tool-play:hover {
+        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/color/play.png);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        outline-style: none;
+        background-size: 22px
+    }
 
-button#tool-play.down {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/color/play.png);
-    background-position: 50%;
-    background-repeat: no-repeat;
-    outline-style: none;
-    background-size: 22px;
-}
+    button#tool-play.down {
+        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/color/play.png);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        outline-style: none;
+        background-size: 22px
+    }
 
 #tool-step img {
-    display: none;
+    display: none
 }
 
 button#tool-step {
@@ -1723,34 +1881,34 @@ button#tool-step {
     position: fixed;
     top: 60px;
     right: 460px;
-    height:50px;
-    width:50px;
+    height: 50px;
+    width: 50px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 25px;
     z-index: 5;
-    outline-style: none;
+    outline-style: none
 }
 
-button#tool-step.down {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/step.png);
-    background-color: #ffc23a;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 25px;
-    outline-style: none;
-}
+    button#tool-step.down {
+        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/step.png);
+        background-color: #ffc23a;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25px;
+        outline-style: none
+    }
 
-button#tool-step:hover {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/step.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 25px;
-    outline-style: none;
-}
+    button#tool-step:hover {
+        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/step.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25px;
+        outline-style: none
+    }
 
 #tool-stop img {
-    display: none;
+    display: none
 }
 
 button#tool-stop {
@@ -1759,65 +1917,110 @@ button#tool-stop {
     background-repeat: no-repeat;
     background-size: 20px;
     outline-style: none;
-
     position: fixed;
-   top: 60px;
+    top: 60px;
     right: 400px;
     z-index: 5;
-  height:50px;
-  width:50px;
+    height: 50px;
+    width: 50px
 }
 
-button#tool-stop.down {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/color/stop.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 20px;
-    outline-style: none;
-    
+    button#tool-stop.down {
+        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/color/stop.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 20px;
+        outline-style: none
+    }
+
+    button#tool-stop:hover {
+        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/color/stop.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 20px;
+        outline-style: none
+    }
+
+#toolbar button {
+    border: none
 }
 
-button#tool-stop:hover {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/color/stop.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 20px;
-    outline-style: none;
-}
-#toolbar button{
-    border: none;
-}
-#toolbar button:first-child{border:none;}
+    #toolbar button:first-child {
+        border: none
+    }
 
 /*#toolbar .group:nth-child(5){opacity:0.1;}*/
 
 /*Draggable window: Variables*/
 
+.draggable-window-content-div table{
+ margin-bottom:20px;
+}
+.draggable-title-bar {
+    background: none;
+    font-size: 15px
+}
+.draggable-window input{
+  top:0px;
+}
+.draggable-window {
+    background: #555;
+    border: solid white 1px;
+    color: white;
+    font-family: monospace;
+    font-size: 20px;
+    padding: 10px;
+    z-index: 0
+}
+.highlightedRow {
+    
+    width: 300px
+      border:solid white 1px;
+    
+}
+
+.attribute-row {
+    font-size: 13px
+}
+
+    .attribute-row td {
+        padding: 0px 10px;
+     
+    }
+
+.attribute-window-table {
+    width: 190px
+}
+
+.attributeRowNumber {
+    font-size: 13px;
+    margin: 0
+}
 .draggable-window#attr-window {
-    position: fixed;
+    position: fixed
 }
 
 .draggable-window#prop-window {
-    position: fixed;
+    position: fixed
 }
 
 .draggable-window-content-div {
-    padding: 0px 0px 0px 10px  ;
+    padding: 0px 0px 0px 10px
 }
 
-.draggable-window-content-div>button {
-    background: none;
-    border: solid white 1px;
-    font-size: 13px;
-}
+    .draggable-window-content-div > button {
+        background: none;
+        border: solid white 1px;
+        font-size: 13px
+    }
 
-.draggable-window-content-div>button:hover {
-    color: black;
-}
+        .draggable-window-content-div > button:hover {
+            color: black
+        }
 
 #plot-window-table {
     margin: 10px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif
 }
 
 #plot-window-close {
@@ -1829,7 +2032,7 @@ button#tool-stop:hover {
     left: 0px;
     outline-style: none;
     position: relative;
-    top: px;
+    top: 0 px
 }
 
 /*Editor 1 (3d inflate) dialogfield*/
@@ -1838,21 +2041,16 @@ button#tool-stop:hover {
     font-family: 'Open Sans', sans-serif;
     background-color: #555555;
     position: relative;
-    top: 40px;
+    top: 40px
 }
 
-img.shape-editor-display {
-    border-style: solid;
-    border-width: 2px;
-    min-height: 23px;
-    min-width: 23px;
-}
+
 
 /*buttons*/
 
 .icon-tool-with-translated-tooltip#pencil {
     background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/edit.png)!important;
-    background-position: center!important;
+    background-position: center !important;
     background-repeat: no-repeat;
     background-size: 11px;
     height: 30px;
@@ -1860,28 +2058,28 @@ img.shape-editor-display {
     background-color: #656565;
     position: fixed;
     top: 65px;
-    border: #656565 solid 1px;
- 
+    border: #656565 solid 1px
 }
 
-.icon-tool-with-translated-tooltip#pencil.down {
-    background-color: #555555;
-}
+    .icon-tool-with-translated-tooltip#pencil.down {
+        background-color: #555555
+    }
 
-.icon-tool-with-translated-tooltip#pencil:hover {
-    background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/edit.png)!important;
-    background-color: #ffc23a!important;
-}
-.icon-tool-with-translated-tooltip#pencil.down:hover {
-      background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/edit.png)!important;
-      background-color: #555555!important;
-}
+    .icon-tool-with-translated-tooltip#pencil:hover {
+        background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/edit.png) !important;
+        background-color: #ffc23a !important
+    }
+
+    .icon-tool-with-translated-tooltip#pencil.down:hover {
+        background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/edit.png) !important;
+        background-color: #555555 !important
+    }
 
 
 
 .icon-tool-with-translated-tooltip#eraser {
-    background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/erase.png)!important;
-    background-position: center!important;
+    background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/erase.png) !important;
+    background-position: center !important;
     background-repeat: no-repeat;
     background-size: 14px;
     height: 30px;
@@ -1889,60 +2087,62 @@ img.shape-editor-display {
     background-color: #656565;
     position: fixed;
     top: 100px;
-    border: #656565 solid 1px;
+    border: #656565 solid 1px
 }
 
-.icon-tool-with-translated-tooltip#eraser:hover {
-    background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/erase.png)!important;
-    background-color: #ffc23a;
-}
+    .icon-tool-with-translated-tooltip#eraser:hover {
+        background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/erase.png) !important;
+        background-color: #ffc23a
+    }
 
-.icon-tool-with-translated-tooltip#eraser.down {
-    background-color: #555555;
-}
-.icon-tool-with-translated-tooltip#eraser.down:hover {
-    background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/erase.png)!important;
-}
+    .icon-tool-with-translated-tooltip#eraser.down {
+        background-color: #555555
+    }
+
+        .icon-tool-with-translated-tooltip#eraser.down:hover {
+            background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/erase.png) !important
+        }
 
 .icon-tool-with-translated-tooltip#eye {
-    background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/eye.png)!important;
-    background-position: center!important;
-    background-repeat: no-repeat!important;
-    background-size: 13px!important;
-    height: 30px!important;
-    width: 30px!important;
+    background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/eye.png) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: 13px !important;
+    height: 30px !important;
+    width: 30px !important;
     background-color: #656565;
     position: fixed;
     top: 135px;
-    border: #656565 solid 1px;
+    border: #656565 solid 1px
 }
 
-.icon-tool-with-translated-tooltip#eye:hover {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/eye.png)!important;
-    background-color: #ffc23a!important;
-      background-position: center!important;
-    background-repeat: no-repeat!important;
-    background-size: 13px!important;
-    height: 30px!important;
-    width: 30px!important;
-}
+    .icon-tool-with-translated-tooltip#eye:hover {
+        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/eye.png) !important;
+        background-color: #ffc23a !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: 13px !important;
+        height: 30px !important;
+        width: 30px !important
+    }
 
-.icon-tool-with-translated-tooltip#eye.down {
-      background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/eye.png)!important;
-    background-color: #555555!important;
-     background-position: center!important;
-    background-repeat: no-repeat!important;
-    background-size: 13px!important;
-    height: 30px!important;
-    width: 30px!important;
-}
-.icon-tool-with-translated-tooltip#eye.down:hover {
-    background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/eye.png)!important;
-}
+    .icon-tool-with-translated-tooltip#eye.down {
+        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/eye.png) !important;
+        background-color: #555555 !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: 13px !important;
+        height: 30px !important;
+        width: 30px !important
+    }
+
+        .icon-tool-with-translated-tooltip#eye.down:hover {
+            background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/eye.png) !important
+        }
 
 .icon-tool-with-translated-tooltip#bucket {
-    background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/bucket.png)!important;
-    background-position: center!important;
+    background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/bucket.png) !important;
+    background-position: center !important;
     background-repeat: no-repeat;
     background-size: 14px;
     height: 30px;
@@ -1950,321 +2150,312 @@ img.shape-editor-display {
     background-color: #656565;
     position: fixed;
     top: 170px;
-    border: #656565 solid 1px;
+    border: #656565 solid 1px
 }
 
-.icon-tool-with-translated-tooltip#bucket:hover {
-    background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/bucket.png)!important;
-    background-color: #ffc23a;
-}
+    .icon-tool-with-translated-tooltip#bucket:hover {
+        background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/bucket.png) !important;
+        background-color: #ffc23a
+    }
 
-.icon-tool-with-translated-tooltip#bucket.down {
-    background-color: #555555;
-}
-.icon-tool-with-translated-tooltip#bucket.down:hover {
-    background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/bucket.png)!important;
-}
+    .icon-tool-with-translated-tooltip#bucket.down {
+        background-color: #555555
+    }
+
+        .icon-tool-with-translated-tooltip#bucket.down:hover {
+            background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/bucket.png) !important
+        }
 
 
 .icon-tool-with-translated-tooltip#wand {
-    background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/wand.png)!important;
+    background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/wand.png) !important;
     background-color: #656565;
-    background-position: center!important;
+    background-position: center !important;
     background-repeat: no-repeat;
-    background-size: 15px!important;
-    height: 30px!important;
-    width: 30px!important;
+    background-size: 15px !important;
+    height: 30px !important;
+    width: 30px !important;
     position: fixed;
     top: 205px;
-    border: #656565 solid 1px;
+    border: #656565 solid 1px
 }
 
-.icon-tool-with-translated-tooltip#wand:hover {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/wand.png)!important;
-    background-position: center!important;
-    background-repeat: no-repeat!important;
-    background-size: 15px!important;
-    height: 30px;
-    width: 30px;
-    background-color: #ffc23a!important;
-}
+    .icon-tool-with-translated-tooltip#wand:hover {
+        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/wand.png) !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: 15px !important;
+        height: 30px;
+        width: 30px;
+        background-color: #ffc23a !important
+    }
 
-.icon-tool-with-translated-tooltip#wand.down {
-    background-color: #555555;
-}
-.icon-tool-with-translated-tooltip#wand.down:hover {
-      background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/wand.png)!important;
-background-position: center!important;
-    background-repeat: no-repeat!important;
-    background-size: 15px!important;
-    background-color: #555555!important;
-}
+    .icon-tool-with-translated-tooltip#wand.down {
+        background-color: #555555
+    }
+
+        .icon-tool-with-translated-tooltip#wand.down:hover {
+            background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/wand.png) !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            background-size: 15px !important;
+            background-color: #555555 !important
+        }
 
 .icon-tool-with-translated-tooltip#rect {
-    background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/rect.png)!important;
-    background-position: center!important;
-    background-repeat: no-repeat!important;
-    background-size: 15px!important;
+    background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/rect.png) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: 15px !important;
     height: 30px;
     width: 30px;
     background-color: #656565;
     position: fixed;
     top: 240px;
-    border: #656565 solid 1px;
+    border: #656565 solid 1px
 }
 
-.icon-tool-with-translated-tooltip#rect:hover {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/rect.png)!important;
-    background-position: center!important;
-    background-repeat: no-repeat!important;
-    background-size: 15px!important;
-    height: 30px;
-    width: 30px;
-    background-color: #ffc23a!important;
-}
+    .icon-tool-with-translated-tooltip#rect:hover {
+        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/rect.png) !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: 15px !important;
+        height: 30px;
+        width: 30px;
+        background-color: #ffc23a !important
+    }
 
-.icon-tool-with-translated-tooltip#rect.down {
-    background-color: #555555;
-}
-.icon-tool-with-translated-tooltip#rect.down:hover {
-      background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/rect.png)!important;
-  background-position: center!important;
-    background-repeat: no-repeat!important;
-    background-size: 15px!important;
-    background-color: #555555;
-}
+    .icon-tool-with-translated-tooltip#rect.down {
+        background-color: #555555
+    }
 
-#color-picker-bg{position:relative;
-top:100px;}
+        .icon-tool-with-translated-tooltip#rect.down:hover {
+            background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/rect.png) !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            background-size: 15px !important;
+            background-color: #555555
+        }
+
+
 
 
 .icon-tool-with-translated-tooltip#circ {
-    background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/circ.png)!important;
-    background-position: center!important;
-    background-repeat: no-repeat!important;
+    background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/circ.png) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
     background-size: 15px;
     height: 30px;
     width: 30px;
     background-color: #656565;
     position: fixed;
     top: 275px;
-    border: #656565 solid 1px;
+    border: #656565 solid 1px
 }
 
-.icon-tool-with-translated-tooltip#circ:hover {
-    background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/circ.png)!important;
-    background-position: center!important;
-    background-repeat: no-repeat!important;
-    background-size: 15px;
-    height: 30px;
-    width: 30px;
-    background-color: #ffc23a!important;
-}
+    .icon-tool-with-translated-tooltip#circ:hover {
+        background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/circ.png) !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: 15px;
+        height: 30px;
+        width: 30px;
+        background-color: #ffc23a !important
+    }
 
-.icon-tool-with-translated-tooltip#circ.down {
-    background-color: #555555;
-}
+    .icon-tool-with-translated-tooltip#circ.down {
+        background-color: #555555
+    }
 
-.icon-tool-with-translated-tooltip#circ.down:hover {
-    background-color: #555555!important;
-      background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/circ.png)!important;}
+        .icon-tool-with-translated-tooltip#circ.down:hover {
+            background-color: #555555 !important;
+            background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/circ.png) !important
+        }
 
 .icon-tool-with-translated-tooltip#poly {
-    background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/poly.png)!important;
-    background-position: center!important;
-    background-repeat: no-repeat!important;
+    background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/poly.png) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
     background-size: 15px;
-    height: 30px!important;
+    height: 30px !important;
     width: 30px;
     background-color: #656565;
     position: fixed;
     top: 310px;
-    border: #656565 solid 1px;
+    border: #656565 solid 1px
 }
 
-.icon-tool-with-translated-tooltip#poly:hover {
-    background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/poly.png)!important;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 15px;
-    height: 30px;
-    width: 30px;
-    background-color: #ffc23a!important;
-}
+    .icon-tool-with-translated-tooltip#poly:hover {
+        background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/poly.png) !important;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 15px;
+        height: 30px;
+        width: 30px;
+        background-color: #ffc23a !important
+    }
 
-.icon-tool-with-translated-tooltip#poly.down {
-    background-color: #555555;
-}
-.icon-tool-with-translated-tooltip#poly.down:hover {
-    background-color: #555555!important;
-      background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/poly.png)!important;
+    .icon-tool-with-translated-tooltip#poly.down {
+        background-color: #555555
+    }
 
-}
+        .icon-tool-with-translated-tooltip#poly.down:hover {
+            background-color: #555555 !important;
+            background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/poly.png) !important
+        }
 
-#color-picker {
-    height: 40px!important;
-    width: 40px!important;
-    position: relative;
-   
-}
-
-#color-picker-bg {
-    background: #555555!important;
-   height: 40px!important;
-    width: 40px!important;
-    position: relative;
- 
-  top:120px;
-}
 
 #none {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/none.png)!important;
-    background-position: center!important;
-    background-repeat: no-repeat!important;
-    background-size: 15px!important;
-    height: 30px!important;
-    width: 30px!important;
-    background-color: #656565!important;
-    position: relative!important;
-    top: 135px!important;
-    left: 45px!important;
-    border: #656565 solid 1px!important;
-  
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/none.png) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: 15px !important;
+    height: 30px !important;
+    width: 30px !important;
+    background-color: #656565 !important;
+    position: relative !important;
+    top: 135px !important;
+    left: 45px !important;
+    border: #656565 solid 1px !important
 }
 
-#none:hover {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/none.png)!important;
-    background-position: center!important;
-    background-repeat: no-repeat!important;
-    background-size: 15px!important;
-    height: 30px!important;
-    width: 30px!important;
-    background-color: #ffc23a!important;
-}
+    #none:hover {
+        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/none.png) !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: 15px !important;
+        height: 30px !important;
+        width: 30px !important;
+        background-color: #ffc23a !important
+    }
 
-#none.down {
-    background-color: #555555!important;
-}
-#none.down:hover {
-    background-color: #555555!important;
-   background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/none.png)!important;
-    background-position: center!important;
-    background-repeat: no-repeat!important;
-    background-size: 15px!important;
-    height: 30px!important;
-    width: 30px!important;
-}
+    #none.down {
+        background-color: #555555 !important
+    }
+
+        #none.down:hover {
+            background-color: #555555 !important;
+            background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/none.png) !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            background-size: 15px !important;
+            height: 30px !important;
+            width: 30px !important
+        }
 
 #horz {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/2ways_vertical.png)!important;
-    background-position: center!important;
-    background-repeat: no-repeat!important;
-    background-size: 15px!important;
-    height: 30px!important;
-    width: 30px!important;
-    background-color: #656565!important;
-    position: relative!important;
-    top: 105px!important;
-    left: 80px!important;
-    border: #656565 solid 1px!important;
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/2ways_vertical.png) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: 15px !important;
+    height: 30px !important;
+    width: 30px !important;
+    background-color: #656565 !important;
+    position: relative !important;
+    top: 105px !important;
+    left: 80px !important;
+    border: #656565 solid 1px !important
 }
 
-#horz:hover {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/2ways_vertical.png)!important;
-    background-position: center!important;
-    background-repeat: no-repeat!important;
-    background-size: 15px!important;
-    height: 30px!important;
-    width: 30px!important;
-    background-color: #ffc23a!important;
-}
+    #horz:hover {
+        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/2ways_vertical.png) !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: 15px !important;
+        height: 30px !important;
+        width: 30px !important;
+        background-color: #ffc23a !important
+    }
 
-#horz.down {
-    background-color: #555555!important;
-}
+    #horz.down {
+        background-color: #555555 !important
+    }
 
-#horz.down:hover {
-    background-color: #555555!important;
-   background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/2ways_vertical.png)!important;
-    background-position: center!important;
-    background-repeat: no-repeat!important;
-    background-size: 15px!important;
-    height: 30px!important;
-    width: 30px!important;
-}
+        #horz.down:hover {
+            background-color: #555555 !important;
+            background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/2ways_vertical.png) !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            background-size: 15px !important;
+            height: 30px !important;
+            width: 30px !important
+        }
+
 #vert {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/2ways_horizontal.png)!important;
-    background-position: center!important;
-    background-repeat: no-repeat!important;
-    background-size: 15px!important;
-    height: 30px!important;
-    width: 30px!important;
-    background-color: #656565!important;
-    position: relative!important;
-    top: 75px!important;
-    left: 115px!important;
-    border: #656565 solid 1px!important;
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/2ways_horizontal.png) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: 15px !important;
+    height: 30px !important;
+    width: 30px !important;
+    background-color: #656565 !important;
+    position: relative !important;
+    top: 75px !important;
+    left: 115px !important;
+    border: #656565 solid 1px !important
 }
 
-#vert:hover {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/2ways_horizontal.png)!important;
-    background-position: center!important;
-    background-repeat: no-repeat!important;
-    background-size: 15px!important;
-    height: 30px!important;
-    width: 30px!important;
-    background-color: #ffc23a!important;
-}
+    #vert:hover {
+        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/2ways_horizontal.png) !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: 15px !important;
+        height: 30px !important;
+        width: 30px !important;
+        background-color: #ffc23a !important
+    }
 
-#vert.down {
-    background-color: #555555!important;
-}
+    #vert.down {
+        background-color: #555555 !important
+    }
 
-#vert.down:hover {
-    background-color: #555555!important;
-      background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/2ways_horizontal.png)!important;
-   background-position: center!important;
-    background-repeat: no-repeat!important;
-    background-size: 15px!important;
-    height: 30px!important;
-    width: 30px!important;
-}
+        #vert.down:hover {
+            background-color: #555555 !important;
+            background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/2ways_horizontal.png) !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            background-size: 15px !important;
+            height: 30px !important;
+            width: 30px !important
+        }
+
 #both {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/4ways.png)!important;
-    background-position: center!important;
-    background-repeat: no-repeat!important;
-    background-size: 15px!important;
-    height: 30px!important;
-    width: 30px!important;
-    background-color: #656565!important;
-    position: relative!important;
-    top: 45px!important;
-    left: 150px!important;
-    border: #656565 solid 1px!important;
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/4ways.png) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: 15px !important;
+    height: 30px !important;
+    width: 30px !important;
+    background-color: #656565 !important;
+    position: relative !important;
+    top: 45px !important;
+    left: 150px !important;
+    border: #656565 solid 1px !important
 }
 
-#both:hover {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/4ways.png)!important;
-    background-position: center!important;
-    background-repeat: no-repeat!important;
-    background-size: 15px!important;
-    height: 30px!important;
-    width: 30px!important;
-    background-color: #ffc23a!important;
-}
+    #both:hover {
+        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/4ways.png) !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: 15px !important;
+        height: 30px !important;
+        width: 30px !important;
+        background-color: #ffc23a !important
+    }
 
-#both.down {
-    background-color: #555555!important;
-}
-#both.down:hover {
-    background-color: #555555!important;
-      background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/4ways.png)!important;
-  background-position: center!important;
-    background-repeat: no-repeat!important;
-    background-size: 15px!important;
-    height: 30px!important;
-    width: 30px!important;
-}
+    #both.down {
+        background-color: #555555 !important
+    }
+
+        #both.down:hover {
+            background-color: #555555 !important;
+            background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/4ways.png) !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            background-size: 15px !important;
+            height: 30px !important;
+            width: 30px !important
+        }
 
 
 .icon-view-tools li[title="3D-Print"] img {
@@ -2275,17 +2466,17 @@ top:100px;}
     cursor: pointer;
     border: #656565 solid 6px;
     position: relative;
-    top: -30px;
+    top: -30px
 }
 
-.icon-view-tools li[title="3D-Print"] img:hover {
-    background-color: #ffc23a;
-    content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/download.png);
-    height: 25px;
-    width: 25px;
-    cursor: pointer;
-    border: #ffc23a solid 6px;
-}
+    .icon-view-tools li[title="3D-Print"] img:hover {
+        background-color: #ffc23a;
+        content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/download.png);
+        height: 25px;
+        width: 25px;
+        cursor: pointer;
+        border: #ffc23a solid 6px
+    }
 
 .icon-view-tools li img[src*="pan-down"] {
     background-color: #ffc23a;
@@ -2295,7 +2486,7 @@ top:100px;}
     cursor: pointer;
     border: #ffc23a solid 6px;
     position: relative;
-    top: -15px;
+    top: -15px
 }
 
 .icon-view-tools li img[src*="pan-up"] {
@@ -2306,19 +2497,19 @@ top:100px;}
     cursor: pointer;
     border: #656565 solid 6px;
     position: relative;
-    top: -15px;
+    top: -15px
 }
 
-.icon-view-tools li img[src*="pan-up"]:hover {
-    background-color: #ffc23a;
-    content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/drag.png);
-    height: 25px;
-    width: 25px;
-    cursor: pointer;
-    border: #ffc23a solid 6px;
-    position: relative;
-    top: -15px;
-}
+    .icon-view-tools li img[src*="pan-up"]:hover {
+        background-color: #ffc23a;
+        content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/drag.png);
+        height: 25px;
+        width: 25px;
+        cursor: pointer;
+        border: #ffc23a solid 6px;
+        position: relative;
+        top: -15px
+    }
 
 .icon-view-tools li img[src*="zoom-up"] {
     background-color: #656565;
@@ -2328,7 +2519,7 @@ top:100px;}
     cursor: pointer;
     border: #656565 solid 6px;
     position: relative;
-    top: 0px;
+    top: 0px
 }
 
 .icon-view-tools li img[src*="zoom-down"] {
@@ -2339,7 +2530,7 @@ top:100px;}
     cursor: pointer;
     border: #ffc23a solid 6px;
     position: relative;
-    top: 0px;
+    top: 0px
 }
 
 .icon-view-tools li img[src*="zoom-up"]:hover {
@@ -2350,7 +2541,7 @@ top:100px;}
     cursor: pointer;
     border: #ffc23a solid 6px;
     position: relative;
-    top: 0px;
+    top: 0px
 }
 
 .icon-view-tools li img[src*="orbit-down"] {
@@ -2361,7 +2552,7 @@ top:100px;}
     cursor: pointer;
     border: #ffc23a solid 6px;
     position: relative;
-    top: 15px;
+    top: 15px
 }
 
 .icon-view-tools li img[src*="orbit-up"] {
@@ -2372,58 +2563,57 @@ top:100px;}
     cursor: pointer;
     border: #656565 solid 6px;
     position: relative;
-    top: 15px;
+    top: 15px
 }
 
-.icon-view-tools li img[src*="orbit-up"]:hover {
-    background-color: #ffc23a;
-    content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/3drotation.png);
-    height: 25px;
-    width: 25px;
-    cursor: pointer;
-    border: #ffc23a solid 6px;
-    position: relative;
-    top: 15px;
-}
+    .icon-view-tools li img[src*="orbit-up"]:hover {
+        background-color: #ffc23a;
+        content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/3drotation.png);
+        height: 25px;
+        width: 25px;
+        cursor: pointer;
+        border: #ffc23a solid 6px;
+        position: relative;
+        top: 15px
+    }
 
 .icon-view-tools li img[src*="reset"] {
-    background-color: #656565!important;
-    content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/restart.png)!important;
-    height: 25px!important;
-    width: 25px!important;
-    cursor: pointer!important;
-    border: #656565 solid 6px!important;
-    position: relative!important;
-    top: 20px!important;
+    background-color: #656565 !important;
+    content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/restart.png) !important;
+    height: 25px !important;
+    width: 25px !important;
+    cursor: pointer !important;
+    border: #656565 solid 6px !important;
+    position: relative !important;
+    top: 20px !important
 }
 
-.icon-view-tools li img[src*="reset"]:hover {
-    background-color: #ffc23a;
-    content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/restart.png)!important;
-    height: 25px!important;
-    width: 25px;
-    cursor: pointer;
-    border: #ffc23a solid 6px;
-}
+    .icon-view-tools li img[src*="reset"]:hover {
+        background-color: #ffc23a;
+        content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/restart.png) !important;
+        height: 25px !important;
+        width: 25px;
+        cursor: pointer;
+        border: #ffc23a solid 6px
+    }
 
 button#clear-button {
-    position: relative!important;
-    border-radius: 0px!important;
-    top: 180px!important;
-    right: 180px!important;
-    width: 30px!important;
-    height: 30px!important;
-    padding: 0px!important;
-    background: #656565!important;
-    color:white;
-    border: #656565 solid 1px!important;
-
+    position: relative !important;
+    border-radius: 0px !important;
+    top: 180px !important;
+    right: 180px !important;
+    width: 30px !important;
+    height: 30px !important;
+    padding: 0px !important;
+    background: #656565 !important;
+    color: white;
+    border: #656565 solid 1px !important
 }
 
-button#clear-button:hover {
-    background: #ffc23a!important;
-  color:#555;
-}
+    button#clear-button:hover {
+        background: #ffc23a !important;
+        color: #555
+    }
 
 button#flatten-button {
     position: relative;
@@ -2434,37 +2624,37 @@ button#flatten-button {
     height: 30px;
     padding: 0px;
     background: #656565;
-    color:white;
-    border: #656565 solid 1px!important;
+    color: white;
+    border: #656565 solid 1px !important
 }
 
 
-button#flatten-button:hover {
-    background: #ffc23a;
-     color:#555;
-}
+    button#flatten-button:hover {
+        background: #ffc23a;
+        color: #555
+    }
 
 #flatten-button-text {
-    display: none;
+    display: none
 }
 
 #clear-button-text {
-    display: none;
+    display: none
 }
 
 #surfaces-dropdown {
     position: relative;
     top: -15px;
     left: 40px;
-    background: none;
+    background: none
 }
 
 #icon-cancel-button {
-    margin-right: 10px;
+    margin-right: 10px
 }
 
 #clear-button {
-    margin-right: 5px;
+    margin-right: 5px
 }
 
 #pressure-td {
@@ -2472,7 +2662,7 @@ button#flatten-button:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
-    font-size: 0;
+    font-size: 0
 }
 
 #ceiling-td {
@@ -2480,7 +2670,7 @@ button#flatten-button:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 20px;
-    font-size: 0;
+    font-size: 0
 }
 
 #noise-td {
@@ -2488,11 +2678,11 @@ button#flatten-button:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
-    font-size: 0;
+    font-size: 0
 }
 
 #smooth-label #translated-gui-element {
-    display: none;
+    display: none
 }
 
 .icon-editor-table-element :nth-child(3) .left {
@@ -2501,7 +2691,7 @@ button#flatten-button:hover {
     background-repeat: no-repeat;
     background-size: 30px;
     height: 30px;
-    color: #555555;
+    color: #555555
 }
 
 #z-offset-td {
@@ -2510,7 +2700,7 @@ button#flatten-button:hover {
     background-repeat: no-repeat;
     background-size: 30px;
     height: 30px;
-    font-size: 0;
+    font-size: 0
 }
 
 #upright-td {
@@ -2520,16 +2710,16 @@ button#flatten-button:hover {
     background-size: 30px;
     font-size: 0;
     position: relative;
-    top: 20px;
+    top: 20px
 }
 
 #upright-checkbox {
     position: relative;
-    top: 20px;
+    top: 20px
 }
 
 #surfaces-td {
-    font-size: 0;
+    font-size: 0
 }
 
 #distance-td {
@@ -2537,24 +2727,47 @@ button#flatten-button:hover {
     background-position: top;
     background-repeat: no-repeat;
     background-size: 20px;
-    font-size: 0;
+    font-size: 0
 }
 
-#surfaces-dropdown{color:white!important;}
-.inflation-button{color:white!important;
-background:#555;}
+#surfaces-dropdown {
+    color: white !important
+}
 
-.inflation-button:hover{
-  color:white!important;
-  background:#ffc23a;
-  color:#555!important;}
+.inflation-button {
+    color: white !important;
+    background: #555
+}
 
-#icon-undo-button{color:white!important;}
-#icon-undo-button:hover{color:#555!important;}
-#icon-cancel-button{color:white!important;}
-#icon-cancel-button:hover{color:#555!important;}
-#icon-save-button{color:white!important;}
-#icon-save-button:hover{color:#555!important;}
+    .inflation-button:hover {
+        color: white !important;
+        background: #ffc23a;
+        color: #555 !important
+    }
+
+#icon-undo-button {
+    color: white !important
+}
+
+    #icon-undo-button:hover {
+        color: #555 !important
+    }
+
+#icon-cancel-button {
+    color: white !important
+}
+
+    #icon-cancel-button:hover {
+        color: #555 !important
+    }
+
+#icon-save-button {
+    color: white !important
+}
+
+    #icon-save-button:hover {
+        color: #555 !important
+    }
 
 /*Slider Speed*/
 
@@ -2562,14 +2775,14 @@ background:#555;}
     opacity: 0.4;
     position: fixed;
     top: 10px;
-    right: 355px;
+    right: 355px
 }
 
 #slow {
     opacity: 0.4;
     position: fixed;
     top: 10px;
-    right: 550px;
+    right: 550px
 }
 
 /*Layers*/
@@ -2582,92 +2795,93 @@ background:#555;}
     font-size: 13px;
     position: fixed;
     right: 340px;
-    top:40px;
-     
-  height:125px;
-  margin-left:10px;
-    width:30px;
-  opacity:0.1
+    top: 40px;
+    height: 125px;
+    margin-left: 10px;
+    width: 30px;
+    opacity: 0.1
 }
-#layer-controls:hover{opacity:1;}
+
+    #layer-controls:hover {
+        opacity: 1
+    }
 
 
 
 #layer-div {
-   left: 3px;
-    font-size:9px;
+    left: 3px;
+    font-size: 9px;
     position: absolute;
     top: -5px;
-   display:none
+    display: none
 }
 
 #grid {
     left: 3px;
-  font-family:'Open Sans', sans-serif;
-  font-size:10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
     position: absolute;
-    top: 10px;
+    top: 10px
 }
 
 #layer-grid-checkbox {
     left: 3px;
     position: absolute;
     top: 23px;
-left:7px;}
+    left: 7px
+}
+
 #layer-height {
-  
 }
 
 #layer-height-div {
-display:none;
+    display: none
 }
 
 #layer-height-slider-div {
     left: -5px;
     position: absolute;
-    top: 95px;
- 
-  
+    top: 95px
 }
 
 #layer-minus-button {
-    color:white!important;
+    color: white !important;
     box-shadow: none;
     font-size: 5pt;
     left: 6px;
-    width:20px;
-    height:20px;
+    width: 20px;
+    height: 20px;
     padding-top: 5px;
     position: absolute;
     top: 75px;
-    background-color:#656565;
+    background-color: #656565
 }
 
-#layer-minus-button:hover{
-  color:#555!important;
-  background-color:#ffc23a;
-}
+    #layer-minus-button:hover {
+        color: #555 !important;
+        background-color: #ffc23a
+    }
 
 #layer-plus-button {
- color:white!important;
+    color: white !important;
     box-shadow: none;
     font-size: 5pt;
     left: 6px;
-    width:20px;
-    height:20px;
+    width: 20px;
+    height: 20px;
     padding-top: 5px;
     position: absolute;
     top: 50px;
-    background-color:#656565;
+    background-color: #656565
 }
 
-#layer-plus-button:hover{
-  color:#555!important;
-  background-color:#ffc23a;
-}
+    #layer-plus-button:hover {
+        color: #555 !important;
+        background-color: #ffc23a
+    }
 
 #slider {
-    color: black;
+    color: black
 }
 
 
@@ -2676,54 +2890,53 @@ display:none;
 #slider-group {
     position: fixed;
     top: 15px;
-    right: 370px;
-  
+    right: 370px
 }
 
 
 #toolbar {
     background: #555555;
-    height: 40px;
+    height: 40px
 }
 
-#toolbar button {
-}
+    #toolbar button {
+    }
 
 /*conversational programming*/
 
 #vat .condition.false {
-    border: white solid 2px;
+    border: white solid 2px
 }
 
-#vat .condition.false span.instruction-name {
-    color: crimson;
-}
+    #vat .condition.false span.instruction-name {
+        color: crimson
+    }
 
 #vat .condition.true {
-    border: white solid 2px;
+    border: white solid 2px
 }
 
-#vat .condition.true span.instruction-name {
-    color: lightgreen;
-}
+    #vat .condition.true span.instruction-name {
+        color: lightgreen
+    }
 
-.true~.block {
-    opacity: 0.3;
+.true ~ .block {
+    opacity: 0.3
 }
 
 .block.false {
     opacity: 0.3;
-    background: red;
+    background: red
 }
 
-.block.false:hover {
-    opacity: 0.4;
-}
+    .block.false:hover {
+        opacity: 0.4
+    }
 
 .block.true {
     background: rgba(144,238,144,0.7);
     margin-bottom: 30px;
-    margin-top: 30px;
+    margin-top: 30px
 }
 
 /*unclear*/
@@ -2731,62 +2944,61 @@ display:none;
 .popup-list-item {
     background: #4d;
     font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
+    font-size: 13px
 }
 
-.popup-list-item:hover {
-    background: #ffc23a;
-    color: black;
-}
+    .popup-list-item:hover {
+        background: #ffc23a;
+        color: black
+    }
 
 .setting-button-menu-item {
     background: #555555;
     color: white;
     font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
+    font-size: 13px
 }
 
-.setting-button-menu-item:hover {
-    background: #ffc23a;
-    color: #555555;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
-}
+    .setting-button-menu-item:hover {
+        background: #ffc23a;
+        color: #555555;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 13px
+    }
 
 .vat-proxy {
     height: 40px;
     left: 40%;
     position: fixed;
     width: 40px;
-    z-index: 20;
+    z-index: 20
 }
 
 canvas {
     height: 100%;
-    width: 100%;
+    width: 100%
 }
 
-canvas.threed-view {
-    height: 340px;
-    width: 340px;
-    position: relative;
-    top: -2px;
-    left: 10px
-;
-}
+    canvas.threed-view {
+        height: 340px;
+        width: 340px;
+        position: relative;
+        top: -2px;
+        left: 10px
+    }
 
 /*stylebot cant handle this
 @keyframes fade_in_conditions {
   0% {
-    
+
     top: 0px;
-    
+
     background: #656565;
   }
   100% {
-    
+
     top: -350px;
-    
+
     background-color: #ae87ca;
   }
 }
@@ -2795,15 +3007,15 @@ canvas.threed-view {
 
 @keyframes fade_in_actions {
   0% {
-    
+
     top: 0px;
-    
+
     background: #66b5b4;
   }
   100% {
-    
+
     top: -350px;
-    
+
     background-color: #66b5b4;
   }
 }
@@ -2811,23 +3023,23 @@ canvas.threed-view {
 */
 
 div#threed-and-status {
-    width: 100%;
+    width: 100%
 }
 
 div#wrap {
-    overflow: visible;
+    overflow: visible
 }
 
 div.group {
-    margin: 0 0px 0 0px;
+    margin: 0 0px 0 0px
 }
 
 div.method:last-child {
-    margin-bottom: 100px;
+    margin-bottom: 100px
 }
 
 select.icon-tool-with-translated-tooltip.form-control {
-    color: white;
+    color: white
 }
 
 div.draggable-title-bar span.cancelbutton {
@@ -2838,54 +3050,54 @@ div.draggable-title-bar span.cancelbutton {
     left: 10px;
     outline-style: none;
     position: relative;
-    top: -12px;
+    top: -12px
 }
 
 #one-true-value-editor {
     z-index: 20000000;
     background: #555555;
-    border: solid #555555 10px;
+    border: solid #555555 10px
 }
 
-#one-true-value-editor .cancelbutton {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/close.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 10px 10px;
-    left: 5px;
-    outline-style: none;
-    position: relative;
-}
+    #one-true-value-editor .cancelbutton {
+        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/close.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 10px 10px;
+        left: 5px;
+        outline-style: none;
+        position: relative
+    }
 
-#one-true-value-editor .acceptbutton {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/checkbox.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 10px 10px;
-    left: 5px;
-    outline-style: none;
-    position: relative;
-}
+    #one-true-value-editor .acceptbutton {
+        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/checkbox.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 10px 10px;
+        left: 5px;
+        outline-style: none;
+        position: relative
+    }
 
 #twod-view {
     height: 315px;
-    width: 315px;
+    width: 315px
 }
 
 #QuickstartWindow {
     background-color: #555555;
-    z-index: 1000000;
+    z-index: 1000000
 }
 
 li.annotation-item-header-item {
-    font-size: 15px;
+    font-size: 15px
 }
 
 .setting-button-menu-separator {
     background-color: black;
     background: #555555;
     height: 10px;
-    margin: 0px;
+    margin: 0px
 }
 
 /*
@@ -2903,23 +3115,22 @@ li.annotation-item-header-item {
     position: relative;
     top: 200px;
     font-family: 'Open Sans', sans-serif;
-    padding: 20px;
+    padding: 20px
 }
 
-.new-shape-dialog button {
-    margin-left: 20px;
-    margin-top: 20px;
-}
+    .new-shape-dialog button {
+        margin-left: 20px;
+        margin-top: 20px
+    }
 
-.new-shape-dialog input {
-    background: none;
-    color: white;
-    border: white solid 1px;
-    width: 250px;
-    position: relative;
-    left: -10px;
-    padding: 10px;
-    margin-top: 20px;
-    font-size: 20px;
-}
-
+    .new-shape-dialog input {
+        background: none;
+        color: white;
+        border: white solid 1px;
+        width: 250px;
+        position: relative;
+        left: -10px;
+        padding: 10px;
+        margin-top: 20px;
+        font-size: 20px
+    }
