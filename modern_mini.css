@@ -1,20 +1,26 @@
 
-#color-picker-bg #color-picker{position:fixed ;top:360px;width:30px;height:30px;
+#color-picker-bg #color-picker {
+    position: fixed;
+    top: 360px;
+    width: 30px;
+    height: 30px
 }
 
-#icon-editor-table button{
-  color:white;
-  background-color:#555;
-  border:solid white 1px;
+#icon-editor-table button {
+    color: white;
+    background-color: #555;
+    border: solid white 1px
 }
-#icon-editor-table button:hover{
-  color:white;
-  background-color:#ffc23a;
-  border:solid #ffc23a 1px;
-}
-#icon-editor-table button:hover{
-  color:black;
-}
+
+    #icon-editor-table button:hover {
+        color: white;
+        background-color: #ffc23a;
+        border: solid #ffc23a 1px
+    }
+
+    #icon-editor-table button:hover {
+        color: black
+    }
 
 #one-true-value-editor > div > span:first-child {
     position: absolute;
@@ -313,7 +319,7 @@
     #vat-code-td {
         position: static;
         padding-left: 100px;
-        padding-right: 170px    !important
+        padding-right: 170px !important
     }
 }
 
@@ -342,7 +348,7 @@
 
     #vat-code-header-agent-name::after {
         /*Rules= Regeln*/
-        content: "-Rules";
+        content: "-Rules"
     }
 
 #vat-actions-header {
@@ -374,7 +380,7 @@
     padding-bottom: 5px;
     padding-left: 6px;
     padding-right: 10px;
-    padding-top: 2px;
+    padding-top: 2px
 }
 
 /*Elements*/
@@ -383,7 +389,7 @@
 
 
 input {
-    background-color: #4D4d4d; 
+    background-color: #4D4d4d;
     color: black;
     margin: 0px 0px 0px 0px;
     outline-style: none;
@@ -398,28 +404,28 @@ input {
     left: -0px;
     top: 5px
 }
-#vat input{
-     color: white;
+
+#vat input {
+    color: white
 }
 
-    input.attributeRowNumber {
-        background: none;
-        border: none;
-        color: white;
-        margin-left: 20px;
-        width: 40px
-    }
+input.attributeRowNumber {
+    background: none;
+    border: none;
+    color: white;
+    margin-left: 20px;
+    width: 40px
+}
 
 
 
 .direction-picker-display {
-    background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/other/direction_all.png);
-  
+    background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/other/direction_all.png)
 }
 
 
 img.shape-editor-display {
-   border:solid white 3px;
+    border: solid white 3px;
     min-height: 23px;
     min-width: 23px
 }
@@ -430,11 +436,11 @@ img.shape-editor-display {
     background: white;
     background-size: 8px 8px;
     min-height: 23px;
-    min-width: 23px;
+    min-width: 23px
 }
 
-.instruction .shape-editor-display{
-  top:0px;
+.instruction .shape-editor-display {
+    top: 0px
 }
 
 
@@ -447,20 +453,19 @@ img.shape-editor-display {
     height: 10px;
     min-height: 23px;
     min-width: 23px;
-    position:relative;
-  top:-3px;
-    border: solid white 3px;
+    position: relative;
+    top: -3px;
+    border: solid white 3px
 }
 
-img.shape-editor-display[src*="missing"]:hover{
-  border: solid #ffc23a 3px;
+img.shape-editor-display[src*="missing"]:hover {
+    border: solid #ffc23a 3px
 }
 
 
 .shape-editor-display {
     top: -2px;
-    border: solid white 3px;
- 
+    border: solid white 3px
 }
 
 
@@ -472,9 +477,13 @@ img.shape-editor-display[src*="missing"]:hover{
         border: solid #ffc23a 1px
     }
 
-.direction-picker-display{border:solid white 3px;}
+.direction-picker-display {
+    border: solid white 3px
+}
 
-.direction-picker-display:hover{border: solid #ffc23a 3px!important;}
+    .direction-picker-display:hover {
+        border: solid #ffc23a 3px !important
+    }
 
 .editable-display {
     border-color: #ae87ca;
@@ -484,23 +493,24 @@ img.shape-editor-display[src*="missing"]:hover{
     font-size: 13px;
     min-width: 23px;
     text-align: center;
-  margin:0px;
-    margin-top:4px;
+    margin: 0px;
+    margin-top: 4px
 }
 
 
 .editor .editable-display:hover {
-    border: solid #ffc23a 3px;
+    border: solid #ffc23a 3px
 }
 
 /*Conditions block*/
-.instruction.condition.instruction-context-menu{
-  background-color:#A47CC3;
+.instruction.condition.instruction-context-menu {
+    background-color: #A47CC3
 }
 
 #vat .condition.vat-selected:not(.disabled), #vat .condition:hover:not(.disabled) {
     background: #A47CC3
 }
+
 .config {
     background: none;
     margin-right: 5px;
@@ -567,7 +577,6 @@ img.shape-editor-display[src*="missing"]:hover{
     background-color: white;
     border: solid 1px white;
     box-shadow: none
-   
 }
 
     .noUi-handle:hover {
@@ -581,10 +590,9 @@ img.shape-editor-display[src*="missing"]:hover{
     border: solid 1px white;
     box-shadow: none;
     margin: 0px 15px
-    
 }
 
- 
+
 
 
 
@@ -600,9 +608,9 @@ img.shape-editor-display[src*="missing"]:hover{
 
 
 
-    .condition.instruction.instruction-context-menu.vat-selected {
-        border-color: #ffc23a
-    }
+.condition.instruction.instruction-context-menu.vat-selected {
+    border-color: #ffc23a
+}
 
 .condition.vat-selected .vat-flippy-closed {
     color: #ffc23a
@@ -613,9 +621,10 @@ img.shape-editor-display[src*="missing"]:hover{
 }
 
 /*Actions - block*/
-.instruction.action.instruction-context-menu{
-  background-color:#5BACAB;
+.instruction.action.instruction-context-menu {
+    background-color: #5BACAB
 }
+
 #vat .action.vat-selected:not(.disabled), #vat .action:hover:not(.disabled) {
     background: #5BACAB
 }
@@ -644,11 +653,11 @@ img.shape-editor-display[src*="missing"]:hover{
 
 
 
-    .action.instruction.instruction-context-menu.vat-selected {
-        background: #66b5b4;
-        border: solid #ffc23a 2px;
-        color: white
-    }
+.action.instruction.instruction-context-menu.vat-selected {
+    background: #66b5b4;
+    border: solid #ffc23a 2px;
+    color: white
+}
 
 .action.vat-selected .vat-flippy-closed {
     color: #ffc23a
@@ -1251,7 +1260,7 @@ hr {
 .block {
     margin: 10px;
     background: none;
-    border: none;
+    border: none
 }
 
 
@@ -1277,8 +1286,7 @@ hr {
 
 
 .trigger.name .editable-display {
-    font-family: 'Open Sans', sans-serif;
-  
+    font-family: 'Open Sans', sans-serif
 }
 
 .trigger-name .editable-display:hover {
@@ -1289,16 +1297,30 @@ hr {
 /*method-if then*/
 
 .if-then .if {
-  color:#333;
-  
-  font-size:0px;}
- span.if::before { position:absolute;font-size:12px;content: " elseif ";}
-.block.rule:first-child .anc.if::before{content:"if";}
+    color: white;
+    font-size: 0px
+}
+
+span.if::before {
+    position: absolute;
+    font-size: 12px;
+    content: " else_if"
+}
+
+.block.rule:first-child .anc.if::before {
+    content: "if"
+}
 
 .if-then .then {
-  color:#333;
-  font-size:0px;}
- span.then:before { position:absolute;font-size:12px;content: "then";}
+    color: white;
+    font-size: 0px
+}
+
+span.then:before {
+    position: absolute;
+    font-size: 12px;
+    content: "then"
+}
 
 .rule .instruction-area {
     display: block !important
@@ -1307,7 +1329,9 @@ hr {
 .rule {
     white-space: normal
 }
-.anc{padding-left:20px;
+
+.anc {
+    padding-left: 20px
 }
 
 
@@ -1316,6 +1340,7 @@ hr {
     background-color: #ae87ca;
     border: none
 }
+
 .if-then + .if-then {
     background-color: #66b5b4
 }
@@ -1706,11 +1731,12 @@ button#tool-fp {
         outline-style: none
     }
 
-button#tool-shadows img{display:none;}
+button#tool-shadows img {
+    display: none
+}
 
 button#tool-shadows {
- 
-  background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/sun.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/sun.png);
     background-color: #52a3d0;
     background-position: center;
     background-repeat: no-repeat;
@@ -1725,7 +1751,7 @@ button#tool-shadows {
 }
 
     button#tool-shadows:hover {
-       background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/sun.png);
+        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/sun.png);
         background-color: #ffc23a;
         background-position: center;
         background-repeat: no-repeat;
@@ -1733,36 +1759,35 @@ button#tool-shadows {
         outline-style: none
     }
 
-button#tool-shadows.down {
- 
-  background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/cloud.png);
-    background-color: #52a3d0;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 16px 12px;
-    height: 30px;
-    left: 20px;
-    outline-style: none;
-    position: fixed;
-    top: 440px;
-    width: 30px;
-    z-index: 5
-}
-button#tool-shadows.down:hover {
- 
-  background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/cloud.png);
-    background-color: #ffc23a;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 16px 12px;
-    height: 30px;
-    left: 20px;
-    outline-style: none;
-    position: fixed;
-    top: 440px;
-    width: 30px;
-    z-index: 5
-}
+    button#tool-shadows.down {
+        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/cloud.png);
+        background-color: #52a3d0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 16px 12px;
+        height: 30px;
+        left: 20px;
+        outline-style: none;
+        position: fixed;
+        top: 440px;
+        width: 30px;
+        z-index: 5
+    }
+
+        button#tool-shadows.down:hover {
+            background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/cloud.png);
+            background-color: #ffc23a;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 16px 12px;
+            height: 30px;
+            left: 20px;
+            outline-style: none;
+            position: fixed;
+            top: 440px;
+            width: 30px;
+            z-index: 5
+        }
 
 
 
@@ -1953,16 +1978,19 @@ button#tool-stop {
 
 /*Draggable window: Variables*/
 
-.draggable-window-content-div table{
- margin-bottom:20px;
+.draggable-window-content-div table {
+    margin-bottom: 20px
 }
+
 .draggable-title-bar {
     background: none;
     font-size: 15px
 }
-.draggable-window input{
-  top:0px;
+
+.draggable-window input {
+    top: 0px
 }
+
 .draggable-window {
     background: #555;
     border: solid white 1px;
@@ -1972,11 +2000,9 @@ button#tool-stop {
     padding: 10px;
     z-index: 0
 }
+
 .highlightedRow {
-    
-    width: 300px
-      border:solid white 1px;
-    
+    width: 300px border:solid white 1px
 }
 
 .attribute-row {
@@ -1984,8 +2010,7 @@ button#tool-stop {
 }
 
     .attribute-row td {
-        padding: 0px 10px;
-     
+        padding: 0px 10px
     }
 
 .attribute-window-table {
@@ -1996,6 +2021,7 @@ button#tool-stop {
     font-size: 13px;
     margin: 0
 }
+
 .draggable-window#attr-window {
     position: fixed
 }
@@ -2049,7 +2075,7 @@ button#tool-stop {
 /*buttons*/
 
 .icon-tool-with-translated-tooltip#pencil {
-    background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/edit.png)!important;
+    background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/edit.png) !important;
     background-position: center !important;
     background-repeat: no-repeat;
     background-size: 11px;
@@ -3134,3 +3160,155 @@ li.annotation-item-header-item {
         margin-top: 20px;
         font-size: 20px
     }
+
+/*hide advanced blocks and camera movement for AC kids*/
+
+#attributes-and-properties-action-group {
+    display: none;
+}
+
+#attributes-and-properties-action-group+div {
+    display: none;
+}
+
+#attributes-and-properties-action-group+div+div {
+    display: none;
+}
+
+#attributes-and-properties-action-group+div+div+div {
+    display: none;
+}
+
+#visualization-action-group {
+    display: none;
+}
+
+#visualization-action-group+div {
+    display: none;
+}
+
+#visualization-action-group+div+div {
+    display: none;
+}
+
+#visualization-action-group+div+div+div {
+    display: none;
+}
+
+#visualization-action-group+div+div+div+div {
+    display: none;
+}
+
+#visualization-action-group+div+div+div+div+div {
+    display: none;
+}
+
+#camera-control-action-group {
+    display: none;
+}
+
+#camera-control-action-group+div {
+    display: none;
+}
+
+#camera-control-action-group+div+div {
+    display: none;
+}
+
+#attributes-condition-group {
+    display: none;
+}
+
+#attributes-condition-group+div {
+    display: none;
+}
+
+#attributes-condition-group+div+div {
+    display: none;
+}
+
+#camera-control-condition-group {
+    display: none;
+}
+
+#camera-control-condition-group+div {
+    display: none;
+}
+
+#basic-conditions-condition-group+div+div+div+div {
+    display: none;
+}
+
+#basic-conditions-condition-group+div+div {
+    display: none;
+}
+
+#basic-conditions-condition-group+div+div+div+div+div+div+div+div {
+    display: none;
+}
+
+#basic-conditions-condition-group+div+div+div+div+div+div+div+div+div+div {
+    display: none;
+}
+
+#basic-actions-action-group+div+div+div+div+div {
+    display: none;
+}
+
+#basic-actions-action-group+div+div+div+div+div+div {
+    display: none;
+}
+
+#basic-actions-action-group+div+div+div+div+div+div+div+div+div+div+div {
+    display: none;
+}
+
+#messages-action-group+div+div {
+    display: none;
+}
+
+#sound-and-speech-action-group+div+div {
+    display: none;
+}
+
+#sound-and-speech-action-group+div+div+div {
+    display: none;
+}
+
+#sound-and-speech-action-group+div+div+div+div {
+    display: none;
+}
+
+#simulation-control-action-group+div {
+    display: none;
+}
+
+#simulation-control-action-group+div+div {
+    display: none;
+}
+
+#simulation-control-action-group+div+div+div {
+    display: none;
+}
+
+#simulation-control-action-group {
+    display: none;
+}
+
+#simulation-control-action-group+div+div+div+div {
+    display: none;
+}
+
+
+.vat-flippy-closed {
+    display: none;
+}
+#tool-camera-rot{display:none;}
+#tool-camera-pan{display:none;}
+#tool-camera-zoom{display:none;}
+#tool-fp{display:none;}
+#tool-shadows{display:none;}
+
+#loop-action-group{display:none}
+#loop-action-group+div{display:none}
+#layer-controls{display:none!important;}

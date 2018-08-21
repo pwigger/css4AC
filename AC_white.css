@@ -169,6 +169,10 @@ body p {
     border: solid 1px white;
 }
 
+
+
+.rule .if-then{background:white;}
+
 #vat .condition:hover:not(.disabled), #vat .condition.vat-selected:not(.disabled), #vat .condition:hover:not(.disabled), #vat .action:hover:not(.disabled), #vat .action.vat-selected:not(.disabled), #vat .action:hover:not(.disabled) {
     background: #ddd;
 }
@@ -177,6 +181,12 @@ body p {
     background: #ddd;
 }
 
+.vat-selected{background:red;}
+
+
+#vat .rule.vat-selected, #vat .method.vat-selected {
+    background: lightgray;
+}
 /* Conversational Programming */
 
 #vat .rule.false div.if-then {
