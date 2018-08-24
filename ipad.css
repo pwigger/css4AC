@@ -1,0 +1,86 @@
+@media (max-width: 1024px) {
+  body{background:grey;
+  font-family:avenir;}
+
+ #gallery-container {
+    position: fixed;
+    right: 10px;
+    width: 160px;
+    top: 90px;
+    background-color: #656565;
+    height:350px!important;
+   z-index:900;
+}
+ 
+  #bottom-toolbar {
+    position: fixed;
+    bottom: 0px
+}
+  
+  div#wrap {
+    overflow: visible;
+    position: fixed;
+    left: -100px
+}
+  #container{
+  }
+  
+  canvas{
+    padding-right:20px;
+    margin-right:-20px;
+    padding-top:8px;
+    height:383px!important;
+  }
+  #threed-and-status{
+    padding-right:20px;
+ }
+  
+  #layer-controls{position:fixed;
+  right:190px;
+  bottom:350px}
+  
+ #vat-conditions-header, #vat-actions-header, #vat-code-header-td {
+    background: none;
+}
+  #vat-code-header-resize-img{display:none;}
+}
+#vat-conditions,#vat-actions{width:155px;background:none;}
+
+/*Scrollbar*/
+
+::-webkit-scrollbar-track {
+    background: none
+}
+
+::-webkit-scrollbar {
+    background: none;
+    height: 0px;
+    width: 10px
+}
+
+::-webkit-scrollbar-thumb {
+    background: none;
+    border: 1px white solid;
+    border-radius: 5px;
+    height: 40px
+}
+
+::-webkit-scrollbar-track-piece {
+    background: none;
+    border: transparent 1px solid;
+    border-radius: 20px;
+    margin-bottom: 40px
+}
+.instruction{color:black;
+background:white;}
+
+
+
+
+
+
+
+
+
+
+
