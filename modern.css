@@ -683,7 +683,7 @@ img.shape-editor-display[src*="missing"]:hover {
 
 textarea.comment-textarea {
     margin: 0px 0px 10px 7px;
-    width: 100%;
+    width: 99%;
     outline-style: none
 }
 
@@ -1027,7 +1027,7 @@ button#action-button {
 
 button#language-button {
     background: #555555;
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text x="20%" y="60%" font-size="14"     font-family="monospace" fill="white">Sprache</text></svg>') !important;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text x="20%" y="60%" font-size="14"     font-family="monospace" fill="white">Language</text></svg>') !important;
     width: 120px;
     height: 40px;
     position: fixed;
@@ -1037,7 +1037,7 @@ button#language-button {
 
     button#language-button:hover {
         background: #ffc23a;
-        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text x="20%" y="60%" font-size="14" font-family="monospace" fill="#555555">Sprache</text></svg>') !important
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text x="20%" y="60%" font-size="14" font-family="monospace" fill="#555555">Language</text></svg>') !important
     }
 
 #language-drop-down {
