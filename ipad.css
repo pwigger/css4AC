@@ -1,18 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Cute+Font');
+
 @media (max-width: 2024px) {
     
   body{background:white;
-  font-family:avenir;}
+  font-family:avenir;
+  line-height:22px;
+}
 
-  body:after{
-    position:fixed;
-    top:0px;
-    left:0px;
-    display:table;
-    width:70px;
-    height:100%;
-    content:" ";
-    background:#313131;
-  }
+ 
     
  #gallery-container {
     position: fixed;
@@ -30,8 +25,8 @@
     bottom: 0px
 }
   
-  #toolbar{background:#6AA9D5!important;}
-  #container{background:#6AA9D5!important;}
+  #toolbar{background:#FBFCFE!important;}
+  #container{background:#FBFCFE!important;}
   #status-bar{background:white;}
   
   
@@ -60,23 +55,69 @@
 }
   #vat-code-header-resize-img{display:none;}
     
+   
+  /*space between code containers*/
+  #vat-conditions-scroll,#vat-actions-scroll{padding:50px;}
+  #vat-conditions-scroll{ margin-left:20px;}
+  #vat-actions-scroll{ margin-right:200px;}
     
+  #vat-conditions, #vat-actions{width:100%;}
+  
   /*Codeblocks*/
-    #vat-conditions,#vat-actions{width:155px;background:none;}
+    #vat-conditions,#vat-actions{background:none;}
 
      #vat-conditions .condition {
         float: right;
-        text-align: left
+        text-align: left;
     }
-    
-  .instruction, .method, .rule .if-then, .rule,.comment-textarea{color:black;
-background:white;
-  border-radius:10px;}
-
- #vat .instruction.vat-selected:not(.disabled), #vat .instruction:hover:not(.disabled){
-    background:#ffc23a;
+   .instruction-content{margin:1px 1px 1px 10px;}
+   
+  .instruction,     .editable-display{color:black;
+background:#62D599;
+  border-radius:40px;
+  border:none;
+  font-family: 'cute font', sans-serif;
+    font-size:22px;
+  color:black;
+ margin-left:10px;
   }
-    
+  
+    .editable-display{
+      padding:0px 10px;
+      background:white;
+      color:gray;
+            
+  }
+    .editable-display:hover{background: lightgrey;color:grey;
+  color:white;}
+  
+    .direction-picker-display,.direction-popup-editor,.one-true-value-editor,.shape-editor-display{border-radius:20px;}
+   
+  .vat-flippy-closed{position:relative;
+  left:5px;
+  color:white;
+    font-size:8px;
+  }
+  
+  
+    /*Block Hover color*/
+  #vat .condition.vat-selected:not(.disabled), #vat .condition:hover:not(.disabled) {
+    background: #A47CC3;
+    background:#62D500;
+}
+  
+  
+  
+  /*stuff around codeblocks*/
+  
+ 
+
+  .comment-textarea{background:none;
+    color:white!important;}
+
+  .vat-selected{border:none;}
+  .rule{background:red;}
+ 
 /*Scrollbar*/
 
 ::-webkit-scrollbar-track {
@@ -105,9 +146,17 @@ background:white;
 
   
   
+  
+  /*Buttons allover*/
+    button{
+      
+  border:solid white 1px;
+  border-radius:50px;
+  padding:0px 10px;
+  margin:2px}
+
   /*Buttons top*/
   
-  button{background:none;}
   .group{padding-right:20px;}
   #toolbar{padding-left:100px;}
   
@@ -123,11 +172,24 @@ background:white;
     }
  
   
+  /*Buttons bottom*/
+  #bottom-toolbar{background:#313131;}
   
+ 
   
-  
-  /*Buttons right
+  /*Buttons left
   */
+  
+   body:after{
+    position:fixed;
+    top:0px;
+    left:0px;
+    display:table;
+    width:70px;
+    height:100%;
+    content:" ";
+    background:#313131;
+  }
   #toolbar button{border:solid black 0px !important;} 
  
 
@@ -145,36 +207,36 @@ background:white;
   
   
 button#tool-arrow {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/cursor.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/cursor.png);
     top: 40px;
   }
   
   button#tool-pencil {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/edit.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/edit.png);
     top: 160px;
   }
   
   button#tool-eraser{ 
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/erase.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/erase.png);
     top:270px; 
   }
    button#tool-hand {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/pointer.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/pointer.png);
     top:95px;
   } 
 
 button#tool-multi {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/paint.png);
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/paint.png);
   top:215px;
 }
     
-  button#tool-camera-pan{    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/drag.png);
+  button#tool-camera-pan{    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/drag.png);
         top:335px;
 
-} button#tool-camera-rot{    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/3drotation.png);top:390px;
+} button#tool-camera-rot{    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/3drotation.png);top:390px;
 }
   button#tool-camera-zoom{
-        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/zoom.png);
+        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/zoom.png);
         top:445px;
   }
  
@@ -190,32 +252,32 @@ button#tool-camera-zoom{
   
 
    button#tool-arrow.down{
- background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/cursor.png);
+ background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/cursor.png);
   background-color:none;  }
   
   
  button#tool-hand.down{
- background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/pointer.png);
+ background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/pointer.png);
   background-color:none;  }
   
    button#tool-pencil.down{
- background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/edit.png);
+ background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/edit.png);
   background-color:none;  }
      button#tool-multi.down{
- background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/paint.png);
+ background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/paint.png);
   background-color:none;  }
        button#tool-eraser.down{
- background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/erase.png);
+ background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/erase.png);
   background-color:none;  }
      button#tool-camera-pan.down{
- background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/drag.png);
+ background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/drag.png);
   background-color:none;  }
       button#tool-camera-rot.down{
- background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/3drotation.png);
+ background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/3drotation.png);
   background-color:none;  }
   
        button#tool-camera-zoom.down{
- background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/zoom.png);
+ background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/zoom.png);
   background-color:none;  }
   
   
