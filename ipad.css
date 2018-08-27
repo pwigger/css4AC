@@ -1,25 +1,125 @@
 @import url('https://fonts.googleapis.com/css?family=Cute+Font');
 
-@media (max-width: 2024px) {
+
     
   body{background:white;
   font-family:avenir;
   line-height:22px;
 }
 
+
  
+  #vat-table tbody tr td:last-child{padding-right:140px;}  
+
+  
+
+
+ /*Gallery*/
     
  #gallery-container {
     position: fixed;
-    right: 10px;
-    width: 160px;
-    top: 90px;
+    right: 0px;
+    width:300px;
+    top: 40px;
     background-color: #656565;
-    height:50%!important;
+    height:100%!important;
    z-index:900;
+   padding:20px 20px 20px 40px;
 }
+  #vat-actions-scroll{margin-right:180px;}
+
+
+@media (max-width: 1240px) {
+  #gallery-container{background:white;color:black;border:solid grey 1px; border-radius:50px; margin-right:20px;}
+  #vat-table tbody tr td:last-child{padding-right:0px;} 
+  #gallery-container{height:45%!important;}
+    #vat-actions-scroll{ margin-right:0px;}
+
+  #vat-table tbody tr td:last-child{padding-right:0px;}  
+}
+  button.config{font-size:0px;background:none; border:none; }
+  
+  button.config:after{font-size:10px;
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/edit.png);
+;content:" edit"; color:black; }
+  .gallery_agentitem{padding:20px;}
+  
+  #gallery-description{padding-top:30px;background:none; font-size:50px; font-family:'cute font';}
  
+  
+
+
+
+.gallery-thumbnail {
+    border-color: #ffc23a;
+    top: 3px;
+  border-radius:20px;
+  background:black;
+}
+
+.gallery_agentitem {
+    height: 45px;
+    padding-top: 4px;
+    background:none!important;
+
+}
+ .gallery_agentitem:hover, .gallery_shapeitem:hover {
+        cursor: pointer
+    }
+
+
+.gallery_shapeitem {
+    height: 35px;
+    padding-bottom: 2px;
+    padding-left: 20px;
+    padding-top: 0px;
+  background:none!important;
  
+}
+
+div.gallery_shapeitem {
+    height: 35px;
+    padding-bottom: 2px;
+    padding-left: 40px;
+}
+
+li ul.gallery_agentsublist li:last-child div.gallery_shapeitem {
+    margin-bottom: 60px
+}
+
+li.gallery-shapelabel {
+    display: none
+}
+
+li:last-child li:last-child div.gallery_shapeitem:last-child {
+    margin-bottom: 100px
+}
+
+ul#gallery_agentlist {
+    margin: 5px;
+    width: 250px;
+
+
+}
+
+    ul#gallery_agentlist > li:first-child {
+        margin-top: 50px
+    }
+
+    ul#gallery_agentlist > li:last-child {
+        margin-bottom: 100px
+    }
+
+span.gallery_name {
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    top: 2px;
+    left: 10px
+}
+  
+  
+  
   #bottom-toolbar {
     position: fixed;
     bottom: 0px
@@ -41,6 +141,7 @@
     padding-right:20px;
     margin-right:-20px;
     padding-top:8px;
+    min-height:370px;
   }
   #threed-and-status{
     padding-right:20px;
@@ -57,9 +158,9 @@
     
    
   /*space between code containers*/
-  #vat-conditions-scroll,#vat-actions-scroll{padding:50px;}
+  #vat-conditions-scroll,#vat-actions-scroll{padding:10px 10px 40px 20px;}
   #vat-conditions-scroll{ margin-left:20px;}
-  #vat-actions-scroll{ margin-right:200px;}
+
     
   #vat-conditions, #vat-actions{width:100%;}
   
@@ -79,7 +180,7 @@ background:#62D599;
   font-family: 'cute font', sans-serif;
     font-size:22px;
   color:black;
- margin-left:10px;
+ margin-left:0px;
   }
   
     .editable-display{
@@ -93,7 +194,7 @@ background:#62D599;
   
     .direction-picker-display,.direction-popup-editor,.one-true-value-editor,.shape-editor-display{border-radius:20px;}
    
-  .vat-flippy-closed{position:relative;
+ .vat-flippy-closed{position:relative;
   left:5px;
   color:white;
     font-size:8px;
@@ -104,19 +205,46 @@ background:#62D599;
   #vat .condition.vat-selected:not(.disabled), #vat .condition:hover:not(.disabled) {
     background: #A47CC3;
     background:#62D500;
+  
 }
   
+  /*methods and rules*/
+ .rule{display:flex;
+   background:lightgrey;
+   border:none;}
+  
+  .rule .anc{vertical-align:top; position:relative; top: 8px; left:-10px}
+  
+  .block .if-then{background:white;border:none;padding-left:30px;padding-top:15px; padding-bottom:0px;min-height:60px}
+  
+ .method{background:lightgrey;
+ border: none;margin-bottom:50px;padding:5px}
+  
+  .method-disclosure-span{color:white;  }
+  
+  textarea.comment-textarea{margin-left:5px;padding-left:10px; border:white solid 1px;
+  background:none;
+    color:white!important;}
+  
+  textarea.comment-textarea:focus{outline-style:none; background:white; color:black!important;}
+  
+ 
+  
+  .trigger-name .editable-display{font-size:50px;
+  padding:20px; background:none;color:white;}
+  
+  .method .trigger-name{border:none;}
+  
+  /*Selected Rules and Methods*/
+  #vat .rule.vat-selected{background:#62D599;}
+ 
+#vat .method.vat-selected{background:#62D599;}
   
   
   /*stuff around codeblocks*/
   
- 
-
-  .comment-textarea{background:none;
-    color:white!important;}
-
-  .vat-selected{border:none;}
-  .rule{background:red;}
+  .comment-textarea{}
+  .input:focus{display:none;}
  
 /*Scrollbar*/
 
@@ -144,21 +272,31 @@ background:#62D599;
     margin-bottom: 40px
 }
 
-  
+  #asi-cube-link{position:fixed;
+  left:30px;top:20px;}
   
   
   /*Buttons allover*/
     button{
       
   border:solid white 1px;
-  border-radius:50px;
-  padding:0px 10px;
-  margin:2px}
+      border-radius:3px;
+  
+  padding:5px 15px;
+  margin:0px; font-size:12px;
+  background:white;
+  color:#67C580;
+  font-weight:500;
+   text-transform: uppercase;
+  outline-style:none;
+  }
+  
 
   /*Buttons top*/
   
   .group{padding-right:20px;}
-  #toolbar{padding-left:100px;}
+  #toolbar{padding-left:100px;
+}
   
 
   
@@ -173,8 +311,34 @@ background:#62D599;
  
   
   /*Buttons bottom*/
-  #bottom-toolbar{background:#313131;}
   
+  
+  #bottom-toolbar{background:white;}
+  
+  #gallery-buttons{position:fixed; right:90px;}
+  
+  #gallery-minus-button {
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/delete.png);
+    background-color: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 11px;
+    font-size: 0;
+    position: relative;
+    top: -0.5px;
+    width: 24px;
+    height: 24px
+}
+  
+  #vat-delete-button {
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/delete.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 11px;
+    font-size: 0;
+    position: relative;
+    height: 24px
+}
  
   
   /*Buttons left
@@ -208,36 +372,36 @@ background:#62D599;
   
 button#tool-arrow {
     background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/cursor.png);
-    top: 40px;
+    top: 140px;
   }
   
   button#tool-pencil {
     background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/edit.png);
-    top: 160px;
+    top: 260px;
   }
   
   button#tool-eraser{ 
     background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/erase.png);
-    top:270px; 
+    top:370px; 
   }
    button#tool-hand {
     background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/pointer.png);
-    top:95px;
+    top:195px;
   } 
 
 button#tool-multi {
     background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/paint.png);
-  top:215px;
+  top:315px;
 }
     
   button#tool-camera-pan{    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/drag.png);
-        top:335px;
+        top:435px;
 
-} button#tool-camera-rot{    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/3drotation.png);top:390px;
+} button#tool-camera-rot{    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/3drotation.png);top:490px;
 }
   button#tool-camera-zoom{
         background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/zoom.png);
-        top:445px;
+        top:545px;
   }
  
   button#tool-arrow, button#tool-pencil, button#tool-eraser, button#tool-multi,
@@ -302,7 +466,8 @@ button#tool-camera-zoom.down{
     background-size: 15px 15px;
     height: 50px;
     left: 10px;
-    position: fixed;
+ position: fixed;
+  
     width: 50px;
     z-index: 5;
 }
@@ -311,7 +476,6 @@ button#tool-camera-zoom.down{
     
     
     
-}
 
 
 
