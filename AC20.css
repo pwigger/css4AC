@@ -2,12 +2,13 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
     
-  body{background:#FAFBFC;
-  font-family:Roboto;
+  body{background:#eee;
+  font-family:Avenir;
+    font-size:12px;
   line-height:22px;
 }
 
-
+/*
  body:after{
     position:fixed;
     top:0px;
@@ -17,15 +18,17 @@
     height:70px;
     content:" ";
     background:#4B435C;
-  }
+}*/
+
 
 /*adjust Colors*/
 .instruction,     .editable-display{background:grey;}
 
  #gallery-container {
-    background-color: #DFE2EB;
+    background-color: #EEE;
    color:#5399DB;
    color:#7C7C8D;
+   border-right:solid #DDD 1px
 }
 
 /*Button-text*/
@@ -55,7 +58,11 @@ button{
   .block .if-then{background:none;}
 
  .method{background:white;
-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);}
+ box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);}
+
+.card-2 {
+ 
+}
 .block{margin:0px -5px 0px -5px;}
 
  /*Selected Rules and Methods*/
@@ -80,13 +87,15 @@ box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);}
   width:250px;
 }
 
-#toolbar{
-  background:#FAFBFC;!important;margin-left:260px;padding-left:0px;height:55px; margin-top:15px}
+
 
 
 #non-gallery-container{position:fixed;
-top:70px; left:250px;}
-#layer-controls{position:fixed; top:20px; right:20px;}
+top:78px; left:250px;}
+
+#layer-controls{position:fixed; top:30px; right:20px;}
+
+
 
 /*
 @media (max-width: 1240px) {
@@ -99,14 +108,16 @@ top:70px; left:250px;}
 }*/
 
 #gallery-title-span{position:relative;
-top:20px;left:100px;color:white;}
+top:20px;left:100px;color:blue;}
 
 
   button.config{font-size:0px;background:none; border:none; }
   
   button.config:after{font-size:10px;
-content:" edit"; color:white; position:relative;
+content:" edit"; color:#aaa; position:relative;
 top:-2px;left:-10px}
+
+
 
 ul#gallery_agentlist{margin:0px 0px 0px 0px;
   width:250px;
@@ -130,8 +141,8 @@ ul#gallery_agentlist{margin:0px 0px 0px 0px;
 
 }
 
-
-
+#asi-cube-link img{position:fixed; left:0px;background:white;top:8px;height:70px;border-left:solid white 30px;border-bottom:solid white 10px;
+border-right:solid white 28px;}
 .gallery_agentitem .gallery-thumbnail {
     top: 9px;
   height:20px;
@@ -139,6 +150,7 @@ ul#gallery_agentlist{margin:0px 0px 0px 0px;
   margin-right:20px;
 
 }
+
 
 
 .gallery_shapeitem .gallery-thumbnail {
@@ -151,9 +163,7 @@ ul#gallery_agentlist{margin:0px 0px 0px 0px;
 
 
 
-.gallery_agentitem {
- 
-}
+
  .gallery_agentitem:hover, .gallery_shapeitem:hover {
         cursor: pointer
     }
@@ -191,8 +201,8 @@ li:last-child li:last-child div.gallery_shapeitem:last-child {
  
   
  
-  #container{background:#FBFCFE!important;}
-  #status-bar{background:white;}
+  #container{background:#eee!important}
+  #status-bar{background:#eee;}
   
   
   
@@ -204,8 +214,7 @@ li:last-child li:last-child div.gallery_shapeitem:last-child {
  #vat-conditions-header, #vat-actions-header, #vat-code-header-td {
     background: none;
 }
-  #vat-code-header-resize-img{}
-    
+
    
   /*space between code containers*/
   
@@ -277,8 +286,6 @@ li:last-child li:last-child div.gallery_shapeitem:last-child {
   
   /*stuff around codeblocks*/
   
-  .comment-textarea{}
-  .input:focus{display:none;}
  
 /*Scrollbar*/
 
@@ -294,7 +301,7 @@ li:last-child li:last-child div.gallery_shapeitem:last-child {
 
 ::-webkit-scrollbar-thumb {
     background: none;
-    border: 1px white solid;
+    border: 1px #bbb solid;
     border-radius: 5px;
     height: 40px
 }
@@ -322,15 +329,11 @@ li:last-child li:last-child div.gallery_shapeitem:last-child {
   text-transform: uppercase;
   outline-style:none;
   }
+
   
 
   /*Buttons top*/
-  
-  .group{padding-right:20px;}
-
-
-  
-  
+ 
   
     button#tool-play.down,button#tool-stop.down {
         background: none;
@@ -344,13 +347,12 @@ li:last-child li:last-child div.gallery_shapeitem:last-child {
   /*Buttons bottom*/
   
   
-  #bottom-toolbar{background:white;}
+  #bottom-toolbar{background:white;border-top:solid #ccc 1px;}
   
   #gallery-buttons{position:fixed; left:10px;}
   
   #gallery-minus-button {
     background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/delete.png);
-    background-color: none;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 11px;
@@ -376,7 +378,6 @@ li:last-child li:last-child div.gallery_shapeitem:last-child {
   */
   
 
-  #toolbar button{border:solid black 0px !important;} 
 
 
  
@@ -388,11 +389,12 @@ li:last-child li:last-child div.gallery_shapeitem:last-child {
 #tool-hand img,
 #tool-camera-pan img,
 #tool-camera-rot img,
-#tool-camera-zoom img{
+#tool-camera-zoom img,
+#tool-fp img, button#tool-shadows img{
     display: none;
 }
 
-#toolbar button{background:none;} 
+
   
 button#tool-arrow {
     background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/cursor.png);
@@ -427,11 +429,17 @@ button#tool-multi {
         background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/zoom.png);
         top:545px;
   }
+button#tool-fp {
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/birdview.png);}
+
+button#tool-shadows {
+  background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/cloud.png);}
  
-  button#tool-arrow, button#tool-pencil, button#tool-eraser, button#tool-multi,
+button#tool-arrow, button#tool-pencil, button#tool-eraser, button#tool-multi,
 button#tool-hand,
 button#tool-camera-pan, button#tool-camera-rot,
-button#tool-camera-zoom{
+button#tool-camera-zoom, button#tool-fp, 
+button#tool-shadows{
   background-color: none;
   }
   
@@ -441,34 +449,41 @@ button#tool-camera-zoom{
 
    button#tool-arrow.down{
  background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/cursor.png);
-  background-color:none;  }
+  }
   
   
  button#tool-hand.down{
- background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/pointer.png);
-  background-color:none;  }
+ background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/pointer.png);}
   
    button#tool-pencil.down{
  background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/edit.png);
-  background-color:none;  }
+    }
      button#tool-multi.down{
  background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/paint.png);
-  background-color:none;  }
+    }
        button#tool-eraser.down{
  background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/erase.png);
-  background-color:none;  }
+ }
      button#tool-camera-pan.down{
  background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/drag.png);
-  background-color:none;  }
+    }
       button#tool-camera-rot.down{
  background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/3drotation.png);
-  background-color:none;  }
+  }
   
        button#tool-camera-zoom.down{
  background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/zoom.png);
-  background-color:none;  }
+    }
   
+
+
+button#tool-fp.down {
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/first-person-view.png);}
   
+button#tool-shadows.down {
+  background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/sun.png);}
+
+
 button#tool-arrow,
 button#tool-arrow.down,
 button#tool-pencil,
@@ -483,16 +498,145 @@ button#tool-camera-pan.down,
 button#tool-camera-rot,
 button#tool-camera-rot.down,
 button#tool-camera-zoom,
-button#tool-camera-zoom.down{
+button#tool-camera-zoom.down,
+button#tool-fp,button#tool-fp.down, button#tool-shadows,button#tool-shadows.down{
  
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px 15px;
-    height: 20px;
+    height: 40px;
     left: 10px;
-
-  
-    width: 20px;
+    width: 40px;
     z-index: 5;
+  margin-top:3px;
+  margin-right:3px;
+  margin-bottom:3px;
 }
-#toolbar select{border:solid grey 0px;border-bottom:solid grey 1px; color:grey;background-color:rgba(0,0,0,0); box-shadow:none;}
+button#tool-fp,button#tool-fp.down{ background-size: 15px 13px;}
+
+
+
+button#tool-arrow.down,
+button#tool-pencil.down,
+button#tool-eraser.down, 
+button#tool-multi.down,
+button#tool-hand.down,  
+button#tool-camera-pan.down,
+button#tool-camera-rot.down,
+button#tool-camera-zoom.down,button#tool-play.down,button#tool-stop.down, button#tool-step.down{background-color:#eee;}
+
+
+/*Toolbar*/
+
+#toolbar:after{content:""; position:fixed; left: 0px; top:0px; height:50px; background:white; width:100%; z-index:-100;}
+
+#toolbar{
+ background:white;!important;
+  border:solid #ccc 1px!important;
+  height:49px; 
+  margin-top:30px; 
+  padding-left:40px;
+  padding-top:0px
+}
+
+#toolbar button, #toolbar button:first-child{border:solid white 0px; border-left:0px;}
+
+
+
+/*
+#toolbar .group:last-child{z-index:40;}
+#toolbar .group:first-child{position:fixed; right:10px; top:30px}*/
+
+
+.group{padding:0px; margin-right:0px;height:30px; }
+.group:last-child{border-right:solid #ccc 1px; padding-right:20px}
+.group:first-child{display:none;}
+
+
+/*Button position*/
+#tool-play, #tool-stop,#tool-step, #tool-fp, #tool-shadows, #world-save-button, #world-clone-button, #tool-reset{
+margin-top:3px;margin:3px 2px 0px 2px;padding:5px 12px; width:40px;}
+#tool-reset{position:relative; left:25px;}
+
+#slider-group{margin-top:18px;padding:0px 15px}
+
+
+
+
+button#tool-hand{ 
+}
+.group{border-left:solid #ccc 1px; border-right:solid #ccc 1px; padding-left:10px;padding-right:10px;vertical-align:top!important;height:55px;}
+ .group:nth-child(2),.group:nth-child(3),.group:nth-child(4){left:0px;top:0px;height:0px;}
+
+
+#toolbar button{height:40px;}
+
+/*
+.group:nth-child(5){left:400px;top:35px;}
+.group:nth-child(6){left:539px;top:35px;}
+.group:nth-child(7){left:775px;top:35px;}
+.group:nth-child(8){left:910px;top:35px;}
+.group:nth-child(9){left:977px;top:35px;}
+.group:nth-child(10){left:1044px;top:45px;}*/
+/*Menu*/
+#action-button img,
+#language-button img, #world-button img, #world-button-text{
+  display:none;
+}
+
+
+button#action-button,button#language-button, button#world-button{
+  background-position: center;
+    background-repeat: no-repeat;
+    background-size: 160px 20px;
+    height: 30px;
+    top:0px;
+    position: fixed;
+    width:100px;
+    border-radius:0px;
+}
+
+
+
+
+
+
+button:hover{background-color:#EEE!important;}
+
+
+#action-button-menu{position:fixed;top:28px;left:100px;}
+
+#language-drop-down {
+    position: fixed;
+   top: 28px;
+    left: 200px;
+}
+
+button#action-button{
+   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text x="25%" y="75%" font-size="13"     font-family="Roboto" fill="black">AgentCubes</text></svg>') ;
+       left: 100px;
+}
+button#language-button {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text x="30%" y="75%" font-size="13"     font-family="Roboto" fill="black">Language</text></svg>') !important;
+    left: 200px;  
+}
+
+button#world-button{left:300px;font-family:"roboto"; color:black;  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text x="36%" y="75%" font-size="13"     font-family="Roboto" fill="black">World</text></svg>') !important;
+    left: 300px; }
+
+   
+#world-button-menu{position:fixed; left: 300px; top:28px; content:" ";}
+
+
+
+button#world-clone-button, button#world-save-button{background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/save.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 12px;
+    font-size: 0;
+}
+
+#toolbar select{border:solid #ccc 1px; color:grey;background-color:rgba(0,0,0,0); box-shadow:none; position:relative; left:20px} 
+
+
+
