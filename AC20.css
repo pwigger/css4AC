@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css?family=Cute+Font');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+    
+  body{background:#FAFBFC;
+  font-family:Roboto;
+  line-height:22px;
+}
+
+
+ body:after{
+    position:fixed;
+    top:0px;
+    left:0px;
+    display:table;
+    width:250px;
+    height:70px;
+    content:" ";
+    background:#4B435C;
+  }
+
+/*adjust Colors*/
+.instruction,     .editable-display{background:grey;}
+
+ #gallery-container {
+    background-color: #DFE2EB;
+   color:#5399DB;
+   color:#7C7C8D;
+}
+
+/*Button-text*/
+button{
+  color:#5399DB;
+}
+/*Farbe für Block*/
+
+.instruction,.editable-display{color:white;}
+
+
+
+  /*Block Hover color*/
+  #vat .condition.vat-selected:not(.disabled), #vat .condition:hover:not(.disabled) {
+    background: #A47CC3;
+    
+} 
+
+
+/*Farbe für Regel*/
+ .rule{display:flex;
+   background:none;
+   margin:20px;
+}
+.rule-box{background:none;}
+
+  .block .if-then{background:none;}
+
+ .method{background:white;
+box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);}
+.block{margin:0px -5px 0px -5px;}
+
+ /*Selected Rules and Methods*/
+  #vat .rule.vat-selected,#vat .method.vat-selected{background:#DFE2EB;}
+#vat .rule{ border-top:solid #eee 5px;}
+
+  /*#vat-table tbody tr td:last-child{padding-right:140px;}*/
+
+#vat-table{margin-left:20px;}
+  
+/*Cleanup*/
+
+
+#vat-code-td #vat-code {padding:0px 40px 0px 50px;}
+#vat-conditions-scroll{padding:0px 5px 0px 0px;}
+
+
+
+ /*Gallery*/
+    
+ #gallery-container {
+  width:250px;
+}
+
+#toolbar{
+  background:#FAFBFC;!important;margin-left:260px;padding-left:0px;height:55px; margin-top:15px}
+
+
+#non-gallery-container{position:fixed;
+top:70px; left:250px;}
+#layer-controls{position:fixed; top:20px; right:20px;}
+
+/*
+@media (max-width: 1240px) {
+  #gallery-container{background:white;color:black;border:solid grey 1px; border-radius:50px; margin-right:20px;}
+  #vat-table tbody tr td:last-child{padding-right:0px;} 
+  #gallery-container{height:45%!important;}
+    #vat-actions-scroll{ margin-right:0px;}
+
+  #vat-table tbody tr td:last-child{padding-right:0px;}  
+}*/
+
+#gallery-title-span{position:relative;
+top:20px;left:100px;color:white;}
+
+
+  button.config{font-size:0px;background:none; border:none; }
+  
+  button.config:after{font-size:10px;
+content:" edit"; color:white; position:relative;
+top:-2px;left:-10px}
+
+ul#gallery_agentlist{margin:0px 0px 0px 0px;
+  width:250px;
+  
+}
+  
+.gallery_agentitem{padding-left:35px; height:40px;}
+
+.flippy-open, .flippy-closed{
+  position:relative; left:200px;
+  top:11px; 
+ font-size:8px;}
+
+/*.flippy-closed:after {content:"SHAPES"}
+.flippy-open:after {content:"HIDE"}*/
+
+  #gallery-description{padding-top:30px;background:none; font-size:50px; font-family:'cute font';}
+ 
+.gallery_shapeitem{padding-left:50px;
+ 
+
+}
+
+
+
+.gallery_agentitem .gallery-thumbnail {
+    top: 9px;
+  height:20px;
+  width:20px;
+  margin-right:20px;
+
+}
+
+
+.gallery_shapeitem .gallery-thumbnail {
+    top:2px;
+  height:20px;
+  width:20px;
+  margin-right:20px;
+
+}
+
+
+
+.gallery_agentitem {
+ 
+}
+ .gallery_agentitem:hover, .gallery_shapeitem:hover {
+        cursor: pointer
+    }
+
+.gallery_agentitem .gallery_name{position:relative; top:10px}
+.gallery_shapeitem .gallery_name{position:relative; top:3px;}
+
+
+
+li ul.gallery_agentsublist li:last-child div.gallery_shapeitem {
+    margin-bottom: 30px;
+
+}
+
+
+li.gallery-shapelabel {
+    display: none
+}
+
+li:last-child li:last-child div.gallery_shapeitem:last-child {
+    margin-bottom: 100px
+}
+
+
+    ul#gallery_agentlist > li:first-child {
+        margin-top: 50px
+    }
+
+    ul#gallery_agentlist > li:last-child {
+        margin-bottom: 100px
+    }
+
+
+  
+ 
+  
+ 
+  #container{background:#FBFCFE!important;}
+  #status-bar{background:white;}
+  
+  
+  
+ 
+
+ 
+  
+  
+ #vat-conditions-header, #vat-actions-header, #vat-code-header-td {
+    background: none;
+}
+  #vat-code-header-resize-img{}
+    
+   
+  /*space between code containers*/
+  
+  
+  /*Codeblocks*/
+    #vat-conditions,#vat-actions{background:none;}
+
+     #vat-conditions .condition {
+        float: right;
+        text-align: left;
+    }
+   .instruction-content{margin:1px 1px 1px 10px;}
+   
+  .instruction,     .editable-display{
+  border-radius:40px;
+  border:none;
+  font-family: 'cute font', sans-serif;
+    font-size:22px;
+ margin-left:0px;
+  }
+  
+    .editable-display{
+      padding:0px 10px;
+      background:white;
+      color:gray;
+            
+  }
+    .editable-display:hover{background: lightgrey;color:grey;
+  color:white;}
+  
+    .direction-picker-display,.direction-popup-editor,.one-true-value-editor,.shape-editor-display{border-radius:20px;}
+   
+ .vat-flippy-closed{position:relative;
+  left:5px;
+  color:white;
+    font-size:8px;
+  }
+  
+  
+  
+  
+  /*methods and rules*/
+ .rule{display:flex;
+   border:none;}
+  
+  .rule .anc{vertical-align:top; position:relative; top: 8px; left:-10px}
+  
+  .block .if-then{border:none;padding-left:30px;padding-top:15px; padding-bottom:0px;min-height:60px}
+  
+ .method{border: none;margin-bottom:50px;padding:5px}
+  
+  .method-disclosure-span{color:white;}
+  
+  textarea.comment-textarea{margin-left:5px;padding-left:10px; border:white solid 1px;
+  background:none;
+    color:white!important;}
+  
+  textarea.comment-textarea:focus{outline-style:none; background:white; color:black!important;}
+  
+ 
+  
+  .trigger-name .editable-display{font-size:50px;
+  padding:40px 0px 40px 40px; background:none;color:grey;}
+  
+  .method .trigger-name{border:none;}
+  
+ 
+  
+  
+  /*stuff around codeblocks*/
+  
+  .comment-textarea{}
+  .input:focus{display:none;}
+ 
+/*Scrollbar*/
+
+::-webkit-scrollbar-track {
+    background: none
+}
+
+::-webkit-scrollbar {
+    background: none;
+    height: 0px;
+    width: 10px
+}
+
+::-webkit-scrollbar-thumb {
+    background: none;
+    border: 1px white solid;
+    border-radius: 5px;
+    height: 40px
+}
+
+::-webkit-scrollbar-track-piece {
+    background: none;
+    border: transparent 1px solid;
+    border-radius: 20px;
+    margin-bottom: 40px
+}
+
+ 
+  
+  
+  /*Buttons allover*/
+    button{
+      
+  border:solid red 0px;
+      border-radius:3px;
+  
+  padding:5px 15px;
+  margin:0px; font-size:12px;
+  background:white;
+  font-weight:500;
+  text-transform: uppercase;
+  outline-style:none;
+  }
+  
+
+  /*Buttons top*/
+  
+  .group{padding-right:20px;}
+
+
+  
+  
+  
+    button#tool-play.down,button#tool-stop.down {
+        background: none;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        outline-style: none;
+        background-size: 22px
+    }
+ 
+  
+  /*Buttons bottom*/
+  
+  
+  #bottom-toolbar{background:white;}
+  
+  #gallery-buttons{position:fixed; left:10px;}
+  
+  #gallery-minus-button {
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/delete.png);
+    background-color: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 11px;
+    font-size: 0;
+    position: relative;
+    top: -0.5px;
+    width: 24px;
+    height: 24px
+}
+  
+  #vat-delete-button {
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/delete.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 11px;
+    font-size: 0;
+    position: relative;
+    height: 24px
+}
+ 
+  
+  /*Buttons left
+  */
+  
+
+  #toolbar button{border:solid black 0px !important;} 
+
+
+ 
+
+#tool-arrow img, 
+#tool-pencil img, 
+#tool-eraser img, 
+#tool-multi img,
+#tool-hand img,
+#tool-camera-pan img,
+#tool-camera-rot img,
+#tool-camera-zoom img{
+    display: none;
+}
+
+#toolbar button{background:none;} 
+  
+button#tool-arrow {
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/cursor.png);
+    top: 140px;
+  }
+  
+  button#tool-pencil {
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/edit.png);
+    top: 260px;
+  }
+  
+  button#tool-eraser{ 
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/erase.png);
+    top:370px; 
+  }
+   button#tool-hand {
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/pointer.png);
+    top:195px;
+  } 
+
+button#tool-multi {
+    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/paint.png);
+  top:315px;
+}
+    
+  button#tool-camera-pan{    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/drag.png);
+        top:435px;
+
+} button#tool-camera-rot{    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/3drotation.png);top:490px;
+}
+  button#tool-camera-zoom{
+        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/zoom.png);
+        top:545px;
+  }
+ 
+  button#tool-arrow, button#tool-pencil, button#tool-eraser, button#tool-multi,
+button#tool-hand,
+button#tool-camera-pan, button#tool-camera-rot,
+button#tool-camera-zoom{
+  background-color: none;
+  }
+  
+  .down{
+  outline-style: none;}
+  
+
+   button#tool-arrow.down{
+ background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/cursor.png);
+  background-color:none;  }
+  
+  
+ button#tool-hand.down{
+ background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/pointer.png);
+  background-color:none;  }
+  
+   button#tool-pencil.down{
+ background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/edit.png);
+  background-color:none;  }
+     button#tool-multi.down{
+ background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/paint.png);
+  background-color:none;  }
+       button#tool-eraser.down{
+ background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/erase.png);
+  background-color:none;  }
+     button#tool-camera-pan.down{
+ background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/drag.png);
+  background-color:none;  }
+      button#tool-camera-rot.down{
+ background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/3drotation.png);
+  background-color:none;  }
+  
+       button#tool-camera-zoom.down{
+ background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/zoom.png);
+  background-color:none;  }
+  
+  
+button#tool-arrow,
+button#tool-arrow.down,
+button#tool-pencil,
+button#tool-pencil.down,
+button#tool-eraser, 
+button#tool-eraser.down, button#tool-multi,
+button#tool-multi.down,
+button#tool-hand,
+button#tool-hand.down,  
+button#tool-camera-pan, 
+button#tool-camera-pan.down,
+button#tool-camera-rot,
+button#tool-camera-rot.down,
+button#tool-camera-zoom,
+button#tool-camera-zoom.down{
+ 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    height: 20px;
+    left: 10px;
+
+  
+    width: 20px;
+    z-index: 5;
+}
+#toolbar select{border:solid grey 0px;border-bottom:solid grey 1px; color:grey;background-color:rgba(0,0,0,0); box-shadow:none;}

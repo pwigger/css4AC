@@ -1,4 +1,3 @@
-
 #color-picker-bg #color-picker {
     position: fixed;
     top: 360px;
@@ -991,19 +990,20 @@ button:hover {
     color: #555555
 }
 
-#action-button img {
-    content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/other/logo.png);
+#action-button img{display:none;}
+
+#action-button {
+    background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/other/logo.png)!important;
     height: 25px;
     width: 25px;
     background: none;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 16px 16px;
+    background-size: 30px 30px;
     margin-top: 5px
 }
 
 button#action-button {
-    background: none;
     position: fixed;
     top: 0px;
     left: 0px;
@@ -1012,7 +1012,8 @@ button#action-button {
 }
 
 #action-button:hover {
-    background: #ffc23a
+		background-size: 35px 35px;
+
 }
 
 #action-button-menu {
@@ -1037,7 +1038,7 @@ button#language-button {
 
     button#language-button:hover {
         background: #ffc23a;
-        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text x="20%" y="60%" font-size="14" font-family="monospace" fill="#555555">Language</text></svg>') !important
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text x="20%" y="60%" font-size="14" font-family="monospace" fill="black">Language</text></svg>') !important
     }
 
 #language-drop-down {
