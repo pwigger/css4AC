@@ -1,7 +1,46 @@
 @import url('https://fonts.googleapis.com/css?family=Cute+Font');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-    
+
+@import url('https://fonts.googleapis.com/css?family=Boogaloo');
+
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch');
+
+@import url('https://fonts.googleapis.com/css?family=Squada+One');
+
+
+@import url('https://fonts.googleapis.com/css?family=Averia+Gruesa+Libre|Bahiana|Baloo+Da|Bubblegum+Sans|Chewy|Concert+One|Flamenco|Fredoka+One|Irish+Grover|Kirang+Haerang|Londrina+Solid|Luckiest+Guy|Offside|Press+Start+2P|Skranji|Slackey|Sniglet|Squada+One|Tulpen+One');
+  
+/*OK Fonts
+Cute Font Averia Gruesa Libre Bubblegum sans Sans Kirang Haerang Londrina solid Skranji Sniglet*/
+
+/*Farbe für Block*/
+.instruction,     .editable-display{
+  
+  background:#444;
+  background:#F5C169;
+  background:#7A9ACF;
+  background:#6CC4F6;
+  background:#7C6CE5;
+  background:#2BC6DA;
+  background:#F78737;
+  color:white;
+  
+    font-family: 'Bubblegum Sans'; 
+
+
+     font-family: 'Averia Gruesa Libre'; 
+   font-size:14px;
+  
+    font-family: 'Cute Font';
+font-size:22px;
+   
+  font-weight: 100;
+  
+        
+
+}
+
   body{background:#eee;
   font-family:Avenir;
     font-size:12px;
@@ -22,10 +61,9 @@
 
 
 /*adjust Colors*/
-.instruction,     .editable-display{background:grey;}
 
  #gallery-container {
-    background-color: #EEE;
+    background-color: #eee;
    color:#5399DB;
    color:#7C7C8D;
    border-right:solid #DDD 1px
@@ -35,15 +73,17 @@
 button{
   color:#5399DB;
 }
-/*Farbe für Block*/
 
-.instruction,.editable-display{color:white;}
 
 
 
   /*Block Hover color*/
-  #vat .condition.vat-selected:not(.disabled), #vat .condition:hover:not(.disabled) {
-    background: #A47CC3;
+  #vat .condition.vat-selected:not(.disabled), #vat .condition:hover:not(.disabled),#vat .action.vat-selected:not(.disabled), #vat .action:hover:not(.disabled) {
+    background:#F5C169;
+     background:#6080B0;
+    background:#E07020;
+    cursor:hand;
+
     
 } 
 
@@ -57,17 +97,14 @@ button{
 
   .block .if-then{background:none;}
 
- .method{background:white;
+ .method{background:#fff;
  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);}
 
-.card-2 {
- 
-}
 .block{margin:0px -5px 0px -5px;}
 
  /*Selected Rules and Methods*/
-  #vat .rule.vat-selected,#vat .method.vat-selected{background:#DFE2EB;}
-#vat .rule{ border-top:solid #eee 5px;}
+  #vat .rule.vat-selected,#vat .method.vat-selected{background:#F5C169;}
+#vat .rule{ border-top:solid #efefef 5px;}
 
   /*#vat-table tbody tr td:last-child{padding-right:140px;}*/
 
@@ -77,7 +114,7 @@ button{
 
 
 #vat-code-td #vat-code {padding:0px 40px 0px 50px;}
-#vat-conditions-scroll{padding:0px 5px 0px 0px;}
+#vat-conditions-scroll,#vat-actions-scroll{padding:0px 10px 0px 20px;}
 
 
 
@@ -90,25 +127,18 @@ button{
 
 
 
-#non-gallery-container{position:fixed;
-top:78px; left:250px;}
+#non-gallery-container{position:absolute;
+top:0px; left:250px;}
+#container canvas{padding-right:30px;}
+#layer-controls{color:#bbb;position:fixed; top:15px; right:15px;opacity:0.2}
+#layer-controls:hover{opacity:1;}
 
-#layer-controls{position:fixed; top:30px; right:20px;}
 
 
 
-/*
-@media (max-width: 1240px) {
-  #gallery-container{background:white;color:black;border:solid grey 1px; border-radius:50px; margin-right:20px;}
-  #vat-table tbody tr td:last-child{padding-right:0px;} 
-  #gallery-container{height:45%!important;}
-    #vat-actions-scroll{ margin-right:0px;}
-
-  #vat-table tbody tr td:last-child{padding-right:0px;}  
-}*/
 
 #gallery-title-span{position:relative;
-top:20px;left:100px;color:blue;}
+top:20px;left:100px;}
 
 
   button.config{font-size:0px;background:none; border:none; }
@@ -231,9 +261,7 @@ li:last-child li:last-child div.gallery_shapeitem:last-child {
   .instruction,     .editable-display{
   border-radius:40px;
   border:none;
-  font-family: 'cute font', sans-serif;
-    font-size:22px;
- margin-left:0px;
+   margin-left:0px;
   }
   
     .editable-display{
@@ -266,18 +294,24 @@ li:last-child li:last-child div.gallery_shapeitem:last-child {
   
  .method{border: none;margin-bottom:50px;padding:5px}
   
-  .method-disclosure-span{color:white;}
+  .method-disclosure-span{color:#888;}
   
-  textarea.comment-textarea{margin-left:5px;padding-left:10px; border:white solid 1px;
-  background:none;
-    color:white!important;}
+  textarea.comment-textarea{margin-left:60px;padding-left:10px; border:#ddd solid 1px;
+  background:white;
+    border-radius:4px;
+    color:#555!important;
+width:80%;
+margin-bottom:20px;}
   
   textarea.comment-textarea:focus{outline-style:none; background:white; color:black!important;}
-  
  
   
   .trigger-name .editable-display{font-size:50px;
-  padding:40px 0px 40px 40px; background:none;color:grey;}
+  padding:20px 0px 10px 20px;
+    margin:20px 20px 0px 20px;background:none;color:grey;}
+  .trigger-name .editable-display:hover{background:#eee;}
+
+.trigger-name .editable-display:after{content:"▼"; font-size:15px;position:relative; left:20px;}
   
   .method .trigger-name{border:none;}
   
@@ -352,7 +386,7 @@ li:last-child li:last-child div.gallery_shapeitem:last-child {
   #gallery-buttons{position:fixed; left:10px;}
   
   #gallery-minus-button {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/delete.png);
+    background: url(/Ristretto3D/public/css/skins/icons/darkgrey/delete.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 11px;
@@ -364,7 +398,7 @@ li:last-child li:last-child div.gallery_shapeitem:last-child {
 }
   
   #vat-delete-button {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/delete.png);
+    background: url(/Ristretto3D/public/css/skins/icons/darkgrey/delete.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 11px;
@@ -397,43 +431,43 @@ li:last-child li:last-child div.gallery_shapeitem:last-child {
 
   
 button#tool-arrow {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/cursor.png);
+    background: url(/Ristretto3D/public/css/skins/icons/darkgrey/cursor.png);
     top: 140px;
   }
   
   button#tool-pencil {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/edit.png);
+    background: url(/Ristretto3D/public/css/skins/icons/darkgrey/edit.png);
     top: 260px;
   }
   
   button#tool-eraser{ 
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/erase.png);
+    background: url(/Ristretto3D/public/css/skins/icons/darkgrey/erase.png);
     top:370px; 
   }
    button#tool-hand {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/pointer.png);
+    background: url(/Ristretto3D/public/css/skins/icons/darkgrey/pointer.png);
     top:195px;
   } 
 
 button#tool-multi {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/paint.png);
+    background: url(/Ristretto3D/public/css/skins/icons/darkgrey/paint.png);
   top:315px;
 }
     
-  button#tool-camera-pan{    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/drag.png);
+  button#tool-camera-pan{    background: url(/Ristretto3D/public/css/skins/icons/darkgrey/drag.png);
         top:435px;
 
-} button#tool-camera-rot{    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/3drotation.png);top:490px;
+} button#tool-camera-rot{    background: url(/Ristretto3D/public/css/skins/icons/darkgrey/3drotation.png);top:490px;
 }
   button#tool-camera-zoom{
-        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/zoom.png);
+        background: url(/Ristretto3D/public/css/skins/icons/darkgrey/zoom.png);
         top:545px;
   }
 button#tool-fp {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/birdview.png);}
+    background: url(/Ristretto3D/public/css/skins/icons/darkgrey/birdview.png);}
 
 button#tool-shadows {
-  background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/cloud.png);}
+  background: url(/Ristretto3D/public/css/skins/icons/darkgrey/cloud.png);}
  
 button#tool-arrow, button#tool-pencil, button#tool-eraser, button#tool-multi,
 button#tool-hand,
@@ -448,40 +482,40 @@ button#tool-shadows{
   
 
    button#tool-arrow.down{
- background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/cursor.png);
+ background: url(/Ristretto3D/public/css/skins/icons/darkgrey/cursor.png);
   }
   
   
  button#tool-hand.down{
- background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/pointer.png);}
+ background: url(/Ristretto3D/public/css/skins/icons/darkgrey/pointer.png);}
   
    button#tool-pencil.down{
- background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/edit.png);
+ background: url(/Ristretto3D/public/css/skins/icons/darkgrey/edit.png);
     }
      button#tool-multi.down{
- background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/paint.png);
+ background: url(/Ristretto3D/public/css/skins/icons/darkgrey/paint.png);
     }
        button#tool-eraser.down{
- background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/erase.png);
+ background: url(/Ristretto3D/public/css/skins/icons/darkgrey/erase.png);
  }
      button#tool-camera-pan.down{
- background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/drag.png);
+ background: url(/Ristretto3D/public/css/skins/icons/darkgrey/drag.png);
     }
       button#tool-camera-rot.down{
- background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/3drotation.png);
+ background: url(/Ristretto3D/public/css/skins/icons/darkgrey/3drotation.png);
   }
   
        button#tool-camera-zoom.down{
- background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/zoom.png);
+ background: url(/Ristretto3D/public/css/skins/icons/darkgrey/zoom.png);
     }
   
 
 
 button#tool-fp.down {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/first-person-view.png);}
+    background: url(/Ristretto3D/public/css/skins/icons/darkgrey/first-person-view.png);}
   
 button#tool-shadows.down {
-  background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/sun.png);}
+  background: url(/Ristretto3D/public/css/skins/icons/darkgrey/sun.png);}
 
 
 button#tool-arrow,
@@ -629,14 +663,59 @@ button#world-button{left:300px;font-family:"roboto"; color:black;  background-im
 
 
 
-button#world-clone-button, button#world-save-button{background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/save.png);
+button#world-clone-button, button#world-save-button{background: url(/Ristretto3D/public/css/skins/icons/darkgrey/save.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 12px;
     font-size: 0;
 }
 
-#toolbar select{border:solid #ccc 1px; color:grey;background-color:rgba(0,0,0,0); box-shadow:none; position:relative; left:20px} 
+#toolbar select{border:solid #ccc 1px; color:grey;background-color:rgba(0,0,0,0); box-shadow:none; position:relative; left:20px}
 
+
+div.popped-over-content{top:10%; position:relative; }
+
+
+
+
+#error {
+    background-color: blue;
+    border: solid blue 100px;
+    color: white;
+    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+    opacity: 1;
+    position: relative;
+    top: 100px
+}
+
+
+
+@media (max-width: 1240px) {
+  #wrap{height:100%!important;}
+
+  #gallery-container{position:fixed;
+    height:45%!important;border-bottom:solid #ccc 1px; }
+  #bottom-toolbar{position:fixed;bottom:0px;}
+  
+  #vat-buttons{text-align:right;}
+  #non-gallery-container{position:fixed;top:79px;height:100%!important}
+  #vat{position:fixed; left:0px;}
+  #gallery-title-span{position:fixed; top: 100px;}
+  #vat-conditions,#vat-actions{width:180px;}
+
+  .instruction{max-width:200px;}
+  #vat-code-header-resize-img{display:none;}
+  #vat-help-button{font-size:0px;}
+  #vat-help-button:after{content:"HELP";font-size:12px;}
+
+  
+  #vat{height:50%!important;}
+  
+    
+ canvas{width:100%!important;
+  height:50%!important;}
+}
+
+.editor .editable-display > span{position:relative;top:0px;top:10px;}
 
 

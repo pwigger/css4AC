@@ -418,7 +418,7 @@ input.attributeRowNumber {
 
 
 .direction-picker-display {
-    background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/other/direction_all.png)
+    background-image: url(/Ristretto3D/public/css/skins/icons/other/direction_all.png)
 }
 
 
@@ -430,7 +430,7 @@ img.shape-editor-display {
 
 
 .condition img.shape-editor-display[src*="missing"] {
-    content: url( https://raw.githubusercontent.com/pwigger/css4AC/master/icons/color/pick_purple.png);
+    content: url( /Ristretto3D/public/css/skins/icons/color/pick_purple.png);
     background: white;
     background-size: 8px 8px;
     min-height: 23px;
@@ -444,7 +444,7 @@ img.shape-editor-display {
 
 
 .action img.shape-editor-display[src*="missing"] {
-    content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/color/pick_turquise.png);
+    content: url(/Ristretto3D/public/css/skins/icons/color/pick_turquise.png);
     background: white;
     background-size: 8px 8px;
     width: 10px;
@@ -529,7 +529,7 @@ img.shape-editor-display[src*="missing"]:hover {
 }
 
     #vat-code-header-resize-img:hover {
-        content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/menu.png);
+        content: url(/Ristretto3D/public/css/skins/icons/darkgrey/menu.png);
         cursor: ns-resize;
         position: fixed;
         width: 100%;
@@ -847,7 +847,7 @@ span.gallery_name {
     }
 
 #gallery-minus-button {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/delete.png);
+    background: url(/Ristretto3D/public/css/skins/icons/white/delete.png);
     background-color: #656565;
     background-position: center;
     background-repeat: no-repeat;
@@ -860,7 +860,7 @@ span.gallery_name {
 }
 
     #gallery-minus-button:hover {
-        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/delete.png);
+        background: url(/Ristretto3D/public/css/skins/icons/darkgrey/delete.png);
         background-position: center;
         background-repeat: no-repeat;
         background-color: #ffc23a;
@@ -942,7 +942,7 @@ button#cancel-button {
 /*replace logo*/
 
 #asi-cube-link img {
-    //content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/other/logo_full.png);
+    //content: url(/Ristretto3D/public/css/skins/icons/other/logo_full.png);
     left: -30px;
     position: relative;
     top: 10px;
@@ -993,27 +993,26 @@ button:hover {
 #action-button img{display:none;}
 
 #action-button {
-    background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/other/logo.png)!important;
-    height: 25px;
-    width: 25px;
+     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text x="20%" y="60%" font-size="14"     font-family="monospace" fill="white">AgentCubes</text></svg>') !important;
     background: none;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 30px 30px;
-    margin-top: 5px
+    
 }
 
 button#action-button {
     position: fixed;
     top: 0px;
     left: 0px;
-    width: 60px;
-    height: 40px
+    width: 125px;
+    height: 40px;
+   
 }
 
 #action-button:hover {
-		background-size: 35px 35px;
 
+		 background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text x="20%" y="60%" font-size="14"     font-family="monospace" fill="black">AgentCubes</text></svg>') !important;
+  background: #ffc23a;
 }
 
 #action-button-menu {
@@ -1032,8 +1031,8 @@ button#language-button {
     width: 120px;
     height: 40px;
     position: fixed;
-    top: 1px;
-    left: 60px
+    top: 0px;
+    left: 130px
 }
 
     button#language-button:hover {
@@ -1043,7 +1042,7 @@ button#language-button {
 
 #language-drop-down {
     position: fixed;
-    left: 60px;
+    left: 130px;
     top: 35px
 }
 
@@ -1074,8 +1073,8 @@ button#language-button {
     }
 
 
-button#world-save-button {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/save.png);
+button#world-save-button, button#world-clone-button {
+    background: url(/Ristretto3D/public/css/skins/icons/white/save.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 14px;
@@ -1088,8 +1087,8 @@ button#world-save-button {
     height: 24px
 }
 
-    button#world-save-button:hover {
-        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/save.png);
+    button#world-save-button:hover, button#world-clone-button:hover  {
+        background: url(/Ristretto3D/public/css/skins/icons/darkgrey/save.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: 14px;
@@ -1104,16 +1103,17 @@ button#world-save-button {
     background-repeat: no-repeat;
     background-size: 16px 16px;
     position: fixed;
-    top: 0px;
-    left: 180px;
-    height: 40px !important;
+    top: -1px;
+    left: 250px;
+    height: 41px !important;
     width: 90px;
     font-size: 14px;
     font-family: monospace
 }
 
     #world-button:hover {
-        background: #ffc23a
+        background: #ffc23a;
+      color:black;
     }
 
 #world-drop-down {
@@ -1155,7 +1155,7 @@ hr {
 
 #world-button-menu {
     position: fixed;
-    left: 180px;
+    left: 250px;
     top: 35px
 }
 
@@ -1185,7 +1185,7 @@ hr {
 }
 
 #vat-delete-button {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/delete.png);
+    background: url(/Ristretto3D/public/css/skins/icons/white/delete.png);
     background-color: #656565;
     background-position: center;
     background-repeat: no-repeat;
@@ -1199,7 +1199,7 @@ hr {
 }
 
     #vat-delete-button:hover {
-        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/delete.png);
+        background: url(/Ristretto3D/public/css/skins/icons/darkgrey/delete.png);
         background-position: center;
         background-repeat: no-repeat;
         background-color: #ffc23a;
@@ -1218,7 +1218,7 @@ hr {
 }
 
 #vat-duplicate-button {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/duplicate.png);
+    background: url(/Ristretto3D/public/css/skins/icons/white/duplicate.png);
     background-color: #656565;
     background-position: center;
     background-repeat: no-repeat;
@@ -1232,7 +1232,7 @@ hr {
 }
 
     #vat-duplicate-button:hover {
-        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/duplicate.png);
+        background: url(/Ristretto3D/public/css/skins/icons/darkgrey/duplicate.png);
         background-position: center;
         background-repeat: no-repeat;
         background-color: #ffc23a;
@@ -1438,7 +1438,7 @@ button {
 }
 
 button#tool-arrow {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/cursor.png);
+    background: url(/Ristretto3D/public/css/skins/icons/white/cursor.png);
     background-color: #52a3d0;
     background-position: center;
     background-repeat: no-repeat;
@@ -1452,7 +1452,7 @@ button#tool-arrow {
 }
 
     button#tool-arrow.down {
-        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/cursor.png);
+        background: url(/Ristretto3D/public/css/skins/icons/darkgrey/cursor.png);
         background-color: #ffc23a;
         background-position: center;
         background-repeat: no-repeat;
@@ -1461,7 +1461,7 @@ button#tool-arrow {
     }
 
     button#tool-arrow:hover {
-        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/cursor.png);
+        background: url(/Ristretto3D/public/css/skins/icons/darkgrey/cursor.png);
         background-color: #ffc23a;
         background-position: center;
         background-repeat: no-repeat;
@@ -1474,7 +1474,7 @@ button#tool-arrow {
 }
 
 button#tool-camera-pan {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/drag.png);
+    background: url(/Ristretto3D/public/css/skins/icons/white/drag.png);
     background-color: #52a3d0;
     background-position: center;
     background-repeat: no-repeat;
@@ -1488,7 +1488,7 @@ button#tool-camera-pan {
 }
 
     button#tool-camera-pan.down {
-        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/drag.png);
+        background: url(/Ristretto3D/public/css/skins/icons/darkgrey/drag.png);
         background-color: #ffc23a;
         background-position: center;
         background-repeat: no-repeat;
@@ -1497,7 +1497,7 @@ button#tool-camera-pan {
     }
 
     button#tool-camera-pan:hover {
-        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/drag.png);
+        background: url(/Ristretto3D/public/css/skins/icons/darkgrey/drag.png);
         background-color: #ffc23a;
         background-position: center;
         background-repeat: no-repeat;
@@ -1510,7 +1510,7 @@ button#tool-camera-pan {
 }
 
 button#tool-camera-rot {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/3drotation.png);
+    background: url(/Ristretto3D/public/css/skins/icons/white/3drotation.png);
     background-color: #52a3d0;
     background-position: center;
     background-repeat: no-repeat;
@@ -1524,7 +1524,7 @@ button#tool-camera-rot {
 }
 
     button#tool-camera-rot.down {
-        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/3drotation.png);
+        background: url(/Ristretto3D/public/css/skins/icons/darkgrey/3drotation.png);
         background-color: #ffc23a;
         background-position: center;
         background-repeat: no-repeat;
@@ -1533,7 +1533,7 @@ button#tool-camera-rot {
     }
 
     button#tool-camera-rot:hover {
-        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/3drotation.png);
+        background: url(/Ristretto3D/public/css/skins/icons/darkgrey/3drotation.png);
         background-color: #ffc23a;
         background-position: center;
         background-repeat: no-repeat;
@@ -1546,7 +1546,7 @@ button#tool-camera-rot {
 }
 
 button#tool-pencil {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/edit.png);
+    background: url(/Ristretto3D/public/css/skins/icons/white/edit.png);
     background-color: #52a3d0;
     background-position: center;
     background-repeat: no-repeat;
@@ -1560,7 +1560,7 @@ button#tool-pencil {
 }
 
     button#tool-pencil.down {
-        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/edit.png);
+        background: url(/Ristretto3D/public/css/skins/icons/darkgrey/edit.png);
         background-color: #ffc23a;
         background-position: center;
         background-repeat: no-repeat;
@@ -1569,7 +1569,7 @@ button#tool-pencil {
     }
 
     button#tool-pencil:hover {
-        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/edit.png);
+        background: url(/Ristretto3D/public/css/skins/icons/darkgrey/edit.png);
         background-color: #ffc23a;
         background-position: center;
         background-repeat: no-repeat;
@@ -1585,7 +1585,7 @@ button#tool-reset {
     position: fixed;
     right: 590px;
     top: 8px;
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/restart.png);
+    background: url(/Ristretto3D/public/css/skins/icons/white/restart.png);
     background-color: #656565;
     background-position: center;
     background-repeat: no-repeat;
@@ -1594,7 +1594,7 @@ button#tool-reset {
 }
 
     button#tool-reset.down {
-        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/restart.png);
+        background: url(/Ristretto3D/public/css/skins/icons/darkgrey/restart.png);
         background-color: #ffc23a;
         background-position: center;
         background-repeat: no-repeat;
@@ -1603,7 +1603,7 @@ button#tool-reset {
     }
 
     button#tool-reset:hover {
-        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/restart.png);
+        background: url(/Ristretto3D/public/css/skins/icons/darkgrey/restart.png);
         background-color: #ffc23a;
         background-position: center;
         background-repeat: no-repeat;
@@ -1617,7 +1617,7 @@ button#tool-reset {
 }
 
 button#tool-camera-zoom {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/zoom.png);
+    background: url(/Ristretto3D/public/css/skins/icons/white/zoom.png);
     background-color: #52a3d0;
     background-position: center;
     background-repeat: no-repeat;
@@ -1631,7 +1631,7 @@ button#tool-camera-zoom {
 }
 
     button#tool-camera-zoom:hover {
-        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/zoom.png);
+        background: url(/Ristretto3D/public/css/skins/icons/darkgrey/zoom.png);
         background-color: #ffc23a;
         background-position: center;
         background-repeat: no-repeat;
@@ -1640,7 +1640,7 @@ button#tool-camera-zoom {
     }
 
     button#tool-camera-zoom.down {
-        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/zoom.png);
+        background: url(/Ristretto3D/public/css/skins/icons/darkgrey/zoom.png);
         outline-style: none;
         background-color: #ffc23a;
         background-position: center;
@@ -1654,7 +1654,7 @@ button#tool-camera-zoom {
 }
 
 button#tool-eraser {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/erase.png);
+    background: url(/Ristretto3D/public/css/skins/icons/white/erase.png);
     background-color: #52a3d0;
     background-position: center;
     background-repeat: no-repeat;
@@ -1668,7 +1668,7 @@ button#tool-eraser {
 }
 
     button#tool-eraser.down {
-        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/erase.png);
+        background: url(/Ristretto3D/public/css/skins/icons/darkgrey/erase.png);
         background-color: #ffc23a;
         background-position: center;
         background-repeat: no-repeat;
@@ -1677,7 +1677,7 @@ button#tool-eraser {
     }
 
     button#tool-eraser:hover {
-        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/erase.png);
+        background: url(/Ristretto3D/public/css/skins/icons/darkgrey/erase.png);
         background-color: #ffc23a;
         background-position: center;
         background-repeat: no-repeat;
@@ -1690,7 +1690,7 @@ button#tool-eraser {
 }
 
 button#tool-fp {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/birdview.png);
+    background: url(/Ristretto3D/public/css/skins/icons/white/birdview.png);
     background-color: #52a3d0;
     background-position: center;
     background-repeat: no-repeat;
@@ -1705,7 +1705,7 @@ button#tool-fp {
 }
 
     button#tool-fp.down {
-        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/first-person-view.png);
+        background: url(/Ristretto3D/public/css/skins/icons/white/first-person-view.png);
         background-color: #52a3d0;
         background-position: center;
         background-repeat: no-repeat;
@@ -1714,7 +1714,7 @@ button#tool-fp {
     }
 
         button#tool-fp.down:hover {
-            background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/first-person-view.png);
+            background: url(/Ristretto3D/public/css/skins/icons/darkgrey/first-person-view.png);
             background-color: #ffc23a;
             background-position: center;
             background-repeat: no-repeat;
@@ -1723,7 +1723,7 @@ button#tool-fp {
         }
 
     button#tool-fp:hover {
-        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/birdview.png);
+        background: url(/Ristretto3D/public/css/skins/icons/darkgrey/birdview.png);
         background-color: #ffc23a;
         background-position: center;
         background-repeat: no-repeat;
@@ -1736,7 +1736,7 @@ button#tool-shadows img {
 }
 
 button#tool-shadows {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/sun.png);
+    background: url(/Ristretto3D/public/css/skins/icons/white/sun.png);
     background-color: #52a3d0;
     background-position: center;
     background-repeat: no-repeat;
@@ -1751,7 +1751,7 @@ button#tool-shadows {
 }
 
     button#tool-shadows:hover {
-        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/sun.png);
+        background: url(/Ristretto3D/public/css/skins/icons/darkgrey/sun.png);
         background-color: #ffc23a;
         background-position: center;
         background-repeat: no-repeat;
@@ -1760,7 +1760,7 @@ button#tool-shadows {
     }
 
     button#tool-shadows.down {
-        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/cloud.png);
+        background: url(/Ristretto3D/public/css/skins/icons/white/cloud.png);
         background-color: #52a3d0;
         background-position: center;
         background-repeat: no-repeat;
@@ -1775,7 +1775,7 @@ button#tool-shadows {
     }
 
         button#tool-shadows.down:hover {
-            background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/cloud.png);
+            background: url(/Ristretto3D/public/css/skins/icons/darkgrey/cloud.png);
             background-color: #ffc23a;
             background-position: center;
             background-repeat: no-repeat;
@@ -1796,7 +1796,7 @@ button#tool-shadows {
 }
 
 button#tool-hand {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/pointer.png);
+    background: url(/Ristretto3D/public/css/skins/icons/white/pointer.png);
     background-color: #52a3d0;
     background-position: center;
     background-repeat: no-repeat;
@@ -1810,7 +1810,7 @@ button#tool-hand {
 }
 
     button#tool-hand.down {
-        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/pointer.png);
+        background: url(/Ristretto3D/public/css/skins/icons/darkgrey/pointer.png);
         background-color: #ffc23a;
         background-position: center;
         background-repeat: no-repeat;
@@ -1819,7 +1819,7 @@ button#tool-hand {
     }
 
     button#tool-hand:hover {
-        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/pointer.png);
+        background: url(/Ristretto3D/public/css/skins/icons/darkgrey/pointer.png);
         background-color: #ffc23a;
         background-position: center;
         background-repeat: no-repeat;
@@ -1832,7 +1832,7 @@ button#tool-hand {
 }
 
 button#tool-multi {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/paint.png);
+    background: url(/Ristretto3D/public/css/skins/icons/white/paint.png);
     background-color: #52a3d0;
     background-position: center;
     background-repeat: no-repeat;
@@ -1846,7 +1846,7 @@ button#tool-multi {
 }
 
     button#tool-multi.down {
-        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/paint.png);
+        background: url(/Ristretto3D/public/css/skins/icons/darkgrey/paint.png);
         background-color: #ffc23a;
         background-position: center;
         background-repeat: no-repeat;
@@ -1855,7 +1855,7 @@ button#tool-multi {
     }
 
     button#tool-multi:hover {
-        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/paint.png);
+        background: url(/Ristretto3D/public/css/skins/icons/darkgrey/paint.png);
         background-color: #ffc23a;
         background-position: center;
         background-repeat: no-repeat;
@@ -1868,7 +1868,7 @@ button#tool-multi {
 }
 
 button#tool-play {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/play.png);
+    background: url(/Ristretto3D/public/css/skins/icons/white/play.png);
     background-position: center;
     background-repeat: no-repeat;
     outline-style: none;
@@ -1882,7 +1882,7 @@ button#tool-play {
 }
 
     button#tool-play:hover {
-        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/color/play.png);
+        background: url(/Ristretto3D/public/css/skins/icons/color/play.png);
         background-position: 50%;
         background-repeat: no-repeat;
         outline-style: none;
@@ -1890,7 +1890,7 @@ button#tool-play {
     }
 
     button#tool-play.down {
-        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/color/play.png);
+        background: url(/Ristretto3D/public/css/skins/icons/color/play.png);
         background-position: 50%;
         background-repeat: no-repeat;
         outline-style: none;
@@ -1902,7 +1902,7 @@ button#tool-play {
 }
 
 button#tool-step {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/step.png);
+    background: url(/Ristretto3D/public/css/skins/icons/white/step.png);
     position: fixed;
     top: 60px;
     right: 460px;
@@ -1916,7 +1916,7 @@ button#tool-step {
 }
 
     button#tool-step.down {
-        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/step.png);
+        background: url(/Ristretto3D/public/css/skins/icons/darkgrey/step.png);
         background-color: #ffc23a;
         background-position: center;
         background-repeat: no-repeat;
@@ -1925,7 +1925,7 @@ button#tool-step {
     }
 
     button#tool-step:hover {
-        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/step.png);
+        background: url(/Ristretto3D/public/css/skins/icons/darkgrey/step.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: 25px;
@@ -1937,7 +1937,7 @@ button#tool-step {
 }
 
 button#tool-stop {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/stop.png);
+    background: url(/Ristretto3D/public/css/skins/icons/white/stop.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 20px;
@@ -1951,7 +1951,7 @@ button#tool-stop {
 }
 
     button#tool-stop.down {
-        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/color/stop.png);
+        background: url(/Ristretto3D/public/css/skins/icons/color/stop.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: 20px;
@@ -1959,7 +1959,7 @@ button#tool-stop {
     }
 
     button#tool-stop:hover {
-        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/color/stop.png);
+        background: url(/Ristretto3D/public/css/skins/icons/color/stop.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: 20px;
@@ -2051,7 +2051,7 @@ button#tool-stop {
 
 #plot-window-close {
     font-size: 0px;
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/close.png);
+    background: url(/Ristretto3D/public/css/skins/icons/white/close.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 10px 10px;
@@ -2075,7 +2075,7 @@ button#tool-stop {
 /*buttons*/
 
 .icon-tool-with-translated-tooltip#pencil {
-    background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/edit.png) !important;
+    background-image: url(/Ristretto3D/public/css/skins/icons/white/edit.png) !important;
     background-position: center !important;
     background-repeat: no-repeat;
     background-size: 11px;
@@ -2092,19 +2092,19 @@ button#tool-stop {
     }
 
     .icon-tool-with-translated-tooltip#pencil:hover {
-        background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/edit.png) !important;
+        background-image: url(/Ristretto3D/public/css/skins/icons/darkgrey/edit.png) !important;
         background-color: #ffc23a !important
     }
 
     .icon-tool-with-translated-tooltip#pencil.down:hover {
-        background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/edit.png) !important;
+        background-image: url(/Ristretto3D/public/css/skins/icons/white/edit.png) !important;
         background-color: #555555 !important
     }
 
 
 
 .icon-tool-with-translated-tooltip#eraser {
-    background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/erase.png) !important;
+    background-image: url(/Ristretto3D/public/css/skins/icons/white/erase.png) !important;
     background-position: center !important;
     background-repeat: no-repeat;
     background-size: 14px;
@@ -2117,7 +2117,7 @@ button#tool-stop {
 }
 
     .icon-tool-with-translated-tooltip#eraser:hover {
-        background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/erase.png) !important;
+        background-image: url(/Ristretto3D/public/css/skins/icons/darkgrey/erase.png) !important;
         background-color: #ffc23a
     }
 
@@ -2126,11 +2126,11 @@ button#tool-stop {
     }
 
         .icon-tool-with-translated-tooltip#eraser.down:hover {
-            background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/erase.png) !important
+            background-image: url(/Ristretto3D/public/css/skins/icons/white/erase.png) !important
         }
 
 .icon-tool-with-translated-tooltip#eye {
-    background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/eye.png) !important;
+    background-image: url(/Ristretto3D/public/css/skins/icons/white/eye.png) !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: 13px !important;
@@ -2143,7 +2143,7 @@ button#tool-stop {
 }
 
     .icon-tool-with-translated-tooltip#eye:hover {
-        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/eye.png) !important;
+        background: url(/Ristretto3D/public/css/skins/icons/darkgrey/eye.png) !important;
         background-color: #ffc23a !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
@@ -2153,7 +2153,7 @@ button#tool-stop {
     }
 
     .icon-tool-with-translated-tooltip#eye.down {
-        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/eye.png) !important;
+        background: url(/Ristretto3D/public/css/skins/icons/white/eye.png) !important;
         background-color: #555555 !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
@@ -2163,11 +2163,11 @@ button#tool-stop {
     }
 
         .icon-tool-with-translated-tooltip#eye.down:hover {
-            background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/eye.png) !important
+            background-image: url(/Ristretto3D/public/css/skins/icons/white/eye.png) !important
         }
 
 .icon-tool-with-translated-tooltip#bucket {
-    background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/bucket.png) !important;
+    background-image: url(/Ristretto3D/public/css/skins/icons/white/bucket.png) !important;
     background-position: center !important;
     background-repeat: no-repeat;
     background-size: 14px;
@@ -2180,7 +2180,7 @@ button#tool-stop {
 }
 
     .icon-tool-with-translated-tooltip#bucket:hover {
-        background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/bucket.png) !important;
+        background-image: url(/Ristretto3D/public/css/skins/icons/darkgrey/bucket.png) !important;
         background-color: #ffc23a
     }
 
@@ -2189,12 +2189,12 @@ button#tool-stop {
     }
 
         .icon-tool-with-translated-tooltip#bucket.down:hover {
-            background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/bucket.png) !important
+            background-image: url(/Ristretto3D/public/css/skins/icons/white/bucket.png) !important
         }
 
 
 .icon-tool-with-translated-tooltip#wand {
-    background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/wand.png) !important;
+    background-image: url(/Ristretto3D/public/css/skins/icons/white/wand.png) !important;
     background-color: #656565;
     background-position: center !important;
     background-repeat: no-repeat;
@@ -2207,7 +2207,7 @@ button#tool-stop {
 }
 
     .icon-tool-with-translated-tooltip#wand:hover {
-        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/wand.png) !important;
+        background: url(/Ristretto3D/public/css/skins/icons/darkgrey/wand.png) !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
         background-size: 15px !important;
@@ -2221,7 +2221,7 @@ button#tool-stop {
     }
 
         .icon-tool-with-translated-tooltip#wand.down:hover {
-            background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/wand.png) !important;
+            background: url(/Ristretto3D/public/css/skins/icons/white/wand.png) !important;
             background-position: center !important;
             background-repeat: no-repeat !important;
             background-size: 15px !important;
@@ -2229,7 +2229,7 @@ button#tool-stop {
         }
 
 .icon-tool-with-translated-tooltip#rect {
-    background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/rect.png) !important;
+    background-image: url(/Ristretto3D/public/css/skins/icons/white/rect.png) !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: 15px !important;
@@ -2242,7 +2242,7 @@ button#tool-stop {
 }
 
     .icon-tool-with-translated-tooltip#rect:hover {
-        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/rect.png) !important;
+        background: url(/Ristretto3D/public/css/skins/icons/darkgrey/rect.png) !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
         background-size: 15px !important;
@@ -2256,7 +2256,7 @@ button#tool-stop {
     }
 
         .icon-tool-with-translated-tooltip#rect.down:hover {
-            background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/rect.png) !important;
+            background: url(/Ristretto3D/public/css/skins/icons/white/rect.png) !important;
             background-position: center !important;
             background-repeat: no-repeat !important;
             background-size: 15px !important;
@@ -2267,7 +2267,7 @@ button#tool-stop {
 
 
 .icon-tool-with-translated-tooltip#circ {
-    background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/circ.png) !important;
+    background-image: url(/Ristretto3D/public/css/skins/icons/white/circ.png) !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: 15px;
@@ -2280,7 +2280,7 @@ button#tool-stop {
 }
 
     .icon-tool-with-translated-tooltip#circ:hover {
-        background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/circ.png) !important;
+        background-image: url(/Ristretto3D/public/css/skins/icons/darkgrey/circ.png) !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
         background-size: 15px;
@@ -2295,11 +2295,11 @@ button#tool-stop {
 
         .icon-tool-with-translated-tooltip#circ.down:hover {
             background-color: #555555 !important;
-            background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/circ.png) !important
+            background-image: url(/Ristretto3D/public/css/skins/icons/white/circ.png) !important
         }
 
 .icon-tool-with-translated-tooltip#poly {
-    background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/poly.png) !important;
+    background-image: url(/Ristretto3D/public/css/skins/icons/white/poly.png) !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: 15px;
@@ -2312,7 +2312,7 @@ button#tool-stop {
 }
 
     .icon-tool-with-translated-tooltip#poly:hover {
-        background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/poly.png) !important;
+        background-image: url(/Ristretto3D/public/css/skins/icons/darkgrey/poly.png) !important;
         background-position: center;
         background-repeat: no-repeat;
         background-size: 15px;
@@ -2327,12 +2327,12 @@ button#tool-stop {
 
         .icon-tool-with-translated-tooltip#poly.down:hover {
             background-color: #555555 !important;
-            background-image: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/poly.png) !important
+            background-image: url(/Ristretto3D/public/css/skins/icons/white/poly.png) !important
         }
 
 
 #none {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/none.png) !important;
+    background: url(/Ristretto3D/public/css/skins/icons/white/none.png) !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: 15px !important;
@@ -2346,7 +2346,7 @@ button#tool-stop {
 }
 
     #none:hover {
-        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/none.png) !important;
+        background: url(/Ristretto3D/public/css/skins/icons/darkgrey/none.png) !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
         background-size: 15px !important;
@@ -2361,7 +2361,7 @@ button#tool-stop {
 
         #none.down:hover {
             background-color: #555555 !important;
-            background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/none.png) !important;
+            background: url(/Ristretto3D/public/css/skins/icons/white/none.png) !important;
             background-position: center !important;
             background-repeat: no-repeat !important;
             background-size: 15px !important;
@@ -2370,7 +2370,7 @@ button#tool-stop {
         }
 
 #horz {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/2ways_vertical.png) !important;
+    background: url(/Ristretto3D/public/css/skins/icons/white/2ways_vertical.png) !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: 15px !important;
@@ -2384,7 +2384,7 @@ button#tool-stop {
 }
 
     #horz:hover {
-        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/2ways_vertical.png) !important;
+        background: url(/Ristretto3D/public/css/skins/icons/darkgrey/2ways_vertical.png) !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
         background-size: 15px !important;
@@ -2399,7 +2399,7 @@ button#tool-stop {
 
         #horz.down:hover {
             background-color: #555555 !important;
-            background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/2ways_vertical.png) !important;
+            background: url(/Ristretto3D/public/css/skins/icons/white/2ways_vertical.png) !important;
             background-position: center !important;
             background-repeat: no-repeat !important;
             background-size: 15px !important;
@@ -2408,7 +2408,7 @@ button#tool-stop {
         }
 
 #vert {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/2ways_horizontal.png) !important;
+    background: url(/Ristretto3D/public/css/skins/icons/white/2ways_horizontal.png) !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: 15px !important;
@@ -2422,7 +2422,7 @@ button#tool-stop {
 }
 
     #vert:hover {
-        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/2ways_horizontal.png) !important;
+        background: url(/Ristretto3D/public/css/skins/icons/darkgrey/2ways_horizontal.png) !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
         background-size: 15px !important;
@@ -2437,7 +2437,7 @@ button#tool-stop {
 
         #vert.down:hover {
             background-color: #555555 !important;
-            background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/2ways_horizontal.png) !important;
+            background: url(/Ristretto3D/public/css/skins/icons/white/2ways_horizontal.png) !important;
             background-position: center !important;
             background-repeat: no-repeat !important;
             background-size: 15px !important;
@@ -2446,7 +2446,7 @@ button#tool-stop {
         }
 
 #both {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/4ways.png) !important;
+    background: url(/Ristretto3D/public/css/skins/icons/white/4ways.png) !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: 15px !important;
@@ -2460,7 +2460,7 @@ button#tool-stop {
 }
 
     #both:hover {
-        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/4ways.png) !important;
+        background: url(/Ristretto3D/public/css/skins/icons/darkgrey/4ways.png) !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
         background-size: 15px !important;
@@ -2475,7 +2475,7 @@ button#tool-stop {
 
         #both.down:hover {
             background-color: #555555 !important;
-            background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/4ways.png) !important;
+            background: url(/Ristretto3D/public/css/skins/icons/white/4ways.png) !important;
             background-position: center !important;
             background-repeat: no-repeat !important;
             background-size: 15px !important;
@@ -2486,7 +2486,7 @@ button#tool-stop {
 
 .icon-view-tools li[title="3D-Print"] img {
     background-color: #656565;
-    content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/download.png);
+    content: url(/Ristretto3D/public/css/skins/icons/white/download.png);
     height: 25px;
     width: 25px;
     cursor: pointer;
@@ -2497,7 +2497,7 @@ button#tool-stop {
 
     .icon-view-tools li[title="3D-Print"] img:hover {
         background-color: #ffc23a;
-        content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/download.png);
+        content: url(/Ristretto3D/public/css/skins/icons/darkgrey/download.png);
         height: 25px;
         width: 25px;
         cursor: pointer;
@@ -2506,7 +2506,7 @@ button#tool-stop {
 
 .icon-view-tools li img[src*="pan-down"] {
     background-color: #ffc23a;
-    content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/drag.png);
+    content: url(/Ristretto3D/public/css/skins/icons/darkgrey/drag.png);
     height: 25px;
     width: 25px;
     cursor: pointer;
@@ -2517,7 +2517,7 @@ button#tool-stop {
 
 .icon-view-tools li img[src*="pan-up"] {
     background-color: #656565;
-    content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/drag.png);
+    content: url(/Ristretto3D/public/css/skins/icons/white/drag.png);
     height: 25px;
     width: 25px;
     cursor: pointer;
@@ -2528,7 +2528,7 @@ button#tool-stop {
 
     .icon-view-tools li img[src*="pan-up"]:hover {
         background-color: #ffc23a;
-        content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/drag.png);
+        content: url(/Ristretto3D/public/css/skins/icons/darkgrey/drag.png);
         height: 25px;
         width: 25px;
         cursor: pointer;
@@ -2539,7 +2539,7 @@ button#tool-stop {
 
 .icon-view-tools li img[src*="zoom-up"] {
     background-color: #656565;
-    content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/zoom.png);
+    content: url(/Ristretto3D/public/css/skins/icons/white/zoom.png);
     height: 25px;
     width: 25px;
     cursor: pointer;
@@ -2550,7 +2550,7 @@ button#tool-stop {
 
 .icon-view-tools li img[src*="zoom-down"] {
     background-color: #ffc23a;
-    content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/zoom.png);
+    content: url(/Ristretto3D/public/css/skins/icons/darkgrey/zoom.png);
     height: 25px;
     width: 25px;
     cursor: pointer;
@@ -2561,7 +2561,7 @@ button#tool-stop {
 
 .icon-view-tools li img[src*="zoom-up"]:hover {
     background-color: #ffc23a;
-    content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/zoom.png);
+    content: url(/Ristretto3D/public/css/skins/icons/darkgrey/zoom.png);
     height: 25px;
     width: 25px;
     cursor: pointer;
@@ -2572,7 +2572,7 @@ button#tool-stop {
 
 .icon-view-tools li img[src*="orbit-down"] {
     background-color: #ffc23a;
-    content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/3drotation.png);
+    content: url(/Ristretto3D/public/css/skins/icons/darkgrey/3drotation.png);
     height: 25px;
     width: 25px;
     cursor: pointer;
@@ -2583,7 +2583,7 @@ button#tool-stop {
 
 .icon-view-tools li img[src*="orbit-up"] {
     background-color: #656565;
-    content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/3drotation.png);
+    content: url(/Ristretto3D/public/css/skins/icons/white/3drotation.png);
     height: 25px;
     width: 25px;
     cursor: pointer;
@@ -2594,7 +2594,7 @@ button#tool-stop {
 
     .icon-view-tools li img[src*="orbit-up"]:hover {
         background-color: #ffc23a;
-        content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/3drotation.png);
+        content: url(/Ristretto3D/public/css/skins/icons/darkgrey/3drotation.png);
         height: 25px;
         width: 25px;
         cursor: pointer;
@@ -2605,7 +2605,7 @@ button#tool-stop {
 
 .icon-view-tools li img[src*="reset"] {
     background-color: #656565 !important;
-    content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/restart.png) !important;
+    content: url(/Ristretto3D/public/css/skins/icons/white/restart.png) !important;
     height: 25px !important;
     width: 25px !important;
     cursor: pointer !important;
@@ -2616,7 +2616,7 @@ button#tool-stop {
 
     .icon-view-tools li img[src*="reset"]:hover {
         background-color: #ffc23a;
-        content: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/darkgrey/restart.png) !important;
+        content: url(/Ristretto3D/public/css/skins/icons/darkgrey/restart.png) !important;
         height: 25px !important;
         width: 25px;
         cursor: pointer;
@@ -2684,7 +2684,7 @@ button#flatten-button {
 }
 
 #pressure-td {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/inflate.png);
+    background: url(/Ristretto3D/public/css/skins/icons/white/inflate.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -2692,7 +2692,7 @@ button#flatten-button {
 }
 
 #ceiling-td {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/roof.png);
+    background: url(/Ristretto3D/public/css/skins/icons/white/roof.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 20px;
@@ -2700,7 +2700,7 @@ button#flatten-button {
 }
 
 #noise-td {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/noise.png);
+    background: url(/Ristretto3D/public/css/skins/icons/white/noise.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -2712,7 +2712,7 @@ button#flatten-button {
 }
 
 .icon-editor-table-element :nth-child(3) .left {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/blur.png);
+    background: url(/Ristretto3D/public/css/skins/icons/white/blur.png);
     background-position: top;
     background-repeat: no-repeat;
     background-size: 30px;
@@ -2721,7 +2721,7 @@ button#flatten-button {
 }
 
 #z-offset-td {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/vert-dist.png);
+    background: url(/Ristretto3D/public/css/skins/icons/white/vert-dist.png);
     background-position: top;
     background-repeat: no-repeat;
     background-size: 30px;
@@ -2730,7 +2730,7 @@ button#flatten-button {
 }
 
 #upright-td {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/stand-up.png);
+    background: url(/Ristretto3D/public/css/skins/icons/white/stand-up.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 30px;
@@ -2749,7 +2749,7 @@ button#flatten-button {
 }
 
 #distance-td {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/hor-dist.png);
+    background: url(/Ristretto3D/public/css/skins/icons/white/hor-dist.png);
     background-position: top;
     background-repeat: no-repeat;
     background-size: 20px;
@@ -3069,7 +3069,7 @@ select.icon-tool-with-translated-tooltip.form-control {
 }
 
 div.draggable-title-bar span.cancelbutton {
-    background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/close.png);
+    background: url(/Ristretto3D/public/css/skins/icons/white/close.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 10px 10px;
@@ -3086,7 +3086,7 @@ div.draggable-title-bar span.cancelbutton {
 }
 
     #one-true-value-editor .cancelbutton {
-        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/close.png);
+        background: url(/Ristretto3D/public/css/skins/icons/white/close.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: 10px 10px;
@@ -3096,7 +3096,7 @@ div.draggable-title-bar span.cancelbutton {
     }
 
     #one-true-value-editor .acceptbutton {
-        background: url(https://raw.githubusercontent.com/pwigger/css4AC/master/icons/white/checkbox.png);
+        background: url(/Ristretto3D/public/css/skins/icons/white/checkbox.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: 10px 10px;
