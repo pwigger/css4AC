@@ -22,8 +22,9 @@ Cute Font Averia Gruesa Libre Bubblegum sans Sans Kirang Haerang Londrina solid 
   background:#7A9ACF;
   background:#6CC4F6;
   background:#7C6CE5;
-  background:#2BC6DA;
   background:#F78737;
+  background:#2BC6DA;  
+
   color:white;
   
     font-family: 'Bubblegum Sans'; 
@@ -41,6 +42,8 @@ font-size:22px;
 
 }
 
+.action{}
+.condition{}
   body{background:#eee;
   font-family:Avenir;
     font-size:12px;
@@ -78,14 +81,9 @@ button{
 
 
   /*Block Hover color*/
-  #vat .condition.vat-selected:not(.disabled), #vat .condition:hover:not(.disabled),#vat .action.vat-selected:not(.disabled), #vat .action:hover:not(.disabled) {
-    background:#F5C169;
-     background:#6080B0;
-    background:#E07020;
-    cursor:hand;
-
-    
-} 
+.instruction:hover, .vat-selected{
+  background:#2BC6DA;
+}
 
 
 /*Farbe für Regel*/
@@ -98,7 +96,7 @@ button{
   .block .if-then{background:none;}
 
  .method{background:#fff;
- box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);}
+ box-shadow: 0 6px 10px rgba(0,0,0,0.16), 0 3px 2px rgba(0,0,0,0.16);}
 
 .block{margin:0px -5px 0px -5px;}
 
@@ -259,7 +257,7 @@ li:last-child li:last-child div.gallery_shapeitem:last-child {
    .instruction-content{margin:1px 1px 1px 10px;}
    
   .instruction,     .editable-display{
-  border-radius:40px;
+  border-radius:20px;
   border:none;
    margin-left:0px;
   }
@@ -717,5 +715,166 @@ div.popped-over-content{top:10%; position:relative; }
 }
 
 .editor .editable-display > span{position:relative;top:0px;top:10px;}
+
+
+
+/*Action A Shape*/
+
+
+.action{  
+  border-radius:0px;
+  display:inline-flex;
+    }
+
+.vat-flippy-closed,.vat-flippy-open{z-index:20;}
+
+
+/*Left corner in stack*/
+#vat-actions .action .translated-code.instruction-name:before{content: '';
+
+    border-right: 15px solid transparent;
+    border-top: 15px solid #eee;
+    position:absolute;
+    left:0px;
+    margin-top:-4px;
+}
+/*right Corner in rule && right corner in stack*/
+.action.instruction-context-menu:after{content: '';
+    border-left: 15px solid transparent;
+    border-top: 15px solid #eee;
+margin-right:-4px;
+  margin-top:-3px;
+}
+
+/*Left Corner in rule flippy closed*/
+.if-then .action>.vat-flippy-closed:before{content: '';
+    border-right: 15px solid transparent;
+    border-top: 15px solid white;
+    position:absolute;
+  margin-left:-9px;
+     margin-top:-3px;}
+
+.if-then .action>.vat-flippy-open:before{content: '';
+    border-right: 15px solid transparent;
+    border-top: 15px solid white;
+    position:absolute;
+  margin-left:-4px;
+     margin-top:-3px;}
+
+
+
+/*right Corner in rule white*/
+.if-then .action.instruction-context-menu:after{border-top: white solid 15px;}
+
+/*Selected color A-Shape*/
+.vat-selected .if-then .action>.vat-flippy-closed:before,.vat-selected .if-then .action>.vat-flippy-open:before, .vat-selected .if-then .action.instruction-context-menu:after { border-top: 15px solid #F5C169;}
+
+.instruction-area .nested-container{background:white;border: solid white 0px;
+padding:10px;}
+
+/*conversational programming*/
+
+.true .if-then{background:none!important;}
+
+.false .if-then{background:none!important;}
+#vat .false .instruction, .true ~ .block .instruction {
+  background:#e74c3c;
+}
+
+    #vat .condition.false span.instruction-name {
+        color: white
+    }
+
+#vat .condition.true, .true .action {
+  background:#2ecc71;
+   
+}
+
+    #vat .condition.true span.instruction-name {
+        color: white;   
+    }
+
+
+.block.false, .true ~ .block {
+    opacity: 0.4;
+    background:#888!important;
+}
+
+.block.false:hover, .true ~ .block:hover {
+    opacity: 1.0;
+    background:#888!important;
+}
+
+.block.true {
+    background: #C8E6C9!important;
+}
+
+.true, .true .instruction:hover, .true .vat-selected {background:#2ecc71!important;}
+
+.false,.false
+.instruction:hover, .true ~ .block .instruction:hover ,.false .vat-selected{background:#e74c3c!important;}
+
+.false,.false:hover{background:#e74c3c!important;}
+
+
+/*CP: true nonselected correct A-Shape-color*/
+/*True-block*/
+
+.true .action>.vat-flippy-closed:before,.true .action>.vat-flippy-open:before, .true .action.instruction-context-menu:after,.true.vat-selected .if-then .action>.vat-flippy-closed:before,.true.vat-selected .if-then .action>.vat-flippy-open:before,.true.vat-selected .action.instruction-context-menu:after{ border-top: 15px solid #C8E6C9;}
+
+/*False Block*/
+.false .action>.vat-flippy-closed:before,.false .action>.vat-flippy-open:before, .false .action.instruction-context-menu:after,.false.vat-selected .if-then .action>.vat-flippy-closed:before,.false.vat-selected .if-then .action>.vat-flippy-open:before,.false.vat-selected .action.instruction-context-menu:after{ border-top: 15px solid #888;}
+
+
+/*Block content*/
+#one-true-value-editor {
+    z-index: 20000000;
+    background: #555555;
+    border: solid #555555 10px
+}
+
+    #one-true-value-editor .cancelbutton {
+        background: url(/Ristretto3D/public/css/skins/icons/white/close.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 10px 10px;
+        left: 5px;
+        outline-style: none;
+        position: relative
+    }
+
+    #one-true-value-editor .acceptbutton {
+        background: url(/Ristretto3D/public/css/skins/icons/white/checkbox.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 10px 10px;
+        left: 5px;
+        outline-style: none;
+        position: relative
+    }
+
+input {
+    background-color: white;
+    color: black;
+    margin: 0px 0px 0px 0px;
+    outline-style: none;
+    color: white;
+    font-size: 20px;
+    padding-left: 10px;
+    font-family: monospace;
+    border: none;
+    border-bottom: solid #ffc23a 1px;
+    position: relative;
+    left: -0px;
+    top: 5px;
+  border-radius:20px;
+}
+
+#vat input {
+    color: #666
+}
+#one-true-value-editor:before{content:""; height:100%; width:100%; background:rgba(0,0,0,0.7);position:fixed; top:0px; left:0px;}
+#one-true-value-editor{background:black; box-shadow:none; position:fixed; top:25%!important; left:40%!important;height:200px;padding-top:20px;}
+
 
 
