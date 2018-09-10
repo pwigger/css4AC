@@ -169,16 +169,17 @@ ul#gallery_agentlist{margin:0px 0px 0px 0px;
 
 }
 
-#asi-cube-link img{position:fixed; left:0px;background:white;top:8px;height:70px;border-left:solid white 30px;border-bottom:solid white 10px;
-border-right:solid white 28px;}
+#asi-cube-link img{position:fixed; left:25px;background:none;top:5px;height:70px;border-left:solid white 0px;border-bottom:solid white 0px;
+border-right:solid white 0px;}
+
+html:after{position:fixed; left:0px; top:0px; content:" "; height:78px; width:100px; background:white;}
+
 .gallery_agentitem .gallery-thumbnail {
     top: 9px;
   height:20px;
   width:20px;
   margin-right:20px;
-
 }
-
 
 
 .gallery_shapeitem .gallery-thumbnail {
@@ -875,6 +876,788 @@ input {
 }
 #one-true-value-editor:before{content:""; height:100%; width:100%; background:rgba(0,0,0,0.7);position:fixed; top:0px; left:0px;}
 #one-true-value-editor{background:black; box-shadow:none; position:fixed; top:25%!important; left:40%!important;height:200px;padding-top:20px;}
+/*Add agent*/
+.AgentView {
+    position: relative;
+    top: 100px;
+    width: 860px !important
+}
+
+/*Add Agent window*/
+
+#new-agent-div {
+    background-color: white;
+    font-family: 'Open Sans', sans-serif
+}
+
+.popped-over-content {
+    background: white;
+    color: white;
+    box-shadow: none;
+    border: solid white 20px;
+    border-radius: 0px
+}
+
+select.texture-select {
+    background: none;;
+    border: solid transparent 1px;
+    padding: 10px;
+    height: 340px;
+    width: 165px;
+    outline: none;
+    color:grey;
+}
+
+.shape-button {
+    background-color: white !important;
+    color: white !important;
+    box-shadow: none !important
+}
+
+.icon-view-tools {
+    position: relative;
+    left: 20px;
+    top: -40px
+}
+
+.shape-button.down {
+    border: solid #ffc23a;
+    background: none !important;
+    width: 65px
+}
+
+.shape-button-label {
+    display: none !important
+}
+
+input#enter-agent-name {
+    background: none;
+    color: white;
+    height: 50px;
+    padding-left: 20px;
+    width: 690px;
+    margin-bottom: 30px
+}
+
+button#cancel-button {
+    margin-right: 10px
+}
+
+/*Editor 1 (3d inflate) dialogfield*/
+
+#icon-editor-table {
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    position: relative;
+    top: 40px
+}
+
+
+
+/*buttons*/
+
+.icon-tool-with-translated-tooltip#pencil {
+    background-image: url(/Ristretto3D/public/css/skins/icons/white/edit.png) !important;
+    background-position: center !important;
+    background-repeat: no-repeat;
+    background-size: 11px;
+    height: 30px;
+    width: 30px;
+    background-color: #656565;
+    position: fixed;
+    top: 65px;
+    border: #656565 solid 1px
+}
+
+    .icon-tool-with-translated-tooltip#pencil.down {
+        background-color: #555555
+    }
+
+    .icon-tool-with-translated-tooltip#pencil:hover {
+        background-image: url(/Ristretto3D/public/css/skins/icons/darkgrey/edit.png) !important;
+        background-color: #ffc23a !important
+    }
+
+    .icon-tool-with-translated-tooltip#pencil.down:hover {
+        background-image: url(/Ristretto3D/public/css/skins/icons/white/edit.png) !important;
+        background-color: #555555 !important
+    }
+
+
+
+.icon-tool-with-translated-tooltip#eraser {
+    background-image: url(/Ristretto3D/public/css/skins/icons/white/erase.png) !important;
+    background-position: center !important;
+    background-repeat: no-repeat;
+    background-size: 14px;
+    height: 30px;
+    width: 30px;
+    background-color: #656565;
+    position: fixed;
+    top: 100px;
+    border: #656565 solid 1px
+}
+
+    .icon-tool-with-translated-tooltip#eraser:hover {
+        background-image: url(/Ristretto3D/public/css/skins/icons/darkgrey/erase.png) !important;
+        background-color: #ffc23a
+    }
+
+    .icon-tool-with-translated-tooltip#eraser.down {
+        background-color: #555555
+    }
+
+        .icon-tool-with-translated-tooltip#eraser.down:hover {
+            background-image: url(/Ristretto3D/public/css/skins/icons/white/erase.png) !important
+        }
+
+.icon-tool-with-translated-tooltip#eye {
+    background-image: url(/Ristretto3D/public/css/skins/icons/white/eye.png) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: 13px !important;
+    height: 30px !important;
+    width: 30px !important;
+    background-color: #656565;
+    position: fixed;
+    top: 135px;
+    border: #656565 solid 1px
+}
+
+    .icon-tool-with-translated-tooltip#eye:hover {
+        background: url(/Ristretto3D/public/css/skins/icons/darkgrey/eye.png) !important;
+        background-color: #ffc23a !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: 13px !important;
+        height: 30px !important;
+        width: 30px !important
+    }
+
+    .icon-tool-with-translated-tooltip#eye.down {
+        background: url(/Ristretto3D/public/css/skins/icons/white/eye.png) !important;
+        background-color: #555555 !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: 13px !important;
+        height: 30px !important;
+        width: 30px !important
+    }
+
+        .icon-tool-with-translated-tooltip#eye.down:hover {
+            background-image: url(/Ristretto3D/public/css/skins/icons/white/eye.png) !important
+        }
+
+.icon-tool-with-translated-tooltip#bucket {
+    background-image: url(/Ristretto3D/public/css/skins/icons/white/bucket.png) !important;
+    background-position: center !important;
+    background-repeat: no-repeat;
+    background-size: 14px;
+    height: 30px;
+    width: 30px;
+    background-color: #656565;
+    position: fixed;
+    top: 170px;
+    border: #656565 solid 1px
+}
+
+    .icon-tool-with-translated-tooltip#bucket:hover {
+        background-image: url(/Ristretto3D/public/css/skins/icons/darkgrey/bucket.png) !important;
+        background-color: #ffc23a
+    }
+
+    .icon-tool-with-translated-tooltip#bucket.down {
+        background-color: #555555
+    }
+
+        .icon-tool-with-translated-tooltip#bucket.down:hover {
+            background-image: url(/Ristretto3D/public/css/skins/icons/white/bucket.png) !important
+        }
+
+
+.icon-tool-with-translated-tooltip#wand {
+    background-image: url(/Ristretto3D/public/css/skins/icons/white/wand.png) !important;
+    background-color: #656565;
+    background-position: center !important;
+    background-repeat: no-repeat;
+    background-size: 15px !important;
+    height: 30px !important;
+    width: 30px !important;
+    position: fixed;
+    top: 205px;
+    border: #656565 solid 1px
+}
+
+    .icon-tool-with-translated-tooltip#wand:hover {
+        background: url(/Ristretto3D/public/css/skins/icons/darkgrey/wand.png) !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: 15px !important;
+        height: 30px;
+        width: 30px;
+        background-color: #ffc23a !important
+    }
+
+    .icon-tool-with-translated-tooltip#wand.down {
+        background-color: #555555
+    }
+
+        .icon-tool-with-translated-tooltip#wand.down:hover {
+            background: url(/Ristretto3D/public/css/skins/icons/white/wand.png) !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            background-size: 15px !important;
+            background-color: #555555 !important
+        }
+
+.icon-tool-with-translated-tooltip#rect {
+    background-image: url(/Ristretto3D/public/css/skins/icons/white/rect.png) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: 15px !important;
+    height: 30px;
+    width: 30px;
+    background-color: #656565;
+    position: fixed;
+    top: 240px;
+    border: #656565 solid 1px
+}
+
+    .icon-tool-with-translated-tooltip#rect:hover {
+        background: url(/Ristretto3D/public/css/skins/icons/darkgrey/rect.png) !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: 15px !important;
+        height: 30px;
+        width: 30px;
+        background-color: #ffc23a !important
+    }
+
+    .icon-tool-with-translated-tooltip#rect.down {
+        background-color: #555555
+    }
+
+        .icon-tool-with-translated-tooltip#rect.down:hover {
+            background: url(/Ristretto3D/public/css/skins/icons/white/rect.png) !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            background-size: 15px !important;
+            background-color: #555555
+        }
+
+
+
+
+.icon-tool-with-translated-tooltip#circ {
+    background-image: url(/Ristretto3D/public/css/skins/icons/white/circ.png) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: 15px;
+    height: 30px;
+    width: 30px;
+    background-color: #656565;
+    position: fixed;
+    top: 275px;
+    border: #656565 solid 1px
+}
+
+    .icon-tool-with-translated-tooltip#circ:hover {
+        background-image: url(/Ristretto3D/public/css/skins/icons/darkgrey/circ.png) !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: 15px;
+        height: 30px;
+        width: 30px;
+        background-color: #ffc23a !important
+    }
+
+    .icon-tool-with-translated-tooltip#circ.down {
+        background-color: #555555
+    }
+
+        .icon-tool-with-translated-tooltip#circ.down:hover {
+            background-color: #555555 !important;
+            background-image: url(/Ristretto3D/public/css/skins/icons/white/circ.png) !important
+        }
+
+.icon-tool-with-translated-tooltip#poly {
+    background-image: url(/Ristretto3D/public/css/skins/icons/white/poly.png) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: 15px;
+    height: 30px !important;
+    width: 30px;
+    background-color: #656565;
+    position: fixed;
+    top: 310px;
+    border: #656565 solid 1px
+}
+
+    .icon-tool-with-translated-tooltip#poly:hover {
+        background-image: url(/Ristretto3D/public/css/skins/icons/darkgrey/poly.png) !important;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 15px;
+        height: 30px;
+        width: 30px;
+        background-color: #ffc23a !important
+    }
+
+    .icon-tool-with-translated-tooltip#poly.down {
+        background-color: #555555
+    }
+
+        .icon-tool-with-translated-tooltip#poly.down:hover {
+            background-color: #555555 !important;
+            background-image: url(/Ristretto3D/public/css/skins/icons/white/poly.png) !important
+        }
+
+
+#none {
+    background: url(/Ristretto3D/public/css/skins/icons/white/none.png) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: 15px !important;
+    height: 30px !important;
+    width: 30px !important;
+    background-color: #656565 !important;
+    position: relative !important;
+    top: 135px !important;
+    left: 45px !important;
+    border: #656565 solid 1px !important
+}
+
+    #none:hover {
+        background: url(/Ristretto3D/public/css/skins/icons/darkgrey/none.png) !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: 15px !important;
+        height: 30px !important;
+        width: 30px !important;
+        background-color: #ffc23a !important
+    }
+
+    #none.down {
+        background-color: #555555 !important
+    }
+
+        #none.down:hover {
+            background-color: #555555 !important;
+            background: url(/Ristretto3D/public/css/skins/icons/white/none.png) !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            background-size: 15px !important;
+            height: 30px !important;
+            width: 30px !important
+        }
+
+#horz {
+    background: url(/Ristretto3D/public/css/skins/icons/white/2ways_vertical.png) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: 15px !important;
+    height: 30px !important;
+    width: 30px !important;
+    background-color: #656565 !important;
+    position: relative !important;
+    top: 105px !important;
+    left: 80px !important;
+    border: #656565 solid 1px !important
+}
+
+    #horz:hover {
+        background: url(/Ristretto3D/public/css/skins/icons/darkgrey/2ways_vertical.png) !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: 15px !important;
+        height: 30px !important;
+        width: 30px !important;
+        background-color: #ffc23a !important
+    }
+
+    #horz.down {
+        background-color: #555555 !important
+    }
+
+        #horz.down:hover {
+            background-color: #555555 !important;
+            background: url(/Ristretto3D/public/css/skins/icons/white/2ways_vertical.png) !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            background-size: 15px !important;
+            height: 30px !important;
+            width: 30px !important
+        }
+
+#vert {
+    background: url(/Ristretto3D/public/css/skins/icons/white/2ways_horizontal.png) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: 15px !important;
+    height: 30px !important;
+    width: 30px !important;
+    background-color: #656565 !important;
+    position: relative !important;
+    top: 75px !important;
+    left: 115px !important;
+    border: #656565 solid 1px !important
+}
+
+    #vert:hover {
+        background: url(/Ristretto3D/public/css/skins/icons/darkgrey/2ways_horizontal.png) !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: 15px !important;
+        height: 30px !important;
+        width: 30px !important;
+        background-color: #ffc23a !important
+    }
+
+    #vert.down {
+        background-color: #555555 !important
+    }
+
+        #vert.down:hover {
+            background-color: #555555 !important;
+            background: url(/Ristretto3D/public/css/skins/icons/white/2ways_horizontal.png) !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            background-size: 15px !important;
+            height: 30px !important;
+            width: 30px !important
+        }
+
+#both {
+    background: url(/Ristretto3D/public/css/skins/icons/white/4ways.png) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: 15px !important;
+    height: 30px !important;
+    width: 30px !important;
+    background-color: #656565 !important;
+    position: relative !important;
+    top: 45px !important;
+    left: 150px !important;
+    border: #656565 solid 1px !important
+}
+
+    #both:hover {
+        background: url(/Ristretto3D/public/css/skins/icons/darkgrey/4ways.png) !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: 15px !important;
+        height: 30px !important;
+        width: 30px !important;
+        background-color: #ffc23a !important
+    }
+
+    #both.down {
+        background-color: #555555 !important
+    }
+
+        #both.down:hover {
+            background-color: #555555 !important;
+            background: url(/Ristretto3D/public/css/skins/icons/white/4ways.png) !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            background-size: 15px !important;
+            height: 30px !important;
+            width: 30px !important
+        }
+
+
+.icon-view-tools li[title="3D-Print"] img {
+    background-color: #656565;
+    content: url(/Ristretto3D/public/css/skins/icons/white/download.png);
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    border: #656565 solid 6px;
+    position: relative;
+    top: -30px
+}
+
+    .icon-view-tools li[title="3D-Print"] img:hover {
+        background-color: #ffc23a;
+        content: url(/Ristretto3D/public/css/skins/icons/darkgrey/download.png);
+        height: 25px;
+        width: 25px;
+        cursor: pointer;
+        border: #ffc23a solid 6px
+    }
+
+.icon-view-tools li img[src*="pan-down"] {
+    background-color: #ffc23a;
+    content: url(/Ristretto3D/public/css/skins/icons/darkgrey/drag.png);
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    border: #ffc23a solid 6px;
+    position: relative;
+    top: -15px
+}
+
+.icon-view-tools li img[src*="pan-up"] {
+    background-color: #656565;
+    content: url(/Ristretto3D/public/css/skins/icons/white/drag.png);
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    border: #656565 solid 6px;
+    position: relative;
+    top: -15px
+}
+
+    .icon-view-tools li img[src*="pan-up"]:hover {
+        background-color: #ffc23a;
+        content: url(/Ristretto3D/public/css/skins/icons/darkgrey/drag.png);
+        height: 25px;
+        width: 25px;
+        cursor: pointer;
+        border: #ffc23a solid 6px;
+        position: relative;
+        top: -15px
+    }
+
+.icon-view-tools li img[src*="zoom-up"] {
+    background-color: #656565;
+    content: url(/Ristretto3D/public/css/skins/icons/white/zoom.png);
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    border: #656565 solid 6px;
+    position: relative;
+    top: 0px
+}
+
+.icon-view-tools li img[src*="zoom-down"] {
+    background-color: #ffc23a;
+    content: url(/Ristretto3D/public/css/skins/icons/darkgrey/zoom.png);
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    border: #ffc23a solid 6px;
+    position: relative;
+    top: 0px
+}
+
+.icon-view-tools li img[src*="zoom-up"]:hover {
+    background-color: #ffc23a;
+    content: url(/Ristretto3D/public/css/skins/icons/darkgrey/zoom.png);
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    border: #ffc23a solid 6px;
+    position: relative;
+    top: 0px
+}
+
+.icon-view-tools li img[src*="orbit-down"] {
+    background-color: #ffc23a;
+    content: url(/Ristretto3D/public/css/skins/icons/darkgrey/3drotation.png);
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    border: #ffc23a solid 6px;
+    position: relative;
+    top: 15px
+}
+
+.icon-view-tools li img[src*="orbit-up"] {
+    background-color: #656565;
+    content: url(/Ristretto3D/public/css/skins/icons/white/3drotation.png);
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    border: #656565 solid 6px;
+    position: relative;
+    top: 15px
+}
+
+    .icon-view-tools li img[src*="orbit-up"]:hover {
+        background-color: #ffc23a;
+        content: url(/Ristretto3D/public/css/skins/icons/darkgrey/3drotation.png);
+        height: 25px;
+        width: 25px;
+        cursor: pointer;
+        border: #ffc23a solid 6px;
+        position: relative;
+        top: 15px
+    }
+
+.icon-view-tools li img[src*="reset"] {
+    background-color: #656565 !important;
+    content: url(/Ristretto3D/public/css/skins/icons/white/restart.png) !important;
+    height: 25px !important;
+    width: 25px !important;
+    cursor: pointer !important;
+    border: #656565 solid 6px !important;
+    position: relative !important;
+    top: 20px !important
+}
+
+    .icon-view-tools li img[src*="reset"]:hover {
+        background-color: #ffc23a;
+        content: url(/Ristretto3D/public/css/skins/icons/darkgrey/restart.png) !important;
+        height: 25px !important;
+        width: 25px;
+        cursor: pointer;
+        border: #ffc23a solid 6px
+    }
+
+button#clear-button {
+    position: relative !important;
+    border-radius: 0px !important;
+    top: 180px !important;
+    right: 180px !important;
+    width: 30px !important;
+    height: 30px !important;
+    padding: 0px !important;
+    background: #656565 !important;
+    color: white;
+    border: #656565 solid 1px !important
+}
+
+    button#clear-button:hover {
+        background: #ffc23a !important;
+        color: #555
+    }
+
+button#flatten-button {
+    position: relative;
+    border-radius: 0px;
+    top: 180px;
+    right: 250px;
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    background: #656565;
+    color: white;
+    border: #656565 solid 1px !important
+}
+
+
+    button#flatten-button:hover {
+        background: #ffc23a;
+        color: #555
+    }
+
+#flatten-button-text {
+    display: none
+}
+
+#clear-button-text {
+    display: none
+}
+
+#surfaces-dropdown {
+    position: relative;
+    top: -15px;
+    left: 40px;
+    background: none
+}
+
+#icon-cancel-button {
+    margin-right: 10px
+}
+
+#clear-button {
+    margin-right: 5px
+}
+
+#pressure-td {
+    background: url(/Ristretto3D/public/css/skins/icons/darkgrey/inflate.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    font-size: 0
+}
+
+#ceiling-td {
+    background: url(/Ristretto3D/public/css/skins/icons/darkgrey/roof.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    font-size: 0
+}
+
+#noise-td {
+    background: url(/Ristretto3D/public/css/skins/icons/darkgrey/noise.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    font-size: 0
+}
+
+#smooth-label #translated-gui-element {
+    display: none
+}
+
+.icon-editor-table-element :nth-child(3) .left {
+
+    background: url(/Ristretto3D/public/css/skins/icons/darkgrey/blur.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    height: 30px;
+    color: white;
+}
+
+#z-offset-td {
+    background: url(/Ristretto3D/public/css/skins/icons/darkgrey/vert-dist.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    height: 30px;
+    font-size: 0
+}
+
+#upright-td {
+    background: url(/Ristretto3D/public/css/skins/icons/darkgrey/stand-up.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    font-size: 0;
+    position: relative;
+    top: 20px
+}
+
+#upright-checkbox {
+    position: relative;
+    top: 20px
+}
+
+#surfaces-td {
+    font-size: 0
+}
+
+#distance-td {
+    background: url(/Ristretto3D/public/css/skins/icons/darkgrey/hor-dist.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    font-size: 0
+}
+
+#surfaces-dropdown {
+    color: grey !important;
+  width:130px!important;
+  margin-right:40px!important;;
+}
+
+.inflation-button {
+    color: white !important;
+    background: #555
+}
+
+.inflation-button:hover {
+        color: white !important;
+        background: #ffc23a;
+        color: #555 !important
+    }
+
+
+
 
 
 
