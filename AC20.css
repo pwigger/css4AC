@@ -313,12 +313,15 @@ margin-bottom:20px;}
 .trigger-name .editable-display:after{content:"▼"; font-size:15px;position:relative; left:20px;}
   
   .method .trigger-name{border:none;}
-  
+  :root {
+    --main-bg-color: coral;
+    --main-txt-color: blue; 
+    --main-padding: 15px; 
+}
   
 /*method-if then*/
   .block .if-then{border:none;padding-left:3vw;padding-top:30px; padding-bottom:15px;min-height:60px}
   
-
 
 
 .if-then .if,
@@ -331,9 +334,13 @@ margin-bottom:20px;}
 }
 
 span.if::before,span.then:before {
+  color:#555;
+  
+
+  font-weight:100;
     position: absolute;
-    font-size: 16px;
-    content: " else_if";
+    font-size: 18px;
+    content: " else if";
   top:-20px;
   left:0px;
 }
@@ -350,7 +357,8 @@ span.then:before {
     display: block !important
 }
   
-  
+
+
   /*stuff around codeblocks*/
   
  
@@ -702,7 +710,6 @@ button#world-clone-button, button#world-save-button{background: url(/Ristretto3D
 #toolbar select{border:solid #ccc 1px; color:grey;background-color:rgba(0,0,0,0); box-shadow:none; position:relative; left:20px}
 
 
-div.popped-over-content{top:10%; position:relative; }
 
 
 
@@ -859,54 +866,53 @@ padding:10px;}
 
 /*Block content*/
 #one-true-value-editor {
-    z-index: 20000000;
-    background: #555555;
-    border: solid #555555 10px
+    background: white;
+    border: solid #ccc 1px;
+  color:#999;
+  padding-left:20px;
+  padding-right:10px;
 }
 
     #one-true-value-editor .cancelbutton {
-        background: url(/Ristretto3D/public/css/skins/icons/white/close.png);
+        background: url(/Ristretto3D/public/css/skins/icons/darkgrey/close.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: 10px 10px;
         left: 5px;
+      top:-4px;
         outline-style: none;
         position: relative
     }
 
     #one-true-value-editor .acceptbutton {
-        background: url(/Ristretto3D/public/css/skins/icons/white/checkbox.png);
+        background: url(/Ristretto3D/public/css/skins/icons/darkgrey/checkbox.png);
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 10px 10px;
-        left: 5px;
+        background-size: 12px 12px;
+        left: 3px;
+        top:-4px;
         outline-style: none;
         position: relative
     }
 
 input {
-    background-color: white;
+  size:auto;
+    background-color: #eee;
     color: black;
-    margin: 0px 0px 0px 0px;
+    margin: 10px;
     outline-style: none;
-    color: white;
     font-size: 20px;
     padding-left: 10px;
     font-family: monospace;
     border: none;
-    border-bottom: solid #ffc23a 1px;
-    position: relative;
-    left: -0px;
-    top: 5px;
   border-radius:20px;
+  margin-left:20px;
 }
 
 #vat input {
     color: #666
 }
 
-#one-true-value-editor{border-radius:10px;}
-#one-true-value-editor input{margin-left:20px;}
 
 
 
@@ -927,13 +933,7 @@ input {
     font-family: 'Open Sans', sans-serif
 }
 
-.popped-over-content {
-    background: white;
-    color: white;
-    box-shadow: none;
-    border: solid white 20px;
-    border-radius: 0px
-}
+
 
 select.texture-select {
     background: none;
@@ -1328,7 +1328,7 @@ button#clear-button,button#flatten-button {
     margin-bottom: 20px
 }
 
-.draggable-title-bar {
+.draggable-title-bar  {
     background: none;
     font-size: 15px
 }
@@ -1337,13 +1337,13 @@ button#clear-button,button#flatten-button {
     top: 0px
 }
 
-.draggable-window {
+.draggable-window,
+#plot-window {
     background: white;
     border: solid white 1px;
     color: black;
     font-size: 20px;
     padding: 10px;
-    z-index: 0
 }
 
 .highlightedRow {
@@ -1369,12 +1369,30 @@ button#clear-button,button#flatten-button {
 
 
 
- 
+.draggable-window input{color:#555; border:solid grey 0px; background:#eee}  
+.draggable-window button{width:57px;}
+.cancelbutton{}
+
+#plot-window-table {
+    margin: 10px;
+}
+
+#plot-window-title{color: black}
+#plot-window-title-bar{background:none;}
+
+#plot-max-value,#plot-min-value{color:black;}
+
+
+
+.context-menu-list{border-radius:0px;min-width:240px;padding:0px;background:white;border:solid #ccc 1px;}
+.context-menu-item{background-color:white;padding:4px 2px 2px 40px}
+.context-menu-item.icon{margin-left:0px;background-position:10px 8px;min-height:30px;}
+
+.context-menu-item:hover{background-color:#eee;}
 
 
 
 
-
-
-
+.popped-over-content{background:white; margin-top:40px;}
+#color-chooser-preview{height:35px;}
 
