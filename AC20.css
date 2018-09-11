@@ -2,65 +2,33 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 
-@import url('https://fonts.googleapis.com/css?family=Boogaloo');
 
-@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch');
-
-@import url('https://fonts.googleapis.com/css?family=Squada+One');
-
-
-@import url('https://fonts.googleapis.com/css?family=Averia+Gruesa+Libre|Bahiana|Baloo+Da|Bubblegum+Sans|Chewy|Concert+One|Flamenco|Fredoka+One|Irish+Grover|Kirang+Haerang|Londrina+Solid|Luckiest+Guy|Offside|Press+Start+2P|Skranji|Slackey|Sniglet|Squada+One|Tulpen+One');
-  
-/*OK Fonts
-Cute Font Averia Gruesa Libre Bubblegum sans Sans Kirang Haerang Londrina solid Skranji Sniglet*/
 
 /*Farbe für Block*/
 .instruction,     .editable-display{
   
-  background:#444;
-  background:#F5C169;
-  background:#7A9ACF;
-  background:#6CC4F6;
-  background:#7C6CE5;
-  background:#F78737;
+
   background:#2BC6DA;  
 
   color:white;
   
-    font-family: 'Bubblegum Sans'; 
 
-
-     font-family: 'Averia Gruesa Libre'; 
-   font-size:14px;
-  
     font-family: 'Cute Font';
 font-size:22px;
    
   font-weight: 100;
   
-        
 
 }
 
 .action{}
 .condition{}
   body{background:#eee;
-  font-family:Avenir;
+  font-family:'Roboto';
     font-size:12px;
   line-height:22px;
 }
 
-/*
- body:after{
-    position:fixed;
-    top:0px;
-    left:0px;
-    display:table;
-    width:250px;
-    height:70px;
-    content:" ";
-    background:#4B435C;
-}*/
 
 
 /*adjust Colors*/
@@ -159,10 +127,9 @@ ul#gallery_agentlist{margin:0px 0px 0px 0px;
   top:11px; 
  font-size:8px;}
 
-/*.flippy-closed:after {content:"SHAPES"}
-.flippy-open:after {content:"HIDE"}*/
 
-  #gallery-description{padding-top:30px;background:none; font-size:50px; font-family:'cute font';}
+
+  #gallery-description{padding-top:30px;background:none; font-size:30px; }
  
 .gallery_shapeitem{padding-left:50px;
  
@@ -284,6 +251,7 @@ li:last-child li:last-child div.gallery_shapeitem:last-child {
   
   
   /*methods and rules*/
+
  .rule{display:flex;
    border:none;}
   
@@ -297,7 +265,7 @@ li:last-child li:last-child div.gallery_shapeitem:last-child {
   
   textarea.comment-textarea{margin-left:60px;padding-left:10px; border:#ddd solid 1px;
   background:white;
-    border-radius:4px;
+    border-radius:20px;
     color:#555!important;
 width:80%;
 margin-bottom:20px;}
@@ -305,19 +273,19 @@ margin-bottom:20px;}
   textarea.comment-textarea:focus{outline-style:none; background:white; color:black!important;}
  
   
-  .trigger-name .editable-display{font-size:50px;
-  padding:20px 0px 10px 20px;
-    margin:20px 20px 0px 20px;background:none;color:grey;}
+  .trigger-name .editable-display{font-size:30px;
+  padding:10px 40px 10px 20px;
+    margin:20px 20px 5px 20px;background:none;color:grey;font-family:'Roboto';}
+
+
+
+
   .trigger-name .editable-display:hover{background:#eee;}
 
 .trigger-name .editable-display:after{content:"▼"; font-size:15px;position:relative; left:20px;}
   
   .method .trigger-name{border:none;}
-  :root {
-    --main-bg-color: coral;
-    --main-txt-color: blue; 
-    --main-padding: 15px; 
-}
+  
   
 /*method-if then*/
   .block .if-then{border:none;padding-left:3vw;padding-top:30px; padding-bottom:15px;min-height:60px}
@@ -903,7 +871,6 @@ input {
     outline-style: none;
     font-size: 20px;
     padding-left: 10px;
-    font-family: monospace;
     border: none;
   border-radius:20px;
   margin-left:20px;
@@ -930,7 +897,6 @@ input {
 
 #new-agent-div {
     background-color: white;
-    font-family: 'Open Sans', sans-serif
 }
 
 
@@ -945,6 +911,7 @@ select.texture-select {
     color:grey;
 }
 
+/*TODO: Upload image to agentcubes-server and adjust url */
 #new-agent-div .shape-button-icon{background-image:url(https://github.com/pwigger/css4AC/raw/master/icons/other/new-agent-icons.png);}
 .shape-button {
     background-color: white !important;
@@ -1004,8 +971,9 @@ button#cancel-button:hover, button#save-button:hover {background:#ccc;}
   color:black;
 position:relative;
 top:30px;}
-#controls-table:before{content:" ";position:absolute;top:5px; left:0px;width:288px;height:185px;border:solid #ccc 1px;border-radius:5px;}
-#controls-table .section-header:before{content:" ";position:absolute;top:200px; left:0px;width:288px;height:200px;border:solid #ccc 1px;border-radius:5px;}
+
+button#clear-button:before{content:" ";position:absolute;top:-320px; left:60px;width:288px;height:185px;border:solid #ccc 1px;border-radius:5px;pointer-events: none;}
+button#flatten-button:before{content:" ";position:absolute;top:-125px; left:95px;width:288px;height:200px;border:solid #ccc 1px;border-radius:5px;pointer-events: none;}
 
 #controls-table tr:nth-child(5){display:none;}
 #pressure-readout{position:relative; left:-10px;}
@@ -1041,17 +1009,17 @@ top:30px;}
 
 .icon-tool-with-translated-tooltip#rect {
     background-image: url(/Ristretto3D/public/css/skins/icons/darkgrey/rect.png) !important;
-    top: 265px;
+    top: 255px;
 }
   
 .icon-tool-with-translated-tooltip#circ {
     background-image: url(/Ristretto3D/public/css/skins/icons/darkgrey/circ.png) !important;
-    top: 295px;
+    top: 285px;
 }
        
 .icon-tool-with-translated-tooltip#poly {
     background-image: url(/Ristretto3D/public/css/skins/icons/darkgrey/poly.png) !important;
-    top: 325px; 
+    top: 315px; 
     height:30px!important;
 }
 
@@ -1364,8 +1332,6 @@ button#clear-button,button#flatten-button {
     font-size: 13px;
     margin: 0
 }
-
-
 
 
 
