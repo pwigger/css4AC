@@ -1,31 +1,34 @@
 @import url('https://fonts.googleapis.com/css?family=Cute+Font');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat');
 
+:root {
+    --block-color: #1Ba6eA; 
+    --background: white; 
+    --foreground: #eee;    
+    --highlight: yellow;
+  /*var(--block-color); */
+}
 
+input{outline-style:none;}
 
 /*Farbe für Block*/
 .instruction,     .editable-display{
-  
-
   background:#2BC6DA;  
-
+  background:var(--block-color);
   color:white;
-  
-
-    font-family: 'Cute Font';
-font-size:22px;
-   
+  font-family: 'Cute Font';
+  font-size:22px; 
   font-weight: 100;
-  
-
 }
 
 .action{}
 .condition{}
+
   body{background:#eee;
-  font-family:'Roboto';
-    font-size:12px;
+  font-family:'Lato';
+    font-size:13px;
   line-height:22px;
 }
 
@@ -45,13 +48,13 @@ button{
   color:#5399DB;
 }
 
+#vat .condition.vat-selected:not(.disabled),#vat .action.vat-selected:not(.disabled),#vat .condition.vat-selected:hover:not(.disabled),#vat .action.vat-selected:hover:not(.disabled)  {background:#888;}
+#vat .condition:hover:not(.disabled), #vat .action:hover:not(.disabled){background:#0B96dA;}
 
-
-
-  /*Block Hover color*/
+  /*Block Hover color
 .instruction:hover, .vat-selected{
   background:#2BC6DA;
-}
+}*/
 
 
 /*Farbe für Regel*/
@@ -69,7 +72,7 @@ button{
 .block{margin:0px -5px 0px -5px;}
 
  /*Selected Rules and Methods*/
-  #vat .rule.vat-selected,#vat .method.vat-selected{background:#F5C169;}
+  #vat .rule.vat-selected,#vat .method.vat-selected{background:#f0f0ff;}
 #vat .rule{ border-top:solid #efefef 5px;}
 
   /*#vat-table tbody tr td:last-child{padding-right:140px;}*/
@@ -201,12 +204,6 @@ li:last-child li:last-child div.gallery_shapeitem:last-child {
   #status-bar{background:#eee;}
   
   
-  
- 
-
- 
-  
-  
  #vat-conditions-header, #vat-actions-header, #vat-code-header-td {
     background: none;
 }
@@ -271,11 +268,13 @@ width:80%;
 margin-bottom:20px;}
   
   textarea.comment-textarea:focus{outline-style:none; background:white; color:black!important;}
- 
+div.trigger-name{padding-left:30px;}
   
-  .trigger-name .editable-display{font-size:30px;
-  padding:10px 40px 10px 20px;
-    margin:20px 20px 5px 20px;background:none;color:grey;font-family:'Roboto';}
+  .trigger-name .editable-display{font-size:50px;
+font-family:'Roboto';    
+font-family:'cute font';
+  padding:10px 30px 10px 20px;
+    margin:20px 20px 5px 0px;background:none;color:grey;}
 
 
 
@@ -323,12 +322,7 @@ span.then:before {
 
 .rule .instruction-area {
     display: block !important
-}
-  
-
-
-  /*stuff around codeblocks*/
-  
+}  
  
 /*Scrollbar*/
 
@@ -417,7 +411,7 @@ span.then:before {
 }
  
   
-  /*Buttons left
+  /*Buttons top
   */
   
 
@@ -635,11 +629,6 @@ button#action-button,button#language-button, button#world-button{
     border-radius:0px;
 }
 
-
-
-
-
-
 button:hover{background-color:#EEE!important;}
 
 
@@ -666,8 +655,6 @@ button#world-button{left:300px;font-family:"roboto"; color:black;  background-im
    
 #world-button-menu{position:fixed; left: 300px; top:28px; content:" ";}
 
-
-
 button#world-clone-button, button#world-save-button{background: url(/Ristretto3D/public/css/skins/icons/darkgrey/save.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -676,10 +663,6 @@ button#world-clone-button, button#world-save-button{background: url(/Ristretto3D
 }
 
 #toolbar select{border:solid #ccc 1px; color:grey;background-color:rgba(0,0,0,0); box-shadow:none; position:relative; left:20px}
-
-
-
-
 
 
 #error {
@@ -691,6 +674,9 @@ button#world-clone-button, button#world-save-button{background: url(/Ristretto3D
     position: relative;
     top: 100px
 }
+
+div.humane-error{ text-shadow:none; box-shadow:none; background:#CC0F0F ;padding:30px; border:solid #FF0000 0px; color:white; }
+
 
 
 
@@ -726,7 +712,6 @@ button#world-clone-button, button#world-save-button{background: url(/Ristretto3D
 
 /*Action A Shape*/
 
-
 .action{  
   border-radius:0px;
   display:inline-flex;
@@ -735,48 +720,41 @@ button#world-clone-button, button#world-save-button{background: url(/Ristretto3D
 .vat-flippy-closed,.vat-flippy-open{z-index:20;}
 
 
-/*Left corner in stack*/
-#vat-actions .action .translated-code.instruction-name:before{content: '';
 
-    border-right: 15px solid transparent;
-    border-top: 15px solid #eee;
-    position:absolute;
-    left:0px;
-    margin-top:-4px;
-}
-/*right Corner in rule && right corner in stack*/
-.action.instruction-context-menu:after{content: '';
+/*right Corner*/
+.action.instruction-context-menu:after,.if-then .action.instruction-context-menu:after{content: '';
     border-left: 15px solid transparent;
     border-top: 15px solid #eee;
-margin-right:-4px;
+  margin-right:-4px;
   margin-top:-3px;
 }
 
-/*Left Corner in rule flippy closed*/
-.if-then .action>.vat-flippy-closed:before{content: '';
-    border-right: 15px solid transparent;
-    border-top: 15px solid white;
-    position:absolute;
-  margin-left:-9px;
-     margin-top:-3px;}
-
-.if-then .action>.vat-flippy-open:before{content: '';
-    border-right: 15px solid transparent;
-    border-top: 15px solid white;
-    position:absolute;
+/*Left Corner*/
+.action.instruction.instruction-context-menu:before{content: '';
+   border-right: 15px solid transparent;
+   border-top: 15px solid #eee;
+  position:absolute;
   margin-left:-4px;
-     margin-top:-3px;}
+  margin-top:-3px;
+    }
+
+/*in Rule*/
+.if-then .action.instruction-context-menu:after, .if-then .action.instruction.instruction-context-menu:before{border-top: 15px solid white;}
+
+/*special color*/
+.vat-selected .if-then .action.instruction.instruction-context-menu:before,.vat-selected .if-then .action.instruction-context-menu:after{border-top: 15px solid #e6ded4;}
+.vat-selected .if-then .action.instruction.instruction-context-menu:before,.true .vat-selected .if-then .action.instruction-context-menu:after{border-top: 15px solid #e6ded4;}
 
 
+/*Conversational Programming*/
 
-/*right Corner in rule white*/
-.if-then .action.instruction-context-menu:after{border-top: white solid 15px;}
 
-/*Selected color A-Shape*/
-.vat-selected .if-then .action>.vat-flippy-closed:before,.vat-selected .if-then .action>.vat-flippy-open:before, .vat-selected .if-then .action.instruction-context-menu:after { border-top: 15px solid #F5C169;}
+/*CP: true nonselected correct A-Shape-color*/
+/*True-block*/
 
-.instruction-area .nested-container{background:white;border: solid white 0px;
-padding:10px;}
+ .true .if-then .action.instruction.instruction-context-menu:before, .true .if-then .action.instruction-context-menu:after{ border-top: 15px solid #C8E6C9}
+ .false .if-then .action.instruction.instruction-context-menu:before, .false .if-then .action.instruction-context-menu:after{ border-top: 15px solid #888;}
+
 
 /*conversational programming*/
 
@@ -823,13 +801,6 @@ padding:10px;}
 .false,.false:hover{background:#e74c3c!important;}
 
 
-/*CP: true nonselected correct A-Shape-color*/
-/*True-block*/
-
-.true .action>.vat-flippy-closed:before,.true .action>.vat-flippy-open:before, .true .action.instruction-context-menu:after,.true.vat-selected .if-then .action>.vat-flippy-closed:before,.true.vat-selected .if-then .action>.vat-flippy-open:before,.true.vat-selected .action.instruction-context-menu:after{ border-top: 15px solid #C8E6C9;}
-
-/*False Block*/
-.false .action>.vat-flippy-closed:before,.false .action>.vat-flippy-open:before, .false .action.instruction-context-menu:after,.false.vat-selected .if-then .action>.vat-flippy-closed:before,.false.vat-selected .if-then .action>.vat-flippy-open:before,.false.vat-selected .action.instruction-context-menu:after{ border-top: 15px solid #888;}
 
 
 /*Block content*/
@@ -863,7 +834,8 @@ padding:10px;}
         position: relative
     }
 
-input {
+
+#one-true-value-editor input {
   size:auto;
     background-color: #eee;
     color: black;
@@ -876,11 +848,14 @@ input {
   margin-left:20px;
 }
 
+#one-true-value-editor img{background:#ccc;
+padding:2px;margin:2px; border-radius:5px;}
+#one-true-value-editor img:hover{background-color:var(--highlight); border:solid white 0px;;}
 #vat input {
     color: #666
 }
 
-
+.shape-popup-editor{padding-top:10px;}
 
 
 
@@ -889,9 +864,21 @@ input {
 /*Add agent*/
 .AgentView {
     position: relative;
-    top: 100px;
-    width: 860px !important
+    top: 100px; 
+  width:870px!important;
+  border-radius:5px;
 }
+.AgentView select.texture-select{ min-width:190px;background:#eee; border-radius:4px;padding:5px; height:335px; font-size:14px; margin-top:20px;outline: none!important;
+    color:grey;}
+
+.AgentView canvas.threed-view{position:relative; top:-4px; border-radius:4px; border:solid white 0px; height:335px!important; width:335px!important;}
+
+
+.new-shape-dialog{border-radius:5px; position:relative; top: 100px; }
+.new-shape-dialog input{font-size:12px;border-radius:20px; border:solid white 0px; background:var(--foreground); margin:10px; padding:10px 10px 10px 20px}
+
+.new-shape-dialog span{position:relative; left:-180px;}
+
 
 /*Add Agent window*/
 
@@ -901,32 +888,23 @@ input {
 
 
 
-select.texture-select {
-    background: none;
-    border: solid transparent 1px;
-    padding: 10px;
-    height: 340px;
-    width: 165px;
-    outline: none!important;
-    color:grey;
-}
-
 /*TODO: Upload image to agentcubes-server and adjust url */
 #new-agent-div .shape-button-icon{background-image:url(https://github.com/pwigger/css4AC/raw/master/icons/other/new-agent-icons.png);}
+
 .shape-button {
     background-color: white !important;
     color: white !important;
-    box-shadow: none !important
+    box-shadow: none !important;
+  position:relative;top:20px;
 }
+
 .down .inflatable-icon:before{
-  font-size:10.5px;color:white;content:"Adding a lot of inflatable agents might slow down your project!";
-position:relative;left:420px;top:316px;}
-
-
+  font-size:11.5px;color:white;content:"Adding a lot of inflatable agents might slow down your project!";
+position:relative;left:470px;top:305px;z-index:20;}
 
 .shape-button.down {
     border: solid #ffc23a 0px;
-    background: grey !important;
+    background: lightblue !important;
     width: 58px;
   height:58px;
 }
@@ -936,13 +914,19 @@ position:relative;left:420px;top:316px;}
 }
 
 input#enter-agent-name {
-    background: none;
-    color: white;
+    background: var(--foreground);
+    color: black;
     height: 50px;
+  font-size:20px;
     padding-left: 20px;
-    width: 690px;
-    margin-bottom: 30px
+    border-radius:20px;
+  outline-style:none;
+  border:solid white 0px;
+position:relative;  
+left:-20px
 }
+
+#new-agent-div label{margin-left:15px;}
 
 button#cancel-button, button#save-button {
   margin-top:20px;
@@ -981,6 +965,7 @@ button#flatten-button:before{content:" ";position:absolute;top:-125px; left:95px
 .icon-editor-table-element#icon-buttons-td{padding-top:33px;padding-bottom:0px;}
 #icon-editor-table button{border:solid #ccc 1px;color:#5399DB;}
 
+.icon-editor-table-element .right{font-size:11px;font-family:monospace}
 
 /*3D editor buttons left */
 .icon-tool-with-translated-tooltip#pencil{
@@ -1043,10 +1028,6 @@ button#flatten-button:before{content:" ";position:absolute;top:-125px; left:95px
 
 
 /*Mirror*/
-
-
-
-
 #none{
     background: url(/Ristretto3D/public/css/skins/icons/darkgrey/none.png) !important;  
      top: 135px;
@@ -1361,4 +1342,25 @@ button#clear-button,button#flatten-button {
 
 .popped-over-content{background:white; margin-top:40px;}
 #color-chooser-preview{height:35px;}
+
+/*Loop*/
+.instruction-area .nested-container{background-color:white;border:solid white 0px;
+padding:10px;}
+
+#vat-conditions:last-child,#vat-actions:last-child{padding-bottom:80px!important;}
+.group-title{padding-top:40px; font-family:cute font; font-size:30px;}
+#vat-conditions .group-title{text-align:right;}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
