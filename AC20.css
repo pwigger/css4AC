@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Cute+Font');
-@import url('https://fonts.googleapis.com/css?family=Roboto');
 
-@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Cute+Font|Jomhuria|Lato');
+
 
 :root {
     --block-color: #1Ba6eA; 
     --background: white; 
     --foreground: #eee;    
-    --highlight: yellow;
+    --highlight: #FFB74D;
   /*var(--block-color); */
 }
 
@@ -18,7 +17,7 @@ input{outline-style:none;}
   background:#2BC6DA;  
   background:var(--block-color);
   color:white;
-  font-family: 'Cute Font';
+  font-family: 'Cute Font' ,'Jomhuria' ;
   font-size:22px; 
   font-weight: 100;
 }
@@ -48,8 +47,11 @@ button{
   color:#5399DB;
 }
 
-#vat .condition.vat-selected:not(.disabled),#vat .action.vat-selected:not(.disabled),#vat .condition.vat-selected:hover:not(.disabled),#vat .action.vat-selected:hover:not(.disabled)  {background:#888;}
+#vat .condition.vat-selected:not(.disabled),#vat .action.vat-selected:not(.disabled),#vat .condition.vat-selected:hover:not(.disabled),#vat .action.vat-selected:hover:not(.disabled)  {background:#888}
 #vat .condition:hover:not(.disabled), #vat .action:hover:not(.disabled){background:#0B96dA;}
+
+.instruction:active,.instruction:hover:active{background:black}
+
 
   /*Block Hover color
 .instruction:hover, .vat-selected{
@@ -64,7 +66,7 @@ button{
 }
 .rule-box{background:none;}
 
-  .block .if-then{background:none;}
+
 
  .method{background:#fff;
  box-shadow: 0 6px 10px rgba(0,0,0,0.16), 0 3px 2px rgba(0,0,0,0.16);}
@@ -72,8 +74,9 @@ button{
 .block{margin:0px -5px 0px -5px;}
 
  /*Selected Rules and Methods*/
-  #vat .rule.vat-selected,#vat .method.vat-selected{background:#f0f0ff;}
+  #vat .rule.vat-selected,#vat .method.vat-selected{background:var(--highlight);}
 #vat .rule{ border-top:solid #efefef 5px;}
+
 
   /*#vat-table tbody tr td:last-child{padding-right:140px;}*/
 
@@ -94,8 +97,6 @@ button{
 }
 
 
-
-
 #non-gallery-container{position:absolute;
 top:0px; left:250px;}
 #container canvas{padding-right:30px;}
@@ -107,7 +108,7 @@ top:0px; left:250px;}
 
 
 #gallery-title-span{position:relative;
-top:20px;left:100px;}
+top:20px;left:80px;font-family:cute font; font-size:50px;}
 
 
   button.config{font-size:0px;background:none; border:none; }
@@ -129,7 +130,6 @@ ul#gallery_agentlist{margin:0px 0px 0px 0px;
   position:relative; left:200px;
   top:11px; 
  font-size:8px;}
-
 
 
   #gallery-description{padding-top:30px;background:none; font-size:30px; }
@@ -219,7 +219,7 @@ li:last-child li:last-child div.gallery_shapeitem:last-child {
         float: right;
         text-align: left;
     }
-   .instruction-content{margin:1px 1px 1px 10px;}
+   .instruction-content{margin:1px 3px 1px 10px;}
    
   .instruction,     .editable-display{
   border-radius:20px;
@@ -236,24 +236,97 @@ li:last-child li:last-child div.gallery_shapeitem:last-child {
     .editable-display:hover{background: lightgrey;color:grey;
   color:white;}
   
-    .direction-picker-display,.direction-popup-editor,.one-true-value-editor,.shape-editor-display{border-radius:20px;}
-   
- .vat-flippy-closed{position:relative;
+.instruction .shape-editor-display{height:20px;width:20px; margin: -1px 4px 0px 0px}
+
+    .direction-picker-display,.one-true-value-editor,.shape-editor-display{border-radius:10px;}
+
+ .vat-flippy-closed,.vat-flippy-open{position:relative;
   left:5px;
   color:white;
-    font-size:8px;
+    font-size:10px;
+   z-index:20;
   }
+
+
+.editor .editable-display > span{font-family:Arial;}
+
   
+/*Block content*/
+#one-true-value-editor {
+    background: white;
+    border: solid #ccc 1px;
+  color:#999;
+
+  z-index:21
+}
+#one-true-value-editor span:first-child{margin-left:20px;}
+#one-true-value-editor span:last-child{margin-right:20px;}
+
+    #one-true-value-editor .cancelbutton {
+        background: url(/Ristretto3D/public/css/skins/icons/darkgrey/close.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 10px 10px;
+        left: 5px;
+      top:-4px;
+        outline-style: none;
+        position: relative
+    }
+
+    #one-true-value-editor .acceptbutton {
+        background: url(/Ristretto3D/public/css/skins/icons/darkgrey/checkbox.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 12px 12px;
+        left: 3px;
+        top:-4px;
+        outline-style: none;
+        position: relative
+    }
+
+
+#one-true-value-editor input {
+  size:auto;
+    background-color: #eee;
+    color: black;
+    margin: 10px;
+    outline-style: none;
+    font-size: 20px;
+    padding-left: 10px;
+    border: none;
+  border-radius:20px;
+  margin-left:20px;
+}
+
+#one-true-value-editor img{
+  background:#ccc;
+padding:2px;
+  margin:2px; 
+  border-radius:5px;}
+
+#one-true-value-editor img:hover{
+  background-color:var(--highlight); 
+  border:solid white 0px;}
+
+#vat input {
+    color: #666
+}
+
+.shape-popup-editor{padding:10px;}
   
-  
-  
+#one-true-value-editor .direction-popup-editor{border-radius:1px;}  
+.northwest{border-radius:0px 10px 10px 10px;}
+.northeast{border-radius:10px 0px 10px 10px;}
+.southeast{border-radius:10px 10px 0px 10px;}
+.southwest{border-radius:10px 10px 10px 0px;}
+img.shape-editor-display{ border-radius:2px; background:rgba(255,255,255,0.5)}
+
   /*methods and rules*/
 
  .rule{display:flex;
    border:none;}
   
   .rule .anc{vertical-align:top; position:relative; top: 8px; left:-10px}
- 
 
 
  .method{border: none;margin-bottom:50px;padding:5px}
@@ -277,27 +350,21 @@ font-family:'cute font';
     margin:20px 20px 5px 0px;background:none;color:grey;}
 
 
-
-
   .trigger-name .editable-display:hover{background:#eee;}
 
 .trigger-name .editable-display:after{content:"▼"; font-size:15px;position:relative; left:20px;}
   
   .method .trigger-name{border:none;}
   
-  
-/*method-if then*/
-  .block .if-then{border:none;padding-left:3vw;padding-top:30px; padding-bottom:15px;min-height:60px}
-  
 
+/*method-if then*/
+  .block .if-then{border:solid rgba(255,255,255,0.5) 1px; border-radius: 20px;;padding-left:3vw;padding-top:30px; padding-bottom:15px;min-height:60px;background:none;}
 
 .if-then .if,
 .if-then .then {
     font-size: 0px;
   color:black;
-  top:-1px;
-
-     
+  top:-1px;   
 }
 
 span.if::before,span.then:before {
@@ -675,7 +742,7 @@ button#world-clone-button, button#world-save-button{background: url(/Ristretto3D
     top: 100px
 }
 
-div.humane-error{ text-shadow:none; box-shadow:none; background:#CC0F0F ;padding:30px; border:solid #FF0000 0px; color:white; }
+div.humane{ text-shadow:none; box-shadow:none; background:#CC0F0F ;padding:30px; border:solid #FF0000 0px; color:white; }
 
 
 
@@ -706,7 +773,6 @@ div.humane-error{ text-shadow:none; box-shadow:none; background:#CC0F0F ;padding
   height:50%!important;}
 }
 
-.editor .editable-display > span{position:relative;top:0px;top:10px;}
 
 
 
@@ -717,7 +783,6 @@ div.humane-error{ text-shadow:none; box-shadow:none; background:#CC0F0F ;padding
   display:inline-flex;
     }
 
-.vat-flippy-closed,.vat-flippy-open{z-index:20;}
 
 
 
@@ -753,8 +818,7 @@ div.humane-error{ text-shadow:none; box-shadow:none; background:#CC0F0F ;padding
 /*True-block*/
 
  .true .if-then .action.instruction.instruction-context-menu:before, .true .if-then .action.instruction-context-menu:after{ border-top: 15px solid #C8E6C9}
- .false .if-then .action.instruction.instruction-context-menu:before, .false .if-then .action.instruction-context-menu:after{ border-top: 15px solid #888;}
-
+ .false .if-then .action.instruction.instruction-context-menu:before, .false .if-then .action.instruction-context-menu:after, .true ~ .block .if-then .action.instruction.instruction-context-menu:before,.true ~ .block .action:after { border-top: 15px solid #888;}
 
 /*conversational programming*/
 
@@ -800,62 +864,6 @@ div.humane-error{ text-shadow:none; box-shadow:none; background:#CC0F0F ;padding
 
 .false,.false:hover{background:#e74c3c!important;}
 
-
-
-
-/*Block content*/
-#one-true-value-editor {
-    background: white;
-    border: solid #ccc 1px;
-  color:#999;
-  padding-left:20px;
-  padding-right:10px;
-}
-
-    #one-true-value-editor .cancelbutton {
-        background: url(/Ristretto3D/public/css/skins/icons/darkgrey/close.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 10px 10px;
-        left: 5px;
-      top:-4px;
-        outline-style: none;
-        position: relative
-    }
-
-    #one-true-value-editor .acceptbutton {
-        background: url(/Ristretto3D/public/css/skins/icons/darkgrey/checkbox.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 12px 12px;
-        left: 3px;
-        top:-4px;
-        outline-style: none;
-        position: relative
-    }
-
-
-#one-true-value-editor input {
-  size:auto;
-    background-color: #eee;
-    color: black;
-    margin: 10px;
-    outline-style: none;
-    font-size: 20px;
-    padding-left: 10px;
-    border: none;
-  border-radius:20px;
-  margin-left:20px;
-}
-
-#one-true-value-editor img{background:#ccc;
-padding:2px;margin:2px; border-radius:5px;}
-#one-true-value-editor img:hover{background-color:var(--highlight); border:solid white 0px;;}
-#vat input {
-    color: #666
-}
-
-.shape-popup-editor{padding-top:10px;}
 
 
 
@@ -1352,8 +1360,11 @@ padding:10px;}
 #vat-conditions .group-title{text-align:right;}
 
 
-
-
+/*Chose Method
+#one-true-value-editor div div.popup-list-item:nth-child(1){ background: url(/Ristretto3D/public/css/skins/icons/darkgrey/blur.png);background-repeat:no-repeat; background-position:left;
+     background-size: 20px;
+     padding-left:25px;}
+*/
 
 
 
