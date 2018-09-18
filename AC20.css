@@ -7,6 +7,8 @@
     --background: white; 
     --foreground: #eee;    
     --highlight: #FFB74D;
+  --button-font-color:#5399DB;
+  
   /*var(--block-color); */
 }
 
@@ -747,7 +749,7 @@ div.humane{ text-shadow:none; box-shadow:none; background:#CC0F0F ;padding:30px;
 
 
 
-@media (max-width: 1240px) {
+@media (max-width: 1239px) {
   #wrap{height:100%!important;}
 
   #gallery-container{position:fixed;
@@ -807,8 +809,7 @@ div.humane{ text-shadow:none; box-shadow:none; background:#CC0F0F ;padding:30px;
 .if-then .action.instruction-context-menu:after, .if-then .action.instruction.instruction-context-menu:before{border-top: 15px solid white;}
 
 /*special color*/
-.vat-selected .if-then .action.instruction.instruction-context-menu:before,.vat-selected .if-then .action.instruction-context-menu:after{border-top: 15px solid #e6ded4;}
-.vat-selected .if-then .action.instruction.instruction-context-menu:before,.true .vat-selected .if-then .action.instruction-context-menu:after{border-top: 15px solid #e6ded4;}
+.vat-selected .if-then .action.instruction.instruction-context-menu:before,.vat-selected .if-then .action.instruction-context-menu:after,.vat-selected .if-then .action.instruction.instruction-context-menu:before,.true .vat-selected .if-then .action.instruction-context-menu:after{border-top: 15px solid var(--highlight);}
 
 
 /*Conversational Programming*/
@@ -818,7 +819,7 @@ div.humane{ text-shadow:none; box-shadow:none; background:#CC0F0F ;padding:30px;
 /*True-block*/
 
  .true .if-then .action.instruction.instruction-context-menu:before, .true .if-then .action.instruction-context-menu:after{ border-top: 15px solid #C8E6C9}
- .false .if-then .action.instruction.instruction-context-menu:before, .false .if-then .action.instruction-context-menu:after, .true ~ .block .if-then .action.instruction.instruction-context-menu:before,.true ~ .block .action:after { border-top: 15px solid #888;}
+ .false .if-then .action.instruction.instruction-context-menu:before, .false .if-then .action.instruction-context-menu:after, .true ~ .block .if-then .action.instruction.instruction-context-menu:before,.true ~ .block .if-then .action:after { border-top: 15px solid #888;}
 
 /*conversational programming*/
 
@@ -886,7 +887,7 @@ div.humane{ text-shadow:none; box-shadow:none; background:#CC0F0F ;padding:30px;
 .new-shape-dialog input{font-size:12px;border-radius:20px; border:solid white 0px; background:var(--foreground); margin:10px; padding:10px 10px 10px 20px}
 
 .new-shape-dialog span{position:relative; left:-180px;}
-
+.new-shape-dialog button{border:solid #eee 1px;margin-left:10px; min-width:90px;}
 
 /*Add Agent window*/
 
@@ -939,8 +940,7 @@ left:-20px
 button#cancel-button, button#save-button {
   margin-top:20px;
     margin-right: 10px;
-  margin-bottom:-25px;
-  background:#eee;
+  border:solid #ccc 1px;
 }
 
 button#cancel-button:hover, button#save-button:hover {background:#ccc;}
@@ -964,15 +964,17 @@ button#cancel-button:hover, button#save-button:hover {background:#ccc;}
 position:relative;
 top:30px;}
 
-button#clear-button:before{content:" ";position:absolute;top:-320px; left:60px;width:288px;height:185px;border:solid #ccc 1px;border-radius:5px;pointer-events: none;}
-button#flatten-button:before{content:" ";position:absolute;top:-125px; left:95px;width:288px;height:200px;border:solid #ccc 1px;border-radius:5px;pointer-events: none;}
+button#clear-button:before{content:" ";position:absolute;top:-330px; left:60px;width:288px;height:185px;border:solid #ccc 1px;border-radius:5px;pointer-events: none;}
+button#flatten-button:before{content:" ";position:absolute;top:-140px; left:95px;width:288px;height:200px;border:solid #ccc 1px;border-radius:5px;pointer-events: none;}
 
 #controls-table tr:nth-child(5){display:none;}
 #pressure-readout{position:relative; left:-10px;}
 
 .icon-editor-table-element#icon-buttons-td{padding-top:33px;padding-bottom:0px;}
-#icon-editor-table button{border:solid #ccc 1px;color:#5399DB;}
 
+#icon-editor-table button{border:solid #ccc 1px;color:var(--button-font-color);}
+
+#icon-buttons-td button{height:35px;}
 .icon-editor-table-element .right{font-size:11px;font-family:monospace}
 
 /*3D editor buttons left */
@@ -1057,24 +1059,17 @@ button#flatten-button:before{content:" ";position:absolute;top:-125px; left:95px
 
     
 
-
-
 #vert {
     background: url(/Ristretto3D/public/css/skins/icons/darkgrey/2ways_horizontal.png) !important;
    
     top: 75px !important;
     left: 115px !important;
- 
-}
-
-   
+}   
 
 #both {
-    background: url(/Ristretto3D/public/css/skins/icons/darkgrey/4ways.png) !important;
-    
+    background: url(/Ristretto3D/public/css/skins/icons/darkgrey/4ways.png) !important;   
     top: 45px !important;
-    left: 150px !important;
-    
+    left: 150px !important;  
 }
 
 
@@ -1145,15 +1140,11 @@ button#flatten-button:before{content:" ";position:absolute;top:-125px; left:95px
  }
 
 
-
-
-
-
 /*Buttons below & hidden*/
 
 button#clear-button,button#flatten-button {
     position: relative;
-    top: 150px;
+    top: 160px;
     right: 180px;
     width: 30px ;
     height: 30px ;
@@ -1337,8 +1328,6 @@ button#clear-button,button#flatten-button {
 
 #plot-max-value,#plot-min-value{color:black;}
 
-
-
 .context-menu-list{border-radius:0px;min-width:240px;padding:0px;background:white;border:solid #ccc 1px;}
 .context-menu-item{background-color:white;padding:4px 2px 2px 40px}
 .context-menu-item.icon{margin-left:0px;background-position:10px 8px;min-height:30px;}
@@ -1367,11 +1356,52 @@ padding:10px;}
 */
 
 
+#status-bar {
+    position: relative;
+    top: -50px;
+    color: white;
+    font-size: 25px;
+    background-color: rgba(255,255,0,0.0);
+    z-index: 5;
+    width: 75%;
+    left: 50%;
+    margin-left: -30.5%;
+    text-shadow: 2px 2px 4px rgba(20,20,20,0.5); 
+  min-height:30px;
+}
+#vat-table:first-child{position:relative; top:-20px;}
+
+.new-world-dialog input{border-radius:20px;
+  margin:10px 10px; padding: 10px 20px;
+  background:#eee; border:solid white 0px;}
+
+.new-world-dialog{padding-top:40px;}
 
 
+.new-world-dialog button{margin-top:30px;margin-left:10px;
+  position:relative; left:20px;
+border:solid #eee 1px;}
 
 
+.skydome-dialog input,.skydome-dialog label{margin:0px 20px 0px 0px;}
+
+.skydome-dialog button, .color-dialog button{margin-top:30px;margin-left:10px;
+border:solid #ccc 1px;
+min-width:80px;}
+
+.draggable-window button{border:solid #ccc 1px;margin-right:2px; padding:5px 10px 5px 10px}
+
+.skydome-dialog>div>div:first-child{ margin-top:20px;}
 
 
+.color-dialog button{}
+
+.highlightedRow{background:#ccc;}
+input.attributeRowNumber{border-radius:20px; padding:5px 10px;}
+
+.attribute-row{height:40px;}
+
+#pop-over-container{z-index:1000000}
+#pop-over-container button{border:solid #ccc 1px;margin-right:2px; padding:5px 10px 5px 10px; margin-top:20px;}
 
 
